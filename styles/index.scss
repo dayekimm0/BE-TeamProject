@@ -17,7 +17,7 @@ body {
 header {
   z-index: 1;
 }
-//main contents
+// main contents
 main {
   overflow: hidden;
   #intro {
@@ -32,16 +32,17 @@ main {
         display: flex;
         flex-direction: column;
         p {
-          font: normal 3.3rem/1.75 "pretendard";
+          font: normal 3.3rem/1.75 map-get($map: $font-family, $key: Pretendard);
           font-weight: 700;
         }
         h2 {
           span {
+            padding: 10px;
             display: flex;
             flex-direction: column;
-            gap: 30px;
             align-items: flex-start;
-            font: bold 12.6rem/0.87 "REM";
+            font: bold 12.6rem/0.87 map-get($map: $font-family, $key: REM);
+            font: bold 10rem/0.87 map-get($map: $font-family, $key: REM);
           }
         }
       }
@@ -69,20 +70,19 @@ main {
           border-radius: 40px;
           box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
           margin-top: 5%;
-          font: 700 2.4rem/1 "Pretendard";
+          font: 700 2.4rem/1 map-get($map: $font-family, $key: Pretendard);
           letter-spacing: -0.52px;
         }
       }
     }
   }
   #con1 {
-    left: 96px;
-    margin-top: 147px;
     display: flex;
     flex-direction: column;
+    padding-left: 5%;
     gap: 40px;
     h2 {
-      font: normal 7rem/1 "REM";
+      font: normal 7rem/1 map-get($map: $font-family, $key: REM);
     }
     .parts {
       display: flex;
@@ -91,28 +91,28 @@ main {
       .part {
         display: flex;
         flex-direction: column;
-        gap: 20px;
-        img {
+        gap: 21px;
+        .partImg {
           width: 430px;
           height: 570px;
           border-radius: 40px;
-          align-items: center;
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          object-fit: cover;
         }
         p {
-          font: normal 3.6rem/1 "REM";
-          font-weight: 700;
+          font: bold 3.6rem/1 map-get($map: $font-family, $key: REM);
         }
       }
     }
   }
   #con2 {
-    position: relative;
     height: 100vh;
     .con2-text {
-      width: 971px;
-      right: 120px;
-      margin-top: 60px;
-      font: 900 11rem/1 "REM";
+      margin-top: 10%;
+      padding: 0 5%;
+      font: 900 11rem/1 map-get($map: $font-family, $key: REM);
       text-align: right;
       letter-spacing: 22px;
       display: flex;
@@ -127,14 +127,12 @@ main {
             0 -1px map-get($map: $colors, $key: dark);
         }
       }
-    }
-    .con2Img {
-      width: 200px;
-      height: 200px;
-      transform: rotate(11deg);
-      position: absolute;
-      left: 200px;
-      margin-top: 500px;
+      .con2Img {
+        width: 200px;
+        height: 200px;
+        margin-top: -5%;
+        margin-left: 5%;
+      }
     }
   }
   #con3 {
@@ -144,8 +142,6 @@ main {
       height: 100%;
       position: relative;
       iframe {
-        top: 0;
-        left: 0;
         width: 100%;
         height: 100%;
       }
@@ -153,7 +149,7 @@ main {
   }
   #con4 {
     .category {
-      margin-top: 132px;
+      margin: 8%;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -161,19 +157,36 @@ main {
       .list {
         width: 1436px;
         h3 {
-          font: 600 9rem/1 "REM";
+          font: 600 9rem/1 map-get($map: $font-family, $key: REM);
           padding-bottom: 50px;
           border-bottom: 1px solid map-get($map: $colors, $key: dark);
         }
         p {
           border-bottom: 1px solid map-get($map: $colors, $key: dark);
-          font: 700 3rem/1 "REM";
+          font: 700 3rem/1 map-get($map: $font-family, $key: REM);
           padding: 50px;
           a {
-            font: 700 5rem/1 "REM";
+            font: 700 5rem/1 map-get($map: $font-family, $key: REM);
             padding: 50px;
           }
         }
+      }
+    }
+  }
+  #con5 {
+    width: 100%;
+    height: 100vh;
+    .eventLoad {
+      height: 50%;
+      opacity: 0.5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: map-get($map: $colors, $key: light);
+      font: bold 6rem/1 map-get($map: $font-family, $key: REM);
+      background: url("../images/index/couponheader.png") center/cover no-repeat;
+      p {
+        width: 1000px;
       }
     }
   }
