@@ -29,63 +29,62 @@ body {
   font-family: "Pretendard";
 }
 
+header {
+  z-index: 1;
+}
+
 main {
   overflow: hidden;
 }
 main #intro .index {
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: relative;
+  display: flex;
+  align-items: center;
 }
-main #intro .title {
-  top: 280px;
-  left: 176px;
+main #intro .index .title {
+  left: 3%;
   position: absolute;
   display: flex;
   flex-direction: column;
-  gap: 30px;
 }
-main #intro .title p {
+main #intro .index .title p {
   font: normal 3.3rem/1.75 "pretendard";
   font-weight: 700;
 }
-main #intro .title .mainTitle {
+main #intro .index .title h2 span {
   display: flex;
   flex-direction: column;
+  gap: 30px;
   align-items: flex-start;
-  gap: 8px;
-  font: bold 8.5rem/0.87 "REM";
+  font: bold 12.6rem/0.87 "REM";
 }
-main #intro .indexImg1 {
+main #intro .index .indexImg1 {
   position: absolute;
-  top: 108px;
-  right: 212px;
+  top: 15%;
+  right: 5%;
 }
-main #intro .indexImg2 {
+main #intro .index .indexImg2 {
   position: absolute;
   width: 100px;
   height: 100px;
-  top: 758px;
-  left: 136px;
-  transform: rotate(11deg);
+  left: 10%;
+  bottom: 10%;
 }
-main #intro .subTitle {
-  top: 664px;
-  right: 212px;
+main #intro .index .subTitle {
+  top: 70%;
+  right: 10%;
   position: absolute;
   display: flex;
   gap: 20px;
 }
-main #intro .subTitle p {
-  padding: 6px 22px;
+main #intro .index .subTitle p {
+  padding: 16px 30px;
   gap: 10px;
   border-radius: 40px;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-top: 47px;
-  font: normal 2.6rem/2.23 "Pretendard";
-  font-weight: 700;
+  margin-top: 5%;
+  font: 700 2.4rem/1 "Pretendard";
   letter-spacing: -0.52px;
 }
 main #con1 {
@@ -120,9 +119,9 @@ main #con1 .parts .part p {
 }
 main #con2 {
   position: relative;
+  height: 100vh;
 }
 main #con2 .con2-text {
-  position: absolute;
   width: 971px;
   right: 120px;
   margin-top: 60px;
@@ -135,7 +134,7 @@ main #con2 .con2-text {
 }
 main #con2 .con2-text p:nth-child(even) {
   color: #fff;
-  -webkit-text-stroke: 1.5px #000;
+  text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 main #con2 .con2Img {
   width: 200px;
@@ -145,21 +144,22 @@ main #con2 .con2Img {
   left: 200px;
   margin-top: 500px;
 }
+main #con3 {
+  width: 100%;
+  height: 100vh;
+}
 main #con3 .content-video {
-  padding-top: 56.25%;
+  height: 100%;
   position: relative;
 }
 main #con3 .content-video iframe {
-  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-main #con4 {
-  width: 1728px;
-}
 main #con4 .category {
+  margin-top: 132px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -170,18 +170,15 @@ main #con4 .category .list {
 }
 main #con4 .category .list h3 {
   font: 600 9rem/1 "REM";
-  margin-bottom: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #000;
 }
 main #con4 .category .list p {
+  border-bottom: 1px solid #000;
   font: 700 3rem/1 "REM";
   padding: 50px;
 }
 main #con4 .category .list p a {
   font: 700 5rem/1 "REM";
   padding: 50px;
-}
-
-.section {
-  margin: 0 5%;
-  height: 100vh;
 }
