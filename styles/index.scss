@@ -1,0 +1,177 @@
+@import "./reset.scss";
+@import "./variables.scss";
+
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Pretendard";
+}
+
+//main contents
+main {
+  overflow: hidden;
+  #intro {
+    .index {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+    .title {
+      top: 280px;
+      left: 176px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      p {
+        font: normal 3.3rem/1.75 "pretendard";
+        font-weight: 700;
+      }
+      .mainTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        font: bold 8.5rem/0.87 "REM";
+      }
+    }
+    .indexImg1 {
+      position: absolute;
+      top: 108px;
+      right: 212px;
+    }
+    .indexImg2 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 758px;
+      left: 136px;
+      transform: rotate(11deg);
+    }
+    .subTitle {
+      top: 664px;
+      right: 212px;
+      position: absolute;
+      display: flex;
+      gap: 20px;
+      p {
+        padding: 6px 22px;
+        gap: 10px;
+        border-radius: 40px;
+        box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+        margin-top: 47px;
+        font: normal 2.6rem/2.23 "Pretendard";
+        font-weight: 700;
+        letter-spacing: -0.52px;
+      }
+    }
+  }
+  #con1 {
+    left: 96px;
+    margin-top: 147px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    h2 {
+      font: normal 7rem/1 "REM";
+    }
+    .parts {
+      display: flex;
+      align-items: center;
+      gap: 46px;
+      .part {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        img {
+          width: 430px;
+          height: 570px;
+          border-radius: 40px;
+          align-items: center;
+        }
+        p {
+          font: normal 3.6rem/1 "REM";
+          font-weight: 700;
+        }
+      }
+    }
+  }
+  #con2 {
+    position: relative;
+    .con2-text {
+      position: absolute;
+      width: 971px;
+      right: 120px;
+      margin-top: 60px;
+      font: 900 11rem/1 "REM";
+      text-align: right;
+      letter-spacing: 22px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p {
+        &:nth-child(even) {
+          color: map-get($map: $colors, $key: light);
+          -webkit-text-stroke: 1.5px map-get($map: $colors, $key: dark);
+        }
+      }
+    }
+    .con2Img {
+      width: 200px;
+      height: 200px;
+      transform: rotate(11deg);
+      position: absolute;
+      left: 200px;
+      margin-top: 500px;
+    }
+  }
+  #con3 {
+    .content-video {
+      padding-top: 56.25%;
+      position: relative;
+    }
+    .content-video iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  #con4 {
+    width: 1728px;
+    .category {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      .list {
+        width: 1436px;
+        h3 {
+          font: 600 9rem/1 "REM";
+          margin-bottom: 50px;
+        }
+        p {
+          font: 700 3rem/1 "REM";
+          padding: 50px;
+          a {
+            font: 700 5rem/1 "REM";
+            padding: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+.section {
+  margin: 0 5%;
+  height: 100vh;
+}

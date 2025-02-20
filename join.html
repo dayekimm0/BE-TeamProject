@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Common CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/join.css" />
+    <script defer src="./script.js"></script>
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h2>JOIN</h2>
+      <form id="form" action="#" method="post">
+        <div id="joinStep">
+          <div id="stepWrap">
+            <div id="stepCircle">
+              <i></i>
+              <span>정보입력</span>
+            </div>
+            <p></p>
+          </div>
+          <div id="stepWrap">
+            <div id="stepCircle">
+              <i></i>
+              <span>갸입완료</span>
+            </div>
+            <p></p>
+          </div>
+        </div>
+        <div class="joinInput">
+          <div>
+            <input type="text" id="phoneNum" placeholder="실명인증필요" />
+            <label for="phoneNum">전화번호</label>
+            <input type="button" value="실명인증하기" />
+          </div>
+          <p>실명인증 진행 후 가입 가능합니다.</p>
+          <div>
+            <input type="checkbox" name="" id="" />
+            <label for="">정보/이벤트 SMS 수신에 동의합니다.</label>
+          </div>
+        </div>
+        <div class="joinInput">
+          <div>
+            <input type="text" id="joinEmail" placeholder="실명인증필요" />
+            <label for="joinEmail">아이디(E-mail)</label>
+            <input type="button" value="실명인증하기" />
+          </div>
+          <p>BE:는 회원가입 시 이메일로만 아이디 생성이 가능합니다.</p>
+          <div>
+            <input type="checkbox" name="" id="" />
+            <label for="">정보/이벤트 메일 수신에 동의합니다.</label>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
