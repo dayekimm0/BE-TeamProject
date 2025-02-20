@@ -1,0 +1,296 @@
+header {
+  z-index: 1;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+}
+main h2 {
+  font-size: 70px;
+  color: #f5f5fa;
+}
+main #form {
+  background: #fff;
+  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+          box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  border-radius: 30px;
+  width: 800px;
+  padding: 80px 150px;
+  margin: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+main #form input:not(input[type=checkbox]) {
+  width: 100%;
+  height: 60px;
+  border-radius: 50px;
+  border: none;
+}
+main #form input:not(input[type=checkbox]):focus {
+  outline: none;
+}
+main #form #inputWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main #form #inputWrap .inputBox {
+  position: relative;
+}
+main #form #inputWrap .inputBox input {
+  padding-left: 160px;
+  background: #f5f5fa;
+}
+main #form #inputWrap .inputBox label {
+  position: absolute;
+  left: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-size: 1.4rem;
+  color: #aeaeba;
+  font-weight: bold;
+}
+main #form #inputWrap .inputBox label::-webkit-input-placeholder {
+  color: #ccc;
+}
+main #form #inputWrap .inputBox label::-moz-placeholder {
+  color: #ccc;
+}
+main #form #inputWrap .inputBox label:-ms-input-placeholder {
+  color: #ccc;
+}
+main #form #inputWrap .inputBox label::-ms-input-placeholder {
+  color: #ccc;
+}
+main #form #inputWrap .inputBox label::placeholder {
+  color: #ccc;
+}
+main #form #userInfo {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+}
+main #form #userInfo div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+}
+main #form #userInfo div:first-child input[type=checkbox] {
+  width: 20px;
+  height: 20px;
+}
+main #form #userInfo div:last-child a:last-child {
+  position: relative;
+  margin-left: 21px;
+}
+main #form #userInfo div:last-child a:last-child::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  background: #000;
+  left: -10px;
+}
+main #form #inputBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main #form #inputBtn input {
+  cursor: pointer;
+  font-size: 1.4rem;
+}
+main #form #inputBtn #loginBtn {
+  background: #000;
+  color: #fff;
+}
+main #form #inputBtn #joinBtn {
+  background: #fff;
+  border: 1px solid #000;
+}
+main #form #easyLogin {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+}
+main #form #easyLogin #easyText {
+  display: none;
+}
+main #form #easyLogin a {
+  font-size: 1.4rem;
+  border-radius: 50px;
+  height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+  color: #fff;
+}
+main #form #easyLogin a:first-child {
+  background: #03c75a;
+}
+main #form #easyLogin a:nth-child(2) {
+  background: #fee500;
+  color: #000;
+}
+main #form #easyLogin a:nth-child(3) {
+  background: #3b5998;
+}
+main #form #easyLogin a:nth-child(4) {
+  background: #000;
+}
+
+@media screen and (max-width: 1024px) {
+  main {
+    padding-top: 110px;
+  }
+  main h2 {
+    font-size: 5rem;
+  }
+  main #form {
+    width: 700px;
+    margin: 50px 0;
+  }
+  main #form #inputWrap {
+    gap: 15px;
+  }
+  main #form #userInfo {
+    margin: 15px 0;
+    font-size: 1.2rem;
+  }
+  main #form #inputBtn {
+    gap: 15px;
+  }
+  main #form #easyLogin {
+    margin-top: 40px;
+    gap: 15px;
+  }
+  footer {
+    z-index: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  main #form {
+    width: 100%;
+    padding: 0 5%;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  main #form input:not(input[type=checkbox]) {
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+  }
+  main #form #inputWrap {
+    gap: 10px;
+  }
+  main #form #inputWrap .inputBox label {
+    font-size: 1.2rem;
+  }
+  main #form #inputBtn {
+    gap: 10px;
+  }
+  main #form #userInfo {
+    font-size: 1.2rem;
+    margin: 15px 0;
+  }
+  main #form #easyLogin {
+    position: relative;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 40px;
+  }
+  main #form #easyLogin #easyText {
+    font-size: 1.4rem;
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+  main #form #easyLogin #easyText::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 35%;
+    height: 1px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: #000;
+  }
+  main #form #easyLogin #easyText::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 35%;
+    height: 1px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    background: #000;
+  }
+  main #form #easyLogin a {
+    width: 40px;
+    height: 40px;
+    gap: 0;
+    border-radius: 50%;
+  }
+  main #form #easyLogin a span {
+    display: none;
+  }
+}
