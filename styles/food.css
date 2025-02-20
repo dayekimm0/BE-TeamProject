@@ -1,0 +1,213 @@
+@charset "UTF-8";
+body h2 {
+  font-size: 5.2rem;
+}
+
+main {
+  padding: 0 230px;
+  width: 100%;
+  margin: 170px 0 100px;
+}
+
+.title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.title .title-img {
+  width: 30px;
+  height: 65px;
+}
+.title h1 {
+  font: bold 11rem/1 "REM";
+}
+.title .circle-img {
+  margin-left: auto;
+}
+
+.infoContainer > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 14px;
+  margin: 30px 0;
+}
+.infoContainer > ul li button {
+  padding: 12px 40px;
+  border-radius: 55px;
+  font-size: 2.6rem;
+  font-weight: 700;
+  color: #a5d112;
+  border: 1px solid #a5d112;
+  background: none;
+  cursor: pointer;
+}
+.infoContainer article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 60px;
+  border: 1px solid #a5d112;
+  border-radius: 40px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.infoContainer article .articleImg {
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 29/27;
+}
+.infoContainer article .articleInfo h3 {
+  font-size: 2.6rem;
+}
+.infoContainer article .articleInfo p {
+  font-size: 1.6rem;
+  margin: 40px 0 20px;
+  line-height: 22px;
+}
+.infoContainer article .articleHashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+.infoContainer article .articleHashtag li {
+  background: #a5d112;
+  padding: 6px 14px;
+  border-radius: 30px;
+  color: #fff;
+  font-size: 1.6rem;
+}
+
+.bannerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 130px 0;
+}
+.bannerContainer .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.bannerContainer .title img {
+  margin-right: auto;
+}
+.bannerContainer .bannerBoxWrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+.bannerContainer .bannerBoxWrapper .contentBox {
+  text-align: center;
+}
+.bannerContainer .bannerBoxWrapper .contentBox img {
+  border-radius: 20px;
+  margin-bottom: 12px;
+}
+.bannerContainer .bannerBoxWrapper .contentBox p {
+  font-size: 2rem;
+}
+
+.shopContainer .shopBoxWrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
+  border-radius: 40px;
+  margin-top: 30px;
+}
+.shopContainer .shopBoxWrapper .shopBox {
+  position: relative;
+  /* 기본적으로 숨김 */
+  /* hover 시 보이게 설정 */
+}
+.shopContainer .shopBoxWrapper .shopBox img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 60px;
+  opacity: 0; /* 투명도 */
+  visibility: hidden; /* 화면에서 제거 */
+  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+}
+.shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
+  font-size: 1.6rem;
+  background: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  color: #a5d112;
+}
+.shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo h4 {
+  margin: 28px 0 30px;
+  font-size: 2.6em;
+}
+.shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo p {
+  font-size: 1.6rem;
+  margin-bottom: 4px;
+}
+.shopContainer .shopBoxWrapper .shopBox:hover .shopHoverBox {
+  opacity: 1;
+  visibility: visible;
+}
+
+@media screen and (max-width: 1024px) {
+  .shopContainer .shopBoxWrapper {
+    border-radius: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .shopContainer .shopBoxWrapper .shopBox {
+    -webkit-box-shadow: inset 0 0 20px darkcyan;
+            box-shadow: inset 0 0 20px darkcyan;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: flex;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
+    opacity: 1;
+    visibility: visible;
+    position: static;
+    -webkit-box-shadow: inset 0 0 20px red;
+            box-shadow: inset 0 0 20px red;
+    z-index: -1;
+  }
+}
