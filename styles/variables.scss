@@ -11,6 +11,8 @@ $colors: (
   kakao: #fee500,
   facebook: #3b5998,
   loginTitle: #f5f5fa,
+  box: #e9e9e9,
+  line: #d9d9d9,
   label: #aeaeba,
   placeholder: #ccc,
 );
@@ -19,11 +21,16 @@ $colors: (
 $font-size: (
   12px: 1.2rem,
   14px: 1.4rem,
+  15px: 1.5rem,
   16px: 1.6rem,
   20px: 2rem,
+  30px: 3rem,
+  40px: 4rem,
   50px: 5rem,
   52px: 5.2rem,
+  60px: 6rem,
   70px: 7rem,
+  100px: 10rem,
 );
 
 // 폰트 패밀리

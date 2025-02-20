@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -35,28 +34,17 @@ main {
 }
 main #intro .index {
   height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   position: relative;
 }
 main #intro .title {
   top: 280px;
   left: 176px;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 30px;
 }
 main #intro .title p {
@@ -64,16 +52,9 @@ main #intro .title p {
   font-weight: 700;
 }
 main #intro .title .mainTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 8px;
   font: bold 8.5rem/0.87 "REM";
 }
@@ -88,15 +69,12 @@ main #intro .indexImg2 {
   height: 100px;
   top: 758px;
   left: 136px;
-  -webkit-transform: rotate(11deg);
-          transform: rotate(11deg);
+  transform: rotate(11deg);
 }
 main #intro .subTitle {
   top: 664px;
   right: 212px;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
@@ -104,8 +82,7 @@ main #intro .subTitle p {
   padding: 6px 22px;
   gap: 10px;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   margin-top: 47px;
   font: normal 2.6rem/2.23 "Pretendard";
   font-weight: 700;
@@ -114,44 +91,28 @@ main #intro .subTitle p {
 main #con1 {
   left: 96px;
   margin-top: 147px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 40px;
 }
 main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
 main #con1 .parts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 46px;
 }
 main #con1 .parts .part {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
 main #con1 .parts .part img {
   width: 430px;
   height: 570px;
   border-radius: 40px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 main #con1 .parts .part p {
   font: normal 3.6rem/1 "REM";
@@ -168,13 +129,8 @@ main #con2 .con2-text {
   font: 900 11rem/1 "REM";
   text-align: right;
   letter-spacing: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
 main #con2 .con2-text p:nth-child(even) {
@@ -184,8 +140,7 @@ main #con2 .con2-text p:nth-child(even) {
 main #con2 .con2Img {
   width: 200px;
   height: 200px;
-  -webkit-transform: rotate(11deg);
-          transform: rotate(11deg);
+  transform: rotate(11deg);
   position: absolute;
   left: 200px;
   margin-top: 500px;
@@ -205,19 +160,10 @@ main #con4 {
   width: 1728px;
 }
 main #con4 .category {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main #con4 .category .list {
   width: 1436px;

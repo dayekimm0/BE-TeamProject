@@ -11,37 +11,44 @@ body {
   background: map-get($map: $colors, $key: light);
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
 .eventTitle {
   width: 100%;
   position: relative;
   height: 600px;
-  .titleBg {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
+  background-image: url("/images/event/title-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
   .mainTitle {
-    align-items: center;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
+    width: 1440px;
     .title {
       display: flex;
       flex-direction: column;
       align-items: start;
-      gap: 25px;
+      gap: 30px;
       color: map-get($map: $colors, $key: light);
       p {
-        font: normal 5rem/1.1 map-get($map: $font-family, $key: "Pretendard");
+        font-size: map-get($map: $font-size, $key: 50px);
+        line-height: 1.1;
+        font-family: map-get($map: $font-family, $key: Pretendard);
         letter-spacing: -1.5px;
       }
       h2 {
-        font: bold 10rem/1 map-get($map: $font-family, $key: "REM");
+        font-size: map-get($map: $font-size, $key: 100px);
+        line-height: 1;
+        font-family: map-get($map: $font-family, $key: REM);
+        font-weight: bold;
         letter-spacing: -2px;
       }
       span {
-        font: light 2.4rem/1 map-get($map: $font-family, $key: "Pretendard");
+        font-size: map-get($map: $font-size, $key: 20px);
+        line-height: 1;
+        font-family: map-get($map: $font-family, $key: Pretendard);
+        font-weight: lighter;
         letter-spacing: 0.9px;
         opacity: 0.7;
       }
@@ -51,7 +58,6 @@ body {
 
 .eventSteps {
   width: 100%;
-  height: 178px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -60,7 +66,7 @@ body {
   .howTo {
     display: flex;
     flex-direction: column;
-    width: 500px;
+    width: 450px;
     height: auto;
     justify-content: center;
     align-items: center;
@@ -69,11 +75,11 @@ body {
       width: 100%;
       height: 100%;
       text-align: center;
-      background: map-get($map: $colors, $key: event);
+      background: map-get($map: $colors, $key: box);
       border-radius: 15px;
       padding: 12px 10px;
       color: map-get($map: $colors, $key: dark);
-      font-size: 4rem;
+      font-size: map-get($map: $font-size, $key: 40px);
       font-weight: bold;
       position: relative;
       &::before {
@@ -90,7 +96,7 @@ body {
       }
     }
     p {
-      font-size: 3.4rem;
+      font-size: map-get($map: $font-size, $key: 30px);
       justify-content: center;
       text-align: center;
       width: 900px;
@@ -98,11 +104,64 @@ body {
     }
   }
   .steps {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
-    gap: 50px;
     margin-top: 50px;
+    border: 1px solid darkblue;
+    .step01,
+    .step02 {
+      width: 620px;
+      height: 415px;
+      position: relative;
+      .bg1,
+      .bg3 {
+        position: absolute;
+        width: 360px;
+        height: 225px;
+        bottom: 0;
+        right: 0px;
+      }
+      .bg2 {
+        width: 180px;
+        height: 200px;
+        position: absolute;
+        border-radius: 5px;
+        background: url("/images/event/login.png") center/cover no-repeat;
+        position: absolute;
+        bottom: 100px;
+        right: 20px;
+      }
+      .text1,
+      .text2 {
+        border: 1px solid #f00;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 11px;
+        position: absolute;
+        top: 25px;
+        left: 45px;
+        h4 {
+          color: map-get($map: $colors, $key: footerBg);
+          font-size: map-get($map: $font-size, $key: 60px);
+          font-weight: 900;
+          letter-spacing: -1.2px;
+        }
+        p {
+          color: map-get($map: $colors, $key: dark);
+          font-size: map-get($map: $font-size, $key: 30px);
+          letter-spacing: -0.6px;
+          font-weight: 600;
+        }
+        span {
+          color: map-get($map: $colors, $key: dark);
+          font-size: map-get($map: $font-size, $key: 15px);
+          font-weight: 400;
+          letter-spacing: -0.3px;
+        }
+      }
+    }
   }
 }

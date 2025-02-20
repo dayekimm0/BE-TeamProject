@@ -25,48 +25,54 @@ body {
   background: #fff;
 }
 
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
 .eventTitle {
   width: 100%;
   position: relative;
   height: 600px;
-}
-.eventTitle .titleBg {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  background-image: url("/images/event/title-bg.png");
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .eventTitle .mainTitle {
-  align-items: center;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 5%;
+  width: 1440px;
 }
 .eventTitle .mainTitle .title {
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 25px;
+  gap: 30px;
   color: #fff;
 }
 .eventTitle .mainTitle .title p {
-  font: normal 5rem/1.1 "Pretendard";
+  font-size: 5rem;
+  line-height: 1.1;
+  font-family: "Pretendard";
   letter-spacing: -1.5px;
 }
 .eventTitle .mainTitle .title h2 {
-  font: bold 10rem/1 "REM";
+  font-size: 10rem;
+  line-height: 1;
+  font-family: "REM";
+  font-weight: bold;
   letter-spacing: -2px;
 }
 .eventTitle .mainTitle .title span {
-  font: light 2.4rem/1 "Pretendard";
+  font-size: 2rem;
+  line-height: 1;
+  font-family: "Pretendard";
+  font-weight: lighter;
   letter-spacing: 0.9px;
   opacity: 0.7;
 }
 
 .eventSteps {
   width: 100%;
-  height: 178px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,7 +82,7 @@ body {
 .eventSteps .howTo {
   display: flex;
   flex-direction: column;
-  width: 500px;
+  width: 450px;
   height: auto;
   justify-content: center;
   align-items: center;
@@ -107,17 +113,84 @@ body {
   border-bottom: 15px solid #d9d9d9;
 }
 .eventSteps .howTo p {
-  font-size: 3.4rem;
+  font-size: 3rem;
   justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
 }
 .eventSteps .steps {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  gap: 50px;
   margin-top: 50px;
+  border: 1px solid darkblue;
+}
+.eventSteps .steps .step01,
+.eventSteps .steps .step02 {
+  width: 620px;
+  height: 415px;
+  position: relative;
+}
+.eventSteps .steps .step01 .bg1,
+.eventSteps .steps .step01 .bg3,
+.eventSteps .steps .step02 .bg1,
+.eventSteps .steps .step02 .bg3 {
+  position: absolute;
+  width: 360px;
+  height: 225px;
+  bottom: 0;
+  right: 0px;
+}
+.eventSteps .steps .step01 .bg2,
+.eventSteps .steps .step02 .bg2 {
+  width: 180px;
+  height: 200px;
+  position: absolute;
+  border-radius: 5px;
+  background: url("/images/event/login.png") center/cover no-repeat;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+}
+.eventSteps .steps .step01 .text1,
+.eventSteps .steps .step01 .text2,
+.eventSteps .steps .step02 .text1,
+.eventSteps .steps .step02 .text2 {
+  border: 1px solid #f00;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+}
+.eventSteps .steps .step01 .text1 h4,
+.eventSteps .steps .step01 .text2 h4,
+.eventSteps .steps .step02 .text1 h4,
+.eventSteps .steps .step02 .text2 h4 {
+  color: #333;
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: -1.2px;
+}
+.eventSteps .steps .step01 .text1 p,
+.eventSteps .steps .step01 .text2 p,
+.eventSteps .steps .step02 .text1 p,
+.eventSteps .steps .step02 .text2 p {
+  color: #000;
+  font-size: 3rem;
+  letter-spacing: -0.6px;
+  font-weight: 600;
+}
+.eventSteps .steps .step01 .text1 span,
+.eventSteps .steps .step01 .text2 span,
+.eventSteps .steps .step02 .text1 span,
+.eventSteps .steps .step02 .text2 span {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
 }
