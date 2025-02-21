@@ -82,7 +82,7 @@ section {
 .infoContainer article .articleImg {
   width: inherit;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   aspect-ratio: 29/27;
 }
 .infoContainer article .articleInfo h3 {
@@ -122,13 +122,9 @@ section {
   position: relative;
 }
 .bannerContainer .bannerBoxWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   width: 60%;
-  -webkit-box-pack: end;
-  -ms-flex-pack: end;
   justify-content: flex-end;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper {
@@ -170,7 +166,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
   background: rgba(202, 229, 112, 0.9);
@@ -226,8 +222,6 @@ section {
     width: 100%;
   }
   .detailTitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -245,8 +239,6 @@ section {
     margin-bottom: 30px;
   }
   .infoContainer > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 14px;
   }
@@ -263,8 +255,6 @@ section {
   .infoContainer article {
     width: inherit;
     height: 400px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 40px;
     border: 1px solid #a5d112;
@@ -275,14 +265,12 @@ section {
     width: 50%;
     height: inherit;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     aspect-ratio: 29/27;
   }
   .infoContainer article .articleInfo {
     width: 50%;
     height: 230px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   .infoContainer article .articleInfo h3 {
@@ -297,8 +285,6 @@ section {
     line-height: 2.2rem;
   }
   .infoContainer article .articleInfo .articleHashtag {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 6px;
     width: 80%;
@@ -311,12 +297,7 @@ section {
     font-size: 1.4rem;
   }
   .bannerContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     background: #cae570;
     padding-top: 60px;
@@ -362,8 +343,6 @@ section {
     width: 100%;
     height: 330px;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -375,42 +354,30 @@ section {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
@@ -457,8 +424,6 @@ section {
     width: 100%;
   }
   .detailTitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -476,8 +441,6 @@ section {
     margin-left: auto;
   }
   .infoContainer > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
@@ -493,8 +456,6 @@ section {
   .infoContainer article {
     width: inherit;
     height: 390px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 20px;
     border: 1px solid #a5d112;
@@ -505,14 +466,12 @@ section {
     width: 50%;
     height: inherit;
     -o-object-fit: cover;
-    object-fit: cover;
+       object-fit: cover;
     aspect-ratio: 29/27;
   }
   .infoContainer article .articleInfo {
     width: 50%;
     height: 230px;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
     align-items: center;
   }
   .infoContainer article .articleInfo h3 {
@@ -527,8 +486,6 @@ section {
     line-height: 1.8rem;
   }
   .infoContainer article .articleInfo .articleHashtag {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 6px;
     width: 80%;
@@ -541,12 +498,7 @@ section {
     font-size: 1.4rem;
   }
   .bannerContainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
     flex-direction: column;
     background: #cae570;
     padding-top: 60px;
@@ -592,8 +544,6 @@ section {
     width: 100%;
     height: 330px;
     position: relative;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -605,42 +555,30 @@ section {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    -webkit-box-ordinal-group: 3;
-    -ms-flex-order: 2;
     order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-    -ms-flex-order: 1;
     order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
