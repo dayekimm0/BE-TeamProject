@@ -331,6 +331,9 @@ main #con1 .parts .part p {
   }
 }
 @media screen and (max-width: 767px) {
+  main #intro .index {
+    height: 80vh;
+  }
   main #intro .index .title {
     top: 30%;
   }
@@ -359,30 +362,40 @@ main #con1 .parts .part p {
     width: 60px;
     height: 60px;
   }
+  main #con1 {
+    padding-left: 5%;
+    gap: 20px;
+    margin-top: -20%;
+  }
   main #con1 h2 {
     font: normal 4rem/1 "REM";
   }
   main #con1 .parts {
-    flex-wrap: nowrap;
-    display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 20px;
-    border-radius: 40px;
+    gap: 10px;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 10px;
+    border-radius: 0;
   }
   main #con1 .parts .part {
-    width: 200px;
-    height: 250px;
+    flex: 0 0 auto;
+    width: 80%;
+    max-width: 280px;
   }
   main #con1 .parts .part::after {
+    content: "";
     border-radius: 40px;
   }
   main #con1 .parts .part .partImg {
-    width: 200px;
-    height: 250px;
+    width: 100%;
+    border-radius: 40px;
   }
   main #con1 .parts .part p {
-    width: 100%;
-    transition: all 0.5s;
+    font-size: 2rem;
+    left: 10%;
+    bottom: 8%;
   }
   main #con2 .con2-text {
     font: bold 4rem/1 "REM";
