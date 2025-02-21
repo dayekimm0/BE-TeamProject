@@ -15,7 +15,7 @@ body {
 
 // header
 header {
-  z-index: 1;
+  z-index: 10;
 }
 // main contents
 main {
@@ -65,7 +65,6 @@ main {
         gap: 20px;
         p {
           padding: 16px 30px;
-          gap: 10px;
           border-radius: 40px;
           box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
           margin-top: 5%;
@@ -88,105 +87,124 @@ main {
       align-items: center;
       gap: 46px;
       .part {
-        display: flex;
-        flex-direction: column;
-        gap: 21px;
+        position: relative;
+        &:hover p {
+          opacity: 1;
+        }
+        &:hover .partImg {
+          filter: brightness(60%);
+        }
         .partImg {
+          display: block;
           width: 430px;
           height: 570px;
           border-radius: 40px;
           background-position: center;
+          transition: all 0.3s;
           background-size: cover;
           background-repeat: no-repeat;
           object-fit: cover;
           cursor: pointer;
         }
         p {
-          font: bold 3.6rem/1 map-get($map: $font-family, $key: REM);
-        }
-      }
-    }
-  }
-  #con2 {
-    height: 100vh;
-    .con2-text {
-      margin-top: 10%;
-      padding: 0 5%;
-      font: 900 11rem/1 map-get($map: $font-family, $key: REM);
-      text-align: right;
-      letter-spacing: 22px;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-      p {
-        &:nth-child(even) {
+          width: 100%;
+          transition: all 0.5s;
+          position: absolute;
+          border-radius: 40px;
           color: map-get($map: $colors, $key: light);
-          text-shadow: -1px 0 map-get($map: $colors, $key: dark),
-            0 1px map-get($map: $colors, $key: dark),
-            1px 0 map-get($map: $colors, $key: dark),
-            0 -1px map-get($map: $colors, $key: dark);
+          font: bold 3.6rem/1 map-get($map: $font-family, $key: REM);
+          left: 6%;
+          bottom: 4%;
+          opacity: 0;
         }
-      }
-      .con2Img {
-        width: 200px;
-        height: 200px;
-        margin-top: -5%;
-        margin-left: 5%;
       }
     }
   }
-  #con3 {
-    width: 100%;
-    height: 100vh;
-    .content-video {
+}
+#con2 {
+  height: 100vh;
+  .con2-text {
+    margin-top: 10%;
+    padding: 0 5%;
+    font: 900 11rem/1 map-get($map: $font-family, $key: REM);
+    text-align: right;
+    letter-spacing: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    p {
+      &:nth-child(even) {
+        color: map-get($map: $colors, $key: light);
+        text-shadow: -1px 0 map-get($map: $colors, $key: dark),
+          0 1px map-get($map: $colors, $key: dark),
+          1px 0 map-get($map: $colors, $key: dark),
+          0 -1px map-get($map: $colors, $key: dark);
+      }
+    }
+    .con2Img {
+      width: 200px;
+      height: 200px;
+      margin-top: -5%;
+      margin-left: 5%;
+    }
+  }
+}
+#con3 {
+  width: 100%;
+  height: 100vh;
+  .content-video {
+    height: 100%;
+    position: relative;
+    iframe {
+      width: 100%;
       height: 100%;
-      position: relative;
-      iframe {
-        width: 100%;
-        height: 100%;
-      }
     }
   }
-  #con4 {
-    .category {
-      margin: 8%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      .list {
-        width: 1436px;
-        h3 {
-          font: bold 9rem/1 map-get($map: $font-family, $key: REM);
-          padding-bottom: 50px;
-          border-bottom: 1px solid map-get($map: $colors, $key: dark);
-        }
-        p {
-          border-bottom: 1px solid map-get($map: $colors, $key: dark);
-          font: bold 3rem/1 map-get($map: $font-family, $key: REM);
-          padding: 50px;
-          a {
-            font: bold 5rem/1 map-get($map: $font-family, $key: REM);
-            padding: 50px;
-          }
-        }
+}
+#con4 {
+  .category {
+    margin: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .list {
+      width: 1436px;
+      h3 {
+        font: bold 9rem/1 map-get($map: $font-family, $key: REM);
+        padding-bottom: 50px;
+        border-bottom: 1px solid map-get($map: $colors, $key: dark);
       }
-    }
-  }
-  #con5 {
-    width: 100%;
-    .eventLoad {
-      padding: 160px 0;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      color: map-get($map: $colors, $key: light);
-      background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-        url("../images/index/couponheader.png");
-      background-size: cover;
       p {
-        width: 1000px;
-        font: bold 7rem/1.2 map-get($map: $font-family, $key: REM);
+        border-bottom: 1px solid map-get($map: $colors, $key: dark);
+        font: bold 3rem/1 map-get($map: $font-family, $key: REM);
+        padding: 50px;
+        a {
+          font: bold 5rem/1 map-get($map: $font-family, $key: REM);
+          padding: 50px;
+        }
+      }
+    }
+  }
+}
+#con5 {
+  width: 100%;
+  .eventLoad {
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    color: map-get($map: $colors, $key: light);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+      url("../images/index/couponheader.png");
+    background-size: cover;
+    justify-content: center;
+    background-attachment: fixed;
+    span {
+      text-align: center;
+      display: block;
+      font: bold 3rem/1.2 map-get($map: $font-family, $key: REM);
+      b {
+        font-size: 5rem;
       }
     }
   }
@@ -199,6 +217,7 @@ main {
       .index {
         .title {
           left: 3%;
+          gap: 14px;
           p {
             font: bold 2rem/1 map-get($map: $font-family, $key: Pretendard);
           }
@@ -207,9 +226,17 @@ main {
               padding: 3px 0;
               font: bold 8rem/1 map-get($map: $font-family, $key: REM);
               &:nth-child(1) {
-                font: normal 6rem/1 map-get($map: $font-family, $key: REM);
+                font: normal 5rem/1 map-get($map: $font-family, $key: REM);
               }
             }
+          }
+        }
+        .subTitle {
+          p {
+            margin-top: 0;
+            padding: 14px 28px;
+            gap: 6px;
+            font: 700 1.8rem/1 map-get($map: $font-family, $key: Pretendard);
           }
         }
         .indexImg1 {
@@ -221,35 +248,55 @@ main {
           height: 80px;
           bottom: 6%;
         }
-        .subTitle {
-          p {
-            padding: 14px 28px;
-            gap: 8px;
-            font: 700 1.8rem/1 map-get($map: $font-family, $key: Pretendard);
-          }
-        }
       }
     }
     #con1 {
+      padding-left: 0;
+      padding: 0 5%;
       h2 {
         font: normal 4rem/1 map-get($map: $font-family, $key: REM);
       }
       .parts {
-        width: 800px;
+        flex-wrap: wrap;
         gap: 0;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        border-radius: 40px;
+        overflow: hidden;
         .part {
+          width: 50%;
+          height: 330px;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
+          }
+          &:hover .partImg {
+            filter: brightness(100%);
+          }
           .partImg {
-            width: 400px;
-            height: 330px;
+            border-radius: 0;
+            width: 100%;
+            height: 100%;
             color: map-get($map: $colors, $key: light);
             font: bold 3rem/1 map-get($map: $font-family, $key: REM);
+          }
+          p {
+            position: absolute;
+            top: 85%;
+            left: 6%;
+            color: map-get($map: $colors, $key: light);
+            font: bold 2.6rem/1 map-get($map: $font-family, $key: REM);
+            z-index: 1;
+            opacity: 1;
           }
         }
       }
     }
     #con2 {
+      height: auto;
       .con2-text {
         font: bold 7rem/1 map-get($map: $font-family, $key: REM);
         .con2Img {
@@ -260,7 +307,7 @@ main {
       }
     }
     #con3 {
-      border: 1px solid #f00;
+      margin-top: 8%;
     }
     #con4 {
       .category {
@@ -295,4 +342,52 @@ main {
 
 // mobile.ver
 @media screen and (max-width: 767px) {
+  main {
+    #intro {
+      .index {
+        .title {
+          top: 30%;
+          h2 {
+            span {
+              padding: 3px 0;
+              font: bold 4rem/1 map-get($map: $font-family, $key: REM);
+              &:nth-child(1) {
+                font: normal 3rem/1 map-get($map: $font-family, $key: REM);
+              }
+            }
+          }
+        }
+        .subTitle {
+          top: 50%;
+          p {
+            padding: 10px 20px;
+            gap: 4px;
+            font: 700 1.4rem/1 map-get($map: $font-family, $key: Pretendard);
+          }
+        }
+        .indexImg1 {
+          width: 120px;
+          height: 120px;
+          top: 10%;
+        }
+        .indexImg2 {
+          top: 60%;
+          width: 60px;
+          height: 60px;
+        }
+      }
+    }
+    #con1 {
+      h2 {
+        font: normal 4rem/1 map-get($map: $colors, $key: REM);
+      }
+      .parts {
+        flex-wrap: nowrap;
+        gap: 20px;
+        .part {
+          height: 100%;
+        }
+      }
+    }
+  }
 }
