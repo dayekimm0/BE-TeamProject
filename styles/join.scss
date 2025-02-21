@@ -1,5 +1,5 @@
 @import "../styles/variables.scss";
-
+@import "../styles/reset.scss";
 header {
   z-index: 1;
 }
@@ -9,27 +9,100 @@ main {
   align-items: center;
   flex-direction: column;
   padding-top: 150px;
+  background: map-get($map: $colors, $key: light);
   h2 {
     font-size: 70px;
     color: map-get($map: $colors, $key: loginTitle);
   }
   #form {
     background: map-get($map: $colors, $key: light);
-    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.6);
+    box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
     border-radius: 30px;
     width: 800px;
-    padding: 80px 150px;
+    padding: 80px 200px;
     margin: 70px 0;
     display: flex;
     flex-direction: column;
     position: relative;
-    input:not(input[type="checkbox"]) {
+    gap: 16px;
+    input:not([type="checkbox"]) {
       width: 100%;
       height: 60px;
       border-radius: 50px;
       border: none;
+      background: map-get($map: $colors, $key: loginTitle);
+      padding-left: 160px;
       &:focus {
         outline: none;
+      }
+    }
+    #joinStep {
+      display: flex;
+      justify-content: center;
+      gap: 100px;
+      .stepWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        &:nth-child(2) {
+          .stepCircle {
+            background: map-get($map: $colors, $key: light);
+            color: map-get($map: $colors, $key: dark);
+            border: 1px solid map-get($map: $colors, $key: loginTitle);
+            i {
+              color: map-get($map: $colors, $key: loginTitle);
+            }
+          }
+        }
+        .stepCircle {
+          display: flex;
+          flex-direction: column;
+          background: map-get($map: $colors, $key: dark);
+          color: map-get($map: $colors, $key: light);
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          justify-content: center;
+          gap: 16px;
+          font-size: 1.2rem;
+          font-weight: bold;
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: bold;
+        }
+      }
+    }
+    .joinInput {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      #phoneBtn {
+        position: absolute;
+        right: 0;
+        width: auto;
+      }
+      label {
+        position: absolute;
+        left: 30px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 1.4rem;
+        color: map-get($map: $colors, $key: label);
+        font-weight: bold;
+        &::placeholder {
+          font-size: 1.8rem;
+          color: map-get($map: $colors, $key: placeholder);
+        }
+      }
+      .checkList {
+        margin-top: 100px;
+        display: flex;
+        gap: 20px;
+        label {
+          position: static;
+        }
       }
     }
   }
@@ -40,7 +113,7 @@ main {
   main {
     padding-top: 110px;
     h2 {
-      font-size: map-get($map: $font-size, $key: 50px);
+      font-size: 5rem;
     }
     #form {
       width: 700px;
