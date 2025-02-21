@@ -1,22 +1,32 @@
-// box-shadow: inset 0 0 50px darkblue;
+/* reset & variables */
+@import "./reset.scss";
+@import "./variables.scss";
 
-body {
-  h2 {
-    font-size: 5.2rem;
-  }
-  // padding: 0 230px;
+header {
+  z-index: 10;
 }
+
 main {
-  padding: 0 230px;
   width: 100%;
   margin: 170px 0 100px;
 }
 
-.title {
+h2 {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 6.2rem;
+}
+
+.detailTitle,
+section {
+  padding: 0 5%;
+  width: 100%;
+}
+
+.detailTitle {
   display: flex;
   gap: 24px;
   align-items: center;
-
   .title-img {
     width: 30px;
     height: 65px;
@@ -26,6 +36,7 @@ main {
   }
   .circle-img {
     margin-left: auto;
+    margin-bottom: 70px;
   }
 }
 
@@ -40,9 +51,9 @@ main {
         padding: 12px 40px;
         border-radius: 55px;
         font-size: 2.6rem;
-        font-weight: 700;
-        color: map-get($map: $colors, $key: food);
-        border: 1px solid map-get($map: $colors, $key: food);
+        font-weight: 600;
+        color: map-get($map: $colors, $key: foodAccent);
+        border: 1.5px solid map-get($map: $colors, $key: foodAccent);
         background: none;
         cursor: pointer;
       }
@@ -53,32 +64,38 @@ main {
     width: 100%;
     display: flex;
     gap: 60px;
-    border: 1px solid map-get($map: $colors, $key: food);
+    border: 1.5px solid map-get($map: $colors, $key: foodAccent);
     border-radius: 40px;
     overflow: hidden;
     align-items: center;
 
     .articleImg {
+      width: inherit;
+      // height: inherit;
       object-fit: cover;
       aspect-ratio: 29/27;
     }
     .articleInfo {
       h3 {
-        font-size: 2.6rem;
+        font-size: 3rem;
+        font-weight: 600;
       }
       p {
-        font-size: 1.6rem;
-        margin: 40px 0 20px;
-        line-height: 22px;
+        width: 80%;
+        font-weight: 300;
+        font-size: 1.8rem;
+        margin: 30px 0 30px;
+        line-height: 2.8rem;
       }
     }
     .articleHashtag {
       display: flex;
       gap: 8px;
+      width: 80%;
 
       li {
-        background: map-get($map: $colors, $key: food);
-        padding: 6px 14px;
+        background: map-get($map: $colors, $key: foodAccent);
+        padding: 10px 24px;
         border-radius: 30px;
         color: map-get($map: $colors, $key: light);
         font-size: 1.6rem;
@@ -91,27 +108,108 @@ main {
   display: flex;
   justify-content: space-between;
   margin: 130px 0;
+  background: map-get($map: $colors, $key: food);
+  padding-top: 70px;
+  padding-bottom: 70px;
   .title {
-    // flex-grow: 1;
+    width: 40%;
+    position: relative;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    img {
-      margin-right: auto;
-    }
+    // flex-direction: column;
+    // justify-content: space-between;
+    // img {
+    //   width: 100px;
+    //   position: absolute;
+    //   bottom: 0;
+    //   left: 0;
+    // }
   }
   .bannerBoxWrapper {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-    .contentBox {
-      text-align: center;
-      img {
-        border-radius: 20px;
-        margin-bottom: 12px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    .contentWrapper {
+      display: flex;
+      gap: 24px;
+      &:first-child {
+        margin-bottom: 24px;
       }
-      p {
-        font-size: 2rem;
+      .contentBox {
+        text-align: center;
+        img {
+          border-radius: 20px;
+          margin-bottom: 8px;
+        }
+        p {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+.shopContainer {
+  .shopBoxWrapper {
+    display: flex;
+    overflow: hidden;
+    border-radius: 40px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    .shopBox {
+      position: relative;
+      width: 33.33%;
+      .imgBox {
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      /* 기본적으로 숨김 */
+      .shopHoverBox {
+        background: rgba($color: #cae570, $alpha: 0.9);
+        position: absolute;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        justify-content: center;
+        align-items: center;
+        padding: 0 60px;
+        opacity: 0; /* 투명도 */
+        transition: all 0.3s;
+
+        .shopInfo {
+          span {
+            font-size: 1.6rem;
+            font-weight: 500;
+            background: map-get($map: $colors, $key: light);
+            padding: 10px 24px;
+            border-radius: 30px;
+            color: map-get($map: $colors, $key: foodAccent);
+          }
+          h4 {
+            font-weight: 600;
+            margin: 28px 0 30px;
+            font-size: 2.2em;
+          }
+          p {
+            font-weight: 300;
+            font-size: 1.6rem;
+            margin-bottom: 4px;
+            line-height: 2.6rem;
+          }
+        }
+      }
+
+      /* hover 시 보이게 설정 */
+      &:hover .shopHoverBox {
+        opacity: 1;
+        visibility: visible;
       }
     }
   }
@@ -126,13 +224,17 @@ main {
 //     margin-top: 30px;
 
 //     .shopBox {
-//       position:relative;
-//       img{
+//       position: relative;
+
+//       img {
 //         width: 100%;
 //         height: 100%;
 //         object-fit: cover;
 //       }
+
+//       /* 기본적으로 숨김 */
 //       .shopHoverBox {
+//         background: rgba($color: #cae570, $alpha: 0.6);
 //         position: absolute;
 //         z-index: 1;
 //         inset: 0;
@@ -140,14 +242,16 @@ main {
 //         justify-content: center;
 //         align-items: center;
 //         padding: 0 60px;
+//         opacity: 0; /* 투명도 */
+//         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 
 //         .shopInfo {
 //           span {
 //             font-size: 1.6rem;
-//               background: #ffffff;
-//               padding: 10px 20px;
-//               border-radius: 30px;
-//               color: #A5D112;
+//             background: map-get($map: $colors, $key: light);
+//             padding: 10px 20px;
+//             border-radius: 30px;
+//             color: map-get($map: $colors, $key: food);
 //           }
 //           h4 {
 //             margin: 28px 0 30px;
@@ -159,93 +263,52 @@ main {
 //           }
 //         }
 //       }
+
+//       /* hover 시 보이게 설정 */
+//       &:hover .shopHoverBox {
+//         opacity: 1;
+//         visibility: visible;
+//       }
 //     }
 //   }
 // }
 
-.shopContainer {
-  .shopBoxWrapper {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    overflow: hidden;
-    border-radius: 40px;
-    margin-top: 30px;
-
-    .shopBox {
-      position: relative;
-
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-
-      /* 기본적으로 숨김 */
-      .shopHoverBox {
-        position: absolute;
-        z-index: 1;
-        inset: 0;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 60px;
-        opacity: 0; /* 투명도 */
-        visibility: hidden; /* 화면에서 제거 */
-        transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
-        .shopInfo {
-          span {
-            font-size: 1.6rem;
-            background: map-get($map: $colors, $key: light);
-            padding: 10px 20px;
-            border-radius: 30px;
-            color: map-get($map: $colors, $key: food);
-          }
-          h4 {
-            margin: 28px 0 30px;
-            font-size: 2.6em;
-          }
-          p {
-            font-size: 1.6rem;
-            margin-bottom: 4px;
-          }
-        }
-      }
-
-      /* hover 시 보이게 설정 */
-      &:hover .shopHoverBox {
-        opacity: 1;
-        visibility: visible;
-      }
-    }
-  }
-}
-
-// tablet.ver
+// 반응형 tablet.ver
 @media screen and (max-width: 1024px) {
   .shopContainer {
     .shopBoxWrapper {
-      border-radius: 0;
-      // grid-template-columns: repeat(1, 1fr);
-      display: flex;
-      flex-direction: column;
+      border: 1px solid map-get($map: $colors, $key: food);
       .shopBox {
-        border: 1px solid #f00;
-        // box-shadow: inset 0 0 20px darkcyan;
-        display: flex;
-        // display: block; /* 기존 flex 제거 */
-        // position: relative; /
+        width: 100%;
+        height: 330px;
+        position: relative;
+        &:nth-child(2) {
+          .imgBox {
+            width: 50%;
+            right: 0;
+            left: auto;
+          }
+          .shopHoverBox {
+            right: auto;
+            left: 0;
+          }
+        }
+        img {
+          width: 50%;
+        }
         .shopHoverBox {
-          z-index: -1;
           opacity: 1;
-          visibility: visible;
-          position: static;
-          border: 1px solid #f00;
-          // box-shadow: inset 0 0 20px red;
+          width: 50%;
+          left: auto;
+          right: 0;
+          background: map-get($map: $colors, $key: light);
+          border-bottom: 1px solid map-get($map: $colors, $key: food);
         }
       }
     }
   }
 }
+
+// 반응형 phone.ver
 @media screen and (max-width: 767px) {
 }
