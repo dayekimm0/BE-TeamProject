@@ -47,11 +47,11 @@ main {
           left: 30px;
           top: 50%;
           transform: translateY(-50%);
-          font-size: map-get($map: $font-size, $key: 14px);
+          font-size: 1.4rem;
           color: map-get($map: $colors, $key: label);
           font-weight: bold;
           &::placeholder {
-            font-size: map-get($map: $font-size, $key: 18px);
+            font-size: 1.8rem;
             color: map-get($map: $colors, $key: placeholder);
           }
         }
@@ -143,7 +143,7 @@ main {
   main {
     padding-top: 110px;
     h2 {
-      font-size: map-get($map: $font-size, $key: 50px);
+      font-size: 5rem;
     }
     #form {
       width: 700px;
@@ -185,7 +185,7 @@ main {
         gap: 10px;
         .inputBox {
           label {
-            font-size: map-get($map: $font-size, $key: 12px);
+            font-size: 1.2rem;
           }
         }
       }
