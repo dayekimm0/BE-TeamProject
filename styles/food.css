@@ -48,7 +48,7 @@ section {
   height: 65px;
 }
 .detailTitle h1 {
-  font: bold 11rem/1 "REM";
+  font: 700 11rem/1 "REM";
 }
 .detailTitle .circle-img {
   margin-left: auto;
@@ -58,7 +58,7 @@ section {
 .infoContainer > ul {
   display: flex;
   gap: 14px;
-  margin: 30px 0;
+  margin: 20px 0;
 }
 .infoContainer > ul li button {
   padding: 12px 40px;
@@ -82,7 +82,7 @@ section {
 .infoContainer article .articleImg {
   width: inherit;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   aspect-ratio: 29/27;
 }
 .infoContainer article .articleInfo h3 {
@@ -120,13 +120,16 @@ section {
 .bannerContainer .title {
   width: 40%;
   position: relative;
-  display: flex;
 }
 .bannerContainer .bannerBoxWrapper {
-  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
   width: 60%;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper {
   display: flex;
@@ -167,7 +170,7 @@ section {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
   background: rgba(202, 229, 112, 0.9);
@@ -208,6 +211,150 @@ section {
 }
 
 @media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 80px 0 10px;
+  }
+  h2 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+  }
+  .detailTitle,
+  section {
+    padding: 0 5%;
+    width: 100%;
+  }
+  .detailTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 18px;
+  }
+  .detailTitle .title-img {
+    width: 22px;
+    height: 60px;
+  }
+  .detailTitle h1 {
+    font: 700 9rem/1 "REM";
+  }
+  .detailTitle .circle-img {
+    width: 140px;
+    height: 140px;
+    margin-left: auto;
+    margin-bottom: 30px;
+  }
+  .infoContainer > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 14px;
+  }
+  .infoContainer > ul li button {
+    padding: 12px 26px;
+    border-radius: 60px;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #a5d112;
+    border: 1px solid #a5d112;
+    background: none;
+    cursor: pointer;
+  }
+  .infoContainer article {
+    width: inherit;
+    height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 40px;
+    border: 1px solid #a5d112;
+    border-radius: 36px;
+    overflow: hidden;
+  }
+  .infoContainer article .articleImg {
+    width: 50%;
+    height: inherit;
+    -o-object-fit: cover;
+    object-fit: cover;
+    aspect-ratio: 29/27;
+  }
+  .infoContainer article .articleInfo {
+    width: 50%;
+    height: 230px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .infoContainer article .articleInfo h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .infoContainer article .articleInfo p {
+    width: 80%;
+    font-weight: 300;
+    font-size: 1.4rem;
+    margin: 30px 0 30px;
+    line-height: 2.2rem;
+  }
+  .infoContainer article .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px;
+    width: 80%;
+  }
+  .infoContainer article .articleInfo .articleHashtag li {
+    background: #a5d112;
+    padding: 8px 16px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .bannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #cae570;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .bannerContainer .title {
+    width: inherit;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .bannerContainer .title br {
+    display: none;
+  }
+  .bannerContainer .bannerBoxWrapper {
+    width: inherit;
+    height: inherit;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper {
+    gap: 20px;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
+    margin-bottom: 20px;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
+    text-align: center;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
+    width: 130px;
+    height: 130px;
+    border-radius: 16px;
+    margin-bottom: 6px;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
+    font-size: 1.6rem;
+  }
+  .shopContainer {
+    margin-bottom: 70px;
+  }
   .shopContainer .shopBoxWrapper {
     border: 1px solid #cae570;
   }
@@ -215,18 +362,56 @@ section {
     width: 100%;
     height: 330px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .imgBox {
+    width: 50%;
+    left: auto;
+    z-index: 9;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .imgBox img {
+    display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    width: 50%;
-    right: 0;
-    left: auto;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
-  .shopContainer .shopBoxWrapper .shopBox img {
-    width: 50%;
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
+    right: auto;
+    left: 0;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
+    right: auto;
+    left: 0;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     opacity: 1;
@@ -234,6 +419,254 @@ section {
     left: auto;
     right: 0;
     background: #fff;
-    border-bottom: 1px solid #cae570;
+    border-bottom: 1px solid #a5d112;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: #a5d112;
+    color: #fff;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo h4 {
+    font-weight: 600;
+    margin: 24px 0 24px;
+    font-size: 2.6rem;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    margin: 80px 0 10px;
+  }
+  h2 {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+  }
+  .detailTitle,
+  section {
+    padding: 0 5%;
+    width: 100%;
+  }
+  .detailTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 18px;
+  }
+  .detailTitle .title-img {
+    width: 18px;
+    height: 42px;
+  }
+  .detailTitle h1 {
+    font: 700 6.6rem/1 "REM";
+  }
+  .detailTitle .circle-img {
+    opacity: 0;
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+  }
+  .infoContainer > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+  }
+  .infoContainer > ul li button {
+    padding: 8px 20px;
+    border-radius: 60px;
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #a5d112;
+    border: 1px solid #a5d112;
+    cursor: pointer;
+  }
+  .infoContainer article {
+    width: inherit;
+    height: 390px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    border: 1px solid #a5d112;
+    border-radius: 36px;
+    overflow: hidden;
+  }
+  .infoContainer article .articleImg {
+    width: 50%;
+    height: inherit;
+    -o-object-fit: cover;
+    object-fit: cover;
+    aspect-ratio: 29/27;
+  }
+  .infoContainer article .articleInfo {
+    width: 50%;
+    height: 230px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .infoContainer article .articleInfo h3 {
+    font-size: 2.2rem;
+    font-weight: 600;
+  }
+  .infoContainer article .articleInfo p {
+    width: 80%;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin: 30px 0 30px;
+    line-height: 1.8rem;
+  }
+  .infoContainer article .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 6px;
+    width: 80%;
+  }
+  .infoContainer article .articleInfo .articleHashtag li {
+    background: #a5d112;
+    padding: 8px 16px;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 1.4rem;
+  }
+  .bannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background: #cae570;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .bannerContainer .title {
+    width: inherit;
+    position: relative;
+    padding-bottom: 40px;
+  }
+  .bannerContainer .title br {
+    display: none;
+  }
+  .bannerContainer .bannerBoxWrapper {
+    width: inherit;
+    height: inherit;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper {
+    gap: 20px;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
+    margin-bottom: 20px;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
+    text-align: center;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
+    width: 130px;
+    height: 130px;
+    border-radius: 16px;
+    margin-bottom: 6px;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
+    font-size: 1.6rem;
+  }
+  .shopContainer {
+    margin-bottom: 70px;
+  }
+  .shopContainer .shopBoxWrapper {
+    border: 1px solid #cae570;
+  }
+  .shopContainer .shopBoxWrapper .shopBox {
+    width: 100%;
+    height: 330px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .imgBox {
+    width: 50%;
+    left: auto;
+    z-index: 9;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .imgBox img {
+    display: block;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
+    right: auto;
+    left: 0;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
+    right: auto;
+    left: 0;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
+    right: auto;
+    left: 0;
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
+    opacity: 1;
+    width: 50%;
+    left: auto;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #a5d112;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 30px;
+    background: #a5d112;
+    color: #fff;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo h4 {
+    font-weight: 600;
+    margin: 24px 0 24px;
+    font-size: 2.6rem;
+  }
+  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo p {
+    font-weight: 300;
+    font-size: 1.4rem;
+    line-height: 2rem;
   }
 }

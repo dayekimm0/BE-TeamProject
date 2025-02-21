@@ -15,10 +15,10 @@ main {
   }
   #form {
     background: map-get($map: $colors, $key: light);
-    box-shadow: 0 0 8px rgba($color: #000000, $alpha: 0.6);
+    box-shadow: 0 30px 60px rgba(20, 20, 21, 0.08);
     border-radius: 30px;
     width: 800px;
-    padding: 80px 150px;
+    padding: 80px 200px;
     margin: 70px 0;
     display: flex;
     flex-direction: column;
@@ -35,7 +35,7 @@ main {
     #inputWrap {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 12px;
       .inputBox {
         position: relative;
         input {
@@ -47,25 +47,27 @@ main {
           left: 30px;
           top: 50%;
           transform: translateY(-50%);
-          font-size: map-get($map: $font-size, $key: 14px);
+          font-size: 1.4rem;
           color: map-get($map: $colors, $key: label);
           font-weight: bold;
           &::placeholder {
-            font-size: map-get($map: $font-size, $key: 18px);
+            font-size: 1.8rem;
             color: map-get($map: $colors, $key: placeholder);
           }
         }
       }
     }
     #userInfo {
-      margin: 20px 0;
+      margin: 16px 0;
+      padding: 0 10px;
       display: flex;
       justify-content: space-between;
-      font-size: 1.4rem;
+      font-size: 1.2rem;
+      color: map-get($map: $colors, $key: userInfo);
       div:first-child {
         display: flex;
         align-items: center;
-        gap: 10px;
+        gap: 8px;
         input[type="checkbox"] {
           width: 20px;
           height: 20px;
@@ -80,8 +82,8 @@ main {
             position: absolute;
             width: 1px;
             height: 100%;
-            background: map-get($map: $colors, $key: dark);
-            left: -10px;
+            background: map-get($map: $colors, $key: line);
+            left: -12.5px;
           }
         }
       }
@@ -89,25 +91,26 @@ main {
     #inputBtn {
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 12px;
       input {
         cursor: pointer;
         font-size: 1.4rem;
       }
       #loginBtn {
-        background: map-get($map: $colors, $key: dark);
+        background: map-get($map: $colors, $key: foodAccent);
         color: map-get($map: $colors, $key: light);
+        font-weight: bold;
       }
       #joinBtn {
         background: map-get($map: $colors, $key: light);
-        border: 1px solid map-get($map: $colors, $key: dark);
+        border: 1px solid map-get($map: $colors, $key: line);
       }
     }
     #easyLogin {
-      margin-top: 50px;
+      margin-top: 30px;
       display: flex;
       flex-direction: column;
-      gap: 20px;
+      gap: 12px;
       #easyText {
         display: none;
       }
@@ -143,10 +146,11 @@ main {
   main {
     padding-top: 110px;
     h2 {
-      font-size: map-get($map: $font-size, $key: 50px);
+      font-size: 5rem;
     }
     #form {
       width: 700px;
+      padding: 80px 150px;
       margin: 50px 0;
       #inputWrap {
         gap: 15px;
@@ -160,7 +164,7 @@ main {
       }
       #easyLogin {
         margin-top: 40px;
-        gap: 15px;
+        gap: 12px;
       }
     }
   }
@@ -185,7 +189,7 @@ main {
         gap: 10px;
         .inputBox {
           label {
-            font-size: map-get($map: $font-size, $key: 12px);
+            font-size: 1.2rem;
           }
         }
       }
@@ -198,45 +202,9 @@ main {
       }
       #easyLogin {
         position: relative;
-        flex-direction: row;
         justify-content: center;
-        padding-top: 40px;
-        #easyText {
-          font-size: 1.4rem;
-          display: block;
-          position: absolute;
-          top: 0;
-          width: 100%;
-          text-align: center;
-          &::before {
-            content: "";
-            position: absolute;
-            top: 50%;
-            left: 0;
-            width: 35%;
-            height: 1px;
-            transform: translateY(-50%);
-            background: map-get($map: $colors, $key: dark);
-          }
-          &::after {
-            content: "";
-            position: absolute;
-            top: 50%;
-            right: 0;
-            width: 35%;
-            height: 1px;
-            transform: translateY(-50%);
-            background: map-get($map: $colors, $key: dark);
-          }
-        }
         a {
-          width: 40px;
-          height: 40px;
-          gap: 0;
-          border-radius: 50%;
-          span {
-            display: none;
-          }
+          height: 50px;
         }
       }
     }
