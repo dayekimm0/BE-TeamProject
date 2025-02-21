@@ -27,7 +27,7 @@ body {
 
 .container {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 5%;
 }
 
 .eventTitle {
@@ -252,134 +252,119 @@ body {
 .couponsList .couponSky,
 .couponsList .couponPurple {
   position: relative;
-  width: 180px;
-  height: 220px;
-  border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 230px;
+  height: 310px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
 }
-.couponsList .couponGreen .coupon-bottom,
-.couponsList .couponPink .coupon-bottom,
-.couponsList .couponSky .coupon-bottom,
-.couponsList .couponPurple .coupon-bottom {
+.couponsList .couponGreen .couponTop,
+.couponsList .couponPink .couponTop,
+.couponsList .couponSky .couponTop,
+.couponsList .couponPurple .couponTop {
   position: absolute;
-  bottom: -30px;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.couponsList .couponGreen .couponBottom,
+.couponsList .couponPink .couponBottom,
+.couponsList .couponSky .couponBottom,
+.couponsList .couponPurple .couponBottom {
+  position: absolute;
+  width: 100%;
+  bottom: -35px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
   height: 40px;
   background: inherit;
-  border-radius: 25px 25px 10px 10px;
+  border-radius: 20px 20px 10px 10px;
 }
-.couponsList .couponGreen .dashed-line,
-.couponsList .couponPink .dashed-line,
-.couponsList .couponSky .dashed-line,
-.couponsList .couponPurple .dashed-line {
+.couponsList .couponGreen {
+  background-color: #cae570;
+}
+.couponsList .couponPink {
+  background-color: #ffc6c7;
+}
+.couponsList .couponSky {
+  background-color: #b4e3fc;
+}
+.couponsList .couponPurple {
+  background-color: #c198f9;
+}
+.couponsList .dashedLine {
   position: absolute;
   bottom: 0;
   left: 10px;
-  transform: translateX(-1px);
-  width: 90%;
-  height: 1px;
+  width: calc(100% - 20px);
   border-top: 2px dashed #000;
   z-index: 2;
 }
-.couponsList .couponGreen.couponGreen,
-.couponsList .couponPink.couponGreen,
-.couponsList .couponSky.couponGreen,
-.couponsList .couponPurple.couponGreen {
-  background-color: #cae570;
-}
-.couponsList .couponGreen.couponPink,
-.couponsList .couponPink.couponPink,
-.couponsList .couponSky.couponPink,
-.couponsList .couponPurple.couponPink {
-  background-color: #ffc6c7;
-}
-.couponsList .couponGreen.couponSky,
-.couponsList .couponPink.couponSky,
-.couponsList .couponSky.couponSky,
-.couponsList .couponPurple.couponSky {
-  background-color: #b4e3fc;
-}
-.couponsList .couponGreen.couponPurple,
-.couponsList .couponPink.couponPurple,
-.couponsList .couponSky.couponPurple,
-.couponsList .couponPurple.couponPurple {
-  background-color: #c198f9;
-}
-.couponsList .couponGreen .couponText,
-.couponsList .couponPink .couponText,
-.couponsList .couponSky .couponText,
-.couponsList .couponPurple .couponText {
+.couponsList .couponText {
   font-size: 1.6rem;
   position: absolute;
   bottom: 16px;
   left: 15px;
   text-align: left;
 }
-.couponsList .couponGreen .couponText p,
-.couponsList .couponPink .couponText p,
-.couponsList .couponSky .couponText p,
-.couponsList .couponPurple .couponText p {
+.couponsList .couponText p {
   color: #000;
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 500;
   font-family: "Pretendard";
 }
-.couponsList .couponGreen .couponText p b,
-.couponsList .couponPink .couponText p b,
-.couponsList .couponSky .couponText p b,
-.couponsList .couponPurple .couponText p b {
-  font-size: 3.5rem;
+.couponsList .couponText p b {
+  font-size: 4.5rem;
   font-weight: bold;
   font-family: "REM";
 }
-.couponsList .couponGreen .couponText span,
-.couponsList .couponPink .couponText span,
-.couponsList .couponSky .couponText span,
-.couponsList .couponPurple .couponText span {
+.couponsList .couponText span {
   font-size: 1.4rem;
   font-weight: 400;
   opacity: 0.7;
 }
-.couponsList .couponGreen i,
-.couponsList .couponPink i,
-.couponsList .couponSky i,
-.couponsList .couponPurple i {
+.couponsList i {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  font-size: 24px;
+  top: 15px;
+  right: 15px;
+  font-size: 34px;
   rotate: 90deg;
 }
-.couponsList .buttons {
+
+.buttons {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 35px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
-.couponsList .buttons button {
+.buttons button {
   display: flex;
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
-  width: auto;
+  width: 250px;
+  height: 55px;
   border-radius: 30px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
+  cursor: pointer;
 }
-.couponsList .buttons button p {
+.buttons button p {
   font-size: 2rem;
-  font-weight: normal;
   font-weight: 700;
   letter-spacing: -0.4px;
 }
-.couponsList .buttons button i {
+.buttons button i {
   display: flex;
   font-size: 2rem;
   width: 40px;
@@ -388,7 +373,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  border: 1px solid #ccc;
+  color: #000;
+  border: 1px solid #000;
   background: #fff;
 }
 
@@ -403,12 +389,13 @@ body {
 .eventNotice h5 {
   color: #000;
   font-weight: bold;
-  margin-top: 15%;
-  margin-bottom: 10px;
+  margin-top: 12%;
+  margin-bottom: 15px;
 }
 .eventNotice ul > li {
   font-size: 2rem;
   font-weight: 500;
   line-height: 35px;
   letter-spacing: 0.2px;
+  list-style: inside;
 }
