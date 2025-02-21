@@ -32,7 +32,7 @@ section {
     height: 65px;
   }
   h1 {
-    font: bold 11rem/1 "REM";
+    font: 700 11rem/1 "REM";
   }
   .circle-img {
     margin-left: auto;
@@ -40,11 +40,12 @@ section {
   }
 }
 
+// section1
 .infoContainer {
   & > ul {
     display: flex;
     gap: 14px;
-    margin: 30px 0;
+    margin: 20px 0;
 
     li {
       button {
@@ -104,6 +105,7 @@ section {
   }
 }
 
+// section2
 .bannerContainer {
   display: flex;
   justify-content: space-between;
@@ -111,24 +113,17 @@ section {
   background: map-get($map: $colors, $key: food);
   padding-top: 70px;
   padding-bottom: 70px;
+
   .title {
     width: 40%;
     position: relative;
-    display: flex;
-    // flex-direction: column;
-    // justify-content: space-between;
-    // img {
-    //   width: 100px;
-    //   position: absolute;
-    //   bottom: 0;
-    //   left: 0;
-    // }
   }
   .bannerBoxWrapper {
-    width: 100%;
+    // width: 100%;
     display: flex;
     flex-wrap: wrap;
     width: 60%;
+    justify-content: flex-end;
     .contentWrapper {
       display: flex;
       gap: 24px;
@@ -149,6 +144,7 @@ section {
   }
 }
 
+// section3
 .shopContainer {
   .shopBoxWrapper {
     display: flex;
@@ -215,100 +211,467 @@ section {
   }
 }
 
-// .shopContainer {
-//   .shopBoxWrapper {
-//     display: grid;
-//     grid-template-columns: repeat(3, 1fr);
-//     overflow: hidden;
-//     border-radius: 40px;
-//     margin-top: 30px;
-
-//     .shopBox {
-//       position: relative;
-
-//       img {
-//         width: 100%;
-//         height: 100%;
-//         object-fit: cover;
-//       }
-
-//       /* 기본적으로 숨김 */
-//       .shopHoverBox {
-//         background: rgba($color: #cae570, $alpha: 0.6);
-//         position: absolute;
-//         z-index: 1;
-//         inset: 0;
-//         display: flex;
-//         justify-content: center;
-//         align-items: center;
-//         padding: 0 60px;
-//         opacity: 0; /* 투명도 */
-//         transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-
-//         .shopInfo {
-//           span {
-//             font-size: 1.6rem;
-//             background: map-get($map: $colors, $key: light);
-//             padding: 10px 20px;
-//             border-radius: 30px;
-//             color: map-get($map: $colors, $key: food);
-//           }
-//           h4 {
-//             margin: 28px 0 30px;
-//             font-size: 2.6em;
-//           }
-//           p {
-//             font-size: 1.6rem;
-//             margin-bottom: 4px;
-//           }
-//         }
-//       }
-
-//       /* hover 시 보이게 설정 */
-//       &:hover .shopHoverBox {
-//         opacity: 1;
-//         visibility: visible;
-//       }
-//     }
-//   }
-// }
-
-// 반응형 tablet.ver
+// tablet.ver
 @media screen and (max-width: 1024px) {
+  main {
+    width: 100%;
+    margin: 80px 0 10px;
+  }
+
+  h2 {
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 6.2rem;
+  }
+
+  .detailTitle,
+  section {
+    padding: 0 5%;
+    width: 100%;
+  }
+
+  .detailTitle {
+    display: flex;
+    gap: 18px;
+    .title-img {
+      width: 22px;
+      height: 60px;
+    }
+    h1 {
+      font: 700 9rem/1 "REM";
+    }
+    .circle-img {
+      width: 140px;
+      height: 140px;
+      margin-left: auto;
+      margin-bottom: 30px;
+    }
+  }
+
+  // section1
+  .infoContainer {
+    & > ul {
+      display: flex;
+      gap: 14px;
+
+      li {
+        button {
+          padding: 12px 26px;
+          border-radius: 60px;
+          font-size: 2rem;
+          font-weight: 600;
+          color: map-get($map: $colors, $key: foodAccent);
+          border: 1px solid map-get($map: $colors, $key: foodAccent);
+          background: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    article {
+      width: inherit;
+      height: 400px;
+      display: flex;
+      gap: 40px;
+      border: 1px solid map-get($map: $colors, $key: foodAccent);
+      border-radius: 36px;
+      overflow: hidden;
+      .articleImg {
+        width: 50%;
+        // width: 360px;
+        height: inherit;
+        object-fit: cover;
+        aspect-ratio: 29/27;
+      }
+      .articleInfo {
+        width: 50%;
+        height: 230px;
+        align-items: center;
+        // height: inherit;
+        h3 {
+          font-size: 2.2rem;
+          font-weight: 600;
+        }
+        p {
+          width: 80%;
+          font-weight: 300;
+          font-size: 1.4rem;
+          margin: 30px 0 30px;
+          line-height: 2.2rem;
+        }
+        .articleHashtag {
+          display: flex;
+          gap: 6px;
+          width: 80%;
+          li {
+            background: map-get($map: $colors, $key: foodAccent);
+            padding: 8px 16px;
+            border-radius: 30px;
+            color: map-get($map: $colors, $key: light);
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  // section2
+  .bannerContainer {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // margin: 130px 0;
+    background: map-get($map: $colors, $key: food);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .title {
+      width: inherit;
+      position: relative;
+      padding-bottom: 40px;
+      br {
+        display: none;
+      }
+    }
+    .bannerBoxWrapper {
+      width: inherit;
+      height: inherit;
+      .contentWrapper {
+        gap: 20px;
+        &:first-child {
+          margin-bottom: 20px;
+        }
+        .contentBox {
+          text-align: center;
+          img {
+            width: 130px;
+            height: 130px;
+            border-radius: 16px;
+            margin-bottom: 6px;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // section3
   .shopContainer {
+    margin-bottom: 70px;
     .shopBoxWrapper {
       border: 1px solid map-get($map: $colors, $key: food);
       .shopBox {
         width: 100%;
         height: 330px;
         position: relative;
+        display: flex;
+        .imgBox {
+          width: 50%;
+          left: auto;
+          z-index: 9;
+          img {
+            display: block;
+          }
+        }
         &:nth-child(2) {
           .imgBox {
-            width: 50%;
-            right: 0;
-            left: auto;
+            order: 2;
           }
           .shopHoverBox {
             right: auto;
             left: 0;
+            position: relative;
+            order: 1;
           }
         }
-        img {
-          width: 50%;
+        &:nth-child(4) {
+          .imgBox {
+            order: 2;
+          }
+          .shopHoverBox {
+            right: auto;
+            left: 0;
+            position: relative;
+            order: 1;
+          }
         }
+        &:nth-child(6) {
+          .imgBox {
+            order: 2;
+          }
+          .shopHoverBox {
+            right: auto;
+            left: 0;
+            position: relative;
+            order: 1;
+          }
+        }
+
         .shopHoverBox {
           opacity: 1;
           width: 50%;
           left: auto;
           right: 0;
           background: map-get($map: $colors, $key: light);
-          border-bottom: 1px solid map-get($map: $colors, $key: food);
+          border-bottom: 1px solid map-get($map: $colors, $key: foodAccent);
+          .shopInfo {
+            span {
+              font-size: 1.2rem;
+              font-weight: 500;
+              padding: 8px 16px;
+              border-radius: 30px;
+              background: map-get($map: $colors, $key: foodAccent);
+              color: map-get($map: $colors, $key: light);
+            }
+            h4 {
+              font-weight: 600;
+              margin: 24px 0 24px;
+              font-size: 2.6rem;
+            }
+            p {
+              font-weight: 300;
+              font-size: 1.4rem;
+              line-height: 2rem;
+            }
+          }
         }
       }
     }
   }
 }
 
-// 반응형 phone.ver
+// phone.ver
 @media screen and (max-width: 767px) {
+  main {
+    width: 100%;
+    margin: 80px 0 10px;
+  }
+
+  h2 {
+    width: 100%;
+    font-size: 3rem;
+    font-weight: 600;
+    line-height: 3.6rem;
+  }
+
+  .detailTitle,
+  section {
+    padding: 0 5%;
+    width: 100%;
+  }
+
+  .detailTitle {
+    display: flex;
+    gap: 18px;
+    .title-img {
+      width: 18px;
+      height: 42px;
+    }
+    h1 {
+      font: 700 6.6rem/1 "REM";
+    }
+    .circle-img {
+      opacity: 0;
+      width: 100px;
+      height: 100px;
+      margin-left: auto;
+      // margin-bottom: 10px;
+    }
+  }
+
+  // section1
+  .infoContainer {
+    & > ul {
+      display: flex;
+      gap: 10px;
+
+      li {
+        button {
+          // width: 100%;
+          padding: 8px 20px;
+          border-radius: 60px;
+          font-size: 1.8rem;
+          font-weight: 500;
+          color: map-get($map: $colors, $key: foodAccent);
+          border: 1px solid map-get($map: $colors, $key: foodAccent);
+          // background: none;
+          cursor: pointer;
+        }
+      }
+    }
+
+    article {
+      width: inherit;
+      height: 390px;
+      display: flex;
+      gap: 20px;
+      border: 1px solid map-get($map: $colors, $key: foodAccent);
+      border-radius: 36px;
+      overflow: hidden;
+      .articleImg {
+        width: 50%;
+        // width: 360px;
+        height: inherit;
+        object-fit: cover;
+        aspect-ratio: 29/27;
+      }
+      .articleInfo {
+        width: 50%;
+        height: 230px;
+        align-items: center;
+        // height: inherit;
+        h3 {
+          font-size: 2.2rem;
+          font-weight: 600;
+        }
+        p {
+          width: 80%;
+          font-weight: 300;
+          font-size: 1.2rem;
+          margin: 30px 0 30px;
+          line-height: 1.8rem;
+        }
+        .articleHashtag {
+          display: flex;
+          gap: 6px;
+          width: 80%;
+          li {
+            background: map-get($map: $colors, $key: foodAccent);
+            padding: 8px 16px;
+            border-radius: 30px;
+            color: map-get($map: $colors, $key: light);
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+
+  // section2
+  .bannerContainer {
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // margin: 130px 0;
+    background: map-get($map: $colors, $key: food);
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .title {
+      width: inherit;
+      position: relative;
+      padding-bottom: 40px;
+      br {
+        display: none;
+      }
+    }
+    .bannerBoxWrapper {
+      width: inherit;
+      height: inherit;
+      .contentWrapper {
+        gap: 20px;
+        &:first-child {
+          margin-bottom: 20px;
+        }
+        .contentBox {
+          text-align: center;
+          img {
+            width: 130px;
+            height: 130px;
+            border-radius: 16px;
+            margin-bottom: 6px;
+          }
+          p {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  // section3
+  .shopContainer {
+    margin-bottom: 70px;
+    .shopBoxWrapper {
+      border: 1px solid map-get($map: $colors, $key: food);
+      .shopBox {
+        width: 100%;
+        height: 330px;
+        position: relative;
+        display: flex;
+        .imgBox {
+          width: 50%;
+          left: auto;
+          z-index: 9;
+          img {
+            display: block;
+          }
+        }
+        &:nth-child(2) {
+          .imgBox {
+            order: 2;
+          }
+          .shopHoverBox {
+            right: auto;
+            left: 0;
+            position: relative;
+            order: 1;
+          }
+        }
+        &:nth-child(4) {
+          .imgBox {
+            order: 2;
+          }
+          .shopHoverBox {
+            right: auto;
+            left: 0;
+            position: relative;
+            order: 1;
+          }
+        }
+        &:nth-child(6) {
+          .imgBox {
+            order: 2;
+          }
+          .shopHoverBox {
+            right: auto;
+            left: 0;
+            position: relative;
+            order: 1;
+          }
+        }
+
+        .shopHoverBox {
+          opacity: 1;
+          width: 50%;
+          left: auto;
+          right: 0;
+          background: map-get($map: $colors, $key: light);
+          border-bottom: 1px solid map-get($map: $colors, $key: foodAccent);
+          .shopInfo {
+            span {
+              font-size: 1.2rem;
+              font-weight: 500;
+              padding: 8px 16px;
+              border-radius: 30px;
+              background: map-get($map: $colors, $key: foodAccent);
+              color: map-get($map: $colors, $key: light);
+            }
+            h4 {
+              font-weight: 600;
+              margin: 24px 0 24px;
+              font-size: 2.6rem;
+            }
+            p {
+              font-weight: 300;
+              font-size: 1.4rem;
+              line-height: 2rem;
+            }
+          }
+        }
+      }
+    }
+  }
 }
