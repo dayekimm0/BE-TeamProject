@@ -24,7 +24,7 @@ body {
 
 .container {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 5%;
 }
 .eventTitle {
   width: 100%;
@@ -231,110 +231,135 @@ body {
       gap: 30px;
     }
   }
+
   .couponGreen,
   .couponPink,
   .couponSky,
   .couponPurple {
-    @include coupon;
-    .coupon-bottom {
+    position: relative;
+    width: 230px;
+    height: 310px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+    .couponTop {
       position: absolute;
-      bottom: -30px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .couponBottom {
+      position: absolute;
+      width: 100%;
+      bottom: -35px;
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
       height: 40px;
       background: inherit;
-      border-radius: 25px 25px 10px 10px;
-    }
-    .dashed-line {
-      position: absolute;
-      bottom: 0;
-      left: 10px;
-      transform: translateX(-1px);
-      width: 90%;
-      height: 1px;
-      border-top: 2px dashed #000;
-      z-index: 2;
-    }
-    &.couponGreen {
-      background-color: map-get($colors, food);
-    }
-    &.couponPink {
-      background-color: map-get($colors, beauty);
-    }
-    &.couponSky {
-      background-color: map-get($colors, fashion);
-    }
-    &.couponPurple {
-      background-color: map-get($colors, lifestyle);
-    }
-
-    .couponText {
-      font-size: 1.6rem;
-      position: absolute;
-      bottom: 16px;
-      left: 15px;
-      text-align: left;
-      p {
-        color: map-get($map: $colors, $key: dark);
-        font-size: 1.8rem;
-        font-weight: 500;
-        font-family: map-get($map: $font-family, $key: Pretendard);
-        b {
-          font-size: 3.5rem;
-          font-weight: bold;
-          font-family: map-get($map: $font-family, $key: REM);
-        }
-      }
-      span {
-        font-size: 1.4rem;
-        font-weight: 400;
-        opacity: 0.7;
-      }
-    }
-
-    i {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 24px;
-      rotate: 90deg;
+      border-radius: 20px 20px 10px 10px;
     }
   }
-  .buttons {
-    width: 100%;
+
+  .couponGreen {
+    background-color: map-get($colors, food);
+  }
+  .couponPink {
+    background-color: map-get($colors, beauty);
+  }
+  .couponSky {
+    background-color: map-get($colors, fashion);
+  }
+  .couponPurple {
+    background-color: map-get($colors, lifestyle);
+  }
+
+  .dashedLine {
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    width: calc(100% - 20px);
+    border-top: 2px dashed #000;
+    z-index: 2;
+  }
+
+  .couponText {
+    font-size: 1.6rem;
+    position: absolute;
+    bottom: 16px;
+    left: 15px;
+    text-align: left;
+
+    p {
+      color: map-get($colors, dark);
+      font-size: 2rem;
+      font-weight: 500;
+      font-family: map-get($font-family, Pretendard);
+
+      b {
+        font-size: 4.5rem;
+        font-weight: bold;
+        font-family: map-get($font-family, REM);
+      }
+    }
+
+    span {
+      font-size: 1.4rem;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+  }
+
+  i {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 34px;
+    rotate: 90deg;
+  }
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 30px;
+  button {
     display: flex;
-    justify-content: center;
-    gap: 35px;
-    margin-top: 20px;
-    button {
+    align-items: center;
+    padding: 10px 20px;
+    gap: 10px;
+    width: 250px;
+    height: 55px;
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    background-color: map-get($map: $colors, $key: light);
+    cursor: pointer;
+    p {
+      font-size: 2rem;
+      font-weight: 700;
+      letter-spacing: -0.4px;
+    }
+    i {
       display: flex;
+      font-size: 2rem;
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+      justify-content: center;
       align-items: center;
-      padding: 10px 20px;
-      gap: 10px;
-      width: auto;
       border-radius: 30px;
-      border: none;
-      box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-      background-color: map-get($map: $colors, $key: light);
-      p {
-        font-size: 2rem;
-        font-weight: normal;
-        font-weight: 700;
-        letter-spacing: -0.4px;
-      }
-      i {
-        display: flex;
-        font-size: 2rem;
-        width: 40px;
-        height: 40px;
-        padding: 6px;
-        justify-content: center;
-        align-items: center;
-        border-radius: 30px;
-        border: 1px solid map-get($map: $colors, $key: placeholder);
-        background: map-get($map: $colors, $key: light);
-      }
+      color: map-get($map: $colors, $key: dark);
+      border: 1px solid map-get($map: $colors, $key: dark);
+      background: map-get($map: $colors, $key: light);
     }
   }
 }
@@ -349,13 +374,14 @@ body {
   h5 {
     color: map-get($map: $colors, $key: dark);
     font-weight: bold;
-    margin-top: 15%;
-    margin-bottom: 10px;
+    margin-top: 12%;
+    margin-bottom: 15px;
   }
   ul > li {
     font-size: 2rem;
     font-weight: 500;
     line-height: 35px;
     letter-spacing: 0.2px;
+    list-style: inside;
   }
 }
