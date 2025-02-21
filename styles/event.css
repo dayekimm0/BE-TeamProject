@@ -52,7 +52,6 @@ body {
 .eventTitle .mainTitle .title p {
   font-size: 5rem;
   line-height: 1.1;
-  font-family: "Pretendard";
   letter-spacing: -1.5px;
 }
 .eventTitle .mainTitle .title h2 {
@@ -65,7 +64,6 @@ body {
 .eventTitle .mainTitle .title span {
   font-size: 2rem;
   line-height: 1;
-  font-family: "Pretendard";
   font-weight: lighter;
   letter-spacing: 0.9px;
   opacity: 0.7;
@@ -87,50 +85,47 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: #000;
 }
 .eventSteps .howTo h3 {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: #e9e9e9;
   border-radius: 15px;
   padding: 12px 10px;
   color: #000;
-  font-size: 4rem;
+  font-family: "REM";
+  font-size: 7rem;
   font-weight: bold;
   position: relative;
 }
-.eventSteps .howTo h3::before {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 88%;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 15px solid #d9d9d9;
-}
 .eventSteps .howTo p {
-  font-size: 3rem;
+  font-size: 3.4rem;
+  font-weight: 500;
   justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
+  font-weight: normal;
+}
+.eventSteps .howTo p b {
+  font-weight: 800;
 }
 .eventSteps .steps {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  border: 1px solid darkblue;
 }
 .eventSteps .steps .step01,
 .eventSteps .steps .step02 {
   width: 620px;
   height: 415px;
   position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #d9d9d9;
+  background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
 .eventSteps .steps .step01 .bg3,
@@ -153,11 +148,21 @@ body {
   bottom: 100px;
   right: 20px;
 }
+.eventSteps .steps .step01 .bg4,
+.eventSteps .steps .step02 .bg4 {
+  width: 284px;
+  height: 190px;
+  position: absolute;
+  border-radius: 5px;
+  background: url("/images/event/coupons.png") center/cover no-repeat;
+  position: absolute;
+  bottom: 83px;
+  right: 0;
+}
 .eventSteps .steps .step01 .text1,
 .eventSteps .steps .step01 .text2,
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
-  border: 1px solid #f00;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -175,6 +180,7 @@ body {
   font-size: 6rem;
   font-weight: 900;
   letter-spacing: -1.2px;
+  font-family: "REM";
 }
 .eventSteps .steps .step01 .text1 p,
 .eventSteps .steps .step01 .text2 p,
@@ -193,4 +199,216 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: -0.3px;
+}
+
+.couponsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-top: 132px;
+}
+.couponsList .hashTags {
+  width: 628px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.couponsList .hashTags span {
+  width: 200px;
+  height: 55px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px #d9d9d9;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.couponsList .coupons {
+  width: 100%;
+  gap: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.couponsList .coupons .ticket {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.couponsList .couponGreen,
+.couponsList .couponPink,
+.couponsList .couponSky,
+.couponsList .couponPurple {
+  position: relative;
+  width: 180px;
+  height: 220px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  font-weight: bold;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.couponsList .couponGreen .coupon-bottom,
+.couponsList .couponPink .coupon-bottom,
+.couponsList .couponSky .coupon-bottom,
+.couponsList .couponPurple .coupon-bottom {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 40px;
+  background: inherit;
+  border-radius: 25px 25px 10px 10px;
+}
+.couponsList .couponGreen .dashed-line,
+.couponsList .couponPink .dashed-line,
+.couponsList .couponSky .dashed-line,
+.couponsList .couponPurple .dashed-line {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  transform: translateX(-1px);
+  width: 90%;
+  height: 1px;
+  border-top: 2px dashed #000;
+  z-index: 2;
+}
+.couponsList .couponGreen.couponGreen,
+.couponsList .couponPink.couponGreen,
+.couponsList .couponSky.couponGreen,
+.couponsList .couponPurple.couponGreen {
+  background-color: #cae570;
+}
+.couponsList .couponGreen.couponPink,
+.couponsList .couponPink.couponPink,
+.couponsList .couponSky.couponPink,
+.couponsList .couponPurple.couponPink {
+  background-color: #ffc6c7;
+}
+.couponsList .couponGreen.couponSky,
+.couponsList .couponPink.couponSky,
+.couponsList .couponSky.couponSky,
+.couponsList .couponPurple.couponSky {
+  background-color: #b4e3fc;
+}
+.couponsList .couponGreen.couponPurple,
+.couponsList .couponPink.couponPurple,
+.couponsList .couponSky.couponPurple,
+.couponsList .couponPurple.couponPurple {
+  background-color: #c198f9;
+}
+.couponsList .couponGreen .couponText,
+.couponsList .couponPink .couponText,
+.couponsList .couponSky .couponText,
+.couponsList .couponPurple .couponText {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  text-align: left;
+}
+.couponsList .couponGreen .couponText p,
+.couponsList .couponPink .couponText p,
+.couponsList .couponSky .couponText p,
+.couponsList .couponPurple .couponText p {
+  color: #000;
+  font-size: 1.8rem;
+  font-weight: 500;
+  font-family: "Pretendard";
+}
+.couponsList .couponGreen .couponText p b,
+.couponsList .couponPink .couponText p b,
+.couponsList .couponSky .couponText p b,
+.couponsList .couponPurple .couponText p b {
+  font-size: 3.5rem;
+  font-weight: bold;
+  font-family: "REM";
+}
+.couponsList .couponGreen .couponText span,
+.couponsList .couponPink .couponText span,
+.couponsList .couponSky .couponText span,
+.couponsList .couponPurple .couponText span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.couponsList .couponGreen i,
+.couponsList .couponPink i,
+.couponsList .couponSky i,
+.couponsList .couponPurple i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  rotate: 90deg;
+}
+.couponsList .buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 20px;
+}
+.couponsList .buttons button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: auto;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+}
+.couponsList .buttons button p {
+  font-size: 2rem;
+  font-weight: normal;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.couponsList .buttons button i {
+  display: flex;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+
+.eventNotice {
+  width: 100%;
+  height: 500px;
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+}
+.eventNotice h5 {
+  color: #000;
+  font-weight: bold;
+  margin-top: 15%;
+  margin-bottom: 10px;
+}
+.eventNotice ul > li {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0.2px;
 }
