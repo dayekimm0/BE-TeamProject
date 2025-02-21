@@ -22,11 +22,11 @@ main h2 {
 }
 main #form {
   background: #fff;
-  -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-          box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 30px 60px rgba(20, 20, 21, 0.08);
+          box-shadow: 0 30px 60px rgba(20, 20, 21, 0.08);
   border-radius: 30px;
   width: 800px;
-  padding: 80px 150px;
+  padding: 80px 200px;
   margin: 70px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -54,7 +54,7 @@ main #form #inputWrap {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 main #form #inputWrap .inputBox {
   position: relative;
@@ -94,14 +94,16 @@ main #form #inputWrap .inputBox label::placeholder {
   color: #ccc;
 }
 main #form #userInfo {
-  margin: 20px 0;
+  margin: 16px 0;
+  padding: 0 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.4rem;
+  font-size: 1.2rem;
+  color: #64646b;
 }
 main #form #userInfo div:first-child {
   display: -webkit-box;
@@ -110,7 +112,7 @@ main #form #userInfo div:first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 10px;
+  gap: 8px;
 }
 main #form #userInfo div:first-child input[type=checkbox] {
   width: 20px;
@@ -125,8 +127,8 @@ main #form #userInfo div:last-child a:last-child::before {
   position: absolute;
   width: 1px;
   height: 100%;
-  background: #000;
-  left: -10px;
+  background: #d9d9d9;
+  left: -12.5px;
 }
 main #form #inputBtn {
   display: -webkit-box;
@@ -136,22 +138,23 @@ main #form #inputBtn {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 main #form #inputBtn input {
   cursor: pointer;
   font-size: 1.4rem;
 }
 main #form #inputBtn #loginBtn {
-  background: #000;
+  background: #a5d112;
   color: #fff;
+  font-weight: bold;
 }
 main #form #inputBtn #joinBtn {
   background: #fff;
-  border: 1px solid #000;
+  border: 1px solid #d9d9d9;
 }
 main #form #easyLogin {
-  margin-top: 50px;
+  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,7 +162,7 @@ main #form #easyLogin {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 20px;
+  gap: 12px;
 }
 main #form #easyLogin #easyText {
   display: none;
@@ -203,6 +206,7 @@ main #form #easyLogin a:nth-child(4) {
   }
   main #form {
     width: 700px;
+    padding: 80px 150px;
     margin: 50px 0;
   }
   main #form #inputWrap {
@@ -217,7 +221,7 @@ main #form #easyLogin a:nth-child(4) {
   }
   main #form #easyLogin {
     margin-top: 40px;
-    gap: 15px;
+    gap: 12px;
   }
   footer {
     z-index: 0;
@@ -239,7 +243,7 @@ main #form #easyLogin a:nth-child(4) {
     gap: 10px;
   }
   main #form #inputWrap .inputBox label {
-    font-size: 1.2rerm;
+    font-size: 1.2rem;
   }
   main #form #inputBtn {
     gap: 10px;
@@ -250,52 +254,11 @@ main #form #easyLogin a:nth-child(4) {
   }
   main #form #easyLogin {
     position: relative;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding-top: 40px;
-  }
-  main #form #easyLogin #easyText {
-    font-size: 1.4rem;
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    text-align: center;
-  }
-  main #form #easyLogin #easyText::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 35%;
-    height: 1px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    background: #000;
-  }
-  main #form #easyLogin #easyText::after {
-    content: "";
-    position: absolute;
-    top: 50%;
-    right: 0;
-    width: 35%;
-    height: 1px;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-    background: #000;
   }
   main #form #easyLogin a {
-    width: 40px;
-    height: 40px;
-    gap: 0;
-    border-radius: 50%;
-  }
-  main #form #easyLogin a span {
-    display: none;
+    height: 50px;
   }
 }

@@ -1,15 +1,45 @@
 @charset "UTF-8";
-body h2 {
-  font-size: 5.2rem;
+/* reset & variables */
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header {
+  z-index: 10;
 }
 
 main {
-  padding: 0 230px;
   width: 100%;
   margin: 170px 0 100px;
 }
 
-.title {
+h2 {
+  font-size: 5.2rem;
+  font-weight: 600;
+  line-height: 6.2rem;
+}
+
+.detailTitle,
+section {
+  padding: 0 5%;
+  width: 100%;
+}
+
+.detailTitle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,15 +48,16 @@ main {
       -ms-flex-align: center;
           align-items: center;
 }
-.title .title-img {
+.detailTitle .title-img {
   width: 30px;
   height: 65px;
 }
-.title h1 {
+.detailTitle h1 {
   font: bold 11rem/1 "REM";
 }
-.title .circle-img {
+.detailTitle .circle-img {
   margin-left: auto;
+  margin-bottom: 70px;
 }
 
 .infoContainer > ul {
@@ -40,9 +71,9 @@ main {
   padding: 12px 40px;
   border-radius: 55px;
   font-size: 2.6rem;
-  font-weight: 700;
+  font-weight: 600;
   color: #a5d112;
-  border: 1px solid #a5d112;
+  border: 1.5px solid #a5d112;
   background: none;
   cursor: pointer;
 }
@@ -52,7 +83,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   gap: 60px;
-  border: 1px solid #a5d112;
+  border: 1.5px solid #a5d112;
   border-radius: 40px;
   overflow: hidden;
   -webkit-box-align: center;
@@ -60,27 +91,32 @@ main {
           align-items: center;
 }
 .infoContainer article .articleImg {
+  width: inherit;
   -o-object-fit: cover;
      object-fit: cover;
   aspect-ratio: 29/27;
 }
 .infoContainer article .articleInfo h3 {
-  font-size: 2.6rem;
+  font-size: 3rem;
+  font-weight: 600;
 }
 .infoContainer article .articleInfo p {
-  font-size: 1.6rem;
-  margin: 40px 0 20px;
-  line-height: 22px;
+  width: 80%;
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin: 30px 0 30px;
+  line-height: 2.8rem;
 }
 .infoContainer article .articleHashtag {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
+  width: 80%;
 }
 .infoContainer article .articleHashtag li {
   background: #a5d112;
-  padding: 6px 14px;
+  padding: 10px 24px;
   border-radius: 30px;
   color: #fff;
   font-size: 1.6rem;
@@ -94,63 +130,82 @@ main {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 130px 0;
+  background: #cae570;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 .bannerContainer .title {
+  width: 40%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.bannerContainer .title img {
-  margin-right: auto;
 }
 .bannerContainer .bannerBoxWrapper {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 60%;
+}
+.bannerContainer .bannerBoxWrapper .contentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   gap: 24px;
 }
-.bannerContainer .bannerBoxWrapper .contentBox {
+.bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
+  margin-bottom: 24px;
+}
+.bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
   text-align: center;
 }
-.bannerContainer .bannerBoxWrapper .contentBox img {
+.bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
   border-radius: 20px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
-.bannerContainer .bannerBoxWrapper .contentBox p {
+.bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
 }
 
 .shopContainer .shopBoxWrapper {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   overflow: hidden;
   border-radius: 40px;
   margin-top: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .shopContainer .shopBoxWrapper .shopBox {
   position: relative;
+  width: 33.33%;
   /* 기본적으로 숨김 */
   /* hover 시 보이게 설정 */
 }
-.shopContainer .shopBoxWrapper .shopBox img {
+.shopContainer .shopBoxWrapper .shopBox .imgBox {
+  width: 100%;
+  height: 100%;
+}
+.shopContainer .shopBoxWrapper .shopBox .imgBox img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
+  background: rgba(202, 229, 112, 0.9);
   position: absolute;
-  z-index: 1;
-  inset: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -159,24 +214,27 @@ main {
           align-items: center;
   padding: 0 60px;
   opacity: 0; /* 투명도 */
-  visibility: hidden; /* 화면에서 제거 */
-  -webkit-transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
-  transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
   font-size: 1.6rem;
-  background: #ffffff;
-  padding: 10px 20px;
+  font-weight: 500;
+  background: #fff;
+  padding: 10px 24px;
   border-radius: 30px;
   color: #a5d112;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo h4 {
+  font-weight: 600;
   margin: 28px 0 30px;
-  font-size: 2.6em;
+  font-size: 2.2em;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo p {
+  font-weight: 300;
   font-size: 1.6rem;
   margin-bottom: 4px;
+  line-height: 2.6rem;
 }
 .shopContainer .shopBoxWrapper .shopBox:hover .shopHoverBox {
   opacity: 1;
@@ -185,29 +243,31 @@ main {
 
 @media screen and (max-width: 1024px) {
   .shopContainer .shopBoxWrapper {
-    border-radius: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    border: 1px solid #cae570;
   }
   .shopContainer .shopBoxWrapper .shopBox {
-    -webkit-box-shadow: inset 0 0 20px darkcyan;
-            box-shadow: inset 0 0 20px darkcyan;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    display: flex;
+    width: 100%;
+    height: 330px;
+    position: relative;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
+    width: 50%;
+    right: 0;
+    left: auto;
+  }
+  .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
+    right: auto;
+    left: 0;
+  }
+  .shopContainer .shopBoxWrapper .shopBox img {
+    width: 50%;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     opacity: 1;
-    visibility: visible;
-    position: static;
-    -webkit-box-shadow: inset 0 0 20px red;
-            box-shadow: inset 0 0 20px red;
-    z-index: -1;
+    width: 50%;
+    left: auto;
+    right: 0;
+    background: #fff;
+    border-bottom: 1px solid #cae570;
   }
 }
