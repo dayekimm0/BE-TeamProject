@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -40,22 +39,13 @@ main {
 main #intro .index {
   height: 100vh;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 main #intro .index .title {
   left: 3%;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
 main #intro .index .title p {
@@ -64,15 +54,8 @@ main #intro .index .title p {
 }
 main #intro .index .title h2 span {
   padding: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
   align-items: flex-start;
   font: bold 10rem/0.87 "REM";
 }
@@ -92,27 +75,19 @@ main #intro .index .subTitle {
   top: 70%;
   right: 10%;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 main #intro .index .subTitle p {
   padding: 16px 30px;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   margin-top: 5%;
   font: 700 2.4rem/1 "Pretendard";
   letter-spacing: -0.52px;
 }
 main #con1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 5%;
   gap: 40px;
@@ -121,11 +96,7 @@ main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
 main #con1 .parts {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
   gap: 46px;
 }
@@ -148,7 +119,7 @@ main #con1 .parts .part .partImg {
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
 }
 main #con1 .parts .part p {
@@ -172,12 +143,7 @@ main #con1 .parts .part p {
   font: 900 11rem/1 "REM";
   text-align: right;
   letter-spacing: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   gap: 20px;
 }
@@ -207,18 +173,9 @@ main #con1 .parts .part p {
 
 #con4 .category {
   margin: 8%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 #con4 .category .list {
@@ -247,16 +204,7 @@ main #con1 .parts .part p {
   display: flex;
   align-items: center;
   color: #fff;
-  background: -webkit-gradient(
-      linear,
-      left top,
-      left bottom,
-      from(rgba(0, 0, 0, 0.75)),
-      to(rgba(0, 0, 0, 0.75))
-    ),
-    url("../images/index/couponheader.png");
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/index/couponheader.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/index/couponheader.png");
   background-size: cover;
   justify-content: center;
   background-attachment: fixed;
