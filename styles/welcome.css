@@ -1,0 +1,175 @@
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 150px;
+  background: #fff;
+}
+main h2 {
+  font-size: 70px;
+  color: #f5f5fa;
+}
+main #form {
+  margin: 70px 0;
+  background: #fff;
+  -webkit-box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+          box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+  border-radius: 30px;
+  width: 800px;
+  padding: 80px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+  gap: 50px;
+}
+main #form #finalStep {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 30px;
+}
+main #form #finalStep #arrow {
+  font-size: 2rem;
+  color: #d9d9d9;
+}
+main #form #finalStep .stepWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+  text-align: center;
+}
+main #form #finalStep .stepWrap:nth-child(1) .stepCircle {
+  background: #fff;
+  color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+}
+main #form #finalStep .stepWrap:nth-child(1) p {
+  color: #d9d9d9;
+}
+main #form #finalStep .stepWrap .stepCircle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #a5d112;
+  color: #fff;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 16px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+main #form #finalStep .stepWrap .stepCircle i {
+  font-size: 1.8rem;
+}
+main #form #finalStep .stepWrap p {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #a5d112;
+}
+main #form #finalText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+main #form #finalText i {
+  font-size: 5rem;
+  color: #d9d9d9;
+}
+main #form #finalText p {
+  font-size: 2.4rem;
+}
+main #form #finalText span {
+  font-size: 1.4rem;
+}
+main #form #inputBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  height: 50px;
+}
+main #form #inputBtn input {
+  width: 100%;
+  border-radius: 50px;
+  border: none;
+  background: #f5f5fa;
+  cursor: pointer;
+}
+main #form #inputBtn input:focus {
+  outline: none;
+}
+main #form #inputBtn #finalLogin {
+  background: #a5d112;
+  color: #fff;
+  font-weight: bold;
+}
+main #form #inputBtn #finalMain {
+  background: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+@media screen and (max-width: 767px) {
+  main #form {
+    margin: 70px 0 0 0;
+  }
+}

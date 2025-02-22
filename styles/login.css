@@ -42,7 +42,7 @@ main #form #inputWrap .inputBox {
   position: relative;
 }
 main #form #inputWrap .inputBox input {
-  padding-left: 160px;
+  padding-left: 140px;
   background: #f5f5fa;
 }
 main #form #inputWrap .inputBox label {
@@ -54,6 +54,8 @@ main #form #inputWrap .inputBox label {
   color: #aeaeba;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
 main #form #inputWrap .inputBox label::-moz-placeholder {
   font-size: 1.8rem;
   color: #ccc;
@@ -62,6 +64,7 @@ main #form #inputWrap .inputBox label::placeholder {
   font-size: 1.8rem;
   color: #ccc;
 }
+>>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
 main #form #userInfo {
   margin: 16px 0;
   padding: 0 10px;

@@ -1,4 +1,5 @@
 const joinBtn = document.querySelector("#joinBtn");
+
 joinBtn.addEventListener("click", () => {
-  window.location.href = "join.html";
+  location.href = "join.html";
 });
