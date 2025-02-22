@@ -4,7 +4,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -35,9 +36,13 @@ section {
 }
 
 .detailTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .detailTitle .title-img {
   width: 30px;
@@ -59,6 +64,8 @@ h2 {
 
 /* ==== contents ==== */
 .infoContainer > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 14px;
   margin: 20px 0;
@@ -69,23 +76,19 @@ h2 {
   border-radius: 55px;
   font-size: 2.6rem;
   font-weight: 500;
-  color: #a5d112;
+  color: #c198f9;
   border: 1.5px solid #a5d112;
   background: none;
   cursor: pointer;
 }
 .infoContainer article {
   width: 100%;
-<<<<<<< HEAD
   height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
-=======
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
   display: flex;
   border-radius: 40px;
   overflow: hidden;
-<<<<<<< HEAD
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -93,9 +96,6 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border: 1.5px solid #a5d112;
-=======
-  align-items: center;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
 }
 .infoContainer article .articleVideo {
   width: 35%;
@@ -118,13 +118,9 @@ h2 {
   margin: 30px 0 30px;
   line-height: 2.8rem;
 }
-<<<<<<< HEAD
 .infoContainer article .articleInfo .articleHashtag {
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-.infoContainer article .articleHashtag {
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
   display: flex;
   gap: 8px;
 }
@@ -138,8 +134,12 @@ h2 {
 }
 
 .bannerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 130px 0;
   background: #cae570;
   padding-top: 70px;
@@ -150,12 +150,19 @@ h2 {
   position: relative;
 }
 .bannerContainer .bannerBoxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 60%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
@@ -171,67 +178,6 @@ h2 {
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
-}
-
-.shopContainer .shopBoxWrapper {
-  display: flex;
-  overflow: hidden;
-  border-radius: 40px;
-  margin-top: 30px;
-  flex-wrap: wrap;
-}
-.shopContainer .shopBoxWrapper .shopBox {
-  position: relative;
-  width: 33.33%;
-  /* 기본적으로 숨김 */
-  /* hover 시 보이게 설정 */
-}
-.shopContainer .shopBoxWrapper .shopBox .imgBox {
-  width: 100%;
-  height: 100%;
-}
-.shopContainer .shopBoxWrapper .shopBox .imgBox img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
-  background: rgba(202, 229, 112, 0.9);
-  position: absolute;
-  display: flex;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  justify-content: center;
-  align-items: center;
-  padding: 0 60px;
-  opacity: 0; /* 투명도 */
-  transition: all 0.3s;
-}
-.shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
-  font-size: 1.4rem;
-  font-weight: 500;
-  background: #fff;
-  padding: 10px 20px;
-  border-radius: 30px;
-  color: #a5d112;
-}
-.shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo h4 {
-  font-weight: 600;
-  margin: 28px 0 30px;
-  font-size: 1.8em;
-}
-.shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo p {
-  font-weight: 300;
-  font-size: 1.4rem;
-  margin-bottom: 4px;
-  line-height: 2rem;
-}
-.shopContainer .shopBoxWrapper .shopBox:hover .shopHoverBox {
-  opacity: 1;
-  visibility: visible;
 }
 
 /* ==== 반응형 ==== */
@@ -278,6 +224,8 @@ h2 {
     width: 100%;
   }
   .detailTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -295,6 +243,8 @@ h2 {
     margin-bottom: 30px;
   }
   .infoContainer > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
@@ -312,6 +262,8 @@ h2 {
   .infoContainer article {
     width: inherit;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
     border: 1px solid #a5d112;
@@ -331,7 +283,9 @@ h2 {
     padding-left: 0;
     width: 50%;
     height: 230px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .infoContainer article .articleInfo h3 {
     font-size: 2.2rem;
@@ -345,6 +299,8 @@ h2 {
     line-height: 2.2rem;
   }
   .infoContainer article .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 6px;
   }
@@ -357,16 +313,14 @@ h2 {
     font-weight: 400;
   }
   .bannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 70px 0;
-=======
-    flex-direction: column;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
     background: #cae570;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -414,6 +368,8 @@ h2 {
     width: 100%;
     height: 330px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -425,31 +381,43 @@ h2 {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     opacity: 1;
@@ -489,13 +457,10 @@ h2 {
     line-height: 1;
   }
   .detailTitle {
-<<<<<<< HEAD
     padding: 0 5%;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
-=======
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
     display: flex;
     gap: 18px;
   }
@@ -513,6 +478,8 @@ h2 {
     margin-left: auto;
   }
   .infoContainer > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
@@ -527,7 +494,6 @@ h2 {
     cursor: pointer;
   }
   .infoContainer article {
-<<<<<<< HEAD
     position: relative;
     height: 230px;
     gap: 20px;
@@ -546,27 +512,6 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
     height: auto;
-=======
-    width: inherit;
-    height: 390px;
-    display: flex;
-    gap: 20px;
-    border: 1px solid #a5d112;
-    border-radius: 36px;
-    overflow: hidden;
-  }
-  .infoContainer article .articleImg {
-    width: 50%;
-    height: inherit;
-    -o-object-fit: cover;
-       object-fit: cover;
-    aspect-ratio: 29/27;
-  }
-  .infoContainer article .articleInfo {
-    width: 50%;
-    height: 230px;
-    align-items: center;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
   }
   .infoContainer article .articleInfo h3 {
     font-size: 1.5rem;
@@ -579,6 +524,8 @@ h2 {
     line-height: 1.4rem;
   }
   .infoContainer article .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -592,8 +539,9 @@ h2 {
     font-size: 1rem;
   }
   .bannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-<<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -602,12 +550,6 @@ h2 {
     background: none;
     padding-top: 30px;
     padding-bottom: 30px;
-=======
-    flex-direction: column;
-    background: #cae570;
-    padding-top: 60px;
-    padding-bottom: 60px;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
   }
   .bannerContainer .title {
     width: inherit;
@@ -655,15 +597,9 @@ h2 {
     border: 0.8px solid #a5d112;
   }
   .shopContainer .shopBoxWrapper .shopBox {
-<<<<<<< HEAD
     height: 230px;
     display: -webkit-box;
     display: -ms-flexbox;
-=======
-    width: 100%;
-    height: 330px;
-    position: relative;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
     display: flex;
     position: relative;
   }
@@ -676,31 +612,43 @@ h2 {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     background: #fff;
