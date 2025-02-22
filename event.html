@@ -3,18 +3,23 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EVENT</title>
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/e4b3f89c46.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- common css & js  -->
     <link rel="stylesheet" href="./style.css" />
     <script defer src="./script.js"></script>
+
     <!-- custom css & js  -->
     <link rel="stylesheet" href="./styles/event.css" />
-    <script defer src="./scripts/event.js"></script>
-    <title>EVENT COUPON</title>
+
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+    <link rel="icon" href="./images/common/favicon.png" type="image/x-icon" />
   </head>
   <body>
     <header></header>
@@ -32,7 +37,7 @@
       <div class="container">
         <section class="eventSteps">
           <div class="howTo">
-            <h3>이벤트 참여 방법</h3>
+            <h3>HOW TO *</h3>
             <p>
               회원가입 후 <b>필수항목</b> 입력하고 저장하면 간단하게 응모 가능!
             </p>
@@ -55,11 +60,7 @@
             <div class="step02">
               <div class="photo02">
                 <img class="bg3" src="./images/event/step-bg.png" alt="step" />
-                <img
-                  class="bg4"
-                  src="./images/event/coupons.png"
-                  alt="coupons"
-                />
+                <div class="bg4"></div>
               </div>
               <div class="text2">
                 <h4>Step 02</h4>
@@ -79,40 +80,62 @@
             <span>#동반할인</span>
           </div>
           <div class="coupons">
-            <div class="couponGreen">
-              <i class="fas fa-arrow-right-to-bracket"></i>
-              <div class="discount">10%</div>
-              <div class="couponTitle">FOOD COUPON</div>
-              <div class="couponDesc">최대 1만원 할인</div>
+            <div class="ticket">
+              <div class="couponGreen">
+                <div class="couponTop">
+                  <i class="fas fa-arrow-right-to-bracket"></i>
+                  <div class="couponText">
+                    <p><b>10%</b><br />FOOD COUPON</p>
+                    <span>최대 1만원 할인</span>
+                  </div>
+                  <div class="dashedLine"></div>
+                </div>
+                <div class="couponBottom"></div>
+              </div>
+              <div class="couponPink">
+                <div class="couponTop">
+                  <i class="fas fa-arrow-right-to-bracket"></i>
+                  <div class="couponText">
+                    <p><b>10%</b><br />BEAUTY COUPON</p>
+                    <span>최대 1만원 할인</span>
+                  </div>
+                  <div class="dashedLine"></div>
+                </div>
+                <div class="couponBottom"></div>
+              </div>
+              <div class="couponSky">
+                <div class="couponTop">
+                  <i class="fas fa-arrow-right-to-bracket"></i>
+                  <div class="couponText">
+                    <p><b>10%</b><br />FASHION COUPON</p>
+                    <span>최대 1만원 할인</span>
+                  </div>
+                  <div class="dashedLine"></div>
+                </div>
+                <div class="couponBottom"></div>
+              </div>
+              <div class="couponPurple">
+                <div class="couponTop">
+                  <i class="fas fa-arrow-right-to-bracket"></i>
+                  <div class="couponText">
+                    <p><b>10%</b><br />ONEDAY COUPON</p>
+                    <span>최대 1만원 할인</span>
+                  </div>
+                  <div class="dashedLine"></div>
+                </div>
+                <div class="couponBottom"></div>
+              </div>
             </div>
-            <div class="couponPink">
-              <i class="fas fa-arrow-right-to-bracket"></i>
-              <div class="discount">10%</div>
-              <div class="couponTitle">BEAYTY COUPON</div>
-              <div class="couponDesc">최대 1만원 할인</div>
-            </div>
-            <div class="couponSky">
-              <i class="fas fa-arrow-right-to-bracket"></i>
-              <div class="discount">10%</div>
-              <div class="couponTitle">FASHION COUPON</div>
-              <div class="couponDesc">최대 1만원 할인</div>
-            </div>
-            <div class="couponPurple">
-              <i class="fas fa-arrow-right-to-bracket"></i>
-              <div class="discount">10%</div>
-              <div class="couponTitle">ONE DAY COUPON</div>
-              <div class="couponDesc">최대 1만원 할인</div>
-            </div>
-            <div class="buttons">
-              <button>
-                <p>회원가입 하러가기</p>
-                <i class="fas fa-arrow-right"></i>
-              </button>
-              <button>
-                <p>쿠폰 전체 발급받기</p>
-                <i class="fas fa-arrow-right"></i>
-              </button>
-            </div>
+          </div>
+          <div class="buttons">
+            <button>
+              <p>회원가입 하러가기</p>
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <button>
+              <p>쿠폰 전체 발급받기</p>
+              <i class="fas fa-arrow-right"></i>
+            </button>
           </div>
         </section>
         <section class="eventNotice">
@@ -122,7 +145,7 @@
             <li>프로필 이벤트응모는 앱과 웹페이지에서 가능합니다.</li>
             <li>이벤트 참여는 1인 1회 가능합니다. (중복사용 불가)</li>
             <li>
-              프로필 정보를 삭제할 경우 혹은 음모조건이 충족되지 않는 경우
+              프로필 정보를 삭제할 경우 혹은 응모조건이 충족되지 않는 경우
               쿠폰발급이 제외됩니다.
             </li>
             <li>

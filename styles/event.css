@@ -27,7 +27,7 @@ body {
 
 .container {
   width: 1440px;
-  margin: 0 auto;
+  margin: 0 5%;
 }
 
 .eventTitle {
@@ -52,7 +52,6 @@ body {
 .eventTitle .mainTitle .title p {
   font-size: 5rem;
   line-height: 1.1;
-  font-family: "Pretendard";
   letter-spacing: -1.5px;
 }
 .eventTitle .mainTitle .title h2 {
@@ -65,7 +64,6 @@ body {
 .eventTitle .mainTitle .title span {
   font-size: 2rem;
   line-height: 1;
-  font-family: "Pretendard";
   font-weight: lighter;
   letter-spacing: 0.9px;
   opacity: 0.7;
@@ -87,50 +85,47 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
+  color: #000;
 }
 .eventSteps .howTo h3 {
   width: 100%;
   height: 100%;
   text-align: center;
-  background: #e9e9e9;
   border-radius: 15px;
   padding: 12px 10px;
   color: #000;
-  font-size: 4rem;
+  font-family: "REM";
+  font-size: 7rem;
   font-weight: bold;
   position: relative;
 }
-.eventSteps .howTo h3::before {
-  content: "";
-  position: absolute;
-  top: -13px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 88%;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 15px solid #d9d9d9;
-}
 .eventSteps .howTo p {
-  font-size: 3rem;
+  font-size: 3.4rem;
+  font-weight: 500;
   justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
+  font-weight: normal;
+}
+.eventSteps .howTo p b {
+  font-weight: 800;
 }
 .eventSteps .steps {
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
-  border: 1px solid darkblue;
 }
 .eventSteps .steps .step01,
 .eventSteps .steps .step02 {
   width: 620px;
   height: 415px;
   position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #d9d9d9;
+  background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
 .eventSteps .steps .step01 .bg3,
@@ -153,11 +148,21 @@ body {
   bottom: 100px;
   right: 20px;
 }
+.eventSteps .steps .step01 .bg4,
+.eventSteps .steps .step02 .bg4 {
+  width: 284px;
+  height: 190px;
+  position: absolute;
+  border-radius: 5px;
+  background: url("/images/event/coupons.png") center/cover no-repeat;
+  position: absolute;
+  bottom: 83px;
+  right: 0;
+}
 .eventSteps .steps .step01 .text1,
 .eventSteps .steps .step01 .text2,
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
-  border: 1px solid #f00;
   width: 250px;
   display: flex;
   flex-direction: column;
@@ -175,6 +180,7 @@ body {
   font-size: 6rem;
   font-weight: 900;
   letter-spacing: -1.2px;
+  font-family: "REM";
 }
 .eventSteps .steps .step01 .text1 p,
 .eventSteps .steps .step01 .text2 p,
@@ -193,4 +199,203 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: -0.3px;
+}
+
+.couponsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-top: 132px;
+}
+.couponsList .hashTags {
+  width: 628px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.couponsList .hashTags span {
+  width: 200px;
+  height: 55px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px #d9d9d9;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.couponsList .coupons {
+  width: 100%;
+  gap: 50px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.couponsList .coupons .ticket {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.couponsList .couponGreen,
+.couponsList .couponPink,
+.couponsList .couponSky,
+.couponsList .couponPurple {
+  position: relative;
+  width: 230px;
+  height: 310px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+.couponsList .couponGreen .couponTop,
+.couponsList .couponPink .couponTop,
+.couponsList .couponSky .couponTop,
+.couponsList .couponPurple .couponTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.couponsList .couponGreen .couponBottom,
+.couponsList .couponPink .couponBottom,
+.couponsList .couponSky .couponBottom,
+.couponsList .couponPurple .couponBottom {
+  position: absolute;
+  width: 100%;
+  bottom: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 40px;
+  background: inherit;
+  border-radius: 20px 20px 10px 10px;
+}
+.couponsList .couponGreen {
+  background-color: #cae570;
+}
+.couponsList .couponPink {
+  background-color: #ffc6c7;
+}
+.couponsList .couponSky {
+  background-color: #b4e3fc;
+}
+.couponsList .couponPurple {
+  background-color: #c198f9;
+}
+.couponsList .dashedLine {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: calc(100% - 20px);
+  border-top: 2px dashed #000;
+  z-index: 2;
+}
+.couponsList .couponText {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  text-align: left;
+}
+.couponsList .couponText p {
+  color: #000;
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: "Pretendard";
+}
+.couponsList .couponText p b {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "REM";
+}
+.couponsList .couponText span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.couponsList i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 34px;
+  rotate: 90deg;
+}
+
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+  margin-top: 30px;
+}
+.buttons button {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: 250px;
+  height: 55px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  cursor: pointer;
+}
+.buttons button p {
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+}
+.buttons button i {
+  display: flex;
+  font-size: 2rem;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #000;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.eventNotice {
+  width: 100%;
+  height: 500px;
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+}
+.eventNotice h5 {
+  color: #000;
+  font-weight: bold;
+  margin-top: 12%;
+  margin-bottom: 15px;
+}
+.eventNotice ul > li {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 35px;
+  letter-spacing: 0.2px;
+  list-style: inside;
 }

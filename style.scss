@@ -29,7 +29,7 @@ header {
   align-items: center;
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  background-color: rgba(17, 25, 40, 0.75);
+  background-color: rgba(106, 106, 106, 1);
   // background: transparent;
   border: 1px solid rgba(255, 255, 255, 0.125);
   color: map-get($map: $colors, $key: light);
@@ -78,7 +78,7 @@ header {
           border-radius: 20px;
           position: relative;
           font-family: map-get($map: $font-family, $key: REM);
-          font-size: map-get($map: $font-size, $key: 14px);
+          font-size: 1.4rem;
           transition: all 0.5s;
         }
       }
@@ -312,7 +312,7 @@ footer {
     #footerInner {
       gap: 20px;
       #footerTop {
-        font-size: map-get($map: $font-size, $key: 12px);
+        font-size: 1.2rem;
         #footerLogo {
           width: 80px !important;
         }

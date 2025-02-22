@@ -1,0 +1,125 @@
+@import "../styles/variables.scss";
+@import "../styles/reset.scss";
+
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 150px;
+  background: map-get($map: $colors, $key: light);
+  h2 {
+    font-size: 70px;
+    color: map-get($map: $colors, $key: loginTitle);
+  }
+  #form {
+    margin: 70px 0;
+    background: map-get($map: $colors, $key: light);
+    box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+    border-radius: 30px;
+    width: 800px;
+    padding: 80px 200px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 50px;
+    #finalStep {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+      align-items: center;
+      padding-bottom: 30px;
+      #arrow {
+        font-size: 2rem;
+        color: map-get($map: $colors, $key: line);
+      }
+      .stepWrap {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+        &:nth-child(1) {
+          .stepCircle {
+            background: map-get($map: $colors, $key: light);
+            color: map-get($map: $colors, $key: line);
+            border: 1px solid map-get($map: $colors, $key: line);
+          }
+          p {
+            color: map-get($map: $colors, $key: line);
+          }
+        }
+        .stepCircle {
+          display: flex;
+          flex-direction: column;
+          background: map-get($map: $colors, $key: foodAccent);
+          color: map-get($map: $colors, $key: light);
+          border-radius: 50%;
+          width: 100px;
+          height: 100px;
+          justify-content: center;
+          gap: 16px;
+          font-size: 1.2rem;
+          font-weight: bold;
+          i {
+            font-size: 1.8rem;
+          }
+        }
+        p {
+          font-size: 1.4rem;
+          font-weight: bold;
+          color: map-get($map: $colors, $key: foodAccent);
+        }
+      }
+    }
+    #finalText {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+      text-align: center;
+      i {
+        font-size: 5rem;
+        color: map-get($map: $colors, $key: line);
+      }
+      p {
+        font-size: 2.4rem;
+      }
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    #inputBtn {
+      display: flex;
+      gap: 20px;
+      height: 50px;
+      input {
+        width: 100%;
+        border-radius: 50px;
+        border: none;
+        background: map-get($map: $colors, $key: loginTitle);
+        cursor: pointer;
+        &:focus {
+          outline: none;
+        }
+      }
+      #finalLogin {
+        background: map-get($map: $colors, $key: foodAccent);
+        color: map-get($map: $colors, $key: light);
+        font-weight: bold;
+      }
+      #finalMain {
+        background: map-get($map: $colors, $key: light);
+        border: 1px solid map-get($map: $colors, $key: line);
+      }
+    }
+  }
+}
+
+//mobile.ver
+@media screen and (max-width: 767px) {
+  main {
+    #form {
+      margin: 70px 0 0 0;
+    }
+  }
+}
