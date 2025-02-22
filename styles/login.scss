@@ -39,7 +39,7 @@ main {
       .inputBox {
         position: relative;
         input {
-          padding-left: 160px;
+          padding-left: 140px;
           background: map-get($map: $colors, $key: loginTitle);
         }
         label {
@@ -50,10 +50,6 @@ main {
           font-size: 1.4rem;
           color: map-get($map: $colors, $key: label);
           font-weight: bold;
-          &::placeholder {
-            font-size: 1.8rem;
-            color: map-get($map: $colors, $key: placeholder);
-          }
         }
       }
     }
