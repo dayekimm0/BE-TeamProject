@@ -56,6 +56,8 @@ main {
         height: 100px;
         left: 10%;
         bottom: 10%;
+        opacity: 0;
+        animation: dropBounce 2s ease-out forwards;
       }
       .subTitle {
         top: 70%;
@@ -82,15 +84,12 @@ main {
     h2 {
       font: normal 7rem/1 map-get($map: $font-family, $key: REM);
     }
-    .parts-slick {
+    .parts {
       width: 100%;
       display: flex;
       align-items: center;
       gap: 46px;
       overflow: hidden;
-      .slick-track {
-        gap: 20px;
-      }
       .part {
         position: relative;
         &:hover p {
@@ -137,12 +136,18 @@ main {
       flex-direction: column;
       gap: 20px;
       p {
+        opacity: 0;
+        transform: translateX(0);
         &:nth-child(even) {
           color: map-get($map: $colors, $key: light);
           text-shadow: -1px 0 map-get($map: $colors, $key: dark),
             0 1px map-get($map: $colors, $key: dark),
             1px 0 map-get($map: $colors, $key: dark),
             0 -1px map-get($map: $colors, $key: dark);
+          animation: slideInLeft 1s ease forwards;
+        }
+        &:nth-child(odd) {
+          animation: slideInRight 1s ease forwards;
         }
       }
       .con2Img {
@@ -409,8 +414,9 @@ main {
         gap: 14px;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        padding-bottom: 10px;
         border-radius: 0;
+        overflow: hidden;
+
         .part {
           flex: 0 0 auto;
           width: 80%;
@@ -436,6 +442,7 @@ main {
       .con2-text {
         font: bold 4rem/1 map-get($map: $font-family, $key: REM);
         letter-spacing: 12px;
+
         .con2Img {
           width: 70px;
           height: 70px;
@@ -476,5 +483,51 @@ main {
         }
       }
     }
+  }
+}
+
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes dropBounce {
+  0% {
+    opacity: 0;
+    transform: translate(500%, 300%);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(20%, 50%); // 내려오면서 작게 튐
+  }
+  50% {
+    transform: translate(0, -50%); // 위로 살짝 튀기
+  }
+  70% {
+    transform: translate(0, 30%); // 다시 아래로 내려오기
+  }
+  90% {
+    transform: translate(0, -30%); // 두 번째 튕김
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); // 제자리 정착
   }
 }

@@ -64,9 +64,7 @@ main #form #joinStep {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 60px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 30px;
 }
@@ -132,28 +130,16 @@ main #form .joinInput {
   flex-direction: column;
 =======
 main #form #joinBox {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 12px;
 >>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
 }
 main #form #joinBox .joinInput {
   position: relative;
   display: flex;
-<<<<<<< HEAD
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  gap: 12px;
-=======
   flex-direction: column;
->>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
+  gap: 12px;
 }
 main #form #joinBox .joinInput #phoneBtn {
   position: absolute;
@@ -206,10 +192,7 @@ main #form .joinInput .checkList {
 =======
 >>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 12px;
 }
 main #form #joinBox .joinInfo p {
@@ -263,18 +246,11 @@ main #form #joinBox select:focus {
 main #form #joinAgree {
   padding-top: 30px;
   border-top: 1px solid #d9d9d9;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 12px;
 }
 main #form #joinAgree .checkList {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 8px;
 }
@@ -284,15 +260,9 @@ main #form #joinAgree .checkList label {
   color: #64646b;
 }
 main #form #joinAgree .checkList2 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   display: flex;
   gap: 8px;
 }
@@ -332,13 +302,8 @@ main #form #joinAgree .agreeBox::-webkit-scrollbar-track {
   background: #f5f5fa;
 }
 main #form #inputBtn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 12px;
 }
 main #form #inputBtn input {

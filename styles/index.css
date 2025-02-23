@@ -70,6 +70,8 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
+  opacity: 0;
+  animation: dropBounce 2s ease-out forwards;
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -95,10 +97,7 @@ main #con1 {
 main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
-<<<<<<< HEAD
 main #con1 .parts {
-=======
-main #con1 .parts-slick {
   width: 100%;
 >>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   display: flex;
@@ -106,19 +105,16 @@ main #con1 .parts-slick {
   gap: 46px;
   overflow: hidden;
 }
-main #con1 .parts-slick .slick-list draggable .slick-track {
-  gap: 20px;
-}
-main #con1 .parts-slick .part {
+main #con1 .parts .part {
   position: relative;
 }
-main #con1 .parts-slick .part:hover p {
+main #con1 .parts .part:hover p {
   opacity: 1;
 }
-main #con1 .parts-slick .part:hover .partImg {
+main #con1 .parts .part:hover .partImg {
   filter: brightness(60%);
 }
-main #con1 .parts-slick .part .partImg {
+main #con1 .parts .part .partImg {
   width: 430px;
   height: 570px;
   display: block;
@@ -131,7 +127,7 @@ main #con1 .parts-slick .part .partImg {
      object-fit: cover;
   cursor: pointer;
 }
-main #con1 .parts-slick .part p {
+main #con1 .parts .part p {
   width: 100%;
   transition: all 0.5s;
   position: absolute;
@@ -155,9 +151,17 @@ main #con2 .con2-text {
   flex-direction: column;
   gap: 20px;
 }
+main #con2 .con2-text p {
+  opacity: 0;
+  transform: translateX(0);
+}
 main #con2 .con2-text p:nth-child(even) {
   color: #fff;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
+  animation: slideInLeft 1s ease forwards;
+}
+main #con2 .con2-text p:nth-child(odd) {
+  animation: slideInRight 1s ease forwards;
 }
 main #con2 .con2-text .con2Img {
   width: 200px;
@@ -394,8 +398,8 @@ main #con5 .eventLoad span b {
     gap: 14px;
     flex-wrap: nowrap;
     justify-content: flex-start;
-    padding-bottom: 10px;
     border-radius: 0;
+    overflow: hidden;
   }
   main #con1 .parts .part {
     flex: 0 0 auto;
@@ -453,5 +457,47 @@ main #con5 .eventLoad span b {
   main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
   }
->>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes dropBounce {
+  0% {
+    opacity: 0;
+    transform: translate(500%, 300%);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(20%, 50%);
+  }
+  50% {
+    transform: translate(0, -50%);
+  }
+  70% {
+    transform: translate(0, 30%);
+  }
+  90% {
+    transform: translate(0, -30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
 }
