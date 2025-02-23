@@ -23,21 +23,16 @@ $(".parts").slick({
   ],
 });
 
+// Add this JavaScript to trigger the animations
 document.addEventListener("DOMContentLoaded", function () {
-  const texts = document.querySelectorAll(".con2-text p");
+  const pTags = document.querySelectorAll("#con2 .con2-text p");
 
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("show"); // 화면에 보이면 애니메이션 실행
-        }
-      });
-    },
-    {
-      threshold: 1, // 요소의 50%가 화면에 보이면 실행
+  pTags.forEach((p, index) => {
+    p.style.animationDelay = `${index * 0.3}s`;
+    if (index % 2 === 0) {
+      p.style.animationName = "slideInFromLeft"; //
+    } else {
+      p.style.animationName = "slideInFromRight"; // 2nd and 4th
     }
-  );
-
-  texts.forEach((text) => observer.observe(text));
+  });
 });
