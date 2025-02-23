@@ -57,7 +57,12 @@ main #form input:not([type=checkbox]):focus {
 }
 main #form #joinStep {
   display: flex;
-  justify-content: center;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 60px;
   align-items: center;
   border-bottom: 1px solid #d9d9d9;
@@ -66,6 +71,11 @@ main #form #joinStep {
 main #form #joinStep #arrow {
   font-size: 2rem;
   color: #d9d9d9;
+=======
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
+  justify-content: center;
+  gap: 100px;
+>>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
 }
 main #form #joinStep .stepWrap {
   display: flex;
@@ -83,8 +93,19 @@ main #form #joinStep .stepWrap:nth-child(3) p {
 }
 main #form #joinStep .stepWrap .stepCircle {
   display: flex;
-  flex-direction: column;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #a5d112;
+=======
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
+  flex-direction: column;
+  background: #000;
+>>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
   color: #fff;
   border-radius: 50%;
   width: 100px;
@@ -102,10 +123,17 @@ main #form #joinStep .stepWrap p {
   font-weight: bold;
   color: #a5d112;
 }
+<<<<<<< HEAD
+main #form .joinInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+=======
 main #form #joinBox {
   display: flex;
   flex-direction: column;
   gap: 12px;
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
 }
 main #form #joinBox .joinInput {
   position: relative;
@@ -122,7 +150,10 @@ main #form #joinBox .joinInput #phoneBtn {
   width: auto;
   height: auto;
   top: 50%;
-  transform: translateY(-50%);
+<<<<<<< HEAD
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   right: 30px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -132,13 +163,34 @@ main #form #joinBox .joinInput label {
   position: absolute;
   left: 30px;
   top: 50%;
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   transform: translateY(-50%);
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
 main #form #joinBox .joinInfo {
   margin-top: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
+main #form .joinInput label::-moz-placeholder {
+  font-size: 1.8rem;
+  color: #ccc;
+}
+main #form .joinInput label::placeholder {
+  font-size: 1.8rem;
+  color: #ccc;
+}
+main #form .joinInput .checkList {
+  margin-top: 100px;
+<<<<<<< HEAD
+=======
+>>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -160,6 +212,9 @@ main #form #joinBox .joinInfo p span {
   color: #d9d9d9;
 }
 main #form #joinBox .joinInfo .checkList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   display: flex;
   gap: 8px;
 }

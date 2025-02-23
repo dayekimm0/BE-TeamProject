@@ -99,6 +99,7 @@ main #con1 h2 {
 }
 main #con1 .parts {
   width: 100%;
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   display: flex;
   align-items: center;
   gap: 46px;
@@ -405,6 +406,8 @@ main #con5 .eventLoad span b {
     width: 80%;
     max-width: 280px;
   }
+<<<<<<< HEAD
+=======
   main #con1 .parts .part::after {
     content: "";
     border-radius: 20px;
