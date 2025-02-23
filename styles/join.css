@@ -58,6 +58,8 @@ main #form input:not([type=checkbox]):focus {
 main #form #joinStep {
   display: flex;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -72,6 +74,7 @@ main #form #joinStep #arrow {
   font-size: 2rem;
   color: #d9d9d9;
 =======
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   justify-content: center;
   gap: 100px;
 >>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
@@ -93,12 +96,15 @@ main #form #joinStep .stepWrap:nth-child(3) p {
 main #form #joinStep .stepWrap .stepCircle {
   display: flex;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background: #a5d112;
 =======
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   flex-direction: column;
   background: #000;
 >>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
@@ -119,6 +125,12 @@ main #form #joinStep .stepWrap p {
   font-weight: bold;
   color: #a5d112;
 }
+<<<<<<< HEAD
+main #form .joinInput {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+=======
 main #form #joinBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -128,6 +140,7 @@ main #form #joinBox {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 12px;
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
 }
 main #form #joinBox .joinInput {
   position: relative;
@@ -151,6 +164,8 @@ main #form #joinBox .joinInput #phoneBtn {
   width: auto;
   height: auto;
   top: 50%;
+<<<<<<< HEAD
+=======
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   right: 30px;
@@ -162,17 +177,21 @@ main #form #joinBox .joinInput label {
   position: absolute;
   left: 30px;
   top: 50%;
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   transform: translateY(-50%);
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
 }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 main #form #joinBox .joinInfo {
   margin-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
 =======
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
 main #form .joinInput label::-moz-placeholder {
   font-size: 1.8rem;
   color: #ccc;
@@ -183,6 +202,8 @@ main #form .joinInput label::placeholder {
 }
 main #form .joinInput .checkList {
   margin-top: 100px;
+<<<<<<< HEAD
+=======
 >>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
   display: flex;
   -webkit-box-orient: vertical;
@@ -210,6 +231,7 @@ main #form #joinBox .joinInfo p span {
 main #form #joinBox .joinInfo .checkList {
   display: -webkit-box;
   display: -ms-flexbox;
+>>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
   display: flex;
   gap: 8px;
 }
