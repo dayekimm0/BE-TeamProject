@@ -1,58 +1,23 @@
 @import "./reset.scss";
 @import "./variables.scss";
 
-// 반응형
-@mixin mobile {
-  @media (max-width: 390px) {
-    @content;
-  }
-}
-
-@mixin tablet {
-  @media (max-width: 1024px) {
-    @content;
-  }
-}
-
-@mixin desktop {
-  @media (max-width: 1440px) {
-    @content;
-  }
-}
-
 html {
   font-size: 62.5%;
-
-  @include mobile {
-    font-size: 55%;
-  }
 }
 
 body {
   font-size: 1.6rem;
-  font-family: map-get($map: $font-family, $key: Pretendard);
+  font-family: "Pretendard";
   background: map-get($map: $colors, $key: light);
 }
 
 .container {
-  width: 1440px;
-  margin: 0 auto;
-  // padding: 0 5%;
-
-  @include desktop {
-    width: 100%;
-    max-width: 1440px;
-  }
-
-  @include tablet {
-    width: 100%;
-    margin: 0 auto;
-  }
-
-  @include mobile {
-    width: 100%;
-    margin: 0 auto;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
 }
 
 .eventTitle {
@@ -64,29 +29,8 @@ body {
   justify-content: center;
   align-items: center;
 
-  @include tablet {
-    height: 500px;
-  }
-
-  @include mobile {
-    height: 400px;
-  }
   .mainTitle {
     width: 1440px;
-
-    @include desktop {
-      width: 100%;
-    }
-
-    @include tablet {
-      width: 100%;
-      padding: 0 20px;
-    }
-
-    @include mobile {
-      width: 100%;
-      padding: 0 15px;
-    }
 
     .title {
       display: flex;
@@ -95,22 +39,10 @@ body {
       gap: 30px;
       color: map-get($map: $colors, $key: light);
 
-      @include mobile {
-        gap: 20px;
-      }
-
       p {
         font-size: 5rem;
         line-height: 1.1;
         letter-spacing: -1.5px;
-
-        @include tablet {
-          font-size: 4rem;
-        }
-
-        @include mobile {
-          font-size: 3rem;
-        }
       }
       h2 {
         font-size: 10rem;
@@ -118,13 +50,6 @@ body {
         font-family: map-get($map: $font-family, $key: REM);
         font-weight: bold;
         letter-spacing: -2px;
-        @include tablet {
-          font-size: 8rem;
-        }
-
-        @include mobile {
-          font-size: 5rem;
-        }
       }
       span {
         font-size: 2rem;
@@ -132,10 +57,6 @@ body {
         font-weight: lighter;
         letter-spacing: 0.9px;
         opacity: 0.7;
-
-        @include mobile {
-          font-size: 1.6rem;
-        }
       }
     }
   }
@@ -149,16 +70,6 @@ body {
   gap: 30px;
   margin-top: 100px;
 
-  @include tablet {
-    margin-top: 70px;
-    gap: 25px;
-  }
-
-  @include mobile {
-    margin-top: 50px;
-    gap: 20px;
-  }
-
   .howTo {
     display: flex;
     flex-direction: column;
@@ -168,10 +79,6 @@ body {
     align-items: center;
     gap: 10px;
     color: map-get($map: $colors, $key: dark);
-
-    @include tablet {
-      width: 100%;
-    }
 
     h3 {
       width: 100%;
@@ -184,14 +91,6 @@ body {
       font-size: 7rem;
       font-weight: bold;
       position: relative;
-
-      @include tablet {
-        font-size: 6rem;
-      }
-
-      @include mobile {
-        font-size: 4.5rem;
-      }
     }
 
     p {
@@ -203,16 +102,6 @@ body {
       margin-top: 30px;
       font-weight: normal;
 
-      @include tablet {
-        width: 100%;
-        font-size: 2.8rem;
-      }
-
-      @include mobile {
-        font-size: 2rem;
-        margin-top: 20px;
-      }
-
       b {
         font-weight: 800;
       }
@@ -222,14 +111,8 @@ body {
   .steps {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin-top: 50px;
-
-    @include tablet {
-      flex-direction: column;
-      gap: 30px;
-      align-items: center;
-    }
 
     .step01,
     .step02 {
@@ -241,15 +124,6 @@ body {
       box-shadow: 0 0 8px map-get($map: $colors, $key: line);
       background: map-get($map: $colors, $key: light);
 
-      @include tablet {
-        width: 100%;
-        max-width: 620px;
-      }
-
-      @include mobile {
-        height: 350px;
-      }
-
       .bg1,
       .bg3 {
         position: absolute;
@@ -257,10 +131,6 @@ body {
         height: 225px;
         bottom: 0;
         right: 0px;
-        @include mobile {
-          width: 280px;
-          height: 175px;
-        }
       }
 
       .bg2 {
@@ -272,12 +142,6 @@ body {
         position: absolute;
         bottom: 100px;
         right: 20px;
-
-        @include mobile {
-          width: 140px;
-          height: 160px;
-          bottom: 80px;
-        }
       }
 
       .bg4 {
@@ -289,12 +153,6 @@ body {
         position: absolute;
         bottom: 83px;
         right: 0;
-
-        @include mobile {
-          width: 220px;
-          height: 150px;
-          bottom: 70px;
-        }
       }
 
       .text1,
@@ -308,41 +166,24 @@ body {
         top: 25px;
         left: 45px;
 
-        @include mobile {
-          width: 200px;
-          left: 25px;
-        }
-
         h4 {
           color: map-get($map: $colors, $key: footerBg);
           font-size: 6rem;
           font-weight: 900;
           letter-spacing: -1.2px;
           font-family: map-get($map: $font-family, $key: REM);
-
-          @include mobile {
-            font-size: 4.5rem;
-          }
         }
         p {
           color: map-get($map: $colors, $key: dark);
           font-size: 3rem;
           letter-spacing: -0.6px;
           font-weight: 600;
-
-          @include mobile {
-            font-size: 2.4rem;
-          }
         }
         span {
           color: map-get($map: $colors, $key: dark);
           font-size: 1.5rem;
           font-weight: 400;
           letter-spacing: -0.3px;
-
-          @include mobile {
-            font-size: 1.3rem;
-          }
         }
       }
     }
@@ -358,16 +199,6 @@ body {
   align-items: center;
   margin-top: 132px;
 
-  @include tablet {
-    margin-top: 100px;
-    gap: 40px;
-  }
-
-  @include mobile {
-    margin-top: 80px;
-    gap: 30px;
-  }
-
   .hashTags {
     width: 628px;
     height: 56px;
@@ -375,13 +206,6 @@ body {
     align-items: center;
     gap: 30px;
     justify-content: space-evenly;
-
-    @include tablet {
-      width: 100%;
-      flex-wrap: wrap;
-      height: auto;
-      gap: 20px;
-    }
 
     span {
       width: 200px;
@@ -398,321 +222,611 @@ body {
       align-items: center;
       justify-content: center;
       text-align: center;
-
-      @include mobile {
-        width: calc(50% - 10px);
-        font-size: 2rem;
-      }
     }
   }
 
   .coupons {
     width: 100%;
-    gap: 50px;
+    gap: 30px;
     justify-content: center;
     display: flex;
-    flex-direction: column;
-
-    @include mobile {
-      gap: 30px;
-    }
-
-    .ticket {
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      gap: 50px;
-
-      @include tablet {
-        flex-wrap: wrap;
-      }
-
-      @include mobile {
-        gap: 20px;
-      }
-    }
   }
 
-  .couponGreen,
-  .couponPink,
-  .couponSky,
-  .couponPurple {
+  .couponCommon {
     position: relative;
     width: 230px;
     height: 310px;
-    border-radius: 20px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    overflow: visible;
-
-    @include tablet {
-      width: 180px; // 타블렛에서 가로 180px
-      height: 280px; // 타블렛에서 세로 280px
+    cursor: pointer;
+    img {
+      position: absolute;
+      right: 3%;
+      top: 3%;
+      z-index: 1;
     }
-
-    @include mobile {
-      width: 138px; // 모바일에서 가로 138px
-      height: 200px;
+    &.couponGreen {
+      .couponTop,
+      .couponBottom {
+        background: map-get($map: $colors, $key: food);
+      }
+    }
+    &.couponPink {
+      .couponTop,
+      .couponBottom {
+        background: map-get($map: $colors, $key: beauty);
+      }
+    }
+    &.couponSky {
+      .couponTop,
+      .couponBottom {
+        background: map-get($map: $colors, $key: fashion);
+      }
+    }
+    &.couponPurple {
+      .couponTop,
+      .couponBottom {
+        background: map-get($map: $colors, $key: lifestyle);
+      }
     }
 
     .couponTop {
       position: absolute;
       top: 0;
       width: 100%;
-      height: 100%;
+      height: 280px;
+      left: 0;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      > i {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        font-size: 34px;
-        rotate: 90deg;
-
-        @include mobile {
-          font-size: 28px;
-          top: 10px;
-          right: 10px;
-        }
-      }
+      border-radius: 10px;
     }
-
     .couponBottom {
       position: absolute;
       width: 100%;
-      bottom: -35px;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 100%;
       height: 40px;
-      background: inherit;
-      border-radius: 20px 20px 10px 10px;
-    }
-  }
-
-  .couponGreen {
-    background-color: map-get($colors, food);
-  }
-  .couponPink {
-    background-color: map-get($colors, beauty);
-  }
-  .couponSky {
-    background-color: map-get($colors, fashion);
-  }
-  .couponPurple {
-    background-color: map-get($colors, lifestyle);
-  }
-
-  .dashedLine {
-    position: absolute;
-    bottom: 0;
-    left: 10px;
-    width: calc(100% - 20px);
-    border-top: 2px dashed #000;
-    z-index: 2;
-  }
-
-  .couponText {
-    font-size: 1.6rem;
-    position: absolute;
-    bottom: 16px;
-    left: 15px;
-    text-align: left;
-
-    @include mobile {
-      bottom: 12px;
-      left: 12px;
-    }
-
-    p {
-      color: map-get($colors, dark);
-      font-size: 2.2rem;
-      font-weight: 500;
-      font-family: map-get($font-family, Pretendard);
-
-      @include tablet {
-        max-width: 110px;
-      }
-
-      @include mobile {
-        font-size: 1.3rem;
-        max-width: 100px;
-      }
-
-      b {
-        font-size: 4.5rem;
-        font-weight: bold;
-        font-family: map-get($font-family, REM);
-
-        @include mobile {
-          font-size: 3.8rem;
-        }
-      }
-    }
-
-    span {
-      font-size: 1.4rem;
-      font-weight: 400;
-      opacity: 0.7;
-
-      @include mobile {
-        font-size: 1.2rem;
+      bottom: -10px;
+      left: 0;
+      border-radius: 10px;
+      .dashed {
+        position: absolute;
+        left: 0;
+        bottom: 39px;
+        width: 98%;
+        border: 1px dashed transparent;
+        border-image: repeating-linear-gradient(
+            90deg,
+            #000 0,
+            #000 10px,
+            transparent 10px,
+            transparent 20px
+          )
+          30;
       }
     }
   }
 }
 
+.couponText {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  text-align: left;
+
+  p {
+    color: map-get($colors, dark);
+    font-size: 2.2rem;
+    font-weight: 500;
+    font-family: map-get($font-family, Pretendard);
+
+    b {
+      font-size: 4.5rem;
+      font-weight: bold;
+      font-family: map-get($font-family, REM);
+    }
+  }
+
+  span {
+    font-size: 1.4rem;
+    font-weight: 400;
+    opacity: 0.7;
+  }
+}
+
 .buttons {
-  width: 100%;
   display: flex;
   justify-content: center;
   gap: 35px;
   margin-top: 30px;
-
-  @include tablet {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-
-  @include mobile {
-    gap: 15px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  button {
+  button,
+  a {
     display: flex;
     align-items: center;
     padding: 10px 20px;
     gap: 10px;
     width: auto;
-    height: 55px;
+    height: 60px;
     border-radius: 30px;
     border: none;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     background-color: map-get($map: $colors, $key: light);
     cursor: pointer;
     transition: all 0.3s ease-in-out;
-
-    @include tablet {
-      max-width: 300px;
-      padding: 8px 15px;
-    }
-
-    @include mobile {
-      width: 100%; // 모바일에서 버튼이 가득 차게 설정
-      max-width: 260px;
-      height: 50px;
-      padding: 6px 12px;
-      gap: 5px;
-    }
-
-    p {
-      font-size: 2rem;
-      font-weight: 700;
-      letter-spacing: -0.4px;
-
-      @include tablet {
-        font-size: 1.8rem;
-      }
-
-      @include mobile {
-        font-size: 1.6rem;
-      }
-    }
-    > i {
-      display: flex;
-      font-size: 2rem;
-      width: 40px;
-      height: 40px;
-      padding: 6px;
-      justify-content: center;
-      align-items: center;
-      border-radius: 30px;
-      color: map-get($map: $colors, $key: dark);
-      border: 2px solid map-get($map: $colors, $key: line);
-      background: map-get($map: $colors, $key: light);
-
-      @include tablet {
-        width: 35px;
-        height: 35px;
-        font-size: 1.8rem;
-      }
-
-      @include mobile {
-        width: 30px;
-        height: 30px;
-        font-size: 1.6rem;
-      }
-    }
+    color: inherit;
+    outline: none;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: -0.4px;
+  }
+  a > i {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 6px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    color: map-get($map: $colors, $key: dark);
+    border: 2px solid map-get($map: $colors, $key: line);
+    background: map-get($map: $colors, $key: light);
   }
 }
 
 .eventNotice {
   width: 100%;
-  min-height: 500px;
   color: map-get($map: $colors, $key: dark);
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 60%;
   h5 {
     font-weight: bold;
-    margin-top: 12%;
+    margin-top: 3%;
     margin-bottom: 15px;
+    text-align: left;
   }
-  ul > li {
-    font-size: 2rem;
-    font-weight: 500;
-    line-height: 35px;
-    letter-spacing: 0.2px;
+  ul {
+    margin-bottom: 3%;
+
+    li {
+      font-size: 2rem;
+      font-weight: 500;
+      position: relative;
+      padding-left: 15px;
+      line-height: 1.5;
+      letter-spacing: 0.1px;
+      word-wrap: break-word;
+      word-break: keep-all;
+      align-items: start;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        flex-shrink: 0;
+        background: map-get($map: $colors, $key: dark);
+      }
+    }
+  }
+}
+
+/* ==== 모달페이지 ==== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+
+  &.active {
     display: flex;
-    position: relative;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    padding-left: 15px;
-    &::before {
-      content: "";
-      position: absolute;
-      left: 0px;
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      background: map-get($map: $colors, $key: dark);
+  }
+
+  .modal-content {
+    background: map-get($map: $colors, $key: light);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+  }
+
+  .modal-check {
+    margin: 0 auto 20px;
+    width: 60px;
+    height: 60px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.food circle { fill: map-get($map: $colors, $key: food); }
+    &.beauty circle { fill: map-get($map: $colors, $key: beauty); }
+    &.fashion circle { fill: map-get($map: $colors, $key: fashion); }
+    &.lifestyle circle { fill: map-get($map: $colors, $key: lifestyle); }
+  }
+
+  .modal-title {
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: map-get($map: $colors, $key: dark);
+  }
+
+  .modal-desc {
+    font-size: 1.4rem;
+    color: map-get($map: $colors, $key: gray);
+    margin-bottom: 30px;
+  }
+
+  .modal-buttons {
+    display: flex;
+    gap: 10px;
+
+    button {
+      flex: 1;
+      height: 50px;
+      border-radius: 25px;
+      font-size: 1.6rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.confirm-btn {
+        background: map-get($map: $colors, $key: dark);
+        color: map-get($map: $colors, $key: light);
+        border: none;
+      }
+
+      &.homepage-btn {
+        background: map-get($map: $colors, $key: light);
+        color: map-get($map: $colors, $key: dark);
+        border: 1px solid map-get($map: $colors, $key: line);
+      }
+    }
+  }
+}
+
+
+/* ==== 반응형 ==== */
+
+// tablet.ver
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .eventTitle {
+    height: 500px;
+
+    .mainTitle {
+      width: 100%;
+      padding: 0 20px;
+
+      .title {
+        p {
+          font-size: 4rem;
+        }
+        h2 {
+          font-size: 8rem;
+        }
+        span {
+          font-size: 1.7rem;
+        }
+      }
     }
   }
 
-  @include tablet {
+  .eventSteps {
+    margin-top: 70px;
+    gap: 25px;
+    .howTo {
+      width: 100%;
+      h3 {
+        font-size: 6rem;
+      }
+      p {
+        width: 100%;
+        font-size: 2.8rem;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .steps {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    .step01,
+    .step02 {
+      width: 100%;
+      max-width: 620px;
+      .text1,
+      .text2 {
+        width: 200px;
+        left: 25px;
+      }
+    }
+  }
+
+  .couponsList {
+    margin-top: 100px;
+    gap: 40px;
+    .couponCommon {
+      width: 180px;
+      height: 280px;
+      .couponTop {
+        height: 260px;
+      }
+      .couponBottom {
+        height: 30px;
+        .dashed {
+          bottom: 30px;
+          left: 0;
+          width: 96%;
+        }
+      }
+    }
+  }
+
+  .hashTags {
+    height: auto;
+    gap: 10px;
+    span {
+      width: calc(50% - 10px);
+      font-size: 2rem;
+    }
+  }
+
+  .coupons {
+    .ticket {
+      flex-wrap: wrap;
+    }
+  }
+
+  .couponText {
+    max-width: 110px;
+    p {
+      font-size: 1.8rem;
+      b {
+        font-size: 3.5rem;
+      }
+    }
+  }
+
+  .buttons {
+    flex-wrap: wrap;
+    gap: 20px;
+
+    button {
+      max-width: 300px;
+      padding: 8px 15px;
+      p {
+        font-size: 1.8rem;
+      }
+      > i {
+        width: 35px;
+        height: 35px;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .eventNotice {
     font-size: 2.5rem;
     height: auto;
+    min-height: 400px;
     h5 {
       font-size: 3rem;
       margin-top: 8%;
     }
     ul > li {
       font-size: 1.6rem;
-      line-height: 25px;
+      line-height: 1.5;
+      letter-spacing: 0.1px;
+      word-wrap: break-word;
+      word-break: keep-all;
+    }
+  }
+}
+
+// phone.ver
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+
+  .eventTitle {
+    height: 400px;
+
+    .mainTitle {
+      width: 100%;
+      padding: 0 15px;
+
+      .title {
+        gap: 20px;
+
+        p {
+          font-size: 3rem;
+        }
+        h2 {
+          font-size: 5rem;
+        }
+        span {
+          font-size: 1.3rem;
+        }
+      }
     }
   }
 
-  @include mobile {
+  .eventSteps {
+    margin-top: 50px;
+    gap: 20px;
+    .howTo {
+      width: 100%;
+      h3 {
+        font-size: 6.5rem;
+      }
+      p {
+        width: 100%;
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+    }
+    .steps {
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+      margin-top: 35px;
+      .step01,
+      .step02 {
+        width: 100%;
+        height: 350px;
+        .bg1,
+        .bg3 {
+          width: 280px;
+          height: 175px;
+        }
+        .bg2 {
+          width: 140px;
+          height: 160px;
+          bottom: 80px;
+        }
+        .bg4 {
+          width: 220px;
+          height: 150px;
+          bottom: 70px;
+        }
+        .text1,
+        .text2 {
+          width: 200px;
+          left: 25px;
+          h4 {
+            font-size: 5rem;
+          }
+          p {
+            font-size: 2.5rem;
+          }
+          span {
+            font-size: 1.6rem;
+          }
+        }
+      }
+    }
+  }
+
+  .couponsList {
+    margin-top: 60px;
+    gap: 20px;
+    .hashTags {
+      width: 100%;
+      span {
+        width: auto;
+        font-size: 1.9rem;
+      }
+    }
+    .coupons {
+      .couponCommon {
+        width: 200px;
+        height: 200px;
+        .couponTop {
+          width: 110px;
+          height: 160px;
+          font-size: 28px;
+          top: 10px;
+          right: 10px;
+        }
+        .couponBottom {
+          bottom: 0px;
+          width: 110px;
+        }
+        img {
+          top: 6%;
+          right: -7%;
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  .coupons {
+    gap: 20px;
+    .ticket {
+      gap: 20px;
+    }
+  }
+
+  .couponText {
+    bottom: 12px;
+    left: 5px;
+    p {
+      font-size: 1rem;
+      max-width: 100px;
+
+      b {
+        font-size: 2.8rem;
+      }
+    }
+    span {
+      font-size: 1.2rem;
+    }
+  }
+
+  .buttons {
+    gap: 15px;
+    align-items: center;
+
+    button {
+      width: 100%;
+      max-width: 200px;
+      height: 50px;
+      padding: 6px 12px;
+      gap: 10px;
+      p {
+        font-size: 1.6rem;
+      }
+      > i {
+        width: 30px;
+        height: 30px;
+        font-size: 1.6rem;
+      }
+    }
+  }
+
+  .eventNotice {
     font-size: 2rem;
+    min-height: 330px;
+    margin-top: 30px;
     h5 {
       font-size: 2.5rem;
       margin-top: 5%;
     }
     ul > li {
-      font-size: 1.2rem;
-      line-height: 20px;
+      width: 100%;
+      font-size: 1.4rem;
+      line-height: 1.5;
       letter-spacing: 0.1px;
+      word-wrap: break-word;
+      word-break: keep-all;
     }
   }
 }

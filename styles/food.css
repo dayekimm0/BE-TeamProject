@@ -76,40 +76,23 @@ h2 {
 }
 .infoContainer article {
   width: 100%;
-<<<<<<< HEAD
   height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
   display: flex;
   border-radius: 40px;
   overflow: hidden;
-<<<<<<< HEAD
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: 1.5px solid #a5d112;
-=======
   align-items: center;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
+  justify-content: space-between;
+  border: 1.5px solid #a5d112;
 }
 .infoContainer article .articleVideo {
   width: 35%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-<<<<<<< HEAD
-  aspect-ratio: 29/27;
-=======
 }
 .infoContainer article .articleInfo {
   width: 65%;
   padding-left: 60px;
->>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
 }
 .infoContainer article .articleInfo h3 {
   font-size: 3rem;
@@ -122,13 +105,7 @@ h2 {
   margin: 30px 0 30px;
   line-height: 2.8rem;
 }
-<<<<<<< HEAD
 .infoContainer article .articleInfo .articleHashtag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-.infoContainer article .articleHashtag {
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
   display: flex;
   gap: 8px;
 }
@@ -255,9 +232,7 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper {
     width: 100%;
     gap: 0 !important;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
     width: 20%;
@@ -321,9 +296,7 @@ h2 {
     border: 1px solid #a5d112;
     border-radius: 36px;
     overflow: hidden;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .infoContainer article .articleVideo {
     width: 50%;
@@ -362,18 +335,8 @@ h2 {
   }
   .bannerContainer {
     display: flex;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 70px 0;
-=======
->>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
     flex-direction: column;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
+    margin: 70px 0;
     background: #cae570;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -496,16 +459,8 @@ h2 {
     line-height: 1;
   }
   .detailTitle {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     padding: 0 5%;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
->>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
     display: flex;
     gap: 18px;
   }
@@ -537,13 +492,10 @@ h2 {
     cursor: pointer;
   }
   .infoContainer article {
-<<<<<<< HEAD
     position: relative;
     height: 230px;
     gap: 20px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     border-radius: 20px;
     overflow: hidden;
     border: 0.8px solid #a5d112;
@@ -552,31 +504,8 @@ h2 {
     width: 45%;
   }
   .infoContainer article .articleInfo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-=======
-    width: inherit;
-    height: 390px;
-    display: flex;
-    gap: 20px;
-    border: 1px solid #a5d112;
-    border-radius: 36px;
-    overflow: hidden;
-  }
-  .infoContainer article .articleImg {
-    width: 50%;
-    height: inherit;
-    -o-object-fit: cover;
-       object-fit: cover;
-    aspect-ratio: 29/27;
-  }
-  .infoContainer article .articleInfo {
-    width: 50%;
-    height: 230px;
     align-items: center;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
+    height: auto;
   }
   .infoContainer article .articleInfo h3 {
     font-size: 1.5rem;
@@ -590,8 +519,7 @@ h2 {
   }
   .infoContainer article .articleInfo .articleHashtag {
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 4px;
   }
   .infoContainer article .articleInfo .articleHashtag li {
@@ -603,24 +531,11 @@ h2 {
   }
   .bannerContainer {
     display: flex;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 30px 0;
     background: none;
     padding-top: 30px;
     padding-bottom: 30px;
-=======
->>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
-    flex-direction: column;
-    background: #cae570;
-    padding-top: 60px;
-    padding-bottom: 60px;
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
   }
   .bannerContainer .title {
     width: inherit;
@@ -638,9 +553,7 @@ h2 {
   .bannerContainer .bannerBoxWrapper {
     width: inherit;
     height: inherit;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    justify-content: center;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper {
     gap: 20px;
@@ -668,18 +581,7 @@ h2 {
     border: 0.8px solid #a5d112;
   }
   .shopContainer .shopBoxWrapper .shopBox {
-<<<<<<< HEAD
     height: 230px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
-    width: 100%;
-    height: 330px;
-    position: relative;
-<<<<<<< HEAD
-=======
->>>>>>> a7867f8dedb5a6cbbdbd66f5c8e9f0aeedac250d
->>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
     display: flex;
     position: relative;
   }

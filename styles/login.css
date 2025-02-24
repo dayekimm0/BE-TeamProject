@@ -54,20 +54,6 @@ main #form #inputWrap .inputBox label {
   color: #aeaeba;
   font-weight: bold;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 127eb50a0bec6d720e444d161d69233ffa068035
-main #form #inputWrap .inputBox label::-moz-placeholder {
-  font-size: 1.8rem;
-  color: #ccc;
-}
-main #form #inputWrap .inputBox label::placeholder {
-  font-size: 1.8rem;
-  color: #ccc;
-}
->>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
 main #form #userInfo {
   margin: 16px 0;
   padding: 0 10px;
