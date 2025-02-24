@@ -73,6 +73,8 @@ main #form #inputWrap .inputBox label {
   color: #aeaeba;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
 main #form #inputWrap .inputBox i {
   position: absolute;
   right: 30px;
@@ -82,6 +84,7 @@ main #form #inputWrap .inputBox i {
   color: #aeaeba;
   cursor: pointer;
 }
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 main #form #userInfo {
   margin: 16px 0;
   padding: 0 10px;
@@ -104,8 +107,13 @@ main #form #userInfo div:first-child {
   gap: 8px;
 }
 main #form #userInfo div:first-child input[type=checkbox] {
+<<<<<<< HEAD
+  width: 20px;
+  height: 20px;
+=======
   width: 16px;
   height: 16px;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 }
 main #form #userInfo div:last-child a:last-child {
   position: relative;

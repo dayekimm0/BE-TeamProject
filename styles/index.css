@@ -188,6 +188,8 @@ main #con2 .con2-text {
           flex-direction: column;
   gap: 20px;
 }
+<<<<<<< HEAD
+=======
 main #con2 .con2-text p {
   opacity: 0;
   -webkit-animation-fill-mode: forwards;
@@ -197,6 +199,7 @@ main #con2 .con2-text p {
   -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out;
 }
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 main #con2 .con2-text p:nth-child(even) {
   color: #fff;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;

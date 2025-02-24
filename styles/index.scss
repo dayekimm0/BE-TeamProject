@@ -138,10 +138,6 @@ main {
       flex-direction: column;
       gap: 20px;
       p {
-        opacity: 0;
-        animation-fill-mode: forwards;
-        animation-duration: 1s;
-        animation-timing-function: ease-out;
         &:nth-child(even) {
           color: map-get($map: $colors, $key: light);
           text-shadow: -1px 0 map-get($map: $colors, $key: dark),
