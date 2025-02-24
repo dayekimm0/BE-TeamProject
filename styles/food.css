@@ -4,7 +4,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -35,9 +36,13 @@ section {
 }
 
 .detailTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .detailTitle .title-img {
   width: 30px;
@@ -59,6 +64,8 @@ h2 {
 
 /* ==== contents ==== */
 .infoContainer > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 14px;
   margin: 20px 0;
@@ -77,11 +84,25 @@ h2 {
 .infoContainer article {
   width: 100%;
   height: 500px;
+<<<<<<< HEAD
   display: flex;
   border-radius: 40px;
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 40px;
+  overflow: hidden;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
   border: 1.5px solid #a5d112;
 }
 .infoContainer article .articleVideo {
@@ -106,6 +127,11 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer article .articleInfo .articleHashtag {
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
   display: flex;
   gap: 8px;
 }
@@ -119,8 +145,12 @@ h2 {
 }
 
 .bannerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 130px 0;
   background: #cae570;
   padding-top: 70px;
@@ -131,12 +161,19 @@ h2 {
   position: relative;
 }
 .bannerContainer .bannerBoxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 60%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
@@ -155,11 +192,14 @@ h2 {
 }
 
 .shopContainer .shopBoxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 40px;
   margin-top: 30px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .shopContainer .shopBoxWrapper .shopBox {
   position: relative;
@@ -180,15 +220,22 @@ h2 {
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
   background: rgba(202, 229, 112, 0.9);
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 60px;
   opacity: 0; /* 투명도 */
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
@@ -257,6 +304,8 @@ h2 {
     width: 100%;
   }
   .detailTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -274,6 +323,8 @@ h2 {
     margin-bottom: 30px;
   }
   .infoContainer > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
@@ -291,6 +342,8 @@ h2 {
   .infoContainer article {
     width: inherit;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 40px;
     border: 1px solid #a5d112;
@@ -308,7 +361,9 @@ h2 {
     padding-left: 0;
     width: 50%;
     height: 230px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .infoContainer article .articleInfo h3 {
     font-size: 2.2rem;
@@ -322,6 +377,8 @@ h2 {
     line-height: 2.2rem;
   }
   .infoContainer article .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 6px;
   }
@@ -334,8 +391,17 @@ h2 {
     font-weight: 400;
   }
   .bannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
+=======
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
     margin: 70px 0;
     background: #cae570;
     padding-top: 40px;
@@ -384,6 +450,8 @@ h2 {
     width: 100%;
     height: 330px;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -395,31 +463,43 @@ h2 {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     opacity: 1;
@@ -461,6 +541,11 @@ h2 {
   .detailTitle {
     padding: 0 5%;
     width: 100%;
+<<<<<<< HEAD
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
     display: flex;
     gap: 18px;
   }
@@ -478,6 +563,8 @@ h2 {
     margin-left: auto;
   }
   .infoContainer > ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 10px;
   }
@@ -504,7 +591,13 @@ h2 {
     width: 45%;
   }
   .infoContainer article .articleInfo {
+<<<<<<< HEAD
     align-items: center;
+=======
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
     height: auto;
   }
   .infoContainer article .articleInfo h3 {
@@ -518,6 +611,8 @@ h2 {
     line-height: 1.4rem;
   }
   .infoContainer article .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -530,8 +625,17 @@ h2 {
     font-size: 1rem;
   }
   .bannerContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
+=======
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
     margin: 30px 0;
     background: none;
     padding-top: 30px;
@@ -582,6 +686,11 @@ h2 {
   }
   .shopContainer .shopBoxWrapper .shopBox {
     height: 230px;
+<<<<<<< HEAD
+=======
+    display: -webkit-box;
+    display: -ms-flexbox;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
     display: flex;
     position: relative;
   }
@@ -594,31 +703,43 @@ h2 {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     background: #fff;
