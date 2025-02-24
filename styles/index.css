@@ -150,12 +150,6 @@ main #con2 .con2-text {
   flex-direction: column;
   gap: 20px;
 }
-main #con2 .con2-text p {
-  opacity: 0;
-  animation-fill-mode: forwards;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
 main #con2 .con2-text p:nth-child(even) {
   color: #fff;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
