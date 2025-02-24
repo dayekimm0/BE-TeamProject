@@ -80,7 +80,24 @@ main #form .error i {
 }
 main #form #joinStep {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+<<<<<<< HEAD
+  justify-content: center;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  justify-content: center;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   gap: 60px;
   align-items: center;
   border-bottom: 1px solid #d9d9d9;
@@ -106,7 +123,25 @@ main #form #joinStep .stepWrap:nth-child(3) p {
 }
 main #form #joinStep .stepWrap .stepCircle {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+<<<<<<< HEAD
+  flex-direction: column;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  flex-direction: column;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   background: #a5d112;
   color: #fff;
   border-radius: 50%;
@@ -126,14 +161,45 @@ main #form #joinStep .stepWrap p {
   color: #a5d112;
 }
 main #form #joinBox {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+<<<<<<< HEAD
+  display: flex;
+  flex-direction: column;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   gap: 12px;
 }
 main #form #joinBox .joinInput {
   position: relative;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+<<<<<<< HEAD
+  flex-direction: column;
+  gap: 12px;
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+<<<<<<< HEAD
+  gap: 12px;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 }
 main #form #joinBox .joinInput #phoneBtn {
   position: absolute;
@@ -145,6 +211,17 @@ main #form #joinBox .joinInput #phoneBtn {
   height: auto;
   top: 50%;
   transform: translateY(-50%);
+<<<<<<< HEAD
+=======
+=======
+<<<<<<< HEAD
+  transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   right: 30px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -154,6 +231,17 @@ main #form #joinBox .joinInput label {
   position: absolute;
   left: 30px;
   top: 50%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+=======
+<<<<<<< HEAD
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   transform: translateY(-50%);
   font-size: 1.4rem;
   color: #aeaeba;
@@ -161,6 +249,20 @@ main #form #joinBox .joinInput label {
 }
 main #form #joinBox .joinInfo {
   margin-top: 8px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+<<<<<<< HEAD
+=======
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -185,6 +287,17 @@ main #form #joinBox .joinInfo p span {
   color: #d9d9d9;
 }
 main #form #joinBox .joinInfo .checkList {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
   gap: 8px;
 }
