@@ -92,6 +92,14 @@ h2 {
   width: 100%;
   height: 500px;
 <<<<<<< HEAD
+  display: flex;
+  border-radius: 40px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  border: 1.5px solid #a5d112;
+=======
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
   display: flex;
@@ -118,6 +126,7 @@ h2 {
   display: none;
 =======
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 }
 .infoContainer .tabContainer > div .articleVideo {
   width: 35%;
@@ -141,6 +150,9 @@ h2 {
   line-height: 2.8rem;
 }
 <<<<<<< HEAD
+.infoContainer article .articleInfo .articleHashtag {
+=======
+<<<<<<< HEAD
 .infoContainer .tabContainer > div .articleInfo .articleHashtag {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,6 +164,7 @@ h2 {
   display: -ms-flexbox;
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   display: flex;
   gap: 8px;
 }
@@ -385,6 +398,8 @@ h2 {
     border-radius: 36px;
     overflow: hidden;
     align-items: center;
+<<<<<<< HEAD
+=======
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   }
   .infoContainer .tabContainer > div .articleVideo {
@@ -401,6 +416,7 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
     font-size: 2.2rem;
@@ -426,6 +442,11 @@ h2 {
   }
   .bannerContainer {
 <<<<<<< HEAD
+    display: flex;
+    flex-direction: column;
+    margin: 70px 0;
+=======
+<<<<<<< HEAD
 =======
     display: -webkit-box;
     display: -ms-flexbox;
@@ -444,6 +465,7 @@ h2 {
     padding-top: 50px;
     padding-bottom: 50px;
 =======
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     background: #cae570;
     padding-top: 40px;
     padding-bottom: 40px;
@@ -576,6 +598,9 @@ h2 {
   .detailTitle {
     padding: 0 5%;
 <<<<<<< HEAD
+    width: 100%;
+=======
+<<<<<<< HEAD
 =======
     width: 100%;
 <<<<<<< HEAD
@@ -583,6 +608,7 @@ h2 {
     display: -webkit-box;
     display: -ms-flexbox;
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     display: flex;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     gap: 18px;
@@ -614,15 +640,21 @@ h2 {
     font-size: 1.4rem;
   }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   .infoContainer .tabContainer > div {
     height: 250px;
 =======
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   .infoContainer article {
     position: relative;
     height: 230px;
     gap: 20px;
     align-items: center;
+<<<<<<< HEAD
+=======
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     border-radius: 20px;
   }
 <<<<<<< HEAD
@@ -632,6 +664,11 @@ h2 {
     width: 45%;
   }
   .infoContainer article .articleInfo {
+<<<<<<< HEAD
+    align-items: center;
+    height: auto;
+  }
+=======
 <<<<<<< HEAD
     align-items: center;
 =======
@@ -645,6 +682,7 @@ h2 {
 <<<<<<< HEAD
   .infoContainer .tabContainer > div .articleInfo h3 {
 =======
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   .infoContainer article .articleInfo h3 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     font-size: 1.5rem;
@@ -672,6 +710,10 @@ h2 {
   }
   .bannerContainer {
 <<<<<<< HEAD
+    display: flex;
+    flex-direction: column;
+=======
+<<<<<<< HEAD
 =======
     display: -webkit-box;
     display: -ms-flexbox;
@@ -685,6 +727,7 @@ h2 {
             flex-direction: column;
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     margin: 30px 0;
     background: none;
     padding-top: 30px;
@@ -728,9 +771,12 @@ h2 {
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     display: -webkit-box;
     display: -ms-flexbox;
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     display: flex;
     position: relative;
   }

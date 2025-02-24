@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -19,11 +20,6 @@ a {
 html {
   font-size: 62.5%;
 }
-@media (max-width: 390px) {
-  html {
-    font-size: 55%;
-  }
-}
 
 body {
   font-size: 1.6rem;
@@ -32,26 +28,12 @@ body {
 }
 
 .container {
-  width: 1440px;
-  margin: 0 auto;
-}
-@media (max-width: 1440px) {
-  .container {
-    width: 100%;
-    max-width: 1440px;
-  }
-}
-@media (max-width: 1024px) {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 390px) {
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
 }
 
 .eventTitle {
@@ -85,23 +67,6 @@ body {
 .eventTitle .mainTitle {
   width: 1440px;
 }
-@media (max-width: 1440px) {
-  .eventTitle .mainTitle {
-    width: 100%;
-  }
-}
-@media (max-width: 1024px) {
-  .eventTitle .mainTitle {
-    width: 100%;
-    padding: 0 20px;
-  }
-}
-@media (max-width: 390px) {
-  .eventTitle .mainTitle {
-    width: 100%;
-    padding: 0 15px;
-  }
-}
 .eventTitle .mainTitle .title {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,25 +81,10 @@ body {
   gap: 30px;
   color: #fff;
 }
-@media (max-width: 390px) {
-  .eventTitle .mainTitle .title {
-    gap: 20px;
-  }
-}
 .eventTitle .mainTitle .title p {
   font-size: 5rem;
   line-height: 1.1;
   letter-spacing: -1.5px;
-}
-@media (max-width: 1024px) {
-  .eventTitle .mainTitle .title p {
-    font-size: 4rem;
-  }
-}
-@media (max-width: 390px) {
-  .eventTitle .mainTitle .title p {
-    font-size: 3rem;
-  }
 }
 .eventTitle .mainTitle .title h2 {
   font-size: 10rem;
@@ -143,27 +93,12 @@ body {
   font-weight: bold;
   letter-spacing: -2px;
 }
-@media (max-width: 1024px) {
-  .eventTitle .mainTitle .title h2 {
-    font-size: 8rem;
-  }
-}
-@media (max-width: 390px) {
-  .eventTitle .mainTitle .title h2 {
-    font-size: 5rem;
-  }
-}
 .eventTitle .mainTitle .title span {
   font-size: 2rem;
   line-height: 1;
   font-weight: lighter;
   letter-spacing: 0.9px;
   opacity: 0.7;
-}
-@media (max-width: 390px) {
-  .eventTitle .mainTitle .title span {
-    font-size: 1.6rem;
-  }
 }
 
 .eventSteps {
@@ -180,18 +115,6 @@ body {
           align-items: center;
   gap: 30px;
   margin-top: 100px;
-}
-@media (max-width: 1024px) {
-  .eventSteps {
-    margin-top: 70px;
-    gap: 25px;
-  }
-}
-@media (max-width: 390px) {
-  .eventSteps {
-    margin-top: 50px;
-    gap: 20px;
-  }
 }
 .eventSteps .howTo {
   display: -webkit-box;
@@ -212,11 +135,6 @@ body {
   gap: 10px;
   color: #000;
 }
-@media (max-width: 1024px) {
-  .eventSteps .howTo {
-    width: 100%;
-  }
-}
 .eventSteps .howTo h3 {
   width: 100%;
   height: 100%;
@@ -229,16 +147,6 @@ body {
   font-weight: bold;
   position: relative;
 }
-@media (max-width: 1024px) {
-  .eventSteps .howTo h3 {
-    font-size: 6rem;
-  }
-}
-@media (max-width: 390px) {
-  .eventSteps .howTo h3 {
-    font-size: 4.5rem;
-  }
-}
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
@@ -249,18 +157,6 @@ body {
   width: 900px;
   margin-top: 30px;
   font-weight: normal;
-}
-@media (max-width: 1024px) {
-  .eventSteps .howTo p {
-    width: 100%;
-    font-size: 2.8rem;
-  }
-}
-@media (max-width: 390px) {
-  .eventSteps .howTo p {
-    font-size: 2rem;
-    margin-top: 20px;
-  }
 }
 .eventSteps .howTo p b {
   font-weight: 800;
@@ -298,19 +194,6 @@ body {
           box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
-@media (max-width: 1024px) {
-  .eventSteps .steps .step01,
-  .eventSteps .steps .step02 {
-    width: 100%;
-    max-width: 620px;
-  }
-}
-@media (max-width: 390px) {
-  .eventSteps .steps .step01,
-  .eventSteps .steps .step02 {
-    height: 350px;
-  }
-}
 .eventSteps .steps .step01 .bg1,
 .eventSteps .steps .step01 .bg3,
 .eventSteps .steps .step02 .bg1,
@@ -320,15 +203,6 @@ body {
   height: 225px;
   bottom: 0;
   right: 0px;
-}
-@media (max-width: 390px) {
-  .eventSteps .steps .step01 .bg1,
-  .eventSteps .steps .step01 .bg3,
-  .eventSteps .steps .step02 .bg1,
-  .eventSteps .steps .step02 .bg3 {
-    width: 280px;
-    height: 175px;
-  }
 }
 .eventSteps .steps .step01 .bg2,
 .eventSteps .steps .step02 .bg2 {
@@ -341,14 +215,6 @@ body {
   bottom: 100px;
   right: 20px;
 }
-@media (max-width: 390px) {
-  .eventSteps .steps .step01 .bg2,
-  .eventSteps .steps .step02 .bg2 {
-    width: 140px;
-    height: 160px;
-    bottom: 80px;
-  }
-}
 .eventSteps .steps .step01 .bg4,
 .eventSteps .steps .step02 .bg4 {
   width: 284px;
@@ -359,14 +225,6 @@ body {
   position: absolute;
   bottom: 83px;
   right: 0;
-}
-@media (max-width: 390px) {
-  .eventSteps .steps .step01 .bg4,
-  .eventSteps .steps .step02 .bg4 {
-    width: 220px;
-    height: 150px;
-    bottom: 70px;
-  }
 }
 .eventSteps .steps .step01 .text1,
 .eventSteps .steps .step01 .text2,
@@ -388,15 +246,6 @@ body {
   top: 25px;
   left: 45px;
 }
-@media (max-width: 390px) {
-  .eventSteps .steps .step01 .text1,
-  .eventSteps .steps .step01 .text2,
-  .eventSteps .steps .step02 .text1,
-  .eventSteps .steps .step02 .text2 {
-    width: 200px;
-    left: 25px;
-  }
-}
 .eventSteps .steps .step01 .text1 h4,
 .eventSteps .steps .step01 .text2 h4,
 .eventSteps .steps .step02 .text1 h4,
@@ -407,14 +256,6 @@ body {
   letter-spacing: -1.2px;
   font-family: "REM";
 }
-@media (max-width: 390px) {
-  .eventSteps .steps .step01 .text1 h4,
-  .eventSteps .steps .step01 .text2 h4,
-  .eventSteps .steps .step02 .text1 h4,
-  .eventSteps .steps .step02 .text2 h4 {
-    font-size: 4.5rem;
-  }
-}
 .eventSteps .steps .step01 .text1 p,
 .eventSteps .steps .step01 .text2 p,
 .eventSteps .steps .step02 .text1 p,
@@ -424,14 +265,6 @@ body {
   letter-spacing: -0.6px;
   font-weight: 600;
 }
-@media (max-width: 390px) {
-  .eventSteps .steps .step01 .text1 p,
-  .eventSteps .steps .step01 .text2 p,
-  .eventSteps .steps .step02 .text1 p,
-  .eventSteps .steps .step02 .text2 p {
-    font-size: 2.4rem;
-  }
-}
 .eventSteps .steps .step01 .text1 span,
 .eventSteps .steps .step01 .text2 span,
 .eventSteps .steps .step02 .text1 span,
@@ -440,14 +273,6 @@ body {
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: -0.3px;
-}
-@media (max-width: 390px) {
-  .eventSteps .steps .step01 .text1 span,
-  .eventSteps .steps .step01 .text2 span,
-  .eventSteps .steps .step02 .text1 span,
-  .eventSteps .steps .step02 .text2 span {
-    font-size: 1.3rem;
-  }
 }
 
 .couponsList {
@@ -467,18 +292,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 132px;
-}
-@media (max-width: 1024px) {
-  .couponsList {
-    margin-top: 100px;
-    gap: 40px;
-  }
-}
-@media (max-width: 390px) {
-  .couponsList {
-    margin-top: 80px;
-    gap: 30px;
-  }
 }
 .couponsList .hashTags {
   width: 628px;
@@ -528,12 +341,6 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
-}
-@media (max-width: 390px) {
-  .couponsList .hashTags span {
-    width: calc(50% - 10px);
-    font-size: 2rem;
-  }
 }
 .couponsList .coupons {
   width: 100%;
@@ -605,28 +412,29 @@ body {
           justify-content: center;
   overflow: visible;
 }
-@media (max-width: 1024px) {
-  .couponsList .couponGreen,
-  .couponsList .couponPink,
-  .couponsList .couponSky,
-  .couponsList .couponPurple {
-    width: 180px;
-    height: 280px;
-  }
+.couponsList .couponCommon img {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  z-index: 1;
 }
-@media (max-width: 390px) {
-  .couponsList .couponGreen,
-  .couponsList .couponPink,
-  .couponsList .couponSky,
-  .couponsList .couponPurple {
-    width: 138px;
-    height: 200px;
-  }
+.couponsList .couponCommon.couponGreen .couponTop,
+.couponsList .couponCommon.couponGreen .couponBottom {
+  background: #cae570;
 }
-.couponsList .couponGreen .couponTop,
-.couponsList .couponPink .couponTop,
-.couponsList .couponSky .couponTop,
-.couponsList .couponPurple .couponTop {
+.couponsList .couponCommon.couponPink .couponTop,
+.couponsList .couponCommon.couponPink .couponBottom {
+  background: #ffc6c7;
+}
+.couponsList .couponCommon.couponSky .couponTop,
+.couponsList .couponCommon.couponSky .couponBottom {
+  background: #b4e3fc;
+}
+.couponsList .couponCommon.couponPurple .couponTop,
+.couponsList .couponCommon.couponPurple .couponBottom {
+  background: #c198f9;
+}
+.couponsList .couponCommon .couponTop {
   position: absolute;
   top: 0;
   width: 100%;
@@ -668,10 +476,7 @@ body {
   }
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
-.couponsList .couponGreen .couponBottom,
-.couponsList .couponPink .couponBottom,
-.couponsList .couponSky .couponBottom,
-.couponsList .couponPurple .couponBottom {
+.couponsList .couponCommon .couponBottom {
   position: absolute;
   width: 100%;
   bottom: -35px;
@@ -680,78 +485,42 @@ body {
           transform: translateX(-50%);
   width: 100%;
   height: 40px;
-  background: inherit;
-  border-radius: 20px 20px 10px 10px;
+  bottom: -10px;
+  left: 0;
+  border-radius: 10px;
 }
-.couponsList .couponGreen {
-  background-color: #cae570;
-}
-.couponsList .couponPink {
-  background-color: #ffc6c7;
-}
-.couponsList .couponSky {
-  background-color: #b4e3fc;
-}
-.couponsList .couponPurple {
-  background-color: #c198f9;
-}
-.couponsList .dashedLine {
+.couponsList .couponCommon .couponBottom .dashed {
   position: absolute;
-  bottom: 0;
-  left: 10px;
-  width: calc(100% - 20px);
-  border-top: 2px dashed #000;
-  z-index: 2;
+  left: 0;
+  bottom: 39px;
+  width: 98%;
+  border: 1px dashed transparent;
+  -o-border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
+     border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
 }
-.couponsList .couponText {
+
+.couponText {
   font-size: 1.6rem;
   position: absolute;
   bottom: 16px;
   left: 15px;
   text-align: left;
 }
-@media (max-width: 390px) {
-  .couponsList .couponText {
-    bottom: 12px;
-    left: 12px;
-  }
-}
-.couponsList .couponText p {
+.couponText p {
   color: #000;
   font-size: 2.2rem;
   font-weight: 500;
   font-family: "Pretendard";
 }
-@media (max-width: 1024px) {
-  .couponsList .couponText p {
-    max-width: 110px;
-  }
-}
-@media (max-width: 390px) {
-  .couponsList .couponText p {
-    font-size: 1.3rem;
-    max-width: 100px;
-  }
-}
-.couponsList .couponText p b {
+.couponText p b {
   font-size: 4.5rem;
   font-weight: bold;
   font-family: "REM";
 }
-@media (max-width: 390px) {
-  .couponsList .couponText p b {
-    font-size: 3.8rem;
-  }
-}
-.couponsList .couponText span {
+.couponText span {
   font-size: 1.4rem;
   font-weight: 400;
   opacity: 0.7;
-}
-@media (max-width: 390px) {
-  .couponsList .couponText span {
-    font-size: 1.2rem;
-  }
 }
 
 .buttons {
@@ -794,7 +563,7 @@ body {
   padding: 10px 20px;
   gap: 10px;
   width: auto;
-  height: 55px;
+  height: 60px;
   border-radius: 30px;
   border: none;
   -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -803,23 +572,8 @@ body {
   cursor: pointer;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-}
-@media (max-width: 1024px) {
-  .buttons button {
-    max-width: 300px;
-    padding: 8px 15px;
-  }
-}
-@media (max-width: 390px) {
-  .buttons button {
-    width: 100%;
-    max-width: 260px;
-    height: 50px;
-    padding: 6px 12px;
-    gap: 5px;
-  }
-}
-.buttons button p {
+  color: inherit;
+  outline: none;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.4px;
@@ -842,7 +596,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 2rem;
   width: 40px;
   height: 40px;
   padding: 6px;
@@ -857,35 +610,22 @@ body {
   border: 2px solid #d9d9d9;
   background: #fff;
 }
-@media (max-width: 1024px) {
-  .buttons button > i {
-    width: 35px;
-    height: 35px;
-    font-size: 1.8rem;
-  }
-}
-@media (max-width: 390px) {
-  .buttons button > i {
-    width: 30px;
-    height: 30px;
-    font-size: 1.6rem;
-  }
-}
 
 .eventNotice {
   width: 100%;
-  min-height: 500px;
   color: #000;
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 0 20px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  width: 60%;
 }
 .eventNotice h5 {
   font-weight: bold;
-  margin-top: 12%;
+  margin-top: 3%;
   margin-bottom: 15px;
 }
 .eventNotice ul > li {
@@ -897,15 +637,19 @@ body {
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   padding-left: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  align-items: start;
 }
-.eventNotice ul > li::before {
+.eventNotice ul li::before {
   content: "";
   position: absolute;
   left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -913,10 +657,198 @@ body {
       flex-shrink: 0;
   background: #000;
 }
-@media (max-width: 1024px) {
+
+/* ==== 모달페이지 ==== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal .modal-content {
+  background: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+  width: 90%;
+}
+.modal .modal-check {
+  margin: 0 auto 20px;
+  width: 60px;
+  height: 60px;
+}
+.modal .modal-check svg {
+  width: 100%;
+  height: 100%;
+}
+.modal .modal-check.food circle {
+  fill: #cae570;
+}
+.modal .modal-check.beauty circle {
+  fill: #ffc6c7;
+}
+.modal .modal-check.fashion circle {
+  fill: #b4e3fc;
+}
+.modal .modal-check.lifestyle circle {
+  fill: #c198f9;
+}
+.modal .modal-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+.modal .modal-desc {
+  font-size: 1.4rem;
+  margin-bottom: 30px;
+}
+.modal .modal-buttons {
+  display: flex;
+  gap: 10px;
+}
+.modal .modal-buttons button {
+  flex: 1;
+  height: 50px;
+  border-radius: 25px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.modal .modal-buttons button.confirm-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+}
+.modal .modal-buttons button.homepage-btn {
+  background: #fff;
+  color: #000;
+  border: 1px solid #d9d9d9;
+}
+
+/* ==== 반응형 ==== */
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+  .eventTitle {
+    height: 500px;
+  }
+  .eventTitle .mainTitle {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .eventTitle .mainTitle .title p {
+    font-size: 4rem;
+  }
+  .eventTitle .mainTitle .title h2 {
+    font-size: 8rem;
+  }
+  .eventTitle .mainTitle .title span {
+    font-size: 1.7rem;
+  }
+  .eventSteps {
+    margin-top: 70px;
+    gap: 25px;
+  }
+  .eventSteps .howTo {
+    width: 100%;
+  }
+  .eventSteps .howTo h3 {
+    font-size: 6rem;
+  }
+  .eventSteps .howTo p {
+    width: 100%;
+    font-size: 2.8rem;
+    margin-top: 20px;
+  }
+  .steps {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .steps .step01,
+  .steps .step02 {
+    width: 100%;
+    max-width: 620px;
+  }
+  .steps .step01 .text1,
+  .steps .step01 .text2,
+  .steps .step02 .text1,
+  .steps .step02 .text2 {
+    width: 200px;
+    left: 25px;
+  }
+  .couponsList {
+    margin-top: 100px;
+    gap: 40px;
+  }
+  .couponsList .couponCommon {
+    width: 180px;
+    height: 280px;
+  }
+  .couponsList .couponCommon .couponTop {
+    height: 260px;
+  }
+  .couponsList .couponCommon .couponBottom {
+    height: 30px;
+  }
+  .couponsList .couponCommon .couponBottom .dashed {
+    bottom: 30px;
+    left: 0;
+    width: 96%;
+  }
+  .hashTags {
+    height: auto;
+    gap: 10px;
+  }
+  .hashTags span {
+    width: calc(50% - 10px);
+    font-size: 2rem;
+  }
+  .coupons .ticket {
+    flex-wrap: wrap;
+  }
+  .couponText {
+    max-width: 110px;
+  }
+  .couponText p {
+    font-size: 1.8rem;
+  }
+  .couponText p b {
+    font-size: 3.5rem;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .buttons button {
+    max-width: 300px;
+    padding: 8px 15px;
+  }
+  .buttons button p {
+    font-size: 1.8rem;
+  }
+  .buttons button > i {
+    width: 35px;
+    height: 35px;
+    font-size: 1.8rem;
+  }
   .eventNotice {
     font-size: 2.5rem;
     height: auto;
+    min-height: 400px;
   }
   .eventNotice h5 {
     font-size: 3rem;
@@ -924,20 +856,191 @@ body {
   }
   .eventNotice ul > li {
     font-size: 1.6rem;
-    line-height: 25px;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    word-wrap: break-word;
+    word-break: keep-all;
   }
 }
-@media (max-width: 390px) {
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .eventTitle {
+    height: 400px;
+  }
+  .eventTitle .mainTitle {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .eventTitle .mainTitle .title {
+    gap: 20px;
+  }
+  .eventTitle .mainTitle .title p {
+    font-size: 3rem;
+  }
+  .eventTitle .mainTitle .title h2 {
+    font-size: 5rem;
+  }
+  .eventTitle .mainTitle .title span {
+    font-size: 1.3rem;
+  }
+  .eventSteps {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .eventSteps .howTo {
+    width: 100%;
+  }
+  .eventSteps .howTo h3 {
+    font-size: 6.5rem;
+  }
+  .eventSteps .howTo p {
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .eventSteps .steps {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 35px;
+  }
+  .eventSteps .steps .step01,
+  .eventSteps .steps .step02 {
+    width: 100%;
+    height: 350px;
+  }
+  .eventSteps .steps .step01 .bg1,
+  .eventSteps .steps .step01 .bg3,
+  .eventSteps .steps .step02 .bg1,
+  .eventSteps .steps .step02 .bg3 {
+    width: 280px;
+    height: 175px;
+  }
+  .eventSteps .steps .step01 .bg2,
+  .eventSteps .steps .step02 .bg2 {
+    width: 140px;
+    height: 160px;
+    bottom: 80px;
+  }
+  .eventSteps .steps .step01 .bg4,
+  .eventSteps .steps .step02 .bg4 {
+    width: 220px;
+    height: 150px;
+    bottom: 70px;
+  }
+  .eventSteps .steps .step01 .text1,
+  .eventSteps .steps .step01 .text2,
+  .eventSteps .steps .step02 .text1,
+  .eventSteps .steps .step02 .text2 {
+    width: 200px;
+    left: 25px;
+  }
+  .eventSteps .steps .step01 .text1 h4,
+  .eventSteps .steps .step01 .text2 h4,
+  .eventSteps .steps .step02 .text1 h4,
+  .eventSteps .steps .step02 .text2 h4 {
+    font-size: 5rem;
+  }
+  .eventSteps .steps .step01 .text1 p,
+  .eventSteps .steps .step01 .text2 p,
+  .eventSteps .steps .step02 .text1 p,
+  .eventSteps .steps .step02 .text2 p {
+    font-size: 2.5rem;
+  }
+  .eventSteps .steps .step01 .text1 span,
+  .eventSteps .steps .step01 .text2 span,
+  .eventSteps .steps .step02 .text1 span,
+  .eventSteps .steps .step02 .text2 span {
+    font-size: 1.6rem;
+  }
+  .couponsList {
+    margin-top: 60px;
+    gap: 20px;
+  }
+  .couponsList .hashTags {
+    width: 100%;
+  }
+  .couponsList .hashTags span {
+    width: auto;
+    font-size: 1.9rem;
+  }
+  .couponsList .coupons .couponCommon {
+    width: 200px;
+    height: 200px;
+  }
+  .couponsList .coupons .couponCommon .couponTop {
+    width: 110px;
+    height: 160px;
+    font-size: 28px;
+    top: 10px;
+    right: 10px;
+  }
+  .couponsList .coupons .couponCommon .couponBottom {
+    bottom: 0px;
+    width: 110px;
+  }
+  .couponsList .coupons .couponCommon img {
+    top: 6%;
+    right: -7%;
+    width: 30px;
+    height: 30px;
+  }
+  .coupons {
+    gap: 20px;
+  }
+  .coupons .ticket {
+    gap: 20px;
+  }
+  .couponText {
+    bottom: 12px;
+    left: 5px;
+  }
+  .couponText p {
+    font-size: 1rem;
+    max-width: 100px;
+  }
+  .couponText p b {
+    font-size: 2.8rem;
+  }
+  .couponText span {
+    font-size: 1.2rem;
+  }
+  .buttons {
+    gap: 15px;
+    align-items: center;
+  }
+  .buttons button {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    padding: 6px 12px;
+    gap: 10px;
+  }
+  .buttons button p {
+    font-size: 1.6rem;
+  }
+  .buttons button > i {
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+  }
   .eventNotice {
     font-size: 2rem;
+    min-height: 330px;
+    margin-top: 30px;
   }
   .eventNotice h5 {
     font-size: 2.5rem;
     margin-top: 5%;
   }
   .eventNotice ul > li {
-    font-size: 1.2rem;
-    line-height: 20px;
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.5;
     letter-spacing: 0.1px;
+    word-wrap: break-word;
+    word-break: keep-all;
   }
 }

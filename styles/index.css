@@ -123,10 +123,15 @@ main #con1 {
 main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
+<<<<<<< HEAD
+main #con1 .parts-slick {
+  width: 100%;
+=======
 main #con1 .parts {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -135,6 +140,9 @@ main #con1 .parts {
   overflow: hidden;
 }
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 main #con1 .parts-slick .slick-track {
   gap: 20px;
 }
@@ -549,6 +557,8 @@ main #con5 .eventLoad span b {
   main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
   }
+<<<<<<< HEAD
+=======
 }
 /* Add these CSS animations */
 @-webkit-keyframes slideInFromLeft {
@@ -668,4 +678,5 @@ main #con5 .eventLoad span b {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
   }
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 }

@@ -80,58 +80,60 @@
             <span>#동반할인</span>
           </div>
           <div class="coupons">
-            <div class="ticket">
-              <div class="couponGreen">
-                <div class="couponTop">
-                  <i class="fas fa-arrow-right-to-bracket"></i>
-                  <div class="couponText">
-                    <p><b>10%</b><br />FOOD COUPON</p>
-                    <span>최대 1만원 할인</span>
-                  </div>
-                  <div class="dashedLine"></div>
+            <div class="couponGreen couponCommon">
+              <img src="/images/event/download.png" alt="down" />
+              <div class="couponTop">
+                <div class="couponText">
+                  <p><b>10%</b><br />FOOD COUPON</p>
+                  <span>최대 1만원 할인</span>
                 </div>
-                <div class="couponBottom"></div>
               </div>
-              <div class="couponPink">
-                <div class="couponTop">
-                  <i class="fas fa-arrow-right-to-bracket"></i>
-                  <div class="couponText">
-                    <p><b>10%</b><br />BEAUTY COUPON</p>
-                    <span>최대 1만원 할인</span>
-                  </div>
-                  <div class="dashedLine"></div>
-                </div>
-                <div class="couponBottom"></div>
+              <div class="couponBottom">
+                <div class="dashed"></div>
               </div>
-              <div class="couponSky">
-                <div class="couponTop">
-                  <i class="fas fa-arrow-right-to-bracket"></i>
-                  <div class="couponText">
-                    <p><b>10%</b><br />FASHION COUPON</p>
-                    <span>최대 1만원 할인</span>
-                  </div>
-                  <div class="dashedLine"></div>
+            </div>
+            <div class="couponPink couponCommon">
+              <img src="/images/event/download.png" alt="down" />
+              <div class="couponTop">
+                <div class="couponText">
+                  <p><b>10%</b><br />BEAUTY COUPON</p>
+                  <span>최대 1만원 할인</span>
                 </div>
-                <div class="couponBottom"></div>
               </div>
-              <div class="couponPurple">
-                <div class="couponTop">
-                  <i class="fas fa-arrow-right-to-bracket"></i>
-                  <div class="couponText">
-                    <p><b>10%</b><br />ONEDAY COUPON</p>
-                    <span>최대 1만원 할인</span>
-                  </div>
-                  <div class="dashedLine"></div>
+              <div class="couponBottom">
+                <div class="dashed"></div>
+              </div>
+            </div>
+            <div class="couponSky couponCommon">
+              <img src="/images/event/download.png" alt="down" />
+              <div class="couponTop">
+                <div class="couponText">
+                  <p><b>10%</b><br />FASHION COUPON</p>
+                  <span>최대 1만원 할인</span>
                 </div>
-                <div class="couponBottom"></div>
+              </div>
+              <div class="couponBottom">
+                <div class="dashed"></div>
+              </div>
+            </div>
+            <div class="couponPurple couponCommon">
+              <img src="/images/event/download.png" alt="down" />
+              <div class="couponTop">
+                <div class="couponText">
+                  <p><b>10%</b><br />ONEDAY COUPON</p>
+                  <span>최대 1만원 할인</span>
+                </div>
+              </div>
+              <div class="couponBottom">
+                <div class="dashed"></div>
               </div>
             </div>
           </div>
           <div class="buttons">
-            <button>
+            <a href="/join.html" class="full-button">
               <p>회원가입 하러가기</p>
               <i class="fas fa-arrow-right"></i>
-            </button>
+            </a>
             <button>
               <p>쿠폰 전체 발급받기</p>
               <i class="fas fa-arrow-right"></i>
@@ -139,7 +141,7 @@
           </div>
         </section>
         <section class="eventNotice">
-          <h5>이벤트 유의사항</h5>
+          <h5>이벤트 유의사항 <i class=""></i></h5>
           <ul>
             <li>본 이벤트는 BE: 개인회원으로 참여하실 수 있습니다.</li>
             <li>프로필 이벤트응모는 앱과 웹페이지에서 가능합니다.</li>
@@ -173,5 +175,26 @@
       </div>
     </main>
     <footer></footer>
+    <div class="modal" id="couponModal">
+      <div class="modal-content">
+        <div class="modal-check">
+          <svg width="50" height="50" viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="25" fill="currentColor" />
+            <path
+              d="M20 27L25 32L35 22"
+              stroke="white"
+              stroke-width="2"
+              fill="none"
+            />
+          </svg>
+        </div>
+        <h2 class="modal-title"></h2>
+        <p class="modal-desc">*해당 쿠폰은 입력하신 정보로 보내드렸습니다.</p>
+        <div class="modal-buttons">
+          <button class="confirm-btn">확인</button>
+          <button class="homepage-btn">홈페이지 구경하기</button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
