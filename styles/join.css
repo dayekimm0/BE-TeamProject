@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -22,9 +23,16 @@ header {
 
 main {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 150px;
   background: #fff;
 }
@@ -34,13 +42,19 @@ main h2 {
 }
 main #form {
   background: #fff;
-  box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+  -webkit-box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+          box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
   border-radius: 30px;
   width: 800px;
   padding: 80px 200px;
   margin: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   gap: 30px;
 }
@@ -56,8 +70,9 @@ main #form input:not([type=checkbox]):focus {
   outline: none;
 }
 main #form #joinStep {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -71,14 +86,15 @@ main #form #joinStep {
 main #form #joinStep #arrow {
   font-size: 2rem;
   color: #d9d9d9;
-=======
-  justify-content: center;
-  gap: 100px;
->>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
 }
 main #form #joinStep .stepWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
   text-align: center;
 }
@@ -91,22 +107,21 @@ main #form #joinStep .stepWrap:nth-child(3) p {
   color: #d9d9d9;
 }
 main #form #joinStep .stepWrap .stepCircle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   background: #a5d112;
-=======
-  flex-direction: column;
-  background: #000;
->>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
   color: #fff;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 16px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -131,16 +146,14 @@ main #form #joinBox {
 }
 main #form #joinBox .joinInput {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 12px;
-=======
-  flex-direction: column;
->>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
 }
 main #form #joinBox .joinInput #phoneBtn {
   position: absolute;
@@ -162,28 +175,16 @@ main #form #joinBox .joinInput label {
   position: absolute;
   left: 30px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
 }
-<<<<<<< HEAD
 main #form #joinBox .joinInfo {
   margin-top: 8px;
   display: -webkit-box;
   display: -ms-flexbox;
-=======
-main #form .joinInput label::-moz-placeholder {
-  font-size: 1.8rem;
-  color: #ccc;
-}
-main #form .joinInput label::placeholder {
-  font-size: 1.8rem;
-  color: #ccc;
-}
-main #form .joinInput .checkList {
-  margin-top: 100px;
->>>>>>> c8461f53841ce5975ae9e94107f45bd907bbc14d
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -370,7 +371,8 @@ main #form #inputBtn #joinCancel {
   main #form {
     width: 100%;
     padding: 0 5%;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   main #form input:not(input[type=checkbox]) {
     height: 50px;

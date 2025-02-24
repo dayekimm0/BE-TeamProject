@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -35,17 +36,30 @@ body {
   position: relative;
   height: 600px;
   background-image: url("/images/event/title-bg.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .eventTitle .mainTitle {
   width: 1440px;
 }
 .eventTitle .mainTitle .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 30px;
   color: #fff;
 }
@@ -71,19 +85,35 @@ body {
 
 .eventSteps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .eventSteps .howTo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 450px;
   height: auto;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   color: #000;
 }
@@ -102,7 +132,9 @@ body {
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
@@ -113,8 +145,12 @@ body {
 }
 .eventSteps .steps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 50px;
 }
 .eventSteps .steps .step01,
@@ -124,7 +160,8 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 8px #d9d9d9;
+  -webkit-box-shadow: 0 0 8px #d9d9d9;
+          box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
@@ -164,9 +201,16 @@ body {
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
   width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 11px;
   position: absolute;
   top: 25px;
@@ -203,20 +247,35 @@ body {
 
 .couponsList {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 132px;
 }
 .couponsList .hashTags {
   width: 628px;
   height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -224,27 +283,45 @@ body {
   padding: 10px 25px;
   border-radius: 30px;
   background: #fff;
-  box-shadow: 0px 0px 4px 0px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
+          box-shadow: 0px 0px 4px 0px #d9d9d9;
   color: #000;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 .couponsList .coupons {
   width: 100%;
   gap: 50px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 .couponsList .coupons .ticket {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 30px;
 }
 .couponsList .couponGreen,
@@ -255,10 +332,19 @@ body {
   width: 230px;
   height: 310px;
   border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   overflow: visible;
 }
 .couponsList .couponGreen .couponTop,
@@ -269,10 +355,19 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .couponsList .couponGreen .couponBottom,
 .couponsList .couponPink .couponBottom,
@@ -282,7 +377,8 @@ body {
   width: 100%;
   bottom: -35px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   width: 100%;
   height: 40px;
   background: inherit;
@@ -341,21 +437,30 @@ body {
 
 .buttons {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 35px;
   margin-top: 30px;
 }
 .buttons button {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 20px;
   gap: 10px;
   width: 250px;
   height: 55px;
   border-radius: 30px;
   border: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   cursor: pointer;
 }
@@ -365,13 +470,19 @@ body {
   letter-spacing: -0.4px;
 }
 .buttons button i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 2rem;
   width: 40px;
   height: 40px;
   padding: 6px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 30px;
   color: #000;
   border: 1px solid #000;

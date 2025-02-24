@@ -17,13 +17,13 @@ const headerInner = `
             <a href="food.html" title="Food">Food</a>
           </li>
           <li>
-            <a href="#" title="Beauty">Beauty</a>
+            <a href="beauty.html" title="Beauty">Beauty</a>
           </li>
           <li>
-            <a href="#" title="Fashion">Fashion</a>
+            <a href="fashion.html" title="Fashion">Fashion</a>
           </li>
           <li>
-            <a href="#" title="Lifestyle">Lifestyle</a>
+            <a href="lifestyle.html" title="Lifestyle">Lifestyle</a>
           </li>
           <li>
             <a href="event.html" title="Events">Events</a>
@@ -46,16 +46,16 @@ const footerInner = `
           <nav id="fnb">
             <ul>
               <li>
-                <a href="#" title="Food">Food</a>
+                <a href="food.html" title="Food">Food</a>
               </li>
               <li>
-                <a href="#" title="Beauty">Beauty</a>
+                <a href="beauty.html" title="Beauty">Beauty</a>
               </li>
               <li>
-                <a href="#" title="Fashion">Fashion</a>
+                <a href="fashion.html" title="Fashion">Fashion</a>
               </li>
               <li>
-                <a href="#" title="Lifestyle">Lifestyle</a>
+                <a href="lifestyle.html" title="Lifestyle">Lifestyle</a>
               </li>
               <li>
                 <a href="#" title="Events">Events</a>
