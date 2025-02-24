@@ -4,9 +4,16 @@ header {
 
 main {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 150px;
 }
 main h2 {
@@ -15,13 +22,19 @@ main h2 {
 }
 main #form {
   background: #fff;
-  box-shadow: 0 30px 60px rgba(20, 20, 21, 0.08);
+  -webkit-box-shadow: 0 30px 60px rgba(20, 20, 21, 0.08);
+          box-shadow: 0 30px 60px rgba(20, 20, 21, 0.08);
   border-radius: 30px;
   width: 800px;
   padding: 80px 200px;
   margin: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
 }
 main #form input:not(input[type=checkbox]) {
@@ -34,8 +47,13 @@ main #form input:not(input[type=checkbox]):focus {
   outline: none;
 }
 main #form #inputWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
 }
 main #form #inputWrap .inputBox {
@@ -49,27 +67,59 @@ main #form #inputWrap .inputBox label {
   position: absolute;
   left: 30px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+main #form #inputWrap .inputBox i {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #aeaeba;
+  cursor: pointer;
+}
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 main #form #userInfo {
   margin: 16px 0;
   padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 1.2rem;
   color: #64646b;
 }
 main #form #userInfo div:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 8px;
 }
 main #form #userInfo div:first-child input[type=checkbox] {
+<<<<<<< HEAD
   width: 20px;
   height: 20px;
+=======
+  width: 16px;
+  height: 16px;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 }
 main #form #userInfo div:last-child a:last-child {
   position: relative;
@@ -84,8 +134,13 @@ main #form #userInfo div:last-child a:last-child::before {
   left: -12.5px;
 }
 main #form #inputBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
 }
 main #form #inputBtn input {
@@ -103,8 +158,13 @@ main #form #inputBtn #joinBtn {
 }
 main #form #easyLogin {
   margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
 }
 main #form #easyLogin #easyText {
@@ -114,9 +174,15 @@ main #form #easyLogin a {
   font-size: 1.4rem;
   border-radius: 50px;
   height: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 10px;
   color: #fff;
 }
@@ -168,7 +234,8 @@ main #form #easyLogin a:nth-child(4) {
   main #form {
     width: 100%;
     padding: 0 5%;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   main #form input:not(input[type=checkbox]) {
     height: 50px;
@@ -190,7 +257,9 @@ main #form #easyLogin a:nth-child(4) {
   }
   main #form #easyLogin {
     position: relative;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   main #form #easyLogin a {
     height: 50px;

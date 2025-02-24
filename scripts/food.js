@@ -1,5 +1,15 @@
-const buttons = document.querySelector("button");
+const tabBtns = document.querySelectorAll("li >button");
+const tabConts = document.querySelectorAll(".tabContainer > div");
 
-buttons.addEventListener("click", (button) => {
-  
+tabBtns.forEach((btn, index) => {
+  btn.addEventListener("click", () => {
+    tabBtns.forEach((otherBtn) => {
+      otherBtn.classList.remove("active");
+    });
+    tabConts.forEach((otherCont) => {
+      otherCont.classList.remove("active");
+    });
+    tabBtns[index].classList.add("active");
+    tabConts[index].classList.add("active");
+  });
 });

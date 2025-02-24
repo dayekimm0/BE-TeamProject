@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -22,9 +23,16 @@ header {
 
 main {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 150px;
   background: #fff;
 }
@@ -34,13 +42,19 @@ main h2 {
 }
 main #form {
   background: #fff;
-  box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+  -webkit-box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+          box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
   border-radius: 30px;
   width: 800px;
   padding: 80px 200px;
   margin: 70px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   position: relative;
   gap: 30px;
 }
@@ -55,9 +69,47 @@ main #form input:not([type=checkbox]) {
 main #form input:not([type=checkbox]):focus {
   outline: none;
 }
+main #form input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+}
+main #form .error {
+  font-size: 1.2rem;
+  margin-top: 12px;
+  color: #fc864b;
+  position: relative;
+}
+main #form .error i {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  text-indent: 1px;
+  margin-right: 8px;
+  background: #fc864b;
+}
 main #form #joinStep {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  justify-content: center;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   gap: 60px;
   align-items: center;
   border-bottom: 1px solid #d9d9d9;
@@ -68,8 +120,13 @@ main #form #joinStep #arrow {
   color: #d9d9d9;
 }
 main #form #joinStep .stepWrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 16px;
   text-align: center;
 }
@@ -82,14 +139,32 @@ main #form #joinStep .stepWrap:nth-child(3) p {
   color: #d9d9d9;
 }
 main #form #joinStep .stepWrap .stepCircle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  flex-direction: column;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   background: #a5d112;
   color: #fff;
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 16px;
   font-size: 1.2rem;
   font-weight: bold;
@@ -103,15 +178,38 @@ main #form #joinStep .stepWrap p {
   color: #a5d112;
 }
 main #form #joinBox {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   gap: 12px;
 }
 main #form #joinBox .joinInput {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   gap: 12px;
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+<<<<<<< HEAD
+  gap: 12px;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 }
 main #form #joinBox .joinInput #phoneBtn {
   position: absolute;
@@ -122,7 +220,16 @@ main #form #joinBox .joinInput #phoneBtn {
   width: auto;
   height: auto;
   top: 50%;
+<<<<<<< HEAD
   transform: translateY(-50%);
+=======
+<<<<<<< HEAD
+  transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   right: 30px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -132,13 +239,37 @@ main #form #joinBox .joinInput label {
   position: absolute;
   left: 30px;
   top: 50%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+=======
+<<<<<<< HEAD
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
 }
 main #form #joinBox .joinInfo {
   margin-top: 8px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+<<<<<<< HEAD
+=======
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -148,18 +279,29 @@ main #form #joinBox .joinInfo p {
   border-radius: 50%;
 }
 main #form #joinBox .joinInfo p i {
+  background: #d9d9d9;
   width: 12px;
   height: 12px;
-  background: #d9d9d9;
+  line-height: 12px;
+  font-size: 1.2rem;
   color: #fff;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
+  text-indent: 1px;
 }
 main #form #joinBox .joinInfo p span {
   color: #d9d9d9;
 }
 main #form #joinBox .joinInfo .checkList {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   display: flex;
   gap: 8px;
 }
@@ -215,6 +357,15 @@ main #form #joinAgree .checkList2 label {
   position: static;
   font-size: 1.4rem;
   color: #64646b;
+}
+main #form #joinAgree .checkList2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
 }
 main #form #joinAgree .checkList2 div label b {
   color: #a5d112;
@@ -302,11 +453,15 @@ main #form #inputBtn #joinCancel {
   main #form {
     width: 100%;
     padding: 0 5%;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   main #form input:not(input[type=checkbox]) {
     height: 50px;
     border-radius: 50px;
     border: none;
+  }
+  main #form i {
+    text-indent: 0 !important;
   }
 }

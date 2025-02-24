@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>K-Vegan Platform, BE:</title>
     <link rel="icon" href="./images/common/favicon.png" type="image/x-icon" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <!-- slick slider -->
     <link rel="stylesheet" href="./slickslider/slick-theme.css" />
     <link rel="stylesheet" href="./slickslider/slick.css" />
     <script src="./jquery-3.7.1.min.js"></script>
     <script src="./slickslider/slick.js"></script>
     <!-- fontawesome -->
-    <script
-      src="https://kit.fontawesome.com/3f2ea24883.js"
-      crossorigin="anonymous"
-    ></script>
+    <script src="https://kit.fontawesome.com/3f2ea24883.js" crossorigin="anonymous"></script>
     <!-- Common CSS & JS -->
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./styles/index.css" />
@@ -26,7 +26,6 @@
   <body>
     <header></header>
     <main>
-      <section id="intro">
         <div class="index">
           <div class="title">
             <p>비건, 이제 BE:로 완성하다</p>
@@ -37,57 +36,74 @@
             <p>#새로운 비건플랫폼</p>
             <p>#비건을 쉽게, BE와 함께</p>
           </div>
-          <img
-            class="indexImg1"
-            src="./images/index/circle-black.png"
-            alt="circle"
-          />
+          <img class="indexImg1" src="./images/index/circle-black.png" alt="circle" />
           <img class="indexImg2" src="./images/index/star.png" alt="star" />
         </div>
       </section>
       <section id="con1" class="section">
         <h2>What We Have</h2>
-        <div class="parts-slick">
+        <div class="parts">
           <div class="part">
-            <img class="partImg" src="./images/index/home.jpeg" alt="home" />
+            <a href="./join.html"
+              ><img class="partImg" src="./images/index/home.jpeg" alt="home"
+            /></a>
             <p>BE:</p>
           </div>
           <div class="part">
-            <img class="partImg" src="./images/index/food.png" alt="food" />
+            <a href="./food.html"
+              ><img class="partImg" src="./images/index/food.png" alt="food"
+            /></a>
             <p>FOOD</p>
           </div>
           <div class="part">
-            <img class="partImg" src="./images/index/beauty.png" alt="beauty" />
+            <a href="#"
+              ><img
+                class="partImg"
+                src="./images/index/beauty.png"
+                alt="beauty"
+            /></a>
             <p>BEAUTY</p>
           </div>
           <div class="part">
-            <img
-              class="partImg"
-              src="./images/index/fashion.png"
-              alt="fashion"
-            />
+<<<<<<< HEAD
+            <img class="partImg" src="./images/index/fashion.png" alt="fashion" />
             <p>FASHION</p>
           </div>
           <div class="part">
-            <img
-              class="partImg"
-              src="./images/index/lifestyle.png"
-              alt="lifestyle"
-            />
+            <img class="partImg" src="./images/index/lifestyle.png" alt="lifestyle" />
+=======
+            <a href="#"
+              ><img
+                class="partImg"
+                src="./images/index/fashion.png"
+                alt="fashion"
+            /></a>
+            <p>FASHION</p>
+          </div>
+          <div class="part">
+            <a href="#"
+              ><img
+                class="partImg"
+                src="./images/index/lifestyle.png"
+                alt="lifestyle"
+            /></a>
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
             <p>LIFESTYLE</p>
           </div>
           <div class="part">
-            <img class="partImg" src="./images/index/event.png" alt="event" />
+            <a href="./event.html"
+              ><img class="partImg" src="./images/index/event.png" alt="event"
+            /></a>
             <p>EVENT</p>
           </div>
         </div>
       </section>
       <section id="con2" class="section">
         <div class="con2-text">
-          <p>TASTY</p>
-          <p>BEAUTIFUL</p>
-          <p>STYLISH</p>
-          <p>WELLNESS</p>
+          <p data-aos="fade-right">TASTY</p>
+          <p data-aos="fade-left">BEAUTIFUL</p>
+          <p data-aos="fade-right">STYLISH</p>
+          <p data-aos="fade-left">WELLNESS</p>
           <img class="con2Img" src="./images/index/star.png" alt="star" />
         </div>
       </section>
@@ -108,9 +124,9 @@
           <div class="list">
             <h3>Our Service *</h3>
             <p>01<a href="./food.html">FOOD</a></p>
-            <p>02<a href="#">BEAUTY</a></p>
-            <p>03<a href="#">FASHION</a></p>
-            <p>04<a href="#">LIFESTYLE</a></p>
+            <p>02<a href="./beauty.html">BEAUTY</a></p>
+            <p>03<a href="./fashion.html">FASHION</a></p>
+            <p>04<a href="./lifestyle.html">LIFESTYLE</a></p>
           </div>
         </div>
       </section>
@@ -124,4 +140,7 @@
     </main>
     <footer></footer>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>
