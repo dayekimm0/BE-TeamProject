@@ -12,6 +12,17 @@ header {
     color: map-get($map: $colors, $key: userInfo);
   }
 }
+@mixin error {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 1.2rem;
+  color: map-get($map: $colors, $key: light);
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  text-indent: 1px;
+}
 main {
   width: 100%;
   display: flex;
@@ -44,6 +55,37 @@ main {
       &:focus {
         outline: none;
       }
+    }
+    input[type="checkbox"] {
+      width: 16px;
+      height: 16px;
+    }
+    .error {
+      font-size: 1.2rem;
+      margin-top: 12px;
+      color: map-get($map: $colors, $key: error);
+      position: relative;
+      i {
+        @include error();
+        margin-right: 8px;
+        background: map-get($map: $colors, $key: error);
+      }
+      // &::before {
+      //   content: "!";
+      //   color: map-get($map: $colors, $key: light);
+      //   position: absolute;
+      //   left: 0;
+      //   font-size: 1.2rem;
+      //   text-align: center;
+      //   background: map-get($map: $colors, $key: error);
+      //   width: 12px;
+      //   height: 12px;
+      //   line-height: 12px;
+      //   left: 0;
+      //   top: 0;
+      //   border-radius: 50%;
+      //   text-indent: 1px;
+      // }
     }
     #joinStep {
       display: flex;
@@ -102,7 +144,6 @@ main {
         position: relative;
         display: flex;
         flex-direction: column;
-        gap: 12px;
         #phoneBtn {
           position: absolute;
           right: 0;
@@ -137,13 +178,8 @@ main {
           font-size: 1.2rem;
           border-radius: 50%;
           i {
-            width: 12px;
-            height: 12px;
             background: map-get($map: $colors, $key: line);
-            color: map-get($map: $colors, $key: light);
-            display: inline-block;
-            text-align: center;
-            border-radius: 50%;
+            @include error;
           }
           span {
             color: map-get($map: $colors, $key: line);
@@ -187,6 +223,9 @@ main {
         align-items: center;
         @include checkList();
         div {
+          display: flex;
+          align-items: center;
+          gap: 8px;
           label {
             b {
               color: map-get($map: $colors, $key: foodAccent);
@@ -292,6 +331,9 @@ main {
         height: 50px;
         border-radius: 50px;
         border: none;
+      }
+      i {
+        text-indent: 0 !important;
       }
     }
   }

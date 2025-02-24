@@ -51,6 +51,14 @@ main {
           color: map-get($map: $colors, $key: label);
           font-weight: bold;
         }
+        i {
+          position: absolute;
+          right: 30px;
+          top: 50%;
+          transform: translateY(-50%);
+          color: map-get($map: $colors, $key: label);
+          cursor: pointer;
+        }
       }
     }
     #userInfo {
@@ -65,8 +73,8 @@ main {
         align-items: center;
         gap: 8px;
         input[type="checkbox"] {
-          width: 20px;
-          height: 20px;
+          width: 16px;
+          height: 16px;
         }
       }
       div:last-child {
