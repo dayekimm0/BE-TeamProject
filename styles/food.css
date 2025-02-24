@@ -4,8 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -35,13 +34,9 @@ section {
 }
 
 .detailTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .detailTitle .titleImg {
   width: 30px;
@@ -53,8 +48,7 @@ section {
 .detailTitle .circleImg {
   margin-left: auto;
   margin-bottom: 70px;
-  -webkit-animation: circle 6s linear infinite;
-          animation: circle 6s linear infinite;
+  animation: circle 6s linear infinite;
 }
 
 h2 {
@@ -65,8 +59,6 @@ h2 {
 
 /* ==== contents ==== */
 .infoContainer > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 14px;
   margin: 20px 0;
@@ -81,7 +73,6 @@ h2 {
   border: 1.5px solid #a5d112;
   background: none;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .infoContainer > ul li .active {
@@ -92,6 +83,8 @@ h2 {
   width: 100%;
   height: 500px;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   display: flex;
   border-radius: 40px;
   overflow: hidden;
@@ -102,31 +95,20 @@ h2 {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
   border-radius: 40px;
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 40px;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
->>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
   border: 1.5px solid #a5d112;
-<<<<<<< HEAD
   display: none;
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 }
 .infoContainer .tabContainer > div .articleVideo {
   width: 35%;
@@ -150,6 +132,9 @@ h2 {
   line-height: 2.8rem;
 }
 <<<<<<< HEAD
+.infoContainer .tabContainer > div .articleInfo .articleHashtag {
+=======
+<<<<<<< HEAD
 .infoContainer article .articleInfo .articleHashtag {
 =======
 <<<<<<< HEAD
@@ -165,6 +150,7 @@ h2 {
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
   gap: 8px;
 }
@@ -177,18 +163,12 @@ h2 {
   font-weight: 400;
 }
 .infoContainer .tabContainer > div.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .bannerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 130px 0;
   background: #cae570;
   padding-top: 70px;
@@ -199,19 +179,12 @@ h2 {
   position: relative;
 }
 .bannerContainer .bannerBoxWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 60%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
@@ -230,14 +203,11 @@ h2 {
 }
 
 .shopContainer .shopBoxWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 40px;
   margin-top: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .shopContainer .shopBoxWrapper .shopBox {
   position: relative;
@@ -258,26 +228,15 @@ h2 {
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
   background: rgba(202, 229, 112, 0.9);
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 0 60px;
-<<<<<<< HEAD
   opacity: 0;
-=======
-  opacity: 0; /* 투명도 */
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
@@ -304,17 +263,9 @@ h2 {
   visibility: visible;
 }
 
-@-webkit-keyframes circle {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes circle {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /* ==== 반응형 ==== */
@@ -354,8 +305,6 @@ h2 {
     line-height: 4.2rem;
   }
   .detailTitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -373,12 +322,6 @@ h2 {
     margin-bottom: 30px;
   }
   .infoContainer > ul {
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     gap: 10px;
   }
   .infoContainer > ul li button {
@@ -387,8 +330,9 @@ h2 {
   }
   .infoContainer .tabContainer > div {
     height: 400px;
-<<<<<<< HEAD
     border-radius: 30px;
+<<<<<<< HEAD
+=======
 =======
     display: -webkit-box;
     display: -ms-flexbox;
@@ -401,6 +345,7 @@ h2 {
 <<<<<<< HEAD
 =======
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   }
   .infoContainer .tabContainer > div .articleVideo {
     width: 45%;
@@ -410,6 +355,8 @@ h2 {
     padding-left: 0;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     width: 50%;
     height: 230px;
     -webkit-box-align: center;
@@ -417,6 +364,7 @@ h2 {
             align-items: center;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
     font-size: 2.2rem;
@@ -426,14 +374,7 @@ h2 {
     margin: 30px 0 20px;
     line-height: 2rem;
   }
-<<<<<<< HEAD
   .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-=======
-  .infoContainer article .articleInfo .articleHashtag {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     gap: 6px;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag li {
@@ -442,6 +383,8 @@ h2 {
   }
   .bannerContainer {
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
     margin: 70px 0;
@@ -452,24 +395,20 @@ h2 {
     display: -ms-flexbox;
     display: flex;
 <<<<<<< HEAD
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     flex-direction: column;
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
->>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
     margin: 70px 0;
-<<<<<<< HEAD
     padding-top: 50px;
     padding-bottom: 50px;
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     background: #cae570;
     padding-top: 40px;
     padding-bottom: 40px;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   }
   .bannerContainer .title {
     width: inherit;
@@ -510,12 +449,6 @@ h2 {
   .shopContainer .shopBoxWrapper .shopBox {
     width: 100%;
     height: 330px;
-<<<<<<< HEAD
-=======
-    position: relative;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -527,43 +460,31 @@ h2 {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     opacity: 1;
@@ -598,6 +519,8 @@ h2 {
   .detailTitle {
     padding: 0 5%;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     width: 100%;
 =======
 <<<<<<< HEAD
@@ -611,6 +534,7 @@ h2 {
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     display: flex;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     gap: 18px;
   }
   .detailTitle .titleImg {
@@ -621,24 +545,16 @@ h2 {
   }
   .detailTitle .circleImg {
     opacity: 0;
-<<<<<<< HEAD
-=======
-    width: 100px;
-    height: 100px;
-    margin-left: auto;
-  }
-  .infoContainer > ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 10px;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   }
   .infoContainer > ul li button {
     margin-top: 0;
     padding: 6px 14px;
     font-size: 1.4rem;
   }
+<<<<<<< HEAD
+  .infoContainer .tabContainer > div {
+    height: 250px;
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -655,17 +571,13 @@ h2 {
 =======
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     border-radius: 20px;
   }
-<<<<<<< HEAD
   .infoContainer .tabContainer > div .articleInfo {
-=======
-  .infoContainer article .articleVideo {
-    width: 45%;
-  }
-  .infoContainer article .articleInfo {
-<<<<<<< HEAD
     align-items: center;
+<<<<<<< HEAD
+=======
     height: auto;
   }
 =======
@@ -677,14 +589,17 @@ h2 {
         -ms-flex-align: center;
             align-items: center;
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     height: auto;
   }
-<<<<<<< HEAD
   .infoContainer .tabContainer > div .articleInfo h3 {
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
   .infoContainer article .articleInfo h3 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -693,13 +608,7 @@ h2 {
     margin: 12px 0 14px;
     line-height: 1.5rem;
   }
-<<<<<<< HEAD
   .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-=======
-  .infoContainer article .articleInfo .articleHashtag {
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
@@ -709,6 +618,8 @@ h2 {
     font-size: 0.9rem;
   }
   .bannerContainer {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
     display: flex;
     flex-direction: column;
@@ -728,6 +639,7 @@ h2 {
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     margin: 30px 0;
     background: none;
     padding-top: 30px;
@@ -738,19 +650,6 @@ h2 {
   }
   .bannerContainer .title h2 {
     font-size: 2.2rem;
-<<<<<<< HEAD
-=======
-    font-weight: 500;
-    line-height: 1;
-  }
-  .bannerContainer .bannerBoxWrapper {
-    width: inherit;
-    height: inherit;
-    justify-content: center;
-  }
-  .bannerContainer .bannerBoxWrapper .contentWrapper {
-    gap: 20px;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
     margin-bottom: 14px;
@@ -767,6 +666,8 @@ h2 {
   }
   .shopContainer .shopBoxWrapper .shopBox {
     height: 230px;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -827,6 +728,7 @@ h2 {
         -ms-flex-order: 1;
             order: 1;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     padding: 0 30px;

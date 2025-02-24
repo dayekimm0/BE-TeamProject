@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -41,17 +40,9 @@ body {
   position: relative;
   height: 600px;
   background-image: url("/images/event/title-bg.png");
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-=======
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 1024px) {
   .eventTitle {
@@ -62,22 +53,14 @@ body {
   .eventTitle {
     height: 400px;
   }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .eventTitle .mainTitle {
   width: 1440px;
 }
 .eventTitle .mainTitle .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
   gap: 30px;
   color: #fff;
 }
@@ -103,35 +86,19 @@ body {
 
 .eventSteps {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .eventSteps .howTo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 450px;
   height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   color: #000;
 }
@@ -150,9 +117,7 @@ body {
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
@@ -163,24 +128,15 @@ body {
 }
 .eventSteps .steps {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin-top: 50px;
 }
 @media (max-width: 1024px) {
   .eventSteps .steps {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
 }
 .eventSteps .steps .step01,
@@ -190,8 +146,7 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 8px #d9d9d9;
-          box-shadow: 0 0 8px #d9d9d9;
+  box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
@@ -231,16 +186,9 @@ body {
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
   width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 11px;
   position: absolute;
   top: 25px;
@@ -277,47 +225,28 @@ body {
 
 .couponsList {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 132px;
 }
 .couponsList .hashTags {
   width: 628px;
   height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 30px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-<<<<<<< HEAD
-=======
+  justify-content: space-evenly;
 }
 @media (max-width: 1024px) {
   .couponsList .hashTags {
     width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     height: auto;
     gap: 20px;
   }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -325,69 +254,43 @@ body {
   padding: 10px 25px;
   border-radius: 30px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
-          box-shadow: 0px 0px 4px 0px #d9d9d9;
+  box-shadow: 0px 0px 4px 0px #d9d9d9;
   color: #000;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .couponsList .coupons {
   width: 100%;
   gap: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  justify-content: center;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-=======
+  flex-direction: column;
 }
 @media (max-width: 390px) {
   .couponsList .coupons {
     gap: 30px;
   }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .coupons .ticket {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
-  gap: 30px;
-=======
+  justify-content: center;
   gap: 50px;
 }
 @media (max-width: 1024px) {
   .couponsList .coupons .ticket {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 390px) {
   .couponsList .coupons .ticket {
     gap: 20px;
   }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .couponGreen,
 .couponsList .couponPink,
@@ -397,19 +300,10 @@ body {
   width: 230px;
   height: 310px;
   border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   overflow: visible;
 }
 .couponsList .couponCommon img {
@@ -439,21 +333,10 @@ body {
   top: 0;
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
-=======
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .couponsList .couponGreen .couponTop > i,
 .couponsList .couponPink .couponTop > i,
@@ -474,15 +357,13 @@ body {
     top: 10px;
     right: 10px;
   }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .couponCommon .couponBottom {
   position: absolute;
   width: 100%;
   bottom: -35px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   width: 100%;
   height: 40px;
   bottom: -10px;
@@ -525,52 +406,36 @@ body {
 
 .buttons {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 35px;
   margin-top: 30px;
 }
 @media (max-width: 1024px) {
   .buttons {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 20px;
   }
 }
 @media (max-width: 390px) {
   .buttons {
     gap: 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    align-items: center;
   }
 }
 .buttons button {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px 20px;
   gap: 10px;
   width: auto;
   height: 60px;
   border-radius: 30px;
   border: none;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   color: inherit;
   outline: none;
@@ -578,9 +443,6 @@ body {
   font-weight: 700;
   letter-spacing: -0.4px;
 }
-<<<<<<< HEAD
-.buttons button i {
-=======
 @media (max-width: 1024px) {
   .buttons button p {
     font-size: 1.8rem;
@@ -592,19 +454,12 @@ body {
   }
 }
 .buttons button > i {
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 40px;
   height: 40px;
   padding: 6px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   color: #000;
   border: 2px solid #d9d9d9;
@@ -633,8 +488,6 @@ body {
   font-weight: 500;
   line-height: 35px;
   letter-spacing: 0.2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   position: relative;
   padding-left: 15px;
@@ -653,8 +506,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   background: #000;
 }
 
