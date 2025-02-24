@@ -75,6 +75,8 @@ main #form #inputWrap .inputBox label {
 }
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 main #form #inputWrap .inputBox i {
   position: absolute;
   right: 30px;
@@ -85,6 +87,7 @@ main #form #inputWrap .inputBox i {
   cursor: pointer;
 }
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 main #form #userInfo {
   margin: 16px 0;
   padding: 0 10px;

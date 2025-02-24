@@ -17,12 +17,11 @@ a {
   color: inherit;
 }
 
-/* ==== header ==== */
+/* ==== common ==== */
 header {
   z-index: 10;
 }
 
-/* ==== common ==== */
 main {
   width: 100%;
   margin: 100px 0 100px;
@@ -39,16 +38,18 @@ section {
   gap: 24px;
   align-items: center;
 }
-.detailTitle .title-img {
+.detailTitle .titleImg {
   width: 30px;
   height: 65px;
 }
 .detailTitle h1 {
   font: 700 11rem/1 "REM";
 }
-.detailTitle .circle-img {
+.detailTitle .circleImg {
   margin-left: auto;
   margin-bottom: 70px;
+  -webkit-animation: circle 6s linear infinite;
+          animation: circle 6s linear infinite;
 }
 
 h2 {
@@ -70,53 +71,94 @@ h2 {
   font-size: 2.6rem;
   font-weight: 500;
   color: #c198f9;
-  border: 1.5px solid #a5d112;
+  border: 1.5px solid #c198f9;
   background: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
-.infoContainer article {
+.infoContainer > ul li .active {
+  background: #c198f9;
+  color: #fff;
+}
+.infoContainer .tabContainer > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+.infoContainer .tabContainer > div > div {
   width: 100%;
   height: 500px;
   display: flex;
   border-radius: 40px;
   overflow: hidden;
+<<<<<<< HEAD
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border: 1.5px solid #c198f9;
+=======
   align-items: center;
   justify-content: space-between;
   border: 1.5px solid #a5d112;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
-.infoContainer article .articleVideo {
+.infoContainer .tabContainer > div > div:first-child {
+  margin-bottom: 50px;
+}
+.infoContainer .tabContainer > div > div .articleVideo {
   width: 35%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-.infoContainer article .articleInfo {
+.infoContainer .tabContainer > div > div .articleInfo {
   width: 65%;
   padding-left: 60px;
 }
-.infoContainer article .articleInfo h3 {
+.infoContainer .tabContainer > div > div .articleInfo h3 {
   font-size: 3rem;
   font-weight: 500;
 }
-.infoContainer article .articleInfo p {
+.infoContainer .tabContainer > div > div .articleInfo p {
   width: 80%;
   font-weight: 300;
   font-size: 1.8rem;
   margin: 30px 0 30px;
   line-height: 2.8rem;
 }
+<<<<<<< HEAD
+.infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 .infoContainer article .articleInfo .articleHashtag {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   display: flex;
   gap: 8px;
 }
-.infoContainer article .articleInfo .articleHashtag li {
-  background: #a5d112;
+.infoContainer .tabContainer > div > div .articleInfo .articleHashtag li {
+  background: #c198f9;
   padding: 10px 22px;
   border-radius: 30px;
   color: #fff;
   font-size: 1.6rem;
   font-weight: 400;
 }
+<<<<<<< HEAD
+.infoContainer .tabContainer > div.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
 
 .bannerContainer {
   display: flex;
@@ -152,9 +194,25 @@ h2 {
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 
+@-webkit-keyframes circle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 /* ==== 반응형 ==== */
+<<<<<<< HEAD
+=======
 @media screen and (max-width: 1200px) {
   .bannerContainer .title {
     width: 30%;
@@ -180,6 +238,7 @@ h2 {
     width: 100%;
   }
 }
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 @media screen and (max-width: 1024px) {
   main {
     width: 100%;
@@ -190,86 +249,84 @@ h2 {
     font-weight: 500;
     line-height: 4.2rem;
   }
-  .detailTitle,
-  section {
-    padding: 0 5%;
-    width: 100%;
-  }
   .detailTitle {
     display: flex;
     gap: 18px;
   }
-  .detailTitle .title-img {
+  .detailTitle .titleImg {
     width: 18px;
     height: 40px;
   }
   .detailTitle h1 {
     font: 700 7.2rem/1 "REM";
   }
-  .detailTitle .circle-img {
+  .detailTitle .circleImg {
     width: 120px;
     height: 120px;
     margin-left: auto;
     margin-bottom: 30px;
   }
   .infoContainer > ul {
+<<<<<<< HEAD
+=======
     display: flex;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     gap: 10px;
   }
   .infoContainer > ul li button {
-    margin-top: 0;
-    padding: 12px 24px;
-    border-radius: 60px;
+    padding: 12px 28px;
     font-size: 2rem;
-    font-weight: 500;
-    color: #a5d112;
-    border: 1px solid #a5d112;
-    background: none;
-    cursor: pointer;
   }
-  .infoContainer article {
-    width: inherit;
+  .infoContainer .tabContainer > div > div {
     height: 400px;
+<<<<<<< HEAD
+    border-radius: 30px;
+=======
     display: flex;
     gap: 40px;
     border: 1px solid #a5d112;
     border-radius: 36px;
     overflow: hidden;
     align-items: center;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   }
-  .infoContainer article .articleVideo {
+  .infoContainer .tabContainer > div > div:first-child {
+    margin-bottom: 40px;
+  }
+  .infoContainer .tabContainer > div > div .articleVideo {
+    width: 45%;
+  }
+  .infoContainer .tabContainer > div > div .articleInfo {
     width: 50%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    aspect-ratio: 29/27;
-  }
-  .infoContainer article .articleInfo {
     padding-left: 0;
+<<<<<<< HEAD
+=======
     width: 50%;
     height: 230px;
     align-items: center;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   }
-  .infoContainer article .articleInfo h3 {
+  .infoContainer .tabContainer > div > div .articleInfo h3 {
     font-size: 2.2rem;
-    font-weight: 500;
   }
-  .infoContainer article .articleInfo p {
-    width: 80%;
-    font-weight: 300;
+  .infoContainer .tabContainer > div > div .articleInfo p {
     font-size: 1.4rem;
-    margin: 20px 0 20px;
-    line-height: 2.2rem;
+    margin: 30px 0 20px;
+    line-height: 2rem;
   }
+<<<<<<< HEAD
+  .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
+=======
   .infoContainer article .articleInfo .articleHashtag {
     display: flex;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     gap: 6px;
   }
-  .infoContainer article .articleInfo .articleHashtag li {
-    background: #a5d112;
+  .infoContainer .tabContainer > div > div .articleInfo .articleHashtag li {
     padding: 8px 16px;
-    border-radius: 30px;
-    color: #fff;
     font-size: 1.4rem;
+<<<<<<< HEAD
+=======
     font-weight: 400;
   }
   .bannerContainer {
@@ -384,6 +441,7 @@ h2 {
     font-weight: 300;
     font-size: 1.4rem;
     line-height: 2rem;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   }
 }
 @media screen and (max-width: 767px) {
@@ -399,19 +457,23 @@ h2 {
   }
   .detailTitle {
     padding: 0 5%;
+<<<<<<< HEAD
+=======
     width: 100%;
     display: flex;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     gap: 18px;
   }
-  .detailTitle .title-img {
-    width: 16px;
-    height: 42px;
+  .detailTitle .titleImg {
+    width: 14px;
   }
   .detailTitle h1 {
     font: 700 6rem/1 "REM";
   }
-  .detailTitle .circle-img {
+  .detailTitle .circleImg {
     opacity: 0;
+<<<<<<< HEAD
+=======
     width: 100px;
     height: 100px;
     margin-left: auto;
@@ -419,51 +481,63 @@ h2 {
   .infoContainer > ul {
     display: flex;
     gap: 10px;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   }
   .infoContainer > ul li button {
     margin-top: 0;
     padding: 6px 14px;
-    border-radius: 60px;
     font-size: 1.4rem;
-    font-weight: 500;
-    color: #a5d112;
-    border: 0.8px solid #a5d112;
-    cursor: pointer;
   }
+<<<<<<< HEAD
+  .infoContainer .tabContainer > div > div {
+    height: 250px;
+=======
   .infoContainer article {
     position: relative;
     height: 230px;
     gap: 20px;
     align-items: center;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     border-radius: 20px;
-    overflow: hidden;
-    border: 0.8px solid #a5d112;
   }
-  .infoContainer article .articleVideo {
-    width: 45%;
+  .infoContainer .tabContainer > div > div:first-child {
+    margin-bottom: 20px;
   }
+<<<<<<< HEAD
+  .infoContainer .tabContainer > div > div .articleInfo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+=======
   .infoContainer article .articleInfo {
     align-items: center;
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     height: auto;
   }
-  .infoContainer article .articleInfo h3 {
+  .infoContainer .tabContainer > div > div .articleInfo h3 {
     font-size: 1.5rem;
     font-weight: 600;
   }
-  .infoContainer article .articleInfo p {
-    font-weight: 300;
+  .infoContainer .tabContainer > div > div .articleInfo p {
     font-size: 0.9rem;
-    margin: 12px 0 12px;
-    line-height: 1.4rem;
+    margin: 12px 0 14px;
+    line-height: 1.5rem;
   }
+<<<<<<< HEAD
+  .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
+=======
   .infoContainer article .articleInfo .articleHashtag {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
   }
-  .infoContainer article .articleInfo .articleHashtag li {
-    background: #a5d112;
+  .infoContainer .tabContainer > div > div .articleInfo .articleHashtag li {
     padding: 6px 8px;
+<<<<<<< HEAD
+=======
     border-radius: 30px;
     color: #fff;
     font-size: 1rem;
@@ -564,21 +638,7 @@ h2 {
     padding: 0 30px;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     font-size: 0.9rem;
-    font-weight: 400;
-    padding: 5px 10px;
-    border-radius: 30px;
-    background: #a5d112;
-    color: #fff;
-  }
-  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo h4 {
-    font-weight: 600;
-    margin: 10px 0;
-    font-size: 1.6rem;
-  }
-  .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo p {
-    font-weight: 300;
-    font-size: 0.9rem;
-    line-height: 1rem;
   }
 }

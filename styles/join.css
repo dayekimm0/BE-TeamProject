@@ -97,8 +97,11 @@ main #form #joinStep {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   justify-content: center;
 =======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -138,8 +141,11 @@ main #form #joinStep .stepWrap .stepCircle {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   flex-direction: column;
 =======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -184,6 +190,10 @@ main #form #joinBox .joinInput {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+  gap: 12px;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 main #form #joinBox .joinInput #phoneBtn {
   position: absolute;
@@ -210,11 +220,16 @@ main #form #joinBox .joinInput label {
   left: 30px;
   top: 50%;
 <<<<<<< HEAD
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+=======
+<<<<<<< HEAD
   transform: translateY(-50%);
 =======
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
@@ -225,7 +240,10 @@ main #form #joinBox .joinInfo {
 =======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+=======
 >>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

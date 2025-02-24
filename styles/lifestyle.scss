@@ -2,40 +2,36 @@
 @import "./reset.scss";
 @import "./variables.scss";
 
-/* ==== header ==== */
+/* ==== common ==== */
 header {
   z-index: 10;
 }
-
-/* ==== common ==== */
 main {
   width: 100%;
   margin: 100px 0 100px;
 }
-
 .detailTitle,
 section {
   padding: 0 5%;
   width: 100%;
 }
-
 .detailTitle {
   display: flex;
   gap: 24px;
   align-items: center;
-  .title-img {
+  .titleImg {
     width: 30px;
     height: 65px;
   }
   h1 {
     font: 700 11rem/1 "REM";
   }
-  .circle-img {
+  .circleImg {
     margin-left: auto;
     margin-bottom: 70px;
+    animation: circle 6s linear infinite;
   }
 }
-
 h2 {
   font-size: 5.2rem;
   font-weight: 600;
@@ -43,7 +39,6 @@ h2 {
 }
 
 /* ==== contents ==== */
-// section1
 .infoContainer {
   & > ul {
     display: flex;
@@ -58,125 +53,83 @@ h2 {
         font-size: 2.6rem;
         font-weight: 500;
         color: map-get($map: $colors, $key: lifestyle);
-        border: 1.5px solid map-get($map: $colors, $key: foodAccent);
+        border: 1.5px solid map-get($map: $colors, $key: lifestyle);
         background: none;
         cursor: pointer;
+        transition: all 0.3s;
+      }
+      .active {
+        background: map-get($map: $colors, $key: lifestyle);
+        color: map-get($map: $colors, $key: light);
       }
     }
   }
 
-  article {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    border-radius: 40px;
-    overflow: hidden;
-    align-items: center;
-    justify-content: space-between;
-    border: 1.5px solid map-get($map: $colors, $key: foodAccent);
-    .articleVideo {
-      width: 35%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .articleInfo {
-      width: 65%;
-      padding-left: 60px;
-      h3 {
-        font-size: 3rem;
-        font-weight: 500;
-      }
-      p {
-        width: 80%;
-        font-weight: 300;
-        font-size: 1.8rem;
-        margin: 30px 0 30px;
-        line-height: 2.8rem;
-      }
-      .articleHashtag {
-        display: flex;
-        gap: 8px;
-        li {
-          background: map-get($map: $colors, $key: foodAccent);
-          padding: 10px 22px;
-          border-radius: 30px;
-          color: map-get($map: $colors, $key: light);
-          font-size: 1.6rem;
-          font-weight: 400;
-        }
-      }
-    }
-  }
-}
-
-// section2
-.bannerContainer {
-  display: flex;
-  justify-content: space-between;
-  margin: 130px 0;
-  background: map-get($map: $colors, $key: food);
-  padding-top: 70px;
-  padding-bottom: 70px;
-
-  .title {
-    width: 40%;
-    position: relative;
-  }
-
-  .bannerBoxWrapper {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-    justify-content: flex-end;
-    .contentWrapper {
+  .tabContainer {
+    & > div {
       display: flex;
-      gap: 24px;
-      &:first-child {
-        margin-bottom: 24px;
-      }
-      .contentBox {
-        text-align: center;
-        img {
-          border-radius: 20px;
-          margin-bottom: 8px;
-        }
-        p {
-          font-size: 2rem;
-        }
-      }
-    }
-  }
-}
-
-/* ==== 반응형 ==== */
-@media screen and (max-width: 1200px) {
-  .bannerContainer {
-    .title {
-      width: 30%;
-      h2 {
-        font-size: 4.5rem;
-      }
-      br {
-        display: none;
-      }
-    }
-    .bannerBoxWrapper {
-      width: 70%;
-      .contentWrapper {
+      flex-direction: column;
+      display: none; // tab메뉴 > 스크립트로 제어
+      & > div {
         width: 100%;
-        gap: 0 !important;
+        height: 500px;
+        display: flex;
+        border-radius: 40px;
+        overflow: hidden;
+        align-items: center;
         justify-content: space-between;
-        .contentBox {
-          width: 20%;
-          img {
-            width: 100%;
+        border: 1.5px solid map-get($map: $colors, $key: lifestyle);
+        &:first-child {
+          margin-bottom: 50px;
+        }
+        .articleVideo {
+          width: 35%;
+          height: 100%;
+          object-fit: cover;
+        }
+
+        .articleInfo {
+          width: 65%;
+          padding-left: 60px;
+          h3 {
+            font-size: 3rem;
+            font-weight: 500;
+          }
+          p {
+            width: 80%;
+            font-weight: 300;
+            font-size: 1.8rem;
+            margin: 30px 0 30px;
+            line-height: 2.8rem;
+          }
+          .articleHashtag {
+            display: flex;
+            gap: 8px;
+            li {
+              background: map-get($map: $colors, $key: lifestyle);
+              padding: 10px 22px;
+              border-radius: 30px;
+              color: map-get($map: $colors, $key: light);
+              font-size: 1.6rem;
+              font-weight: 400;
+            }
           }
         }
       }
     }
+    & > div.active {
+      display: flex;
+    } // 가상클래스 active > 스크립트 제어
   }
 }
+
+@keyframes circle {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* ==== 반응형 ==== */
 // tablet.ver
 @media screen and (max-width: 1024px) {
   main {
@@ -190,23 +143,17 @@ h2 {
     line-height: 4.2rem;
   }
 
-  .detailTitle,
-  section {
-    padding: 0 5%;
-    width: 100%;
-  }
-
   .detailTitle {
     display: flex;
     gap: 18px;
-    .title-img {
+    .titleImg {
       width: 18px;
       height: 40px;
     }
     h1 {
       font: 700 7.2rem/1 "REM";
     }
-    .circle-img {
+    .circleImg {
       width: 120px;
       height: 120px;
       margin-left: auto;
@@ -217,189 +164,43 @@ h2 {
   // section1
   .infoContainer {
     & > ul {
-      display: flex;
       gap: 10px;
       li {
         button {
-          margin-top: 0;
-          padding: 12px 24px;
-          border-radius: 60px;
+          padding: 12px 28px;
           font-size: 2rem;
-          font-weight: 500;
-          color: map-get($map: $colors, $key: foodAccent);
-          border: 1px solid map-get($map: $colors, $key: foodAccent);
-          background: none;
-          cursor: pointer;
         }
       }
     }
 
-    article {
-      width: inherit;
-      height: 400px;
-      display: flex;
-      gap: 40px;
-      border: 1px solid map-get($map: $colors, $key: foodAccent);
-      border-radius: 36px;
-      overflow: hidden;
-      align-items: center;
-      .articleVideo {
-        width: 50%;
-        object-fit: cover;
-        aspect-ratio: 29/27;
-      }
-      .articleInfo {
-        padding-left: 0;
-        width: 50%;
-        height: 230px;
-        align-items: center;
-        h3 {
-          font-size: 2.2rem;
-          font-weight: 500;
-        }
-        p {
-          width: 80%;
-          font-weight: 300;
-          font-size: 1.4rem;
-          margin: 20px 0 20px;
-          line-height: 2.2rem;
-        }
-        .articleHashtag {
-          display: flex;
-          gap: 6px;
-          li {
-            background: map-get($map: $colors, $key: foodAccent);
-            padding: 8px 16px;
-            border-radius: 30px;
-            color: map-get($map: $colors, $key: light);
-            font-size: 1.4rem;
-            font-weight: 400;
+    .tabContainer {
+      & > div {
+        & > div {
+          height: 400px;
+          border-radius: 30px;
+          &:first-child {
+            margin-bottom: 40px;
           }
-        }
-      }
-    }
-  }
-
-  // section2
-  .bannerContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 70px 0;
-    background: map-get($map: $colors, $key: food);
-    padding-top: 40px;
-    padding-bottom: 40px;
-    .title {
-      width: inherit;
-      position: relative;
-      padding-bottom: 40px;
-      br {
-        display: none;
-      }
-      h2 {
-        font-size: 3.2rem;
-        font-weight: 500;
-        line-height: 4.2rem;
-      }
-    }
-    .bannerBoxWrapper {
-      width: inherit;
-      height: inherit;
-      .contentWrapper {
-        gap: 20px;
-        &:first-child {
-          margin-bottom: 20px;
-        }
-        .contentBox {
-          text-align: center;
-          img {
-            border-radius: 16px;
-            margin-bottom: 6px;
+          .articleVideo {
+            width: 45%;
           }
-          p {
-            font-size: 1.5rem;
-          }
-        }
-      }
-    }
-  }
-
-  // section3
-  .shopContainer {
-    margin-bottom: 70px;
-    .shopBoxWrapper {
-      border: 1px solid map-get($map: $colors, $key: food);
-      .shopBox {
-        width: 100%;
-        height: 330px;
-        position: relative;
-        display: flex;
-        .imgBox {
-          width: 50%;
-          left: auto;
-          z-index: 9;
-          img {
-            display: block;
-          }
-        }
-        &:nth-child(2) {
-          .imgBox {
-            order: 2;
-          }
-          .shopHoverBox {
-            right: auto;
-            left: 0;
-            position: relative;
-            order: 1;
-          }
-        }
-        &:nth-child(4) {
-          .imgBox {
-            order: 2;
-          }
-          .shopHoverBox {
-            right: auto;
-            left: 0;
-            position: relative;
-            order: 1;
-          }
-        }
-        &:nth-child(6) {
-          .imgBox {
-            order: 2;
-          }
-          .shopHoverBox {
-            right: auto;
-            left: 0;
-            position: relative;
-            order: 1;
-          }
-        }
-
-        .shopHoverBox {
-          opacity: 1;
-          width: 50%;
-          left: auto;
-          right: 0;
-          background: map-get($map: $colors, $key: light);
-
-          .shopInfo {
-            span {
-              font-size: 1.2rem;
-              font-weight: 500;
-              padding: 8px 16px;
-              border-radius: 30px;
-              background: map-get($map: $colors, $key: foodAccent);
-              color: map-get($map: $colors, $key: light);
-            }
-            h4 {
-              font-weight: 600;
-              margin: 24px 0 24px;
-              font-size: 2.6rem;
+          .articleInfo {
+            width: 50%;
+            padding-left: 0;
+            h3 {
+              font-size: 2.2rem;
             }
             p {
-              font-weight: 300;
               font-size: 1.4rem;
+              margin: 30px 0 20px;
               line-height: 2rem;
+            }
+            .articleHashtag {
+              gap: 6px;
+              li {
+                padding: 8px 16px;
+                font-size: 1.4rem;
+              }
             }
           }
         }
@@ -424,205 +225,58 @@ h2 {
 
   .detailTitle {
     padding: 0 5%;
-    width: 100%;
-    display: flex;
     gap: 18px;
-    .title-img {
-      width: 16px;
-      height: 42px;
+    .titleImg {
+      width: 14px;
     }
     h1 {
       font: 700 6rem/1 "REM";
     }
-    .circle-img {
+    .circleImg {
       opacity: 0;
-      width: 100px;
-      height: 100px;
-      margin-left: auto;
     }
   }
 
   // section1
   .infoContainer {
     & > ul {
-      display: flex;
-      gap: 10px;
-
       li {
         button {
           margin-top: 0;
           padding: 6px 14px;
-          border-radius: 60px;
           font-size: 1.4rem;
-          font-weight: 500;
-          color: map-get($map: $colors, $key: foodAccent);
-          border: 0.8px solid map-get($map: $colors, $key: foodAccent);
-          cursor: pointer;
         }
       }
     }
 
-    article {
-      position: relative;
-      height: 230px;
-      gap: 20px;
-      align-items: center;
-      border-radius: 20px;
-      overflow: hidden;
-      border: 0.8px solid map-get($map: $colors, $key: foodAccent);
-      .articleVideo {
-        width: 45%;
-      }
-      .articleInfo {
-        align-items: center;
-        height: auto;
-        h3 {
-          font-size: 1.5rem;
-          font-weight: 600;
-        }
-        p {
-          font-weight: 300;
-          font-size: 0.9rem;
-          margin: 12px 0 12px;
-          line-height: 1.4rem;
-        }
-        .articleHashtag {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 4px;
-          li {
-            background: map-get($map: $colors, $key: foodAccent);
-            padding: 6px 8px;
-            border-radius: 30px;
-            color: map-get($map: $colors, $key: light);
-            font-size: 1rem;
+    .tabContainer {
+      & > div {
+        & > div {
+          height: 250px;
+          border-radius: 20px;
+          &:first-child {
+            margin-bottom: 20px;
           }
-        }
-      }
-    }
-  }
-
-  // section2
-  .bannerContainer {
-    display: flex;
-    flex-direction: column;
-    margin: 30px 0;
-    background: none;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
-    .title {
-      width: inherit;
-      padding-bottom: 20px;
-      br {
-        display: none;
-      }
-      h2 {
-        width: 100%;
-        font-size: 2.2rem;
-        font-weight: 500;
-        line-height: 1;
-      }
-    }
-    .bannerBoxWrapper {
-      width: inherit;
-      height: inherit;
-      justify-content: center;
-      .contentWrapper {
-        gap: 20px;
-        &:first-child {
-          margin-bottom: 12px;
-        }
-        .contentBox {
-          text-align: center;
-          img {
-            border-radius: 10px;
-            margin-bottom: 2px;
-          }
-          p {
-            font-size: 1.2rem;
-          }
-        }
-      }
-    }
-  }
-
-  // section3
-  .shopContainer {
-    padding: 0 5%;
-    width: 100%;
-    margin-bottom: 70px;
-    .shopBoxWrapper {
-      border-radius: 20px;
-      border: 0.8px solid map-get($map: $colors, $key: foodAccent);
-      .shopBox {
-        height: 230px;
-        display: flex;
-        position: relative;
-
-        .imgBox {
-          width: 50%;
-          left: auto;
-          z-index: 9;
-          img {
-            display: block;
-          }
-        }
-        &:nth-child(2) {
-          .imgBox {
-            order: 2;
-          }
-          .shopHoverBox {
-            right: auto;
-            left: 0;
-            position: relative;
-            order: 1;
-          }
-        }
-        &:nth-child(4) {
-          .imgBox {
-            order: 2;
-          }
-          .shopHoverBox {
-            right: auto;
-            left: 0;
-            position: relative;
-            order: 1;
-          }
-        }
-        &:nth-child(6) {
-          .imgBox {
-            order: 2;
-          }
-          .shopHoverBox {
-            right: auto;
-            left: 0;
-            position: relative;
-            order: 1;
-          }
-        }
-
-        .shopHoverBox {
-          background: map-get($map: $colors, $key: light);
-          padding: 0 30px;
-          .shopInfo {
-            span {
-              font-size: 0.9rem;
-              font-weight: 400;
-              padding: 5px 10px;
-              border-radius: 30px;
-              background: map-get($map: $colors, $key: foodAccent);
-              color: map-get($map: $colors, $key: light);
-            }
-            h4 {
+          .articleInfo {
+            align-items: center;
+            height: auto;
+            h3 {
+              font-size: 1.5rem;
               font-weight: 600;
-              margin: 10px 0;
-              font-size: 1.6rem;
             }
             p {
-              font-weight: 300;
               font-size: 0.9rem;
-              line-height: 1rem;
+              margin: 12px 0 14px;
+              line-height: 1.5rem;
+            }
+            .articleHashtag {
+              display: flex;
+              flex-wrap: wrap;
+              gap: 4px;
+              li {
+                padding: 6px 8px;
+                font-size: 0.9rem;
+              }
             }
           }
         }

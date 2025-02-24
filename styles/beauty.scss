@@ -53,14 +53,14 @@ h2 {
         border-radius: 55px;
         font-size: 2.6rem;
         font-weight: 500;
-        color: map-get($map: $colors, $key: foodAccent);
-        border: 1.5px solid map-get($map: $colors, $key: foodAccent);
+        color: map-get($map: $colors, $key: beautyAccent);
+        border: 1.5px solid map-get($map: $colors, $key: beautyAccent);
         background: none;
         cursor: pointer;
         transition: all 0.3s;
       }
       .active {
-        background: map-get($map: $colors, $key: foodAccent);
+        background: map-get($map: $colors, $key: beautyAccent);
         color: map-get($map: $colors, $key: light);
       }
     }
@@ -75,7 +75,7 @@ h2 {
       overflow: hidden;
       align-items: center;
       justify-content: space-between;
-      border: 1.5px solid map-get($map: $colors, $key: foodAccent);
+      border: 1.5px solid map-get($map: $colors, $key: beautyAccent);
       display: none; // tab메뉴 > 스크립트로 제어
       .articleVideo {
         width: 35%;
@@ -101,7 +101,7 @@ h2 {
           display: flex;
           gap: 8px;
           li {
-            background: map-get($map: $colors, $key: foodAccent);
+            background: map-get($map: $colors, $key: beautyAccent);
             padding: 10px 22px;
             border-radius: 30px;
             color: map-get($map: $colors, $key: light);
@@ -122,7 +122,7 @@ h2 {
   display: flex;
   justify-content: space-between;
   margin: 130px 0;
-  background: map-get($map: $colors, $key: food);
+  background: map-get($map: $colors, $key: beauty);
   padding-top: 70px;
   padding-bottom: 70px;
 
@@ -178,7 +178,7 @@ h2 {
       }
       /* 기본적으로 숨김 */
       .shopHoverBox {
-        background: rgba($color: map-get($map: $colors, $key: food), $alpha: 0.9);
+        background: rgba($color: map-get($map: $colors, $key: beauty), $alpha: 0.9);
         position: absolute;
         display: flex;
         width: 100%;
@@ -198,7 +198,7 @@ h2 {
             background: map-get($map: $colors, $key: light);
             padding: 10px 20px;
             border-radius: 30px;
-            color: map-get($map: $colors, $key: foodAccent);
+            color: map-get($map: $colors, $key: beautyAccent);
           }
           h4 {
             font-weight: 600;
@@ -209,7 +209,7 @@ h2 {
             font-weight: 300;
             font-size: 1.4rem;
             margin-bottom: 4px;
-            line-height: 2rem;
+            line-height: 2.4rem;
           }
         }
       }
@@ -374,7 +374,7 @@ h2 {
   .shopContainer {
     margin-bottom: 70px;
     .shopBoxWrapper {
-      border: 1px solid map-get($map: $colors, $key: foodAccent);
+      border: 1px solid map-get($map: $colors, $key: beautyAccent);
       .shopBox {
         width: 100%;
         height: 330px;
@@ -433,7 +433,7 @@ h2 {
               font-size: 1.2rem;
               padding: 8px 16px;
               border-radius: 30px;
-              background: map-get($map: $colors, $key: foodAccent);
+              background: map-get($map: $colors, $key: beautyAccent);
               color: map-get($map: $colors, $key: light);
             }
             h4 {
@@ -568,7 +568,7 @@ h2 {
             }
             p {
               font-size: 0.9rem;
-              line-height: 1rem;
+              line-height: 1.6rem;
             }
           }
         }

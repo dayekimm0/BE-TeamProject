@@ -134,13 +134,24 @@ main #con1 .parts {
   gap: 46px;
   overflow: hidden;
 }
+<<<<<<< HEAD
+main #con1 .parts-slick .slick-track {
+  gap: 20px;
+}
+main #con1 .parts-slick .part {
+=======
 main #con1 .parts .part {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   position: relative;
 }
 main #con1 .parts .part:hover p {
   opacity: 1;
 }
+<<<<<<< HEAD
+main #con1 .parts-slick .part:hover .partImg {
+=======
 main #con1 .parts .part:hover .partImg {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
 }
@@ -359,7 +370,15 @@ main #con5 .eventLoad span b {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
   }
+<<<<<<< HEAD
+  main #con1 .parts .part:hover .partImg {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
+  }
+  main #con1 .parts .part .partImg {
+=======
   main #con1 .parts .part a .partImg {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     border-radius: 0;
     width: 100%;
     height: 100%;
@@ -467,6 +486,10 @@ main #con5 .eventLoad span b {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+<<<<<<< HEAD
+    padding-bottom: 10px;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     border-radius: 0;
     overflow: hidden;
   }

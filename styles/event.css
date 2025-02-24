@@ -68,6 +68,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
 }
 @media (max-width: 1024px) {
   .eventTitle {
@@ -78,6 +80,7 @@ body {
   .eventTitle {
     height: 400px;
   }
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .eventTitle .mainTitle {
   width: 1440px;
@@ -490,6 +493,8 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+<<<<<<< HEAD
+=======
 }
 @media (max-width: 1024px) {
   .couponsList .hashTags {
@@ -499,6 +504,7 @@ body {
     height: auto;
     gap: 20px;
   }
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -542,11 +548,14 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
+=======
 }
 @media (max-width: 390px) {
   .couponsList .coupons {
     gap: 30px;
   }
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .coupons .ticket {
   width: 100%;
@@ -556,6 +565,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
+  gap: 30px;
+=======
   gap: 50px;
 }
 @media (max-width: 1024px) {
@@ -568,6 +580,7 @@ body {
   .couponsList .coupons .ticket {
     gap: 20px;
   }
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .couponGreen,
 .couponsList .couponPink,
@@ -631,6 +644,8 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
+=======
 }
 .couponsList .couponGreen .couponTop > i,
 .couponsList .couponPink .couponTop > i,
@@ -651,6 +666,7 @@ body {
     top: 10px;
     right: 10px;
   }
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 .couponsList .couponGreen .couponBottom,
 .couponsList .couponPink .couponBottom,
@@ -808,6 +824,9 @@ body {
   font-weight: 700;
   letter-spacing: -0.4px;
 }
+<<<<<<< HEAD
+.buttons button i {
+=======
 @media (max-width: 1024px) {
   .buttons button p {
     font-size: 1.8rem;
@@ -819,6 +838,7 @@ body {
   }
 }
 .buttons button > i {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
