@@ -87,6 +87,9 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
+  opacity: 0;
+  -webkit-animation: dropBounce 2s ease-out forwards;
+          animation: dropBounce 2s ease-out forwards;
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -120,7 +123,7 @@ main #con1 {
 main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
-main #con1 .parts-slick {
+main #con1 .parts {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -131,20 +134,28 @@ main #con1 .parts-slick {
   gap: 46px;
   overflow: hidden;
 }
+<<<<<<< HEAD
 main #con1 .parts-slick .slick-track {
   gap: 20px;
 }
 main #con1 .parts-slick .part {
+=======
+main #con1 .parts .part {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   position: relative;
 }
-main #con1 .parts-slick .part:hover p {
+main #con1 .parts .part:hover p {
   opacity: 1;
 }
+<<<<<<< HEAD
 main #con1 .parts-slick .part:hover .partImg {
+=======
+main #con1 .parts .part:hover .partImg {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
 }
-main #con1 .parts-slick .part .partImg {
+main #con1 .parts .part a .partImg {
   width: 430px;
   height: 570px;
   display: block;
@@ -158,7 +169,7 @@ main #con1 .parts-slick .part .partImg {
      object-fit: cover;
   cursor: pointer;
 }
-main #con1 .parts-slick .part p {
+main #con1 .parts .part p {
   width: 100%;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
@@ -188,6 +199,18 @@ main #con2 .con2-text {
           flex-direction: column;
   gap: 20px;
 }
+<<<<<<< HEAD
+=======
+main #con2 .con2-text p {
+  opacity: 0;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
 main #con2 .con2-text p:nth-child(even) {
   color: #fff;
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
@@ -326,13 +349,17 @@ main #con5 .eventLoad span b {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 0;
-    border-radius: 40px;
     overflow: hidden;
+    border-radius: 40px;
   }
   main #con1 .parts .part {
     width: 50%;
     height: 330px;
     position: relative;
+  }
+  main #con1 .parts .part:hover .partImg {
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
   main #con1 .parts .part::after {
     content: "";
@@ -343,11 +370,15 @@ main #con5 .eventLoad span b {
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
   }
+<<<<<<< HEAD
   main #con1 .parts .part:hover .partImg {
     -webkit-filter: brightness(100%);
             filter: brightness(100%);
   }
   main #con1 .parts .part .partImg {
+=======
+  main #con1 .parts .part a .partImg {
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     border-radius: 0;
     width: 100%;
     height: 100%;
@@ -455,8 +486,12 @@ main #con5 .eventLoad span b {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+<<<<<<< HEAD
     padding-bottom: 10px;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
     border-radius: 0;
+    overflow: hidden;
   }
   main #con1 .parts .part {
     -webkit-box-flex: 0;
@@ -469,7 +504,7 @@ main #con5 .eventLoad span b {
     content: "";
     border-radius: 20px;
   }
-  main #con1 .parts .part .partImg {
+  main #con1 .parts .part a .partImg {
     width: 100%;
     border-radius: 20px;
   }
@@ -513,5 +548,124 @@ main #con5 .eventLoad span b {
   }
   main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
+  }
+}
+/* Add these CSS animations */
+@-webkit-keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromLeft {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Apply animations to the p tags */
+.con2-text p {
+  opacity: 0; /* Start hidden */
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; /* Keep the final state */
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+}
+
+@-webkit-keyframes dropBounce {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(500%, 300%);
+            transform: translate(500%, 300%);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translate(20%, 50%);
+            transform: translate(20%, 50%);
+  }
+  50% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+  70% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  90% {
+    -webkit-transform: translate(0, -30%);
+            transform: translate(0, -30%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+  }
+}
+
+@keyframes dropBounce {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate(500%, 300%);
+            transform: translate(500%, 300%);
+  }
+  30% {
+    opacity: 1;
+    -webkit-transform: translate(20%, 50%);
+            transform: translate(20%, 50%);
+  }
+  50% {
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+  70% {
+    -webkit-transform: translate(0, 30%);
+            transform: translate(0, 30%);
+  }
+  90% {
+    -webkit-transform: translate(0, -30%);
+            transform: translate(0, -30%);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
   }
 }

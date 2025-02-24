@@ -69,13 +69,43 @@ main #form input:not([type=checkbox]) {
 main #form input:not([type=checkbox]):focus {
   outline: none;
 }
+main #form input[type=checkbox] {
+  width: 16px;
+  height: 16px;
+}
+main #form .error {
+  font-size: 1.2rem;
+  margin-top: 12px;
+  color: #fc864b;
+  position: relative;
+}
+main #form .error i {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  font-size: 1.2rem;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  text-indent: 1px;
+  margin-right: 8px;
+  background: #fc864b;
+}
 main #form #joinStep {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  justify-content: center;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
   gap: 60px;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -110,10 +140,17 @@ main #form #joinStep .stepWrap .stepCircle {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  flex-direction: column;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
   background: #a5d112;
   color: #fff;
   border-radius: 50%;
@@ -153,7 +190,10 @@ main #form #joinBox .joinInput {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+<<<<<<< HEAD
   gap: 12px;
+=======
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 }
 main #form #joinBox .joinInput #phoneBtn {
   position: absolute;
@@ -164,8 +204,12 @@ main #form #joinBox .joinInput #phoneBtn {
   width: auto;
   height: auto;
   top: 50%;
+<<<<<<< HEAD
+  transform: translateY(-50%);
+=======
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
   right: 30px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -175,16 +219,31 @@ main #form #joinBox .joinInput label {
   position: absolute;
   left: 30px;
   top: 50%;
+<<<<<<< HEAD
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+=======
+<<<<<<< HEAD
+  transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
 }
 main #form #joinBox .joinInfo {
   margin-top: 8px;
+<<<<<<< HEAD
+=======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+=======
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
+>>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -197,20 +256,26 @@ main #form #joinBox .joinInfo p {
   border-radius: 50%;
 }
 main #form #joinBox .joinInfo p i {
+  background: #d9d9d9;
   width: 12px;
   height: 12px;
-  background: #d9d9d9;
+  line-height: 12px;
+  font-size: 1.2rem;
   color: #fff;
   display: inline-block;
   text-align: center;
   border-radius: 50%;
+  text-indent: 1px;
 }
 main #form #joinBox .joinInfo p span {
   color: #d9d9d9;
 }
 main #form #joinBox .joinInfo .checkList {
+<<<<<<< HEAD
+=======
   display: -webkit-box;
   display: -ms-flexbox;
+>>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
   display: flex;
   gap: 8px;
 }
@@ -279,6 +344,15 @@ main #form #joinAgree .checkList2 label {
   position: static;
   font-size: 1.4rem;
   color: #64646b;
+}
+main #form #joinAgree .checkList2 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 8px;
 }
 main #form #joinAgree .checkList2 div label b {
   color: #a5d112;
@@ -378,5 +452,8 @@ main #form #inputBtn #joinCancel {
     height: 50px;
     border-radius: 50px;
     border: none;
+  }
+  main #form i {
+    text-indent: 0 !important;
   }
 }

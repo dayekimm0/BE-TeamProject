@@ -1,19 +1,31 @@
 @import "./reset.scss";
 @import "./variables.scss";
 
-@mixin coupon {
-  position: relative;
-  width: 180px;
-  height: 220px;
-  border-radius: 10px;
-  text-align: center;
-  padding: 20px;
-  font-weight: bold;
-  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+// 반응형
+@mixin mobile {
+  @media (max-width: 390px) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (max-width: 1440px) {
+    @content;
+  }
 }
 
 html {
   font-size: 62.5%;
+
+  @include mobile {
+    font-size: 55%;
+  }
 }
 
 body {
@@ -24,8 +36,25 @@ body {
 
 .container {
   width: 1440px;
-  margin: 0 5%;
+  margin: 0 auto;
+  // padding: 0 5%;
+
+  @include desktop {
+    width: 100%;
+    max-width: 1440px;
+  }
+
+  @include tablet {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
+
 .eventTitle {
   width: 100%;
   position: relative;
@@ -34,18 +63,54 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include tablet {
+    height: 500px;
+  }
+
+  @include mobile {
+    height: 400px;
+  }
   .mainTitle {
     width: 1440px;
+
+    @include desktop {
+      width: 100%;
+    }
+
+    @include tablet {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    @include mobile {
+      width: 100%;
+      padding: 0 15px;
+    }
+
     .title {
       display: flex;
       flex-direction: column;
       align-items: start;
       gap: 30px;
       color: map-get($map: $colors, $key: light);
+
+      @include mobile {
+        gap: 20px;
+      }
+
       p {
         font-size: 5rem;
         line-height: 1.1;
         letter-spacing: -1.5px;
+
+        @include tablet {
+          font-size: 4rem;
+        }
+
+        @include mobile {
+          font-size: 3rem;
+        }
       }
       h2 {
         font-size: 10rem;
@@ -53,6 +118,13 @@ body {
         font-family: map-get($map: $font-family, $key: REM);
         font-weight: bold;
         letter-spacing: -2px;
+        @include tablet {
+          font-size: 8rem;
+        }
+
+        @include mobile {
+          font-size: 5rem;
+        }
       }
       span {
         font-size: 2rem;
@@ -60,6 +132,10 @@ body {
         font-weight: lighter;
         letter-spacing: 0.9px;
         opacity: 0.7;
+
+        @include mobile {
+          font-size: 1.6rem;
+        }
       }
     }
   }
@@ -72,6 +148,17 @@ body {
   align-items: center;
   gap: 30px;
   margin-top: 100px;
+
+  @include tablet {
+    margin-top: 70px;
+    gap: 25px;
+  }
+
+  @include mobile {
+    margin-top: 50px;
+    gap: 20px;
+  }
+
   .howTo {
     display: flex;
     flex-direction: column;
@@ -81,6 +168,11 @@ body {
     align-items: center;
     gap: 10px;
     color: map-get($map: $colors, $key: dark);
+
+    @include tablet {
+      width: 100%;
+    }
+
     h3 {
       width: 100%;
       height: 100%;
@@ -92,7 +184,16 @@ body {
       font-size: 7rem;
       font-weight: bold;
       position: relative;
+
+      @include tablet {
+        font-size: 6rem;
+      }
+
+      @include mobile {
+        font-size: 4.5rem;
+      }
     }
+
     p {
       font-size: 3.4rem;
       font-weight: 500;
@@ -101,26 +202,54 @@ body {
       width: 900px;
       margin-top: 30px;
       font-weight: normal;
+
+      @include tablet {
+        width: 100%;
+        font-size: 2.8rem;
+      }
+
+      @include mobile {
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+
       b {
         font-weight: 800;
       }
     }
   }
+
   .steps {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
     .step01,
     .step02 {
       width: 620px;
       height: 415px;
       position: relative;
-      // border: 1px solid map-get($map: $colors, $key: line);
       border-radius: 20px;
       overflow: hidden;
       box-shadow: 0 0 8px map-get($map: $colors, $key: line);
       background: map-get($map: $colors, $key: light);
+
+      @include tablet {
+        width: 100%;
+        max-width: 620px;
+      }
+
+      @include mobile {
+        height: 350px;
+      }
+
       .bg1,
       .bg3 {
         position: absolute;
@@ -128,7 +257,12 @@ body {
         height: 225px;
         bottom: 0;
         right: 0px;
+        @include mobile {
+          width: 280px;
+          height: 175px;
+        }
       }
+
       .bg2 {
         width: 180px;
         height: 200px;
@@ -138,7 +272,14 @@ body {
         position: absolute;
         bottom: 100px;
         right: 20px;
+
+        @include mobile {
+          width: 140px;
+          height: 160px;
+          bottom: 80px;
+        }
       }
+
       .bg4 {
         width: 284px;
         height: 190px;
@@ -148,7 +289,14 @@ body {
         position: absolute;
         bottom: 83px;
         right: 0;
+
+        @include mobile {
+          width: 220px;
+          height: 150px;
+          bottom: 70px;
+        }
       }
+
       .text1,
       .text2 {
         width: 250px;
@@ -159,24 +307,42 @@ body {
         position: absolute;
         top: 25px;
         left: 45px;
+
+        @include mobile {
+          width: 200px;
+          left: 25px;
+        }
+
         h4 {
           color: map-get($map: $colors, $key: footerBg);
           font-size: 6rem;
           font-weight: 900;
           letter-spacing: -1.2px;
           font-family: map-get($map: $font-family, $key: REM);
+
+          @include mobile {
+            font-size: 4.5rem;
+          }
         }
         p {
           color: map-get($map: $colors, $key: dark);
           font-size: 3rem;
           letter-spacing: -0.6px;
           font-weight: 600;
+
+          @include mobile {
+            font-size: 2.4rem;
+          }
         }
         span {
           color: map-get($map: $colors, $key: dark);
           font-size: 1.5rem;
           font-weight: 400;
           letter-spacing: -0.3px;
+
+          @include mobile {
+            font-size: 1.3rem;
+          }
         }
       }
     }
@@ -192,6 +358,16 @@ body {
   align-items: center;
   margin-top: 132px;
 
+  @include tablet {
+    margin-top: 100px;
+    gap: 40px;
+  }
+
+  @include mobile {
+    margin-top: 80px;
+    gap: 30px;
+  }
+
   .hashTags {
     width: 628px;
     height: 56px;
@@ -199,6 +375,13 @@ body {
     align-items: center;
     gap: 30px;
     justify-content: space-evenly;
+
+    @include tablet {
+      width: 100%;
+      flex-wrap: wrap;
+      height: auto;
+      gap: 20px;
+    }
 
     span {
       width: 200px;
@@ -215,6 +398,11 @@ body {
       align-items: center;
       justify-content: center;
       text-align: center;
+
+      @include mobile {
+        width: calc(50% - 10px);
+        font-size: 2rem;
+      }
     }
   }
 
@@ -224,11 +412,24 @@ body {
     justify-content: center;
     display: flex;
     flex-direction: column;
+
+    @include mobile {
+      gap: 30px;
+    }
+
     .ticket {
       width: 100%;
       display: flex;
       justify-content: center;
-      gap: 30px;
+      gap: 50px;
+
+      @include tablet {
+        flex-wrap: wrap;
+      }
+
+      @include mobile {
+        gap: 20px;
+      }
     }
   }
 
@@ -245,6 +446,17 @@ body {
     align-items: center;
     justify-content: center;
     overflow: visible;
+
+    @include tablet {
+      width: 180px; // 타블렛에서 가로 180px
+      height: 280px; // 타블렛에서 세로 280px
+    }
+
+    @include mobile {
+      width: 138px; // 모바일에서 가로 138px
+      height: 200px;
+    }
+
     .couponTop {
       position: absolute;
       top: 0;
@@ -254,7 +466,21 @@ body {
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      > i {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        font-size: 34px;
+        rotate: 90deg;
+
+        @include mobile {
+          font-size: 28px;
+          top: 10px;
+          right: 10px;
+        }
+      }
     }
+
     .couponBottom {
       position: absolute;
       width: 100%;
@@ -297,16 +523,34 @@ body {
     left: 15px;
     text-align: left;
 
+    @include mobile {
+      bottom: 12px;
+      left: 12px;
+    }
+
     p {
       color: map-get($colors, dark);
-      font-size: 2rem;
+      font-size: 2.2rem;
       font-weight: 500;
       font-family: map-get($font-family, Pretendard);
+
+      @include tablet {
+        max-width: 110px;
+      }
+
+      @include mobile {
+        font-size: 1.3rem;
+        max-width: 100px;
+      }
 
       b {
         font-size: 4.5rem;
         font-weight: bold;
         font-family: map-get($font-family, REM);
+
+        @include mobile {
+          font-size: 3.8rem;
+        }
       }
     }
 
@@ -314,41 +558,73 @@ body {
       font-size: 1.4rem;
       font-weight: 400;
       opacity: 0.7;
+
+      @include mobile {
+        font-size: 1.2rem;
+      }
     }
   }
-
-  i {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    font-size: 34px;
-    rotate: 90deg;
-  }
 }
+
 .buttons {
   width: 100%;
   display: flex;
   justify-content: center;
   gap: 35px;
   margin-top: 30px;
+
+  @include tablet {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  @include mobile {
+    gap: 15px;
+    flex-direction: column;
+    align-items: center;
+  }
+
   button {
     display: flex;
     align-items: center;
     padding: 10px 20px;
     gap: 10px;
-    width: 250px;
+    width: auto;
     height: 55px;
     border-radius: 30px;
     border: none;
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     background-color: map-get($map: $colors, $key: light);
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    @include tablet {
+      max-width: 300px;
+      padding: 8px 15px;
+    }
+
+    @include mobile {
+      width: 100%; // 모바일에서 버튼이 가득 차게 설정
+      max-width: 260px;
+      height: 50px;
+      padding: 6px 12px;
+      gap: 5px;
+    }
+
     p {
       font-size: 2rem;
       font-weight: 700;
       letter-spacing: -0.4px;
+
+      @include tablet {
+        font-size: 1.8rem;
+      }
+
+      @include mobile {
+        font-size: 1.6rem;
+      }
     }
-    i {
+    > i {
       display: flex;
       font-size: 2rem;
       width: 40px;
@@ -358,21 +634,35 @@ body {
       align-items: center;
       border-radius: 30px;
       color: map-get($map: $colors, $key: dark);
-      border: 1px solid map-get($map: $colors, $key: dark);
+      border: 2px solid map-get($map: $colors, $key: line);
       background: map-get($map: $colors, $key: light);
+
+      @include tablet {
+        width: 35px;
+        height: 35px;
+        font-size: 1.8rem;
+      }
+
+      @include mobile {
+        width: 30px;
+        height: 30px;
+        font-size: 1.6rem;
+      }
     }
   }
 }
 
 .eventNotice {
   width: 100%;
-  height: 500px;
+  min-height: 500px;
   color: map-get($map: $colors, $key: dark);
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 20px;
   h5 {
-    color: map-get($map: $colors, $key: dark);
     font-weight: bold;
     margin-top: 12%;
     margin-bottom: 15px;
@@ -382,6 +672,47 @@ body {
     font-weight: 500;
     line-height: 35px;
     letter-spacing: 0.2px;
-    list-style: inside;
+    display: flex;
+    position: relative;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-left: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0px;
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      background: map-get($map: $colors, $key: dark);
+    }
+  }
+
+  @include tablet {
+    font-size: 2.5rem;
+    height: auto;
+    h5 {
+      font-size: 3rem;
+      margin-top: 8%;
+    }
+    ul > li {
+      font-size: 1.6rem;
+      line-height: 25px;
+    }
+  }
+
+  @include mobile {
+    font-size: 2rem;
+    h5 {
+      font-size: 2.5rem;
+      margin-top: 5%;
+    }
+    ul > li {
+      font-size: 1.2rem;
+      line-height: 20px;
+      letter-spacing: 0.1px;
+    }
   }
 }

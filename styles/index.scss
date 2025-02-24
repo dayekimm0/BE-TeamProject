@@ -56,6 +56,8 @@ main {
         height: 100px;
         left: 10%;
         bottom: 10%;
+        opacity: 0;
+        animation: dropBounce 2s ease-out forwards;
       }
       .subTitle {
         top: 70%;
@@ -82,15 +84,12 @@ main {
     h2 {
       font: normal 7rem/1 map-get($map: $font-family, $key: REM);
     }
-    .parts-slick {
+    .parts {
       width: 100%;
       display: flex;
       align-items: center;
       gap: 46px;
       overflow: hidden;
-      .slick-track {
-        gap: 20px;
-      }
       .part {
         position: relative;
         &:hover p {
@@ -99,17 +98,19 @@ main {
         &:hover .partImg {
           filter: brightness(60%);
         }
-        .partImg {
-          width: 430px;
-          height: 570px;
-          display: block;
-          border-radius: 40px;
-          background-position: center;
-          transition: all 0.3s;
-          background-size: cover;
-          background-repeat: no-repeat;
-          object-fit: cover;
-          cursor: pointer;
+        a {
+          .partImg {
+            width: 430px;
+            height: 570px;
+            display: block;
+            border-radius: 40px;
+            background-position: center;
+            transition: all 0.3s;
+            background-size: cover;
+            background-repeat: no-repeat;
+            object-fit: cover;
+            cursor: pointer;
+          }
         }
         p {
           width: 100%;
@@ -276,12 +277,15 @@ main {
       .parts {
         flex-wrap: wrap;
         gap: 0;
-        border-radius: 40px;
         overflow: hidden;
+        border-radius: 40px;
         .part {
           width: 50%;
           height: 330px;
           position: relative;
+          &:hover .partImg {
+            filter: brightness(100%);
+          }
           &::after {
             content: "";
             position: absolute;
@@ -290,15 +294,14 @@ main {
             height: 100%;
             background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
           }
-          &:hover .partImg {
-            filter: brightness(100%);
-          }
-          .partImg {
-            border-radius: 0;
-            width: 100%;
-            height: 100%;
-            color: map-get($map: $colors, $key: light);
-            font: bold 3rem/1 map-get($map: $font-family, $key: REM);
+          a {
+            .partImg {
+              border-radius: 0;
+              width: 100%;
+              height: 100%;
+              color: map-get($map: $colors, $key: light);
+              font: bold 3rem/1 map-get($map: $font-family, $key: REM);
+            }
           }
           p {
             position: absolute;
@@ -409,8 +412,8 @@ main {
         gap: 14px;
         flex-wrap: nowrap;
         justify-content: flex-start;
-        padding-bottom: 10px;
         border-radius: 0;
+        overflow: hidden;
         .part {
           flex: 0 0 auto;
           width: 80%;
@@ -419,11 +422,12 @@ main {
             content: "";
             border-radius: 20px;
           }
-          .partImg {
-            width: 100%;
-            border-radius: 20px;
+          a {
+            .partImg {
+              width: 100%;
+              border-radius: 20px;
+            }
           }
-
           p {
             font-size: 2rem;
             left: 10%;
@@ -436,6 +440,7 @@ main {
       .con2-text {
         font: bold 4rem/1 map-get($map: $font-family, $key: REM);
         letter-spacing: 12px;
+
         .con2Img {
           width: 70px;
           height: 70px;
@@ -476,5 +481,60 @@ main {
         }
       }
     }
+  }
+}
+
+/* Add these CSS animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Apply animations to the p tags */
+.con2-text p {
+  opacity: 0; /* Start hidden */
+  animation-fill-mode: forwards; /* Keep the final state */
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes dropBounce {
+  0% {
+    opacity: 0;
+    transform: translate(500%, 300%);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(20%, 50%); // 내려오면서 작게 튐
+  }
+  50% {
+    transform: translate(0, -50%); // 위로 살짝 튀기
+  }
+  70% {
+    transform: translate(0, 30%); // 다시 아래로 내려오기
+  }
+  90% {
+    transform: translate(0, -30%); // 두 번째 튕김
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0); // 제자리 정착
   }
 }

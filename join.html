@@ -45,7 +45,12 @@
           <div class="joinWrap">
             <div class="joinInput">
               <div>
-                <input type="text" id="phoneNum" placeholder="실명인증필요" />
+                <input
+                  type="text"
+                  id="phoneNum"
+                  placeholder="실명인증필요"
+                  disabled
+                />
                 <label for="phoneNum">전화번호</label>
                 <input id="phoneBtn" type="button" value="실명인증하기" />
               </div>
@@ -60,6 +65,7 @@
                 <label for="joinSms">정보/이벤트 SMS 수신에 동의합니다.</label>
               </div>
             </div>
+            <div id="errodPhone" class="error"></div>
           </div>
           <div class="joinWrap">
             <div class="joinInput">
@@ -87,22 +93,41 @@
                 >
               </div>
             </div>
-            <div id="idError"></div>
+            <div id="errorId" class="error"></div>
+          </div>
+          <div class="joinWrap">
+            <div class="joinInput">
+              <input
+                type="password"
+                id="joinPw"
+                minlength="10"
+                maxlength="16"
+              />
+              <label for="joinPw">비밀번호</label>
+            </div>
+            <div id="errorPw01" class="error"></div>
+          </div>
+          <div class="joinWrap">
+            <div class="joinInput">
+              <input
+                type="password"
+                id="joinPwCheck"
+                minlength="10"
+                maxlength="16"
+              />
+              <label for="joinPwCheck">비밀번호 확인</label>
+            </div>
+            <div id="errorPw02" class="error"></div>
+          </div>
+          <div class="joinWrap">
+            <div class="joinInput">
+              <input type="text" id="joinName" />
+              <label for="joinName">이름</label>
+            </div>
+            <div id="errorName" class="error"></div>
           </div>
           <div class="joinInput">
-            <input type="password" id="joinPw" />
-            <label for="joinPw">비밀번호</label>
-          </div>
-          <div class="joinInput">
-            <input type="password" id="joinPwCheck" />
-            <label for="joinPwCheck">비밀번호 확인</label>
-          </div>
-          <div class="joinInput">
-            <input type="text" id="joinName" />
-            <label for="joinName">이름</label>
-          </div>
-          <div class="joinInput">
-            <select name="" id="">
+            <select name="vegan" id="vegan">
               <option value="" selected disabled>
                 <span>채식의 단계를 선택해주세요.</span>
               </option>
@@ -114,16 +139,27 @@
               <option value="폴로 베지테리언">폴로 베지테리언</option>
               <option value="플렉시테리언">플렉시테리언</option>
             </select>
+            <div id="errorSelect" class="error"></div>
           </div>
         </div>
         <div id="joinAgree">
           <div class="checkList">
-            <input type="checkbox" name="joinAll" id="joinAll" />
+            <input
+              type="checkbox"
+              name="joinAll"
+              id="joinAll"
+              class="checkBox"
+            />
             <label for="joinAll">모든 약관을 확인하고 동의합니다.</label>
           </div>
           <div class="checkList2">
             <div>
-              <input type="checkbox" name="joinCheck01" id="joinCheck01" />
+              <input
+                type="checkbox"
+                name="joinCheck01"
+                id="joinCheck01"
+                class="checkBox"
+              />
               <label for="joinCheck01"><b>(필수)</b> 이용약관</label>
             </div>
             <a href="#" title="전체보기"
@@ -141,7 +177,12 @@
           </div>
           <div class="checkList2">
             <div>
-              <input type="checkbox" name="joinCheck02" id="joinCheck02" />
+              <input
+                type="checkbox"
+                name="joinCheck02"
+                id="joinCheck02"
+                class="checkBox"
+              />
               <label for="joinCheck02"><b>(필수)</b> 이용약관</label>
             </div>
             <a href="#" title="전체보기"
@@ -157,6 +198,7 @@
               praesentium mollitia! Voluptate ad fuga dolore sapiente.
             </p>
           </div>
+          <div id="errorAgree"></div>
         </div>
         <div id="inputBtn">
           <input id="finalBtn" type="button" value="회원가입" />
