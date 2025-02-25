@@ -132,7 +132,7 @@ main #con1 .parts .part a .partImg {
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 main #con1 .parts .part p {
@@ -229,7 +229,8 @@ main #con5 .eventLoad {
   display: flex;
   align-items: center;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/index/couponheader.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url("../images/index/couponheader.png");
   background-size: cover;
   justify-content: center;
   background-attachment: fixed;
