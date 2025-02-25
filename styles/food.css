@@ -83,6 +83,8 @@ h2 {
   width: 100%;
   height: 500px;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -111,6 +113,7 @@ h2 {
 =======
 <<<<<<< HEAD
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   display: flex;
   border-radius: 40px;
   overflow: hidden;
@@ -120,11 +123,14 @@ h2 {
   display: none;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
 }
 .infoContainer .tabContainer > div .articleVideo {
   width: 35%;
@@ -148,6 +154,8 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer .tabContainer > div .articleInfo .articleHashtag {
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 .infoContainer article .articleInfo .articleHashtag {
@@ -169,6 +177,7 @@ h2 {
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   display: flex;
   gap: 8px;
 }
@@ -359,6 +368,8 @@ h2 {
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,6 +384,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .infoContainer .tabContainer > div .articleVideo {
     width: 45%;
@@ -380,6 +392,8 @@ h2 {
   .infoContainer .tabContainer > div .articleInfo {
     width: 50%;
     padding-left: 0;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -395,6 +409,7 @@ h2 {
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
     font-size: 2.2rem;
@@ -412,6 +427,8 @@ h2 {
     font-size: 1.4rem;
   }
   .bannerContainer {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -435,10 +452,13 @@ h2 {
     display: flex;
 <<<<<<< HEAD
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     flex-direction: column;
     margin: 70px 0;
     padding-top: 50px;
     padding-bottom: 50px;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 =======
@@ -449,6 +469,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .bannerContainer .title {
     width: inherit;
@@ -568,6 +589,8 @@ h2 {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     width: 100%;
 =======
 <<<<<<< HEAD
@@ -583,6 +606,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     gap: 18px;
   }
   .detailTitle .titleImg {
@@ -601,6 +625,8 @@ h2 {
   }
   .infoContainer .tabContainer > div {
     height: 250px;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
     border-radius: 20px;
   }
@@ -630,27 +656,16 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     border-radius: 20px;
   }
   .infoContainer .tabContainer > div .articleInfo {
     align-items: center;
-<<<<<<< HEAD
-=======
-    height: auto;
-  }
-=======
-<<<<<<< HEAD
-    align-items: center;
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
->>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     height: auto;
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 =======
@@ -659,6 +674,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -688,6 +704,8 @@ h2 {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
     display: flex;
     flex-direction: column;
 =======
@@ -708,6 +726,7 @@ h2 {
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     margin: 30px 0;
     background: none;
     padding-top: 30px;
@@ -734,6 +753,8 @@ h2 {
   }
   .shopContainer .shopBoxWrapper .shopBox {
     height: 230px;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -800,6 +821,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     padding: 0 30px;

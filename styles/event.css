@@ -53,16 +53,6 @@ body {
   align-items: center;
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
-@media (max-width: 1024px) {
-  .eventTitle {
-    height: 500px;
-  }
-}
-@media (max-width: 390px) {
-  .eventTitle {
-    height: 400px;
-  }
-}
 .eventTitle .mainTitle {
   width: 1440px;
 }
@@ -138,15 +128,8 @@ body {
 .eventSteps .steps {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 50px;
-}
-@media (max-width: 1024px) {
-  .eventSteps .steps {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
 }
 .eventSteps .steps .step01,
 .eventSteps .steps .step02 {
@@ -255,14 +238,6 @@ body {
   justify-content: space-evenly;
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
-@media (max-width: 1024px) {
-  .couponsList .hashTags {
-    width: 100%;
-    flex-wrap: wrap;
-    height: auto;
-    gap: 20px;
-  }
-}
 .couponsList .hashTags span {
   width: 200px;
   height: 55px;
@@ -281,9 +256,13 @@ body {
 }
 .couponsList .coupons {
   width: 100%;
-  gap: 50px;
+  gap: 30px;
   justify-content: center;
   display: flex;
+<<<<<<< HEAD
+}
+.couponsList .couponCommon {
+=======
 <<<<<<< HEAD
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -324,15 +303,14 @@ body {
 .couponsList .couponPink,
 .couponsList .couponSky,
 .couponsList .couponPurple {
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   position: relative;
   width: 230px;
   height: 310px;
-  border-radius: 20px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  overflow: visible;
+  cursor: pointer;
 }
 .couponsList .couponCommon img {
   position: absolute;
@@ -360,7 +338,8 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
+  height: 280px;
+  left: 0;
   display: flex;
 <<<<<<< HEAD
   -webkit-box-orient: vertical;
@@ -377,6 +356,9 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
+  border-radius: 10px;
+=======
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 .couponsList .couponGreen .couponTop > i,
@@ -398,13 +380,10 @@ body {
     top: 10px;
     right: 10px;
   }
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
 }
 .couponsList .couponCommon .couponBottom {
   position: absolute;
-  width: 100%;
-  bottom: -35px;
-  left: 50%;
-  transform: translateX(-50%);
   width: 100%;
   height: 40px;
   bottom: -10px;
@@ -446,26 +425,13 @@ body {
 }
 
 .buttons {
-  width: 100%;
   display: flex;
   justify-content: center;
   gap: 35px;
   margin-top: 30px;
 }
-@media (max-width: 1024px) {
-  .buttons {
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-@media (max-width: 390px) {
-  .buttons {
-    gap: 15px;
-    flex-direction: column;
-    align-items: center;
-  }
-}
-.buttons button {
+.buttons button,
+.buttons a {
   display: flex;
   align-items: center;
   padding: 10px 20px;
@@ -484,6 +450,9 @@ body {
   font-weight: 700;
   letter-spacing: -0.4px;
 }
+<<<<<<< HEAD
+.buttons a > i {
+=======
 @media (max-width: 1024px) {
   .buttons button p {
     font-size: 1.8rem;
@@ -500,6 +469,7 @@ body {
   display: -ms-flexbox;
 =======
 >>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   display: flex;
   width: 40px;
   height: 40px;
@@ -528,13 +498,14 @@ body {
   font-weight: bold;
   margin-top: 3%;
   margin-bottom: 15px;
+  text-align: left;
 }
-.eventNotice ul > li {
+.eventNotice ul {
+  margin-bottom: 3%;
+}
+.eventNotice ul li {
   font-size: 2rem;
   font-weight: 500;
-  line-height: 35px;
-  letter-spacing: 0.2px;
-  display: flex;
   position: relative;
   padding-left: 15px;
   line-height: 1.5;
