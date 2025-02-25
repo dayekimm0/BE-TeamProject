@@ -41,8 +41,17 @@ body {
   height: 600px;
   background-image: url("/images/event/title-bg.png");
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+=======
   justify-content: center;
   align-items: center;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 .eventTitle .mainTitle {
   width: 1440px;
@@ -221,7 +230,13 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
+<<<<<<< HEAD
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+=======
   justify-content: space-evenly;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -244,8 +259,51 @@ body {
   gap: 30px;
   justify-content: center;
   display: flex;
+<<<<<<< HEAD
 }
 .couponsList .couponCommon {
+=======
+<<<<<<< HEAD
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+=======
+  flex-direction: column;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+}
+@media (max-width: 390px) {
+  .couponsList .coupons {
+    gap: 30px;
+  }
+}
+.couponsList .coupons .ticket {
+  width: 100%;
+  display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
+  justify-content: center;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+  gap: 50px;
+}
+@media (max-width: 1024px) {
+  .couponsList .coupons .ticket {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 390px) {
+  .couponsList .coupons .ticket {
+    gap: 20px;
+  }
+}
+.couponsList .couponGreen,
+.couponsList .couponPink,
+.couponsList .couponSky,
+.couponsList .couponPurple {
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   position: relative;
   width: 230px;
   height: 310px;
@@ -283,10 +341,46 @@ body {
   height: 280px;
   left: 0;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
   flex-direction: column;
   align-items: center;
   justify-content: center;
+<<<<<<< HEAD
   border-radius: 10px;
+=======
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+}
+.couponsList .couponGreen .couponTop > i,
+.couponsList .couponPink .couponTop > i,
+.couponsList .couponSky .couponTop > i,
+.couponsList .couponPurple .couponTop > i {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 34px;
+  rotate: 90deg;
+}
+@media (max-width: 390px) {
+  .couponsList .couponGreen .couponTop > i,
+  .couponsList .couponPink .couponTop > i,
+  .couponsList .couponSky .couponTop > i,
+  .couponsList .couponPurple .couponTop > i {
+    font-size: 28px;
+    top: 10px;
+    right: 10px;
+  }
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
 }
 .couponsList .couponCommon .couponBottom {
   position: absolute;
@@ -356,7 +450,26 @@ body {
   font-weight: 700;
   letter-spacing: -0.4px;
 }
+<<<<<<< HEAD
 .buttons a > i {
+=======
+@media (max-width: 1024px) {
+  .buttons button p {
+    font-size: 1.8rem;
+  }
+}
+@media (max-width: 390px) {
+  .buttons button p {
+    font-size: 1.6rem;
+  }
+}
+.buttons button > i {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
+>>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   display: flex;
   width: 40px;
   height: 40px;

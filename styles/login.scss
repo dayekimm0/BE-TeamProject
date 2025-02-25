@@ -75,6 +75,9 @@ main {
         input[type="checkbox"] {
           width: 16px;
           height: 16px;
+          &:checked {
+            accent-color: map-get($map: $colors, $key: foodAccent) !important;
+          }
         }
       }
       div:last-child {

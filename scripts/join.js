@@ -1,17 +1,48 @@
 const finalBtn = document.querySelector("#finalBtn");
 const joinCancel = document.querySelector("#joinCancel");
 const allCheck = document.querySelector("#joinAll");
-const checkBox = document.querySelectorAll(".checkBox");
+const checkBoxes = document.querySelectorAll(".checkBox:not(#joinAll)");
+const check01 = document.querySelector("#joinCheck01");
+const check02 = document.querySelector("#joinCheck02");
+let checkValid = false;
+let checkValid02 = false;
 
-const checkEvent = (e) => {
-  console.log(e.checked);
+// 체크박스
+const checkEvent = () => {
+  checkBoxes.forEach((checkBox) => {
+    checkBox.checked = allCheck.checked;
+    if (allCheck.checked === true) {
+      checkValid = true;
+      checkValid02 = true;
+    } else {
+      checkValid = false;
+      checkValid02 = false;
+    }
+    checkBox.addEventListener("change", (e) => {
+      allCheck.checked = e.checked;
+    });
+  });
 };
+const checkEvent01 = function () {
+  if (this.checked === true) {
+    return (checkValid = true);
+  } else {
+    return (checkValid = false);
+  }
+};
+const checkEvent02 = function () {
+  if (this.checked === true) {
+    return (checkValid02 = true);
+  } else {
+    return (checkValid02 = false);
+  }
+};
+check01.addEventListener("change", checkEvent01);
+check02.addEventListener("change", checkEvent02);
+
 allCheck.addEventListener("change", checkEvent);
 
-joinCancel.addEventListener("click", () => {
-  location.href = "login.html";
-});
-
+// 폼
 finalBtn.addEventListener("click", () => {
   let isValid = true;
   const email = document.querySelector("#joinId").value;
@@ -19,6 +50,7 @@ finalBtn.addEventListener("click", () => {
   const pw02 = document.querySelector("#joinPwCheck");
   const name = document.querySelector("#joinName");
   const vegan = document.querySelector("#vegan").value;
+
   // 아이디
   if (email === "") {
     errorId.innerHTML = `<i class="fas fa-exclamation"></i>필수항목 입니다.`;
@@ -49,8 +81,9 @@ finalBtn.addEventListener("click", () => {
     isValid = false;
   } else {
     if (pw01.value !== pw02.value) {
-      document.querySelector("#errorPw02").innerText =
-        "비밀번호가 서로 다릅니다.";
+      document.querySelector(
+        "#errorPw02"
+      ).innerHTML = `<i class="fas fa-exclamation"></i>비밀번호가 서로 다릅니다.`;
       isValid = false;
     } else {
       document.querySelector(
@@ -86,10 +119,15 @@ finalBtn.addEventListener("click", () => {
   } else {
     document.querySelector("#errorSelect").innerText = "";
   }
-
-  if (isValid === true) {
+  console.log(checkValid, checkValid02);
+  if (isValid === true && checkValid === true && checkValid02 === true) {
     location.href = "welcome.html";
   }
-
-  // 약관
+  if (checkValid === false || checkValid02 === false) {
+    document.querySelector(
+      "#errorAgree"
+    ).innerHTML = `<i class="fas fa-exclamation"></i>(필수) 이용약관을 체크해주세요.`;
+  } else {
+    document.querySelector("#errorAgree").innerHTML = ``;
+  }
 });
