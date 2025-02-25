@@ -59,6 +59,9 @@ main {
     input[type="checkbox"] {
       width: 16px;
       height: 16px;
+      &:checked {
+        accent-color: map-get($map: $colors, $key: foodAccent) !important;
+      }
     }
     .error {
       font-size: 1.2rem;
@@ -70,22 +73,6 @@ main {
         margin-right: 8px;
         background: map-get($map: $colors, $key: error);
       }
-      // &::before {
-      //   content: "!";
-      //   color: map-get($map: $colors, $key: light);
-      //   position: absolute;
-      //   left: 0;
-      //   font-size: 1.2rem;
-      //   text-align: center;
-      //   background: map-get($map: $colors, $key: error);
-      //   width: 12px;
-      //   height: 12px;
-      //   line-height: 12px;
-      //   left: 0;
-      //   top: 0;
-      //   border-radius: 50%;
-      //   text-indent: 1px;
-      // }
     }
     #joinStep {
       display: flex;
