@@ -78,6 +78,12 @@ main #form #userInfo div:first-child {
 main #form #userInfo div:first-child input[type=checkbox] {
   width: 16px;
   height: 16px;
+<<<<<<< HEAD
+=======
+}
+main #form #userInfo div:first-child input[type=checkbox]:checked {
+  accent-color: #a5d112 !important;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
 }
 main #form #userInfo div:last-child a:last-child {
   position: relative;

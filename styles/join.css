@@ -59,6 +59,9 @@ main #form input[type=checkbox] {
   width: 16px;
   height: 16px;
 }
+main #form input[type=checkbox]:checked {
+  accent-color: #a5d112 !important;
+}
 main #form .error {
   font-size: 1.2rem;
   margin-top: 12px;
@@ -80,9 +83,17 @@ main #form .error i {
 }
 main #form #joinStep {
   display: flex;
+<<<<<<< HEAD
   justify-content: center;
+=======
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   gap: 60px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-bottom: 1px solid #d9d9d9;
   padding-bottom: 30px;
 }
@@ -106,7 +117,14 @@ main #form #joinStep .stepWrap:nth-child(3) p {
 }
 main #form #joinStep .stepWrap .stepCircle {
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   background: #a5d112;
   color: #fff;
   border-radius: 50%;
@@ -126,14 +144,31 @@ main #form #joinStep .stepWrap p {
   color: #a5d112;
 }
 main #form #joinBox {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   gap: 12px;
 }
 main #form #joinBox .joinInput {
   position: relative;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
+=======
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
 }
 main #form #joinBox .joinInput #phoneBtn {
   position: absolute;
@@ -144,7 +179,12 @@ main #form #joinBox .joinInput #phoneBtn {
   width: auto;
   height: auto;
   top: 50%;
+<<<<<<< HEAD
   transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   right: 30px;
   cursor: pointer;
   font-size: 1.2rem;
@@ -154,15 +194,28 @@ main #form #joinBox .joinInput label {
   position: absolute;
   left: 30px;
   top: 50%;
+<<<<<<< HEAD
   transform: translateY(-50%);
+=======
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   font-size: 1.4rem;
   color: #aeaeba;
   font-weight: bold;
 }
 main #form #joinBox .joinInfo {
   margin-top: 8px;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
 }
 main #form #joinBox .joinInfo p {
@@ -185,6 +238,11 @@ main #form #joinBox .joinInfo p span {
   color: #d9d9d9;
 }
 main #form #joinBox .joinInfo .checkList {
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   display: flex;
   gap: 8px;
 }
@@ -216,11 +274,18 @@ main #form #joinBox select:focus {
 main #form #joinAgree {
   padding-top: 30px;
   border-top: 1px solid #d9d9d9;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
 }
 main #form #joinAgree .checkList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 8px;
 }
@@ -230,9 +295,15 @@ main #form #joinAgree .checkList label {
   color: #64646b;
 }
 main #form #joinAgree .checkList2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: flex;
   gap: 8px;
 }
@@ -277,8 +348,13 @@ main #form #joinAgree .agreeBox::-webkit-scrollbar-track {
   background: #f5f5fa;
 }
 main #form #inputBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 12px;
 }
 main #form #inputBtn input {

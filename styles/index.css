@@ -70,8 +70,13 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
+<<<<<<< HEAD
   opacity: 0;
   animation: dropBounce 2s ease-out forwards;
+=======
+  -webkit-animation: rotate-scale-up 0.7s both;
+          animation: rotate-scale-up 0.7s both;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -99,6 +104,11 @@ main #con1 h2 {
 }
 main #con1 .parts {
   width: 100%;
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   display: flex;
   align-items: center;
   gap: 46px;
@@ -111,7 +121,12 @@ main #con1 .parts .part:hover p {
   opacity: 1;
 }
 main #con1 .parts .part:hover .partImg {
+<<<<<<< HEAD
   filter: brightness(60%);
+=======
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
 }
 main #con1 .parts .part a .partImg {
   width: 430px;
@@ -260,6 +275,8 @@ main #con5 .eventLoad span b {
     width: 80px;
     height: 80px;
     bottom: 6%;
+    -webkit-animation: rotate-scale-up 0.7s both;
+            animation: rotate-scale-up 0.7s both;
   }
   main #con1 {
     padding: 0 5%;
@@ -373,6 +390,8 @@ main #con5 .eventLoad span b {
     top: 60%;
     width: 60px;
     height: 60px;
+    -webkit-animation: rotate-scale-up 0.7s both;
+            animation: rotate-scale-up 0.7s both;
   }
   main #con1 {
     padding-left: 5%;
@@ -387,8 +406,16 @@ main #con5 .eventLoad span b {
     flex-direction: row;
     align-items: center;
     gap: 14px;
+<<<<<<< HEAD
     flex-wrap: nowrap;
     justify-content: flex-start;
+=======
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
     border-radius: 0;
     overflow: hidden;
   }
@@ -447,6 +474,7 @@ main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
   }
 }
+<<<<<<< HEAD
 /* Add these CSS animations */
 @keyframes slideInFromLeft {
   0% {
@@ -474,10 +502,25 @@ main #con5 .eventLoad span b {
   animation-fill-mode: forwards; /* Keep the final state */
   animation-duration: 1s;
   animation-timing-function: ease-out;
-}
-
-@keyframes dropBounce {
+=======
+@-webkit-keyframes rotate-scale-up {
   0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+}
+@keyframes rotate-scale-up {
+  0% {
+<<<<<<< HEAD
     opacity: 0;
     transform: translate(500%, 300%);
   }
@@ -497,5 +540,17 @@ main #con5 .eventLoad span b {
   100% {
     opacity: 1;
     transform: translate(0, 0);
+=======
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   }
 }

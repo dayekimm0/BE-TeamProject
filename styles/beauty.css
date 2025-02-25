@@ -69,6 +69,7 @@ h2 {
   border-radius: 55px;
   font-size: 2.6rem;
   font-weight: 500;
+  font-family: "Pretendard";
   color: #ffa6a7;
   border: 1.5px solid #ffa6a7;
   background: none;
@@ -158,6 +159,8 @@ h2 {
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
   border-radius: 20px;
   margin-bottom: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+          box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;

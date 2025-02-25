@@ -56,8 +56,7 @@ main {
         height: 100px;
         left: 10%;
         bottom: 10%;
-        opacity: 0;
-        animation: dropBounce 2s ease-out forwards;
+        animation: rotate-scale-up 0.7s both;
       }
       .subTitle {
         top: 70%;
@@ -266,6 +265,7 @@ main {
           width: 80px;
           height: 80px;
           bottom: 6%;
+          animation: rotate-scale-up 0.7s both;
         }
       }
     }
@@ -395,6 +395,7 @@ main {
           top: 60%;
           width: 60px;
           height: 60px;
+          animation: rotate-scale-up 0.7s both;
         }
       }
     }
@@ -484,57 +485,14 @@ main {
   }
 }
 
-/* Add these CSS animations */
-@keyframes slideInFromLeft {
+@keyframes rotate-scale-up {
   0% {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideInFromRight {
-  0% {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
-/* Apply animations to the p tags */
-.con2-text p {
-  opacity: 0; /* Start hidden */
-  animation-fill-mode: forwards; /* Keep the final state */
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-}
-
-@keyframes dropBounce {
-  0% {
-    opacity: 0;
-    transform: translate(500%, 300%);
-  }
-  30% {
-    opacity: 1;
-    transform: translate(20%, 50%); // 내려오면서 작게 튐
+    transform: scale(1) rotateZ(0);
   }
   50% {
-    transform: translate(0, -50%); // 위로 살짝 튀기
-  }
-  70% {
-    transform: translate(0, 30%); // 다시 아래로 내려오기
-  }
-  90% {
-    transform: translate(0, -30%); // 두 번째 튕김
+    transform: scale(2) rotateZ(180deg);
   }
   100% {
-    opacity: 1;
-    transform: translate(0, 0); // 제자리 정착
+    transform: scale(1) rotateZ(360deg);
   }
 }
