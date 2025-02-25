@@ -82,38 +82,6 @@ h2 {
 .infoContainer .tabContainer > div {
   width: 100%;
   height: 500px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 40px;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: 1.5px solid #a5d112;
-  display: none;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  display: flex;
-  border-radius: 40px;
-  overflow: hidden;
-  align-items: center;
-  justify-content: space-between;
-  border: 1.5px solid #a5d112;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   display: flex;
   border-radius: 40px;
   overflow: hidden;
@@ -121,16 +89,6 @@ h2 {
   justify-content: space-between;
   border: 1.5px solid #a5d112;
   display: none;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
 }
 .infoContainer .tabContainer > div .articleVideo {
   width: 35%;
@@ -154,30 +112,6 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-<<<<<<< HEAD
-=======
-=======
-<<<<<<< HEAD
-.infoContainer article .articleInfo .articleHashtag {
-=======
-<<<<<<< HEAD
-.infoContainer .tabContainer > div .articleInfo .articleHashtag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-<<<<<<< HEAD
-=======
-=======
-.infoContainer article .articleInfo .articleHashtag {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   display: flex;
   gap: 8px;
 }
@@ -264,10 +198,6 @@ h2 {
   align-items: center;
   padding: 0 60px;
   opacity: 0;
-<<<<<<< HEAD
-  -webkit-transition: all 0.3s;
-=======
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
   transition: all 0.3s;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
@@ -316,9 +246,7 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper {
     width: 100%;
     gap: 0 !important;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
     width: 20%;
@@ -364,27 +292,6 @@ h2 {
   .infoContainer .tabContainer > div {
     height: 400px;
     border-radius: 30px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    gap: 40px;
-    border: 1px solid #a5d112;
-    border-radius: 36px;
-    overflow: hidden;
-    align-items: center;
-<<<<<<< HEAD
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .infoContainer .tabContainer > div .articleVideo {
     width: 45%;
@@ -392,24 +299,6 @@ h2 {
   .infoContainer .tabContainer > div .articleInfo {
     width: 50%;
     padding-left: 0;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    width: 50%;
-    height: 230px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
     font-size: 2.2rem;
@@ -427,49 +316,10 @@ h2 {
     font-size: 1.4rem;
   }
   .bannerContainer {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin: 70px 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-    margin: 70px 0;
-=======
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-<<<<<<< HEAD
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     flex-direction: column;
     margin: 70px 0;
     padding-top: 50px;
     padding-bottom: 50px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-    background: #cae570;
-    padding-top: 40px;
-    padding-bottom: 40px;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .bannerContainer .title {
     width: inherit;
@@ -510,11 +360,6 @@ h2 {
   .shopContainer .shopBoxWrapper .shopBox {
     width: 100%;
     height: 330px;
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -584,29 +429,6 @@ h2 {
   }
   .detailTitle {
     padding: 0 5%;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    width: 100%;
-=======
-<<<<<<< HEAD
-=======
-    width: 100%;
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-    display: flex;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     gap: 18px;
   }
   .detailTitle .titleImg {
@@ -625,38 +447,6 @@ h2 {
   }
   .infoContainer .tabContainer > div {
     height: 250px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    border-radius: 20px;
-  }
-  .infoContainer .tabContainer > div .articleInfo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: auto;
-  }
-  .infoContainer .tabContainer > div .articleInfo h3 {
-=======
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  .infoContainer .tabContainer > div {
-    height: 250px;
-=======
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-  .infoContainer article {
-    position: relative;
-    height: 230px;
-    gap: 20px;
-    align-items: center;
-<<<<<<< HEAD
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     border-radius: 20px;
   }
   .infoContainer .tabContainer > div .articleInfo {
@@ -664,17 +454,6 @@ h2 {
     height: auto;
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-=======
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-  .infoContainer article .articleInfo h3 {
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     font-size: 1.5rem;
     font-weight: 600;
   }
@@ -684,14 +463,8 @@ h2 {
     line-height: 1.5rem;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-<<<<<<< HEAD
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 4px;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag li {
@@ -699,34 +472,6 @@ h2 {
     font-size: 0.9rem;
   }
   .bannerContainer {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    display: flex;
-    flex-direction: column;
-=======
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-<<<<<<< HEAD
-    flex-direction: column;
-=======
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
->>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
     margin: 30px 0;
     background: none;
     padding-top: 30px;
@@ -753,75 +498,6 @@ h2 {
   }
   .shopContainer .shopBoxWrapper .shopBox {
     height: 230px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> d4a3f865960cbb54a2dc79846bee4f3ee73b798b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-    display: flex;
-    position: relative;
-  }
-  .shopContainer .shopBoxWrapper .shopBox .imgBox {
-    width: 50%;
-    left: auto;
-    z-index: 9;
-  }
-  .shopContainer .shopBoxWrapper .shopBox .imgBox img {
-    display: block;
-  }
-  .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
-    right: auto;
-    left: 0;
-    position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
-    right: auto;
-    left: 0;
-    position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
-  }
-  .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
-    right: auto;
-    left: 0;
-    position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
->>>>>>> e42069438c81a85b8418bcc845a317e2b9d637eb
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     padding: 0 30px;
