@@ -149,10 +149,10 @@ h2 {
         img {
           border-radius: 20px;
           margin-bottom: 8px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
         }
         p {
-          font-size: 2rem; 
+          font-size: 2rem;
         }
       }
     }
@@ -181,10 +181,7 @@ h2 {
       }
       /* 기본적으로 숨김 */
       .shopHoverBox {
-        background: rgba(
-          $color: map-get($map: $colors, $key: food),
-          $alpha: 0.9
-        );
+        background: rgba($color: map-get($map: $colors, $key: food), $alpha: 0.9);
         position: absolute;
         display: flex;
         width: 100%;
@@ -489,7 +486,7 @@ h2 {
       li {
         button {
           margin-top: 0;
-          padding: 6px 14px;
+          padding: 8px 14px;
           font-size: 1.4rem;
         }
       }
@@ -545,10 +542,8 @@ h2 {
         }
         .contentBox {
           img {
-            width: 120px;
-            height: 120px;
             border-radius: 10px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
           }
           p {
             font-size: 1rem;
