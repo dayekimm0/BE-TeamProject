@@ -188,6 +188,8 @@ h2 {
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
   border-radius: 20px;
   margin-bottom: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;

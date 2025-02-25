@@ -188,6 +188,8 @@ h2 {
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
   border-radius: 20px;
   margin-bottom: 8px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
@@ -402,6 +404,8 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 16px;
     margin-bottom: 6px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1.5rem;
@@ -562,7 +566,8 @@ h2 {
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
-    margin-bottom: px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1rem;
