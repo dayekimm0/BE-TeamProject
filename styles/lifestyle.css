@@ -53,8 +53,7 @@ section {
 .detailTitle .circleImg {
   margin-left: auto;
   margin-bottom: 70px;
-  -webkit-animation: circle 6s linear infinite;
-          animation: circle 6s linear infinite;
+  animation: circle 6s linear infinite;
 }
 
 h2 {
@@ -82,7 +81,6 @@ h2 {
   border: 1.5px solid #c198f9;
   background: none;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .infoContainer > ul li .active {
@@ -90,13 +88,13 @@ h2 {
   color: #fff;
 }
 .infoContainer .tabContainer > div {
+<<<<<<< HEAD
+=======
   display: -webkit-box;
   display: -ms-flexbox;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   display: none;
 }
 .infoContainer .tabContainer > div > div {
@@ -107,12 +105,17 @@ h2 {
   display: flex;
   border-radius: 40px;
   overflow: hidden;
+<<<<<<< HEAD
+  align-items: center;
+  justify-content: space-between;
+=======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   border: 1.5px solid #c198f9;
 }
 .infoContainer .tabContainer > div > div:first-child {
@@ -140,8 +143,11 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
+<<<<<<< HEAD
+=======
   display: -webkit-box;
   display: -ms-flexbox;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   display: flex;
   gap: 8px;
 }
@@ -154,9 +160,9 @@ h2 {
   font-weight: 400;
 }
 .infoContainer .tabContainer > div.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
 }
 
 @-webkit-keyframes circle {
@@ -164,12 +170,12 @@ h2 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
 }
 
 @keyframes circle {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /* ==== 반응형 ==== */
@@ -276,9 +282,13 @@ h2 {
     margin-bottom: 20px;
   }
   .infoContainer .tabContainer > div > div .articleInfo {
+<<<<<<< HEAD
+    align-items: center;
+=======
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
     height: auto;
   }
   .infoContainer .tabContainer > div > div .articleInfo h3 {
@@ -291,8 +301,11 @@ h2 {
     line-height: 1.5rem;
   }
   .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
+<<<<<<< HEAD
+=======
     display: -webkit-box;
     display: -ms-flexbox;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
