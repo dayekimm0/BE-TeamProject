@@ -50,7 +50,7 @@ main #intro .index .title {
 }
 main #intro .index .title p {
   font: normal 3.3rem/1.75 "Pretendard";
-  font-weight: 700;
+  font-weight: 500;
 }
 main #intro .index .title h2 span {
   padding: 10px;
@@ -63,6 +63,7 @@ main #intro .index .indexImg1 {
   position: absolute;
   top: 15%;
   right: 5%;
+  animation: main-circle 5s linear infinite;
 }
 main #intro .index .indexImg2 {
   position: absolute;
@@ -70,7 +71,6 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
-  animation: rotate-scale-up 0.7s both;
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -86,6 +86,16 @@ main #intro .index .subTitle p {
   margin-top: 5%;
   font: 700 2.4rem/1 "Pretendard";
   letter-spacing: -0.52px;
+  transition: all 0.3s;
+}
+main #intro .index .subTitle p:hover {
+  background-color: #cae570;
+}
+main #intro .index .subTitle p:hover:nth-child(2) {
+  background-color: #ffc6c7;
+}
+main #intro .index .subTitle p:hover:nth-child(3) {
+  background-color: #b4e3fc;
 }
 main #con1 {
   display: flex;
@@ -158,6 +168,9 @@ main #con2 .con2-text .con2Img {
   height: 200px;
   margin-top: -5%;
   margin-left: 5%;
+}
+main #con2 .con2-text .con2Img .active {
+  animation: rotate-scale-up 0.7s both;
 }
 main #con3 {
   width: 100%;
@@ -283,6 +296,7 @@ main #con5 .eventLoad span b {
   }
   main #con1 .parts .part::after {
     content: "";
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -400,6 +414,7 @@ main #con5 .eventLoad span b {
   }
   main #con1 .parts .part::after {
     content: "";
+    cursor: pointer;
     border-radius: 20px;
   }
   main #con1 .parts .part a .partImg {
@@ -457,5 +472,13 @@ main #con5 .eventLoad span b {
   }
   100% {
     transform: scale(1) rotateZ(360deg);
+  }
+}
+@keyframes main-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }

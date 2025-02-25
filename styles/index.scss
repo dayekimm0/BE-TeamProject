@@ -33,7 +33,7 @@ main {
         flex-direction: column;
         p {
           font: normal 3.3rem/1.75 map-get($map: $font-family, $key: Pretendard);
-          font-weight: 700;
+          font-weight: 500;
         }
         h2 {
           span {
@@ -49,6 +49,7 @@ main {
         position: absolute;
         top: 15%;
         right: 5%;
+        animation: main-circle 5s linear infinite;
       }
       .indexImg2 {
         position: absolute;
@@ -56,7 +57,6 @@ main {
         height: 100px;
         left: 10%;
         bottom: 10%;
-        animation: rotate-scale-up 0.7s both;
       }
       .subTitle {
         top: 70%;
@@ -71,6 +71,16 @@ main {
           margin-top: 5%;
           font: 700 2.4rem/1 map-get($map: $font-family, $key: Pretendard);
           letter-spacing: -0.52px;
+          transition: all 0.3s;
+          &:hover {
+            background-color: map-get($map: $colors, $key: food);
+            &:nth-child(2) {
+              background-color: map-get($map: $colors, $key: beauty);
+            }
+            &:nth-child(3) {
+              background-color: map-get($map: $colors, $key: fashion);
+            }
+          }
         }
       }
     }
@@ -150,6 +160,9 @@ main {
         height: 200px;
         margin-top: -5%;
         margin-left: 5%;
+        .active {
+          animation: rotate-scale-up 0.7s both;
+        }
       }
     }
   }
@@ -288,6 +301,7 @@ main {
           }
           &::after {
             content: "";
+            cursor: pointer;
             position: absolute;
             bottom: 0;
             width: 100%;
@@ -421,6 +435,7 @@ main {
           max-width: 280px;
           &::after {
             content: "";
+            cursor: pointer;
             border-radius: 20px;
           }
           a {
@@ -494,5 +509,14 @@ main {
   }
   100% {
     transform: scale(1) rotateZ(360deg);
+  }
+}
+
+@keyframes main-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
