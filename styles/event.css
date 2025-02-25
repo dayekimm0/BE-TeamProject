@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -41,43 +40,17 @@ body {
   position: relative;
   height: 600px;
   background-image: url("/images/event/title-bg.png");
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
-=======
-}
-@media (max-width: 1024px) {
-  .eventTitle {
-    height: 500px;
-  }
-}
-@media (max-width: 390px) {
-  .eventTitle {
-    height: 400px;
-  }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+  justify-content: center;
+  align-items: center;
 }
 .eventTitle .mainTitle {
   width: 1440px;
 }
 .eventTitle .mainTitle .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
   gap: 30px;
   color: #fff;
 }
@@ -103,35 +76,19 @@ body {
 
 .eventSteps {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .eventSteps .howTo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 450px;
   height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   color: #000;
 }
@@ -150,9 +107,7 @@ body {
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
@@ -163,25 +118,9 @@ body {
 }
 .eventSteps .steps {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-evenly;
   margin-top: 50px;
-}
-@media (max-width: 1024px) {
-  .eventSteps .steps {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
 }
 .eventSteps .steps .step01,
 .eventSteps .steps .step02 {
@@ -190,8 +129,7 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 8px #d9d9d9;
-          box-shadow: 0 0 8px #d9d9d9;
+  box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
@@ -231,16 +169,9 @@ body {
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
   width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 11px;
   position: absolute;
   top: 25px;
@@ -277,47 +208,20 @@ body {
 
 .couponsList {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 132px;
 }
 .couponsList .hashTags {
   width: 628px;
   height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 30px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-<<<<<<< HEAD
-=======
-}
-@media (max-width: 1024px) {
-  .couponsList .hashTags {
-    width: 100%;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    height: auto;
-    gap: 20px;
-  }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+  justify-content: space-evenly;
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -325,92 +229,30 @@ body {
   padding: 10px 25px;
   border-radius: 30px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
-          box-shadow: 0px 0px 4px 0px #d9d9d9;
+  box-shadow: 0px 0px 4px 0px #d9d9d9;
   color: #000;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 .couponsList .coupons {
   width: 100%;
-  gap: 50px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-<<<<<<< HEAD
-=======
-}
-@media (max-width: 390px) {
-  .couponsList .coupons {
-    gap: 30px;
-  }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-}
-.couponsList .coupons .ticket {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
   gap: 30px;
-=======
-  gap: 50px;
+  justify-content: center;
+  display: flex;
 }
-@media (max-width: 1024px) {
-  .couponsList .coupons .ticket {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
-}
-@media (max-width: 390px) {
-  .couponsList .coupons .ticket {
-    gap: 20px;
-  }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-}
-.couponsList .couponGreen,
-.couponsList .couponPink,
-.couponsList .couponSky,
-.couponsList .couponPurple {
+.couponsList .couponCommon {
   position: relative;
   width: 230px;
   height: 310px;
-  border-radius: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  overflow: visible;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 .couponsList .couponCommon img {
   position: absolute;
@@ -438,51 +280,16 @@ body {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
+  height: 280px;
+  left: 0;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
-=======
-}
-.couponsList .couponGreen .couponTop > i,
-.couponsList .couponPink .couponTop > i,
-.couponsList .couponSky .couponTop > i,
-.couponsList .couponPurple .couponTop > i {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  font-size: 34px;
-  rotate: 90deg;
-}
-@media (max-width: 390px) {
-  .couponsList .couponGreen .couponTop > i,
-  .couponsList .couponPink .couponTop > i,
-  .couponsList .couponSky .couponTop > i,
-  .couponsList .couponPurple .couponTop > i {
-    font-size: 28px;
-    top: 10px;
-    right: 10px;
-  }
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
 }
 .couponsList .couponCommon .couponBottom {
   position: absolute;
-  width: 100%;
-  bottom: -35px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   width: 100%;
   height: 40px;
   bottom: -10px;
@@ -524,118 +331,100 @@ body {
 }
 
 .buttons {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 35px;
   margin-top: 30px;
 }
-@media (max-width: 1024px) {
-  .buttons {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 20px;
-  }
-}
-@media (max-width: 390px) {
-  .buttons {
-    gap: 15px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-}
-.buttons button {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.buttons button,
+.buttons a {
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px 20px;
   gap: 10px;
   width: auto;
   height: 60px;
   border-radius: 30px;
   border: none;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s linear;
   color: inherit;
   outline: none;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.4px;
+  position: relative;
+  overflow: hidden;
 }
-<<<<<<< HEAD
-.buttons button i {
-=======
-@media (max-width: 1024px) {
-  .buttons button p {
-    font-size: 1.8rem;
-  }
+.buttons button:hover p,
+.buttons a:hover p {
+  color: #fff;
+  z-index: 1;
 }
-@media (max-width: 390px) {
-  .buttons button p {
-    font-size: 1.6rem;
-  }
+.buttons button:hover i,
+.buttons a:hover i {
+  z-index: 1;
 }
-.buttons button > i {
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-  display: -webkit-box;
-  display: -ms-flexbox;
+.buttons button:hover::before,
+.buttons a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+.buttons button::before,
+.buttons a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  background: #000;
+  transition: all 0.5s;
+}
+.buttons button i,
+.buttons a i {
   display: flex;
   width: 40px;
   height: 40px;
   padding: 6px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   color: #000;
   border: 2px solid #d9d9d9;
   background: #fff;
+  transition: all 0.5s;
+}
+.buttons button p,
+.buttons a p {
+  font-family: "Pretendard";
+  transition: all 0.5s;
 }
 
 .eventNotice {
-  width: 100%;
   color: #000;
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
-  width: 60%;
 }
-.eventNotice h5 {
+.eventNotice .eventWrapper h5 {
   font-weight: bold;
   margin-top: 3%;
   margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
 }
-.eventNotice ul > li {
+.eventNotice .eventWrapper ul {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.eventNotice .eventWrapper ul li {
   font-size: 2rem;
-  font-weight: 500;
-  line-height: 35px;
-  letter-spacing: 0.2px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  font-weight: 300;
   position: relative;
   padding-left: 15px;
   line-height: 1.5;
@@ -644,7 +433,7 @@ body {
   word-break: keep-all;
   align-items: start;
 }
-.eventNotice ul li::before {
+.eventNotice .eventWrapper ul li::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -653,8 +442,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   background: #000;
 }
 
@@ -662,76 +450,69 @@ body {
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  z-index: 5;
   justify-content: center;
   align-items: center;
 }
 .modal.active {
   display: flex;
 }
-.modal .modal-content {
+.modal .modalContent {
   background: #fff;
-  padding: 40px;
-  border-radius: 20px;
   text-align: center;
-  max-width: 400px;
+  padding-top: 40px;
+  max-width: 450px;
   width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.modal .modal-check {
+.modal .modalCheck {
   margin: 0 auto 20px;
   width: 60px;
   height: 60px;
 }
-.modal .modal-check svg {
-  width: 100%;
-  height: 100%;
+.modal .modalCheck span {
+  font-size: 6rem;
+  color: #000;
 }
-.modal .modal-check.food circle {
-  fill: #cae570;
-}
-.modal .modal-check.beauty circle {
-  fill: #ffc6c7;
-}
-.modal .modal-check.fashion circle {
-  fill: #b4e3fc;
-}
-.modal .modal-check.lifestyle circle {
-  fill: #c198f9;
-}
-.modal .modal-title {
-  font-size: 2.4rem;
+.modal .modalTitle {
+  font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #000;
 }
-.modal .modal-desc {
-  font-size: 1.4rem;
+.modal .modalDesc {
+  font-size: 1.5rem;
   margin-bottom: 30px;
 }
-.modal .modal-buttons {
+.modal .modalButtons {
   display: flex;
-  gap: 10px;
+  margin-top: 30px;
 }
-.modal .modal-buttons button {
-  flex: 1;
-  height: 50px;
-  border-radius: 25px;
-  font-size: 1.6rem;
+.modal .modalButtons button {
+  height: 60px;
+  width: 250px;
+  font-size: 2rem;
   font-weight: 600;
+  border: none;
+  color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-.modal .modal-buttons button.confirm-btn {
+.modal .modalButtons button.confirmBtn {
   background: #000;
   color: #fff;
-  border: none;
+  background: #333;
 }
-.modal .modal-buttons button.homepage-btn {
+.modal .modalButtons button.homepageBtn {
   background: #fff;
   color: #000;
   border: 1px solid #d9d9d9;
@@ -835,15 +616,15 @@ body {
   }
   .buttons button {
     max-width: 300px;
-    padding: 8px 15px;
+    padding: 10px 20px;
   }
   .buttons button p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .buttons button > i {
-    width: 35px;
-    height: 35px;
-    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
   }
   .eventNotice {
     font-size: 2.5rem;
@@ -860,6 +641,22 @@ body {
     letter-spacing: 0.1px;
     word-wrap: break-word;
     word-break: keep-all;
+  }
+  .modal .modalContent {
+    width: 50%;
+  }
+  .modal .modalContent .modalCheck {
+    margin: 0 auto 0px;
+  }
+  .modal .modalContent .modalCheck span {
+    font-size: 6rem;
+  }
+  .modal .modalContent .modalTitle {
+    margin-top: 15px;
+    font-size: 2.5rem;
+  }
+  .modal .modalContent .modalButtons {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -1011,17 +808,19 @@ body {
     gap: 15px;
     align-items: center;
   }
-  .buttons button {
+  .buttons button,
+  .buttons a {
     width: 100%;
     max-width: 200px;
     height: 50px;
-    padding: 6px 12px;
-    gap: 10px;
+    justify-content: space-between;
   }
-  .buttons button p {
+  .buttons button p,
+  .buttons a p {
     font-size: 1.6rem;
   }
-  .buttons button > i {
+  .buttons button > i,
+  .buttons a > i {
     width: 30px;
     height: 30px;
     font-size: 1.6rem;
@@ -1042,5 +841,28 @@ body {
     letter-spacing: 0.1px;
     word-wrap: break-word;
     word-break: keep-all;
+  }
+  .modal .modalContent {
+    padding-top: 25px;
+    width: 50%;
+    height: 15%;
+  }
+  .modal .modalContent .modalCheck {
+    margin: 0 auto 0px;
+  }
+  .modal .modalContent .modalCheck span {
+    font-size: 5rem;
+  }
+  .modal .modalContent .modalTitle {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+  .modal .modalContent .modalButtons {
+    margin-top: 20px;
+  }
+  .modal .modalContent .modalButtons button {
+    font-size: 1.8rem;
+    width: 100%;
+    height: 50px;
   }
 }
