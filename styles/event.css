@@ -41,8 +41,17 @@ body {
   height: 600px;
   background-image: url("/images/event/title-bg.png");
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+=======
   justify-content: center;
   align-items: center;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 @media (max-width: 1024px) {
   .eventTitle {
@@ -238,7 +247,13 @@ body {
   display: flex;
   align-items: center;
   gap: 30px;
+<<<<<<< HEAD
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+=======
   justify-content: space-evenly;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 @media (max-width: 1024px) {
   .couponsList .hashTags {
@@ -269,7 +284,14 @@ body {
   gap: 50px;
   justify-content: center;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+=======
   flex-direction: column;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 @media (max-width: 390px) {
   .couponsList .coupons {
@@ -279,7 +301,13 @@ body {
 .couponsList .coupons .ticket {
   width: 100%;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
   justify-content: center;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
   gap: 50px;
 }
 @media (max-width: 1024px) {
@@ -334,9 +362,22 @@ body {
   width: 100%;
   height: 100%;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+=======
   flex-direction: column;
   align-items: center;
   justify-content: center;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 .couponsList .couponGreen .couponTop > i,
 .couponsList .couponPink .couponTop > i,
@@ -454,6 +495,11 @@ body {
   }
 }
 .buttons button > i {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
   display: flex;
   width: 40px;
   height: 40px;

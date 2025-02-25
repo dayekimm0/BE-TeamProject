@@ -118,6 +118,8 @@ main #con1 .parts {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 main #con1 .parts-slick .slick-track {
   gap: 20px;
@@ -125,6 +127,7 @@ main #con1 .parts-slick .slick-track {
 main #con1 .parts-slick .part {
 =======
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 main #con1 .parts .part {
   position: relative;
 }
@@ -132,7 +135,12 @@ main #con1 .parts .part:hover p {
   opacity: 1;
 }
 main #con1 .parts .part:hover .partImg {
+<<<<<<< HEAD
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+=======
   filter: brightness(60%);
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 main #con1 .parts .part a .partImg {
   width: 430px;
@@ -410,8 +418,16 @@ main #con5 .eventLoad span b {
     flex-direction: row;
     align-items: center;
     gap: 14px;
+<<<<<<< HEAD
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+=======
     flex-wrap: nowrap;
     justify-content: flex-start;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     border-radius: 0;
     overflow: hidden;
   }

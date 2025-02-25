@@ -4,7 +4,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -34,9 +35,13 @@ section {
 }
 
 .detailTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .detailTitle .titleImg {
   width: 30px;
@@ -59,6 +64,8 @@ h2 {
 
 /* ==== contents ==== */
 .infoContainer > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 14px;
   margin: 20px 0;
@@ -98,6 +105,8 @@ h2 {
 .infoContainer .tabContainer > div > div {
   width: 100%;
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 40px;
   overflow: hidden;
@@ -106,6 +115,9 @@ h2 {
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -113,12 +125,15 @@ h2 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   border: 1.5px solid #c198f9;
+<<<<<<< HEAD
+=======
 =======
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   align-items: center;
   justify-content: space-between;
   border: 1.5px solid #c198f9;
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 .infoContainer .tabContainer > div > div:first-child {
   margin-bottom: 50px;
@@ -144,7 +159,6 @@ h2 {
   margin: 30px 0 30px;
   line-height: 2.8rem;
 }
-<<<<<<< HEAD
 .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
 =======
 <<<<<<< HEAD
@@ -154,11 +168,14 @@ h2 {
 .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+=======
 =======
 .infoContainer article .articleInfo .articleHashtag {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
   display: flex;
   gap: 8px;
 }
@@ -170,6 +187,12 @@ h2 {
   font-size: 1.6rem;
   font-weight: 400;
 }
+<<<<<<< HEAD
+.infoContainer .tabContainer > div.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -221,6 +244,7 @@ h2 {
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 
 @-webkit-keyframes circle {
@@ -248,6 +272,8 @@ h2 {
     line-height: 4.2rem;
   }
   .detailTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -271,10 +297,13 @@ h2 {
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
     display: flex;
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     gap: 10px;
   }
   .infoContainer > ul li button {
@@ -283,8 +312,9 @@ h2 {
   }
   .infoContainer .tabContainer > div > div {
     height: 400px;
-<<<<<<< HEAD
     border-radius: 30px;
+<<<<<<< HEAD
+=======
 =======
 <<<<<<< HEAD
 =======
@@ -303,6 +333,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
   }
   .infoContainer .tabContainer > div > div:first-child {
     margin-bottom: 40px;
@@ -317,6 +348,8 @@ h2 {
 =======
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
     width: 50%;
     height: 230px;
     align-items: center;
@@ -325,6 +358,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
   }
   .infoContainer .tabContainer > div > div .articleInfo h3 {
     font-size: 2.2rem;
@@ -375,6 +409,8 @@ h2 {
     height: 250px;
 <<<<<<< HEAD
 =======
+<<<<<<< HEAD
+=======
 =======
   .infoContainer article {
     position: relative;
@@ -386,11 +422,18 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     border-radius: 20px;
   }
   .infoContainer .tabContainer > div > div:first-child {
     margin-bottom: 20px;
   }
+<<<<<<< HEAD
+  .infoContainer .tabContainer > div > div .articleInfo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+=======
 <<<<<<< HEAD
 =======
 <<<<<<< HEAD
@@ -406,6 +449,7 @@ h2 {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     height: auto;
   }
   .infoContainer .tabContainer > div > div .articleInfo h3 {
@@ -417,7 +461,6 @@ h2 {
     margin: 12px 0 14px;
     line-height: 1.5rem;
   }
-<<<<<<< HEAD
   .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
 =======
 <<<<<<< HEAD
@@ -427,13 +470,17 @@ h2 {
   .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
     display: -webkit-box;
     display: -ms-flexbox;
+<<<<<<< HEAD
+=======
 =======
   .infoContainer article .articleInfo .articleHashtag {
 >>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
 >>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 >>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
+>>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 4px;
   }
   .infoContainer .tabContainer > div > div .articleInfo .articleHashtag li {
