@@ -96,35 +96,13 @@ main #con1 {
 main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
-<<<<<<< HEAD
-main #con1 .parts-slick {
-  width: 100%;
-=======
 main #con1 .parts {
   width: 100%;
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
   align-items: center;
   gap: 46px;
   overflow: hidden;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-main #con1 .parts-slick .slick-track {
-  gap: 20px;
-}
-main #con1 .parts-slick .part {
-=======
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 main #con1 .parts .part {
   position: relative;
 }
@@ -469,8 +447,6 @@ main #con5 .eventLoad span b {
   main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
   }
-<<<<<<< HEAD
-=======
 }
 @keyframes rotate-scale-up {
   0% {
@@ -482,5 +458,4 @@ main #con5 .eventLoad span b {
   100% {
     transform: scale(1) rotateZ(360deg);
   }
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 }

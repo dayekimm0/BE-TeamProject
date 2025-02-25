@@ -75,22 +75,11 @@ h2 {
   cursor: pointer;
   transition: all 0.3s;
 }
-<<<<<<< HEAD
-.infoContainer article {
-  width: 100%;
-  height: 500px;
-=======
 .infoContainer > ul li .active {
   background: #c198f9;
   color: #fff;
 }
 .infoContainer .tabContainer > div {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
   flex-direction: column;
   display: none;
@@ -101,21 +90,6 @@ h2 {
   display: flex;
   border-radius: 40px;
   overflow: hidden;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border: 1.5px solid #c198f9;
-=======
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   align-items: center;
   justify-content: space-between;
   border: 1.5px solid #c198f9;
@@ -144,21 +118,7 @@ h2 {
   margin: 30px 0 30px;
   line-height: 2.8rem;
 }
-<<<<<<< HEAD
 .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
-=======
-<<<<<<< HEAD
-.infoContainer article .articleInfo .articleHashtag {
-=======
-<<<<<<< HEAD
-.infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
-  display: -webkit-box;
-  display: -ms-flexbox;
-=======
-.infoContainer article .articleInfo .articleHashtag {
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
   gap: 8px;
 }
@@ -170,65 +130,8 @@ h2 {
   font-size: 1.6rem;
   font-weight: 400;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-
-.bannerContainer {
-  display: flex;
-=======
-<<<<<<< HEAD
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 .infoContainer .tabContainer > div.active {
   display: flex;
-<<<<<<< HEAD
-=======
-=======
-
-.bannerContainer {
-  display: flex;
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-  justify-content: space-between;
-  margin: 130px 0;
-  background: #cae570;
-  padding-top: 70px;
-  padding-bottom: 70px;
-}
-.bannerContainer .title {
-  width: 40%;
-  position: relative;
-}
-.bannerContainer .bannerBoxWrapper {
-  display: flex;
-  flex-wrap: wrap;
-  width: 60%;
-  justify-content: flex-end;
-}
-.bannerContainer .bannerBoxWrapper .contentWrapper {
-  display: flex;
-  gap: 24px;
-}
-.bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
-  margin-bottom: 24px;
-}
-.bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
-  text-align: center;
-}
-.bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
-  border-radius: 20px;
-  margin-bottom: 8px;
-}
-.bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
-  font-size: 2rem;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
-}
-
-@-webkit-keyframes circle {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
 }
 
 @keyframes circle {
@@ -265,16 +168,6 @@ h2 {
     margin-bottom: 30px;
   }
   .infoContainer > ul {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-    display: flex;
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     gap: 10px;
   }
   .infoContainer > ul li button {
@@ -283,26 +176,7 @@ h2 {
   }
   .infoContainer .tabContainer > div > div {
     height: 400px;
-<<<<<<< HEAD
     border-radius: 30px;
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-    border-radius: 30px;
-=======
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-    display: flex;
-    gap: 40px;
-    border: 1px solid #a5d112;
-    border-radius: 36px;
-    overflow: hidden;
-    align-items: center;
-<<<<<<< HEAD
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   }
   .infoContainer .tabContainer > div > div:first-child {
     margin-bottom: 40px;
@@ -313,18 +187,6 @@ h2 {
   .infoContainer .tabContainer > div > div .articleInfo {
     width: 50%;
     padding-left: 0;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-    width: 50%;
-    height: 230px;
-    align-items: center;
-<<<<<<< HEAD
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   }
   .infoContainer .tabContainer > div > div .articleInfo h3 {
     font-size: 2.2rem;
@@ -373,39 +235,13 @@ h2 {
   }
   .infoContainer .tabContainer > div > div {
     height: 250px;
-<<<<<<< HEAD
-=======
-=======
-  .infoContainer article {
-    position: relative;
-    height: 230px;
-    gap: 20px;
-    align-items: center;
-<<<<<<< HEAD
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     border-radius: 20px;
   }
   .infoContainer .tabContainer > div > div:first-child {
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-  .infoContainer article .articleInfo {
-    align-items: center;
-=======
-<<<<<<< HEAD
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   .infoContainer .tabContainer > div > div .articleInfo {
     align-items: center;
-<<<<<<< HEAD
-=======
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     height: auto;
   }
   .infoContainer .tabContainer > div > div .articleInfo h3 {
@@ -417,21 +253,7 @@ h2 {
     margin: 12px 0 14px;
     line-height: 1.5rem;
   }
-<<<<<<< HEAD
   .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
-=======
-<<<<<<< HEAD
-  .infoContainer article .articleInfo .articleHashtag {
-=======
-<<<<<<< HEAD
-  .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
-    display: -webkit-box;
-    display: -ms-flexbox;
-=======
-  .infoContainer article .articleInfo .articleHashtag {
->>>>>>> b16904dfd7ecf8ecc2eb110e6b9af68117e1366b
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
     display: flex;
     flex-wrap: wrap;
     gap: 4px;
