@@ -53,7 +53,8 @@ section {
 .detailTitle .circleImg {
   margin-left: auto;
   margin-bottom: 70px;
-  animation: circle 6s linear infinite;
+  -webkit-animation: circle 6s linear infinite;
+          animation: circle 6s linear infinite;
 }
 
 h2 {
@@ -81,6 +82,7 @@ h2 {
   border: 1.5px solid #c198f9;
   background: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .infoContainer > ul li .active {
@@ -88,13 +90,17 @@ h2 {
   color: #fff;
 }
 .infoContainer .tabContainer > div {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   display: none;
 }
 .infoContainer .tabContainer > div > div {
@@ -106,9 +112,12 @@ h2 {
   border-radius: 40px;
   overflow: hidden;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   align-items: center;
   justify-content: space-between;
 =======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -144,10 +153,15 @@ h2 {
 }
 .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: flex;
   gap: 8px;
 }
@@ -160,9 +174,15 @@ h2 {
   font-weight: 400;
 }
 .infoContainer .tabContainer > div.active {
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
   display: flex;
 <<<<<<< HEAD
 =======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 }
 
 @-webkit-keyframes circle {
@@ -170,12 +190,16 @@ h2 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 }
 
 @keyframes circle {
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /* ==== 반응형 ==== */
@@ -288,7 +312,10 @@ h2 {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
     height: auto;
   }
   .infoContainer .tabContainer > div > div .articleInfo h3 {
@@ -302,10 +329,15 @@ h2 {
   }
   .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
 <<<<<<< HEAD
+    display: -webkit-box;
+    display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 =======
     display: -webkit-box;
     display: -ms-flexbox;
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;

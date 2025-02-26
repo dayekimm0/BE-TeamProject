@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -49,26 +50,41 @@ body {
   position: relative;
   height: 600px;
   background-image: url("/images/event/title-bg.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+=======
 <<<<<<< HEAD
   justify-content: center;
   align-items: center;
 =======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 }
 .eventTitle .mainTitle {
   width: 1440px;
 }
 .eventTitle .mainTitle .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 30px;
   color: #fff;
 }
@@ -94,19 +110,35 @@ body {
 
 .eventSteps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .eventSteps .howTo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 450px;
   height: auto;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   color: #000;
 }
@@ -125,7 +157,9 @@ body {
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
@@ -136,7 +170,14 @@ body {
 }
 .eventSteps .steps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+=======
 <<<<<<< HEAD
   justify-content: space-evenly;
 =======
@@ -144,6 +185,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   margin-top: 50px;
 }
 .eventSteps .steps .step01,
@@ -153,7 +195,8 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 8px #d9d9d9;
+  -webkit-box-shadow: 0 0 8px #d9d9d9;
+          box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
@@ -193,9 +236,16 @@ body {
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
   width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 11px;
   position: absolute;
   top: 25px;
@@ -232,19 +282,37 @@ body {
 
 .couponsList {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 132px;
 }
 .couponsList .hashTags {
   width: 628px;
   height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
+<<<<<<< HEAD
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+=======
 <<<<<<< HEAD
   justify-content: space-evenly;
 =======
@@ -252,6 +320,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -259,39 +328,12 @@ body {
   padding: 10px 25px;
   border-radius: 30px;
   background: #fff;
-  box-shadow: 0px 0px 4px 0px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
+          box-shadow: 0px 0px 4px 0px #d9d9d9;
   color: #000;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.couponsList .coupons {
-  width: 100%;
-  gap: 30px;
-<<<<<<< HEAD
-  justify-content: center;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
-  display: flex;
-}
-.couponsList .couponCommon {
-  position: relative;
-  width: 230px;
-  height: 310px;
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  justify-content: center;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -301,7 +343,56 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
+}
+.couponsList .coupons {
+  width: 100%;
+  gap: 30px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+  justify-content: center;
+=======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
+  display: flex;
+}
+.couponsList .couponCommon {
+  position: relative;
+  width: 230px;
+  height: 310px;
+<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+=======
+<<<<<<< HEAD
+  display: flex;
+  align-items: center;
+  justify-content: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+<<<<<<< HEAD
+=======
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   cursor: pointer;
 }
 .couponsList .couponCommon img {
@@ -333,11 +424,14 @@ body {
   height: 280px;
   left: 0;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 =======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,7 +445,10 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   border-radius: 10px;
 }
 .couponsList .couponCommon .couponBottom {
@@ -398,34 +495,54 @@ body {
 
 .buttons {
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 35px;
   margin-top: 30px;
 }
 .buttons button,
 .buttons a {
 <<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
+<<<<<<< HEAD
 =======
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 20px;
   gap: 10px;
   width: auto;
   height: 60px;
   border-radius: 30px;
   border: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   cursor: pointer;
+<<<<<<< HEAD
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+=======
   transition: all 0.3s linear;
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   color: inherit;
   outline: none;
   font-size: 2rem;
@@ -434,6 +551,11 @@ body {
   position: relative;
   overflow: hidden;
 }
+<<<<<<< HEAD
+.buttons a > i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+=======
 <<<<<<< HEAD
 .buttons button:hover p,
 .buttons a:hover p {
@@ -465,12 +587,17 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: flex;
   width: 40px;
   height: 40px;
   padding: 6px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 30px;
   color: #000;
   border: 2px solid #d9d9d9;
@@ -489,11 +616,14 @@ body {
   font-weight: 500;
   letter-spacing: -0.6px;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 =======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: inline-block;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -511,6 +641,9 @@ body {
   margin-bottom: 15px;
   text-align: left;
 <<<<<<< HEAD
+}
+=======
+<<<<<<< HEAD
   width: 100%;
 }
 .eventNotice .eventWrapper ul {
@@ -522,13 +655,17 @@ body {
   font-weight: 300;
 =======
 }
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 .eventNotice ul {
   margin-bottom: 3%;
 }
 .eventNotice ul li {
   font-size: 2rem;
   font-weight: 500;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   position: relative;
   padding-left: 15px;
   line-height: 1.5;
@@ -549,7 +686,8 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: #000;
 }
 
@@ -564,10 +702,13 @@ body {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
   z-index: 5;
   justify-content: center;
   align-items: center;
 =======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   z-index: 1000;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -575,7 +716,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 }
 .modal.active {
   display: -webkit-box;
@@ -618,7 +762,10 @@ body {
 .modal .modal-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+=======
 >>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: flex;
   margin-top: 30px;
 }
