@@ -83,10 +83,11 @@ h2 {
   color: #fff;
 }
 .infoContainer .tabContainer > div {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   -webkit-box-orient: vertical;
@@ -101,16 +102,15 @@ h2 {
   display: flex;
   border-radius: 40px;
   overflow: hidden;
-<<<<<<< HEAD
-  align-items: center;
-  justify-content: space-between;
-=======
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   border: 1.5px solid #c198f9;
 }
@@ -139,10 +139,11 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   gap: 8px;
@@ -159,8 +160,6 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-=======
 }
 
 @-webkit-keyframes circle {
@@ -168,6 +167,9 @@ h2 {
     -webkit-transform: rotate(360deg);
             transform: rotate(360deg);
   }
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 
@@ -279,12 +281,12 @@ h2 {
     margin-bottom: 20px;
   }
   .infoContainer .tabContainer > div > div .articleInfo {
-<<<<<<< HEAD
-    align-items: center;
-=======
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
     height: auto;
   }
@@ -298,10 +300,11 @@ h2 {
     line-height: 1.5rem;
   }
   .infoContainer .tabContainer > div > div .articleInfo .articleHashtag {
-<<<<<<< HEAD
-=======
     display: -webkit-box;
     display: -ms-flexbox;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
     display: flex;
     flex-wrap: wrap;

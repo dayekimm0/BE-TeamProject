@@ -45,14 +45,20 @@ body {
   display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
+<<<<<<< HEAD
   align-items: center;
 =======
+=======
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .eventTitle .mainTitle {
@@ -157,12 +163,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-  justify-content: space-evenly;
-=======
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   margin-top: 50px;
 }
@@ -286,12 +292,12 @@ body {
       -ms-flex-align: center;
           align-items: center;
   gap: 30px;
-<<<<<<< HEAD
-  justify-content: space-evenly;
-=======
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .couponsList .hashTags span {
@@ -306,6 +312,7 @@ body {
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
+<<<<<<< HEAD
 <<<<<<< HEAD
   display: flex;
   align-items: center;
@@ -346,6 +353,36 @@ body {
   align-items: center;
   justify-content: center;
 =======
+=======
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
+  text-align: center;
+}
+.couponsList .coupons {
+  width: 100%;
+  gap: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.couponsList .couponCommon {
+  position: relative;
+  width: 230px;
+  height: 310px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,12 +423,6 @@ body {
   width: 100%;
   height: 280px;
   left: 0;
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -405,6 +436,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   border-radius: 10px;
 }
@@ -451,10 +485,11 @@ body {
 }
 
 .buttons {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   -webkit-box-pack: center;
@@ -464,10 +499,11 @@ body {
 }
 .buttons button,
 .buttons a {
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   -webkit-box-align: center;
@@ -520,6 +556,11 @@ body {
 .buttons button i,
 .buttons a i {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 =======
   display: -webkit-box;
   display: -ms-flexbox;
@@ -553,8 +594,10 @@ body {
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-<<<<<<< HEAD
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -562,6 +605,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+=======
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -572,6 +617,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .eventNotice .eventWrapper h5 {
@@ -623,15 +671,21 @@ body {
   background: rgba(0, 0, 0, 0.5);
   z-index: 5;
 <<<<<<< HEAD
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
 =======
+=======
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .modal.active {
@@ -670,6 +724,11 @@ body {
 }
 .modal .modalButtons {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 =======
   display: -webkit-box;
   display: -ms-flexbox;

@@ -88,7 +88,12 @@ main #intro .index .indexImg2 {
   left: 10%;
   bottom: 10%;
 <<<<<<< HEAD
+<<<<<<< HEAD
   animation: rotate-scale-up 0.7s both;
+=======
+  -webkit-animation: rotate-scale-up 0.7s both;
+          animation: rotate-scale-up 0.7s both;
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 =======
   -webkit-animation: rotate-scale-up 0.7s both;
           animation: rotate-scale-up 0.7s both;
@@ -128,10 +133,11 @@ main #con1 h2 {
 }
 main #con1 .parts {
   width: 100%;
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   -webkit-box-align: center;
@@ -147,11 +153,11 @@ main #con1 .parts .part:hover p {
   opacity: 1;
 }
 main #con1 .parts .part:hover .partImg {
-<<<<<<< HEAD
-  filter: brightness(60%);
-=======
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 main #con1 .parts .part a .partImg {
@@ -462,15 +468,14 @@ main #con5 .eventLoad span b {
         -ms-flex-align: center;
             align-items: center;
     gap: 14px;
-<<<<<<< HEAD
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-=======
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
     border-radius: 0;
     overflow: hidden;
@@ -533,6 +538,7 @@ main #con5 .eventLoad span b {
   }
 }
 <<<<<<< HEAD
+<<<<<<< HEAD
 @keyframes rotate-scale-up {
   0% {
     transform: scale(1) rotateZ(0);
@@ -543,6 +549,8 @@ main #con5 .eventLoad span b {
   100% {
     transform: scale(1) rotateZ(360deg);
 =======
+=======
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -569,6 +577,9 @@ main #con5 .eventLoad span b {
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
             transform: scale(1) rotateZ(360deg);
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   }
 }

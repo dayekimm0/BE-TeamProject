@@ -574,7 +574,12 @@ h2 {
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
+<<<<<<< HEAD
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+=======
+    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   }
   .shopContainer .shopBoxWrapper {
     border-radius: 20px;

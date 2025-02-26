@@ -260,6 +260,9 @@ footer #footerInner #footerBottom p {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
     opacity: 0;
     pointer-events: none;
@@ -271,9 +274,12 @@ footer #footerInner #footerBottom p {
   }
   header #gnb ul {
 <<<<<<< HEAD
+<<<<<<< HEAD
     gap: 30px;
     flex-direction: column;
 =======
+=======
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
     gap: 4px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -286,6 +292,9 @@ footer #footerInner #footerBottom p {
     width: 100%;
     overflow: hidden;
     position: relative;
+<<<<<<< HEAD
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+=======
 >>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   }
   header #gnb ul li a {
