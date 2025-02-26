@@ -101,12 +101,10 @@ header p {
   opacity: 0;
   position: absolute;
   background: url("./images/detail/circle_black.png") center/cover no-repeat;
-  -webkit-animation: circle 6s linear infinite;
-          animation: circle 6s linear infinite;
+  animation: circle 6s linear infinite;
   bottom: -50px;
   right: -50px;
   z-index: 1;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   width: 0px;
   height: 0px;
@@ -208,17 +206,9 @@ footer #footerInner #footerBottom p {
   font-size: 1.2rem;
 }
 
-@-webkit-keyframes circle {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes circle {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 @media screen and (max-width: 1024px) {
@@ -250,20 +240,8 @@ footer #footerInner #footerBottom p {
     width: 100vw;
     height: 101vh;
     display: flex;
-<<<<<<< HEAD
     align-items: center;
-    justify-content: center;
-=======
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+    justify-content: flex-start;
     opacity: 0;
     pointer-events: none;
   }
@@ -273,18 +251,8 @@ footer #footerInner #footerBottom p {
     height: 300px;
   }
   header #gnb ul {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    gap: 30px;
-    flex-direction: column;
-=======
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
     gap: 4px;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding-left: 4%;
   }
   header #gnb ul li {
@@ -292,10 +260,6 @@ footer #footerInner #footerBottom p {
     width: 100%;
     overflow: hidden;
     position: relative;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   }
   header #gnb ul li a {
     font-size: 7rem !important;

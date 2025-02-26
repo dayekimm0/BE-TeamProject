@@ -294,7 +294,14 @@ body {
         bottom: 39px;
         width: 100%;
         border: 1px dashed transparent;
-        border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
+        border-image: repeating-linear-gradient(
+            90deg,
+            #000 0,
+            #000 10px,
+            transparent 10px,
+            transparent 20px
+          )
+          30;
       }
     }
   }

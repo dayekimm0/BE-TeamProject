@@ -3,8 +3,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -41,40 +40,16 @@ body {
   position: relative;
   height: 600px;
   background-image: url("/images/event/title-bg.png");
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
-<<<<<<< HEAD
   align-items: center;
-=======
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .eventTitle .mainTitle {
   padding-left: 5%;
 }
 .eventTitle .mainTitle .title {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  flex-direction: column;
+  align-items: start;
   gap: 30px;
   color: #fff;
 }
@@ -100,35 +75,19 @@ body {
 
 .eventSteps {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .eventSteps .howTo {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 450px;
   height: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   color: #000;
 }
@@ -147,9 +106,7 @@ body {
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
@@ -160,16 +117,8 @@ body {
 }
 .eventSteps .steps {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+  justify-content: space-evenly;
   margin-top: 50px;
 }
 .eventSteps .steps .step01,
@@ -179,8 +128,7 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  -webkit-box-shadow: 0 0 8px #d9d9d9;
-          box-shadow: 0 0 8px #d9d9d9;
+  box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
@@ -220,16 +168,9 @@ body {
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
   width: 250px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   gap: 11px;
   position: absolute;
   top: 25px;
@@ -266,39 +207,20 @@ body {
 
 .couponsList {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: column;
+  justify-content: center;
   gap: 50px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   margin-top: 132px;
 }
 .couponsList .hashTags {
   width: 628px;
   height: 56px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 30px;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+  justify-content: space-evenly;
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -306,93 +228,29 @@ body {
   padding: 10px 25px;
   border-radius: 30px;
   background: #fff;
-  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
-          box-shadow: 0px 0px 4px 0px #d9d9d9;
+  box-shadow: 0px 0px 4px 0px #d9d9d9;
   color: #000;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
-<<<<<<< HEAD
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   text-align: center;
 }
 .couponsList .coupons {
   width: 100%;
   gap: 30px;
-<<<<<<< HEAD
   justify-content: center;
-=======
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
 }
 .couponsList .couponCommon {
   position: relative;
   width: 230px;
   height: 310px;
-<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
-=======
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
-  text-align: center;
-}
-.couponsList .coupons {
-  width: 100%;
-  gap: 30px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.couponsList .couponCommon {
-  position: relative;
-  width: 230px;
-  height: 310px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   cursor: pointer;
 }
 .couponsList .couponCommon img {
@@ -423,23 +281,10 @@ body {
   width: 100%;
   height: 280px;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   border-radius: 10px;
 }
 .couponsList .couponCommon .couponBottom {
@@ -485,41 +330,23 @@ body {
 }
 
 .buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   gap: 35px;
 }
 .buttons button,
 .buttons a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   padding: 10px 20px;
   gap: 10px;
   width: auto;
   height: 60px;
   border-radius: 30px;
   border: none;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   cursor: pointer;
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: inherit;
   outline: none;
@@ -550,42 +377,25 @@ body {
   left: 0;
   width: 0;
   background: #000;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .buttons button i,
 .buttons a i {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   width: 40px;
   height: 40px;
   padding: 6px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   border-radius: 30px;
   color: #000;
   border: 2px solid #d9d9d9;
   background: #fff;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .buttons button p,
 .buttons a p {
   font-family: "Pretendard";
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -594,33 +404,10 @@ body {
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-<<<<<<< HEAD
   flex-direction: column;
   justify-content: center;
   align-items: center;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .eventNotice .eventWrapper h5 {
   font-weight: bold;
@@ -653,8 +440,7 @@ body {
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   background: #000;
 }
 
@@ -664,29 +450,13 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 5;
-<<<<<<< HEAD
-<<<<<<< HEAD
   justify-content: center;
   align-items: center;
-=======
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-<<<<<<< HEAD
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .modal.active {
   display: flex;
@@ -700,8 +470,7 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .modal .modalCheck {
   margin: 0 auto 20px;
@@ -723,16 +492,6 @@ body {
   margin-bottom: 30px;
 }
 .modal .modalButtons {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   margin-top: 30px;
 }
@@ -1064,9 +823,7 @@ body {
     width: 100%;
     max-width: 200px;
     height: 50px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .buttons button p,
   .buttons a p {
