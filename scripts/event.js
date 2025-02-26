@@ -38,36 +38,10 @@ document.addEventListener("DOMContentLoaded", function () {
     },
   };
 
-  // 쿠폰 클릭 이벤트
-  // coupons.forEach((coupon) => {
-  //   coupon.addEventListener("click", function () {
-  //     // 쿠폰 유형 확인 (텍스트에서 추출)
-  //     const couponText = this.querySelector(".modalTitle").textContent;
-  //     const couponType = couponText.split(" ")[0];
-
-  //     // 모달 내용 설정
-  //     modalCheck.style.color = couponData[couponType].color;
-  //     modalTitle.innerHTML = `<p>${couponData[couponType].title}</p>`;
-  //     homepageBtn.textContent = couponData[couponType].buttonText;
-
-  //     // 확인 버튼 클릭 시 동작 설정
-  //     confirmBtn.onclick = () => {
-  //       closeModal();
-  //     };
-
-  //     // 홈페이지 버튼 클릭 시 동작 설정
-  //     homepageBtn.onclick = () => {
-  //       window.location.href = couponData[couponType].url;
-  //     };
-
-  //     // 모달 표시
-  //     showModal(couponData[couponType].title);
-  //   });
-  // });
+  let couponType = "";
   coupons.forEach((coupon) => {
     coupon.addEventListener("click", function () {
       // 쿠폰 유형 확인 (클래스에서 추출)
-      let couponType = "";
       if (this.classList.contains("couponGreen")) {
         couponType = "FOOD";
       } else if (this.classList.contains("couponPink")) {
@@ -81,8 +55,10 @@ document.addEventListener("DOMContentLoaded", function () {
       // 모달 내용 설정
       modalCheck.querySelector("span").style.color = couponData[couponType].color;
       modalTitle.innerHTML = `<p>${couponData[couponType].title}</p>`;
+      modalTitle.style.color = couponData[couponType].color;
       homepageBtn.textContent = couponData[couponType].buttonText;
-      homepageBtn.style.color = couponData[couponType].buttonText;
+      homepageBtn.style.background = couponData[couponType].color;
+      homepageBtn.style.color = "#fff";
 
       // 확인 버튼 클릭 시 동작 설정
       confirmBtn.onclick = () => {
@@ -101,8 +77,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 전체 발급 버튼 클릭 이벤트
   allCouponBtn.addEventListener("click", () => {
-    modalCheck.style.color = ""; // 기본 색상으로 리셋
+    modalCheck.querySelector("span").style.color = "#333";
     modalTitle.innerHTML = `<p>쿠폰이 전체 발급 되었습니다.</p>`;
+    modalTitle.style.color = "#333";
+    homepageBtn.style.color = "#fff";
+    homepageBtn.style.background = "#d9d9d9";
     homepageBtn.textContent = "메인으로 이동";
 
     // 확인 버튼 클릭 시 동작 설정
