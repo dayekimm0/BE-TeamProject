@@ -296,14 +296,7 @@ body {
         bottom: 39px;
         width: 98%;
         border: 1px dashed transparent;
-        border-image: repeating-linear-gradient(
-            90deg,
-            #000 0,
-            #000 10px,
-            transparent 10px,
-            transparent 20px
-          )
-          30;
+        border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
       }
     }
   }
@@ -354,69 +347,99 @@ body {
     box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
     background-color: map-get($map: $colors, $key: light);
     cursor: pointer;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s linear;
     color: inherit;
     outline: none;
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: -0.4px;
-  }
-  a > i {
-    display: flex;
-    width: 40px;
-    height: 40px;
-    padding: 6px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 30px;
-    color: map-get($map: $colors, $key: dark);
-    border: 2px solid map-get($map: $colors, $key: line);
-    background: map-get($map: $colors, $key: light);
+    position: relative;
+    overflow: hidden;
+    &:hover {
+      p {
+        color: map-get($map: $colors, $key: light);
+        z-index: 1;
+      }
+      i {
+        z-index: 1;
+      }
+      &::before {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 0;
+      background: map-get($map: $colors, $key: dark);
+      transition: all 0.5s;
+    }
+    i {
+      display: flex;
+      width: 40px;
+      height: 40px;
+      padding: 6px;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+      color: map-get($map: $colors, $key: dark);
+      border: 2px solid map-get($map: $colors, $key: line);
+      background: map-get($map: $colors, $key: light);
+      transition: all 0.5s;
+    }
+    p {
+      font-family: map-get($map: $font-family, $key: Pretendard);
+      transition: all 0.5s;
+    }
   }
 }
 
 .eventNotice {
-  width: 100%;
   color: map-get($map: $colors, $key: dark);
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  white-space: nowrap;
-  width: 60%;
-  h5 {
-    font-weight: bold;
-    margin-top: 3%;
-    margin-bottom: 15px;
-    text-align: left;
-  }
-  ul {
-    margin-bottom: 3%;
+  .eventWrapper {
+    h5 {
+      font-weight: bold;
+      margin-top: 3%;
+      margin-bottom: 15px;
+      text-align: left;
+      width: 100%;
+    }
+    ul {
+      width: 100%;
+      margin-bottom: 3%;
 
-    li {
-      font-size: 2rem;
-      font-weight: 500;
-      position: relative;
-      padding-left: 15px;
-      line-height: 1.5;
-      letter-spacing: 0.1px;
-      word-wrap: break-word;
-      word-break: keep-all;
-      align-items: start;
+      li {
+        font-size: 2rem;
+        font-weight: 300;
+        position: relative;
+        padding-left: 15px;
+        line-height: 1.5;
+        letter-spacing: 0.1px;
+        word-wrap: break-word;
+        word-break: keep-all;
+        align-items: start;
 
-      &::before {
-        content: "";
-        position: absolute;
-        left: 0px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        flex-shrink: 0;
-        background: map-get($map: $colors, $key: dark);
+        &::before {
+          content: "";
+          position: absolute;
+          left: 0px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          flex-shrink: 0;
+          background: map-get($map: $colors, $key: dark);
+        }
       }
     }
   }
@@ -426,12 +449,13 @@ body {
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  z-index: 5;
   justify-content: center;
   align-items: center;
 
@@ -439,64 +463,62 @@ body {
     display: flex;
   }
 
-  .modal-content {
+  .modalContent {
     background: map-get($map: $colors, $key: light);
-    padding: 40px;
-    border-radius: 20px;
     text-align: center;
-    max-width: 400px;
+    padding-top: 40px;
+    max-width: 450px;
     width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  .modal-check {
+  .modalCheck {
     margin: 0 auto 20px;
     width: 60px;
     height: 60px;
 
-    svg {
-      width: 100%;
-      height: 100%;
+    span {
+      font-size: 6rem;
+      color: map-get($map: $colors, $key: dark);
     }
-
-    &.food circle { fill: map-get($map: $colors, $key: food); }
-    &.beauty circle { fill: map-get($map: $colors, $key: beauty); }
-    &.fashion circle { fill: map-get($map: $colors, $key: fashion); }
-    &.lifestyle circle { fill: map-get($map: $colors, $key: lifestyle); }
   }
 
-  .modal-title {
-    font-size: 2.4rem;
+  .modalTitle {
+    font-size: 2.6rem;
     font-weight: 700;
     margin-bottom: 10px;
     color: map-get($map: $colors, $key: dark);
   }
 
-  .modal-desc {
-    font-size: 1.4rem;
+  .modalDesc {
+    font-size: 1.5rem;
     color: map-get($map: $colors, $key: gray);
     margin-bottom: 30px;
   }
 
-  .modal-buttons {
+  .modalButtons {
     display: flex;
-    gap: 10px;
-
+    margin-top: 30px;
     button {
-      flex: 1;
-      height: 50px;
-      border-radius: 25px;
-      font-size: 1.6rem;
+      height: 60px;
+      width: 250px;
+      font-size: 2rem;
       font-weight: 600;
+      border: none;
+      color: map-get($map: $colors, $key: light);
       cursor: pointer;
       transition: all 0.3s ease;
 
-      &.confirm-btn {
+      &.confirmBtn {
         background: map-get($map: $colors, $key: dark);
         color: map-get($map: $colors, $key: light);
-        border: none;
+        background: map-get($map: $colors, $key: footerBg);
       }
 
-      &.homepage-btn {
+      &.homepageBtn {
         background: map-get($map: $colors, $key: light);
         color: map-get($map: $colors, $key: dark);
         border: 1px solid map-get($map: $colors, $key: line);
@@ -504,7 +526,6 @@ body {
     }
   }
 }
-
 
 /* ==== 반응형 ==== */
 
@@ -618,14 +639,14 @@ body {
 
     button {
       max-width: 300px;
-      padding: 8px 15px;
+      padding: 10px 20px;
       p {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
       > i {
-        width: 35px;
-        height: 35px;
-        font-size: 1.8rem;
+        width: 40px;
+        height: 40px;
+        font-size: 2rem;
       }
     }
   }
@@ -644,6 +665,25 @@ body {
       letter-spacing: 0.1px;
       word-wrap: break-word;
       word-break: keep-all;
+    }
+  }
+
+  .modal {
+    .modalContent {
+      width: 50%;
+      .modalCheck {
+        margin: 0 auto 0px;
+        span {
+          font-size: 6rem;
+        }
+      }
+      .modalTitle {
+        margin-top: 15px;
+        font-size: 2.5rem;
+      }
+      .modalButtons {
+        margin-top: 40px;
+      }
     }
   }
 }
@@ -795,12 +835,12 @@ body {
     gap: 15px;
     align-items: center;
 
-    button {
+    button,
+    a {
       width: 100%;
       max-width: 200px;
       height: 50px;
-      padding: 6px 12px;
-      gap: 10px;
+      justify-content: space-between;
       p {
         font-size: 1.6rem;
       }
@@ -827,6 +867,32 @@ body {
       letter-spacing: 0.1px;
       word-wrap: break-word;
       word-break: keep-all;
+    }
+  }
+
+  .modal {
+    .modalContent {
+      padding-top: 25px;
+      width: 50%;
+      height: 15%;
+      .modalCheck {
+        margin: 0 auto 0px;
+        span {
+          font-size: 5rem;
+        }
+      }
+      .modalTitle {
+        font-size: 2rem;
+        margin-top: 0px;
+      }
+      .modalButtons {
+        margin-top: 20px;
+        button {
+          font-size: 1.8rem;
+          width: 100%;
+          height: 50px;
+        }
+      }
     }
   }
 }

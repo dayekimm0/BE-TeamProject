@@ -113,6 +113,20 @@ header #gnb ul li a {
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
+header p {
+  opacity: 0;
+  position: absolute;
+  background: url("./images/detail/circle_black.png") center/cover no-repeat;
+  -webkit-animation: circle 6s linear infinite;
+          animation: circle 6s linear infinite;
+  bottom: -50px;
+  right: -50px;
+  z-index: 1;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  width: 0px;
+  height: 0px;
+}
 header #toggleBtn {
   display: none;
   -webkit-transition: all 0.3s;
@@ -230,6 +244,19 @@ footer #footerInner #footerBottom p {
   font-size: 1.2rem;
 }
 
+@-webkit-keyframes circle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes circle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 @media screen and (max-width: 1024px) {
   header {
     z-index: 2;
@@ -266,32 +293,45 @@ footer #footerInner #footerBottom p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
     opacity: 0;
     pointer-events: none;
   }
+  header #gnb p {
+    opacity: 1;
+    width: 300px;
+    height: 300px;
+  }
   header #gnb ul {
-    gap: 30px;
+    gap: 4px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 4%;
+  }
+  header #gnb ul li {
+    text-align: left;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
   }
   header #gnb ul li a {
-    font-size: 1.6rem;
+    font-size: 7rem !important;
+    font-weight: bold;
     color: #000;
+    position: relative;
   }
   header #gnb ul li:hover > a {
     color: #000 !important;
-    font-weight: normal;
   }
   header #toggleBtn {
     position: relative;
     display: block;
     width: 24px;
-    height: 20px;
+    height: 16px;
   }
   header #toggleBtn span {
     background: #000;
@@ -340,8 +380,15 @@ footer #footerInner #footerBottom p {
             transform: none;
     width: 100vw;
   }
+  header #gnb ul {
+    gap: 0;
+  }
   header #gnb ul li a {
-    font-size: 1.4rem;
+    font-size: 6rem !important;
+  }
+  header #gnb p {
+    bottom: -60px;
+    right: -60px;
   }
   header #toggleBtn {
     width: 24px;

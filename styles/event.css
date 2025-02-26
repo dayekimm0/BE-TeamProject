@@ -452,15 +452,42 @@ body {
           box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
   color: inherit;
   outline: none;
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: -0.4px;
+  position: relative;
+  overflow: hidden;
 }
-.buttons a > i {
+.buttons button:hover p,
+.buttons a:hover p {
+  color: #fff;
+  z-index: 1;
+}
+.buttons button:hover i,
+.buttons a:hover i {
+  z-index: 1;
+}
+.buttons button:hover::before,
+.buttons a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+.buttons button::before,
+.buttons a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  background: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.buttons button i,
+.buttons a i {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -477,36 +504,49 @@ body {
   color: #000;
   border: 2px solid #d9d9d9;
   background: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.buttons button p,
+.buttons a p {
+  font-family: "Pretendard";
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .eventNotice {
-  width: 100%;
   color: #000;
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  white-space: nowrap;
-  width: 60%;
 }
-.eventNotice h5 {
+.eventNotice .eventWrapper h5 {
   font-weight: bold;
   margin-top: 3%;
   margin-bottom: 15px;
   text-align: left;
+  width: 100%;
 }
-.eventNotice ul {
+.eventNotice .eventWrapper ul {
+  width: 100%;
   margin-bottom: 3%;
 }
-.eventNotice ul li {
+.eventNotice .eventWrapper ul li {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 300;
   position: relative;
   padding-left: 15px;
   line-height: 1.5;
@@ -517,7 +557,7 @@ body {
       -ms-flex-align: start;
           align-items: start;
 }
-.eventNotice ul li::before {
+.eventNotice .eventWrapper ul li::before {
   content: "";
   position: absolute;
   left: 0px;
@@ -536,12 +576,14 @@ body {
 .modal {
   display: none;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
+  z-index: 5;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -554,69 +596,60 @@ body {
   display: -ms-flexbox;
   display: flex;
 }
-.modal .modal-content {
+.modal .modalContent {
   background: #fff;
-  padding: 40px;
-  border-radius: 20px;
   text-align: center;
-  max-width: 400px;
+  padding-top: 40px;
+  max-width: 450px;
   width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
-.modal .modal-check {
+.modal .modalCheck {
   margin: 0 auto 20px;
   width: 60px;
   height: 60px;
 }
-.modal .modal-check svg {
-  width: 100%;
-  height: 100%;
+.modal .modalCheck span {
+  font-size: 6rem;
+  color: #000;
 }
-.modal .modal-check.food circle {
-  fill: #cae570;
-}
-.modal .modal-check.beauty circle {
-  fill: #ffc6c7;
-}
-.modal .modal-check.fashion circle {
-  fill: #b4e3fc;
-}
-.modal .modal-check.lifestyle circle {
-  fill: #c198f9;
-}
-.modal .modal-title {
-  font-size: 2.4rem;
+.modal .modalTitle {
+  font-size: 2.6rem;
   font-weight: 700;
   margin-bottom: 10px;
   color: #000;
 }
-.modal .modal-desc {
-  font-size: 1.4rem;
+.modal .modalDesc {
+  font-size: 1.5rem;
   margin-bottom: 30px;
 }
-.modal .modal-buttons {
+.modal .modalButtons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
+  margin-top: 30px;
 }
-.modal .modal-buttons button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 50px;
-  border-radius: 25px;
-  font-size: 1.6rem;
+.modal .modalButtons button {
+  height: 60px;
+  width: 250px;
+  font-size: 2rem;
   font-weight: 600;
+  border: none;
+  color: #fff;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.modal .modal-buttons button.confirm-btn {
+.modal .modalButtons button.confirmBtn {
   background: #000;
   color: #fff;
-  border: none;
+  background: #333;
 }
-.modal .modal-buttons button.homepage-btn {
+.modal .modalButtons button.homepageBtn {
   background: #fff;
   color: #000;
   border: 1px solid #d9d9d9;
@@ -727,15 +760,15 @@ body {
   }
   .buttons button {
     max-width: 300px;
-    padding: 8px 15px;
+    padding: 10px 20px;
   }
   .buttons button p {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .buttons button > i {
-    width: 35px;
-    height: 35px;
-    font-size: 1.8rem;
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
   }
   .eventNotice {
     font-size: 2.5rem;
@@ -752,6 +785,22 @@ body {
     letter-spacing: 0.1px;
     word-wrap: break-word;
     word-break: keep-all;
+  }
+  .modal .modalContent {
+    width: 50%;
+  }
+  .modal .modalContent .modalCheck {
+    margin: 0 auto 0px;
+  }
+  .modal .modalContent .modalCheck span {
+    font-size: 6rem;
+  }
+  .modal .modalContent .modalTitle {
+    margin-top: 15px;
+    font-size: 2.5rem;
+  }
+  .modal .modalContent .modalButtons {
+    margin-top: 40px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -910,17 +959,21 @@ body {
         -ms-flex-align: center;
             align-items: center;
   }
-  .buttons button {
+  .buttons button,
+  .buttons a {
     width: 100%;
     max-width: 200px;
     height: 50px;
-    padding: 6px 12px;
-    gap: 10px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
-  .buttons button p {
+  .buttons button p,
+  .buttons a p {
     font-size: 1.6rem;
   }
-  .buttons button > i {
+  .buttons button > i,
+  .buttons a > i {
     width: 30px;
     height: 30px;
     font-size: 1.6rem;
@@ -941,5 +994,28 @@ body {
     letter-spacing: 0.1px;
     word-wrap: break-word;
     word-break: keep-all;
+  }
+  .modal .modalContent {
+    padding-top: 25px;
+    width: 50%;
+    height: 15%;
+  }
+  .modal .modalContent .modalCheck {
+    margin: 0 auto 0px;
+  }
+  .modal .modalContent .modalCheck span {
+    font-size: 5rem;
+  }
+  .modal .modalContent .modalTitle {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+  .modal .modalContent .modalButtons {
+    margin-top: 20px;
+  }
+  .modal .modalContent .modalButtons button {
+    font-size: 1.8rem;
+    width: 100%;
+    height: 50px;
   }
 }
