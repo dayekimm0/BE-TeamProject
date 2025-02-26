@@ -79,8 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       // 모달 내용 설정
-      modalCheck.querySelector("span").style.color =
-        couponData[couponType].color;
+      modalCheck.querySelector("span").style.color = couponData[couponType].color;
       modalTitle.innerHTML = `<p>${couponData[couponType].title}</p>`;
       homepageBtn.textContent = couponData[couponType].buttonText;
       homepageBtn.style.color = couponData[couponType].buttonText;
