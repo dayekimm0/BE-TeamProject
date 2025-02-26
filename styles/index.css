@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -39,14 +40,23 @@ main {
 main #intro .index {
   height: 100vh;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main #intro .index .title {
   left: 3%;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 main #intro .index .title p {
   font: normal 3.3rem/1.75 "Pretendard";
@@ -54,9 +64,16 @@ main #intro .index .title p {
 }
 main #intro .index .title h2 span {
   padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   font: bold 10rem/0.87 "REM";
 }
 main #intro .index .indexImg1 {
@@ -70,64 +87,52 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
-  animation: rotate-scale-up 0.7s both;
+  -webkit-animation: rotate-scale-up 0.7s both;
+          animation: rotate-scale-up 0.7s both;
 }
 main #intro .index .subTitle {
   top: 70%;
   right: 10%;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 main #intro .index .subTitle p {
   padding: 16px 30px;
   border-radius: 40px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   margin-top: 5%;
   font: 700 2.4rem/1 "Pretendard";
   letter-spacing: -0.52px;
 }
 main #con1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-left: 5%;
   gap: 40px;
 }
 main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
-<<<<<<< HEAD
-main #con1 .parts-slick {
-  width: 100%;
-=======
 main #con1 .parts {
   width: 100%;
-<<<<<<< HEAD
-=======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 46px;
   overflow: hidden;
 }
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
-main #con1 .parts-slick .slick-track {
-  gap: 20px;
-}
-main #con1 .parts-slick .part {
-=======
->>>>>>> 6e131131fe6752ed5beb6b0f3c138c501a94d133
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 main #con1 .parts .part {
   position: relative;
 }
@@ -135,12 +140,8 @@ main #con1 .parts .part:hover p {
   opacity: 1;
 }
 main #con1 .parts .part:hover .partImg {
-<<<<<<< HEAD
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
-=======
-  filter: brightness(60%);
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
 }
 main #con1 .parts .part a .partImg {
   width: 430px;
@@ -148,6 +149,7 @@ main #con1 .parts .part a .partImg {
   display: block;
   border-radius: 40px;
   background-position: center;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-size: cover;
   background-repeat: no-repeat;
@@ -157,6 +159,7 @@ main #con1 .parts .part a .partImg {
 }
 main #con1 .parts .part p {
   width: 100%;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: absolute;
   border-radius: 40px;
@@ -175,8 +178,13 @@ main #con2 .con2-text {
   font: 900 11rem/1 "REM";
   text-align: right;
   letter-spacing: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
 }
 main #con2 .con2-text p:nth-child(even) {
@@ -203,10 +211,19 @@ main #con3 .content-video iframe {
 }
 main #con4 .category {
   margin: 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 main #con4 .category .list {
   width: 1200px;
@@ -224,6 +241,7 @@ main #con4 .category .list p {
 main #con4 .category .list p a {
   font: bold 5rem/1 "REM";
   padding: 50px;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 main #con4 .category .list p:nth-child(2) a:hover {
@@ -243,12 +261,19 @@ main #con5 {
 }
 main #con5 .eventLoad {
   padding: 150px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../images/index/couponheader.png");
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/index/couponheader.png");
   background-size: cover;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-attachment: fixed;
 }
 main #con5 .eventLoad span {
@@ -289,7 +314,8 @@ main #con5 .eventLoad span b {
     width: 80px;
     height: 80px;
     bottom: 6%;
-    animation: rotate-scale-up 0.7s both;
+    -webkit-animation: rotate-scale-up 0.7s both;
+            animation: rotate-scale-up 0.7s both;
   }
   main #con1 {
     padding: 0 5%;
@@ -298,7 +324,8 @@ main #con5 .eventLoad span b {
     font: normal 4rem/1 "REM";
   }
   main #con1 .parts {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 0;
     overflow: hidden;
     border-radius: 40px;
@@ -309,7 +336,8 @@ main #con5 .eventLoad span b {
     position: relative;
   }
   main #con1 .parts .part:hover .partImg {
-    filter: brightness(100%);
+    -webkit-filter: brightness(100%);
+            filter: brightness(100%);
   }
   main #con1 .parts .part::after {
     content: "";
@@ -317,6 +345,7 @@ main #con5 .eventLoad span b {
     bottom: 0;
     width: 100%;
     height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
   }
   main #con1 .parts .part a .partImg {
@@ -403,7 +432,8 @@ main #con5 .eventLoad span b {
     top: 60%;
     width: 60px;
     height: 60px;
-    animation: rotate-scale-up 0.7s both;
+    -webkit-animation: rotate-scale-up 0.7s both;
+            animation: rotate-scale-up 0.7s both;
   }
   main #con1 {
     padding-left: 5%;
@@ -415,24 +445,26 @@ main #con5 .eventLoad span b {
     font: normal 4rem/1 "REM";
   }
   main #con1 .parts {
-    flex-direction: row;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     gap: 14px;
-<<<<<<< HEAD
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-=======
-    flex-wrap: nowrap;
-    justify-content: flex-start;
->>>>>>> d93f10de479cfe9bfab0a5a70225efd93ed4bb9b
     border-radius: 0;
     overflow: hidden;
   }
   main #con1 .parts .part {
-    flex: 0 0 auto;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
     width: 80%;
     max-width: 280px;
   }
@@ -485,18 +517,32 @@ main #con5 .eventLoad span b {
   main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
   }
-<<<<<<< HEAD
-=======
+}
+@-webkit-keyframes rotate-scale-up {
+  0% {
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+  }
 }
 @keyframes rotate-scale-up {
   0% {
-    transform: scale(1) rotateZ(0);
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
   }
   50% {
-    transform: scale(2) rotateZ(180deg);
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
   }
   100% {
-    transform: scale(1) rotateZ(360deg);
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
   }
->>>>>>> fe0851fc4d48da4c9a873192a2dfbebd0378b000
 }

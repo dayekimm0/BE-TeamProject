@@ -32,6 +32,7 @@ const headerInner = `
             <a href="login.html" title="Sign Up" id="Sign">Login</a>
           </li>
         </ul>
+        <p></p>
       </nav>
 `;
 header.innerHTML = headerInner;
