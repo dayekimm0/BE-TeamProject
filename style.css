@@ -293,9 +293,15 @@ footer #footerInner #footerBottom p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+<<<<<<< HEAD
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+=======
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
     opacity: 0;
     pointer-events: none;
   }
@@ -305,11 +311,16 @@ footer #footerInner #footerBottom p {
     height: 300px;
   }
   header #gnb ul {
+<<<<<<< HEAD
     gap: 4px;
+=======
+    gap: 30px;
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+<<<<<<< HEAD
     padding-left: 4%;
   }
   header #gnb ul li {
@@ -317,6 +328,8 @@ footer #footerInner #footerBottom p {
     width: 100%;
     overflow: hidden;
     position: relative;
+=======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   }
   header #gnb ul li a {
     font-size: 7rem !important;

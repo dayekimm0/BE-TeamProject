@@ -87,8 +87,18 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
+<<<<<<< HEAD
   -webkit-animation: rotate-scale-up 0.7s both;
           animation: rotate-scale-up 0.7s both;
+=======
+<<<<<<< HEAD
+  opacity: 0;
+  animation: dropBounce 2s ease-out forwards;
+=======
+  -webkit-animation: rotate-scale-up 0.7s both;
+          animation: rotate-scale-up 0.7s both;
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -126,6 +136,10 @@ main #con1 .parts {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
+<<<<<<< HEAD
+=======
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -140,8 +154,17 @@ main #con1 .parts .part:hover p {
   opacity: 1;
 }
 main #con1 .parts .part:hover .partImg {
+<<<<<<< HEAD
   -webkit-filter: brightness(60%);
           filter: brightness(60%);
+=======
+<<<<<<< HEAD
+  filter: brightness(60%);
+=======
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 }
 main #con1 .parts .part a .partImg {
   width: 430px;
@@ -453,11 +476,22 @@ main #con5 .eventLoad span b {
         -ms-flex-align: center;
             align-items: center;
     gap: 14px;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+=======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+<<<<<<< HEAD
+=======
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
     border-radius: 0;
     overflow: hidden;
   }
@@ -518,6 +552,38 @@ main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
   }
 }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+/* Add these CSS animations */
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+/* Apply animations to the p tags */
+.con2-text p {
+  opacity: 0; /* Start hidden */
+  animation-fill-mode: forwards; /* Keep the final state */
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+=======
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
 @-webkit-keyframes rotate-scale-up {
   0% {
     -webkit-transform: scale(1) rotateZ(0);
@@ -531,6 +597,7 @@ main #con5 .eventLoad span b {
     -webkit-transform: scale(1) rotateZ(360deg);
             transform: scale(1) rotateZ(360deg);
   }
+<<<<<<< HEAD
 }
 @keyframes rotate-scale-up {
   0% {
@@ -544,5 +611,43 @@ main #con5 .eventLoad span b {
   100% {
     -webkit-transform: scale(1) rotateZ(360deg);
             transform: scale(1) rotateZ(360deg);
+=======
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+}
+@keyframes rotate-scale-up {
+  0% {
+<<<<<<< HEAD
+    opacity: 0;
+    transform: translate(500%, 300%);
+  }
+  30% {
+    opacity: 1;
+    transform: translate(20%, 50%);
+  }
+  50% {
+    transform: translate(0, -50%);
+  }
+  70% {
+    transform: translate(0, 30%);
+  }
+  90% {
+    transform: translate(0, -30%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+=======
+    -webkit-transform: scale(1) rotateZ(0);
+            transform: scale(1) rotateZ(0);
+  }
+  50% {
+    -webkit-transform: scale(2) rotateZ(180deg);
+            transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateZ(360deg);
+            transform: scale(1) rotateZ(360deg);
+>>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 32f2b05957376b948c338284e8f15d7cf98ac798
   }
 }
