@@ -365,7 +365,7 @@ h2 {
             margin-bottom: 6px;
           }
           p {
-            font-size: 1.5rem;
+            font-size: 1.8rem;
           }
         }
       }
@@ -538,12 +538,16 @@ h2 {
           margin-bottom: 14px;
         }
         .contentBox {
+          width: 120px;
+          justify-content: space-between;
+          &:last-child {
+            display: none;
+          }
           img {
             border-radius: 10px;
-            margin-bottom: px;
           }
           p {
-            font-size: 1rem;
+            font-size: 1.5rem;
           }
         }
       }
