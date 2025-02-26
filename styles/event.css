@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -28,19 +29,10 @@ body {
 
 .container {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0 5%;
 }
 
@@ -49,9 +41,10 @@ body {
   position: relative;
   height: 600px;
   background-image: url("/images/event/title-bg.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
-  justify-content: center;
   align-items: center;
 =======
   -webkit-box-pack: center;
@@ -60,15 +53,22 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .eventTitle .mainTitle {
-  width: 1440px;
+  padding-left: 5%;
 }
 .eventTitle .mainTitle .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 30px;
   color: #fff;
 }
@@ -94,19 +94,35 @@ body {
 
 .eventSteps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .eventSteps .howTo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 450px;
   height: auto;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   color: #000;
 }
@@ -118,14 +134,16 @@ body {
   padding: 12px 10px;
   color: #000;
   font-family: "REM";
-  font-size: 7rem;
+  font-size: 8rem;
   font-weight: bold;
   position: relative;
 }
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
@@ -136,6 +154,8 @@ body {
 }
 .eventSteps .steps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 <<<<<<< HEAD
   justify-content: space-evenly;
@@ -143,7 +163,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   margin-top: 50px;
 }
 .eventSteps .steps .step01,
@@ -153,7 +173,8 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 8px #d9d9d9;
+  -webkit-box-shadow: 0 0 8px #d9d9d9;
+          box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
@@ -193,9 +214,16 @@ body {
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
   width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 11px;
   position: absolute;
   top: 25px;
@@ -232,18 +260,31 @@ body {
 
 .couponsList {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 132px;
 }
 .couponsList .hashTags {
   width: 628px;
   height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
 <<<<<<< HEAD
   justify-content: space-evenly;
@@ -251,7 +292,7 @@ body {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -259,14 +300,27 @@ body {
   padding: 10px 25px;
   border-radius: 30px;
   background: #fff;
-  box-shadow: 0px 0px 4px 0px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
+          box-shadow: 0px 0px 4px 0px #d9d9d9;
   color: #000;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
+<<<<<<< HEAD
   display: flex;
   align-items: center;
   justify-content: center;
+=======
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   text-align: center;
 }
 .couponsList .coupons {
@@ -280,7 +334,7 @@ body {
           justify-content: center;
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
 }
 .couponsList .couponCommon {
@@ -301,7 +355,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   cursor: pointer;
 }
 .couponsList .couponCommon img {
@@ -351,7 +405,7 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   border-radius: 10px;
 }
 .couponsList .couponCommon .couponBottom {
@@ -366,7 +420,7 @@ body {
   position: absolute;
   left: 0;
   bottom: 39px;
-  width: 98%;
+  width: 100%;
   border: 1px dashed transparent;
   -o-border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
      border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
@@ -401,11 +455,12 @@ body {
 =======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 35px;
-  margin-top: 30px;
 }
 .buttons button,
 .buttons a {
@@ -413,18 +468,22 @@ body {
 =======
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 20px;
   gap: 10px;
   width: auto;
   height: 60px;
   border-radius: 30px;
   border: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
   background-color: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: inherit;
   outline: none;
@@ -434,7 +493,6 @@ body {
   position: relative;
   overflow: hidden;
 }
-<<<<<<< HEAD
 .buttons button:hover p,
 .buttons a:hover p {
   color: #fff;
@@ -456,30 +514,37 @@ body {
   left: 0;
   width: 0;
   background: #000;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .buttons button i,
 .buttons a i {
+<<<<<<< HEAD
 =======
-.buttons a > i {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   width: 40px;
   height: 40px;
   padding: 6px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 30px;
   color: #000;
   border: 2px solid #d9d9d9;
   background: #fff;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .buttons button p,
 .buttons a p {
   font-family: "Pretendard";
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -494,23 +559,26 @@ body {
   justify-content: center;
   align-items: center;
 =======
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  white-space: nowrap;
-  width: 60%;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .eventNotice .eventWrapper h5 {
   font-weight: bold;
   margin-top: 3%;
   margin-bottom: 15px;
   text-align: left;
-<<<<<<< HEAD
   width: 100%;
 }
 .eventNotice .eventWrapper ul {
@@ -520,36 +588,25 @@ body {
 .eventNotice .eventWrapper ul li {
   font-size: 2rem;
   font-weight: 300;
-=======
-}
-.eventNotice ul {
-  margin-bottom: 3%;
-}
-.eventNotice ul li {
-  font-size: 2rem;
-  font-weight: 500;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   position: relative;
   padding-left: 15px;
   line-height: 1.5;
   letter-spacing: 0.1px;
   word-wrap: break-word;
   word-break: keep-all;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
+  align-items: start;
 }
 .eventNotice .eventWrapper ul li::before {
   content: "";
   position: absolute;
   left: 0px;
   top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: #000;
 }
 
@@ -559,27 +616,25 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
-<<<<<<< HEAD
   z-index: 5;
+<<<<<<< HEAD
   justify-content: center;
   align-items: center;
 =======
-  z-index: 1000;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
 }
 .modal.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 .modal .modalContent {
@@ -591,7 +646,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .modal .modalCheck {
   margin: 0 auto 20px;
@@ -612,35 +668,23 @@ body {
   font-size: 1.5rem;
   margin-bottom: 30px;
 }
-<<<<<<< HEAD
 .modal .modalButtons {
+<<<<<<< HEAD
 =======
-.modal .modal-buttons {
   display: -webkit-box;
   display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
+>>>>>>> 22d2fe62198a15447ece64dc76d4e7f3f1c6be35
   display: flex;
   margin-top: 30px;
 }
-<<<<<<< HEAD
 .modal .modalButtons button {
   height: 60px;
-  width: 250px;
+  width: 50%;
   font-size: 2rem;
-=======
-.modal .modal-buttons button {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  height: 50px;
-  border-radius: 25px;
-  font-size: 1.6rem;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   font-weight: 600;
   border: none;
   color: #fff;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .modal .modalButtons button.confirmBtn {
@@ -651,13 +695,18 @@ body {
 .modal .modalButtons button.homepageBtn {
   background: #fff;
   color: #000;
-  border: 1px solid #d9d9d9;
 }
 
 /* ==== 반응형 ==== */
 @media screen and (max-width: 1024px) {
+  header {
+    background: #fff;
+  }
   .container {
     width: 100%;
+  }
+  main {
+    margin-top: 60px;
   }
   .eventTitle {
     height: 500px;
@@ -691,14 +740,9 @@ body {
     margin-top: 20px;
   }
   .steps {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 30px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
   }
   .steps .step01,
   .steps .step02 {
@@ -717,19 +761,19 @@ body {
     gap: 40px;
   }
   .couponsList .couponCommon {
-    width: 180px;
-    height: 280px;
-  }
-  .couponsList .couponCommon .couponTop {
     height: 260px;
   }
+  .couponsList .couponCommon .couponTop {
+    height: 220px;
+    top: 0;
+  }
   .couponsList .couponCommon .couponBottom {
-    height: 30px;
+    bottom: 0;
   }
   .couponsList .couponCommon .couponBottom .dashed {
-    bottom: 30px;
-    left: 0;
-    width: 96%;
+    bottom: 39px;
+    left: -4%;
+    width: 100%;
   }
   .hashTags {
     height: auto;
@@ -740,8 +784,7 @@ body {
     font-size: 2rem;
   }
   .coupons .ticket {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
   }
   .couponText {
     max-width: 110px;
@@ -753,8 +796,7 @@ body {
     font-size: 3.5rem;
   }
   .buttons {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 20px;
   }
   .buttons button {
@@ -779,7 +821,7 @@ body {
     margin-top: 8%;
   }
   .eventNotice ul > li {
-    font-size: 1.6rem;
+    font-size: 1.6rem !important;
     line-height: 1.5;
     letter-spacing: 0.1px;
     word-wrap: break-word;
@@ -817,13 +859,13 @@ body {
     gap: 20px;
   }
   .eventTitle .mainTitle .title p {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .eventTitle .mainTitle .title h2 {
-    font-size: 5rem;
+    font-size: 5.5rem;
   }
   .eventTitle .mainTitle .title span {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
   .eventSteps {
     margin-top: 50px;
@@ -833,7 +875,7 @@ body {
     width: 100%;
   }
   .eventSteps .howTo h3 {
-    font-size: 6.5rem;
+    font-size: 5.5rem;
   }
   .eventSteps .howTo p {
     width: 100%;
@@ -841,14 +883,9 @@ body {
     margin-top: 20px;
   }
   .eventSteps .steps {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     gap: 50px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     margin-top: 35px;
   }
   .eventSteps .steps .step01,
@@ -898,7 +935,7 @@ body {
   .eventSteps .steps .step01 .text2 span,
   .eventSteps .steps .step02 .text1 span,
   .eventSteps .steps .step02 .text2 span {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
   }
   .couponsList {
     margin-top: 60px;
@@ -912,25 +949,31 @@ body {
     font-size: 1.9rem;
   }
   .couponsList .coupons .couponCommon {
-    width: 200px;
-    height: 200px;
+    height: 160px;
   }
   .couponsList .coupons .couponCommon .couponTop {
-    width: 110px;
-    height: 160px;
+    width: 100%;
+    height: 130px;
     font-size: 28px;
-    top: 10px;
-    right: 10px;
+    top: 0;
   }
   .couponsList .coupons .couponCommon .couponBottom {
     bottom: 0px;
-    width: 110px;
+    width: 100%;
+    height: 30px;
+  }
+  .couponsList .coupons .couponCommon .couponBottom .dashed {
+    bottom: 28px;
+    -o-border-image: repeating-linear-gradient(90deg, #000 0, #000 5px, transparent 5px, transparent 10px) 20;
+       border-image: repeating-linear-gradient(90deg, #000 0, #000 5px, transparent 5px, transparent 10px) 20;
+    width: 80%;
+    left: 13%;
   }
   .couponsList .coupons .couponCommon img {
-    top: 6%;
-    right: -7%;
-    width: 30px;
-    height: 30px;
+    top: 3%;
+    right: 8%;
+    width: 20px;
+    height: 20px;
   }
   .coupons {
     gap: 20px;
@@ -954,16 +997,17 @@ body {
   }
   .buttons {
     gap: 15px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
+    flex-wrap: nowrap;
   }
   .buttons button,
   .buttons a {
     width: 100%;
     max-width: 200px;
     height: 50px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .buttons button p,
   .buttons a p {

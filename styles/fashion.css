@@ -4,7 +4,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -34,9 +35,13 @@ section {
 }
 
 .detailTitle {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .detailTitle .titleImg {
   width: 30px;
@@ -48,7 +53,8 @@ section {
 .detailTitle .circleImg {
   margin-left: auto;
   margin-bottom: 70px;
-  animation: circle 6s linear infinite;
+  -webkit-animation: circle 6s linear infinite;
+          animation: circle 6s linear infinite;
 }
 
 h2 {
@@ -59,6 +65,8 @@ h2 {
 
 /* ==== contents ==== */
 .infoContainer > ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 14px;
   margin: 20px 0;
@@ -74,6 +82,7 @@ h2 {
   border: 1.5px solid #6fbde7;
   background: none;
   cursor: pointer;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .infoContainer > ul li .active {
@@ -83,11 +92,17 @@ h2 {
 .infoContainer .tabContainer > div {
   width: 100%;
   height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-radius: 40px;
   overflow: hidden;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border: 1.5px solid #6fbde7;
   display: none;
 }
@@ -113,6 +128,8 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer .tabContainer > div .articleInfo .articleHashtag {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 8px;
 }
@@ -125,12 +142,18 @@ h2 {
   font-weight: 400;
 }
 .infoContainer .tabContainer > div.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
 .bannerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 130px 0;
   background: #b4e3fc;
   padding-top: 70px;
@@ -141,12 +164,19 @@ h2 {
   position: relative;
 }
 .bannerContainer .bannerBoxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   width: 60%;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
@@ -159,19 +189,21 @@ h2 {
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
   border-radius: 20px;
   margin-bottom: 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-          box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
 }
 
 .shopContainer .shopBoxWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 40px;
   margin-top: 30px;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .shopContainer .shopBoxWrapper .shopBox {
   position: relative;
@@ -192,15 +224,22 @@ h2 {
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
   background: rgba(180, 227, 252, 0.9);
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 60px;
   opacity: 0;
+  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
@@ -227,9 +266,17 @@ h2 {
   visibility: visible;
 }
 
+@-webkit-keyframes circle {
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 @keyframes circle {
   100% {
-    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 /* ==== 반응형 ==== */
@@ -249,7 +296,9 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper {
     width: 100%;
     gap: 0 !important;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
     width: 20%;
@@ -269,6 +318,8 @@ h2 {
     line-height: 4.2rem;
   }
   .detailTitle {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -319,7 +370,10 @@ h2 {
     font-size: 1.4rem;
   }
   .bannerContainer {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin: 70px 0;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -350,8 +404,7 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 16px;
     margin-bottom: 6px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1.5rem;
@@ -365,6 +418,8 @@ h2 {
   .shopContainer .shopBoxWrapper .shopBox {
     width: 100%;
     height: 330px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -376,31 +431,43 @@ h2 {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     opacity: 1;
@@ -455,7 +522,9 @@ h2 {
     border-radius: 20px;
   }
   .infoContainer .tabContainer > div .articleInfo {
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: auto;
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
@@ -468,8 +537,11 @@ h2 {
     line-height: 1.5rem;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 4px;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag li {
@@ -491,13 +563,18 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
     margin-bottom: 14px;
   }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
+    width: 120px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox:last-child {
+    display: none;
+  }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-  }
-  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
-    font-size: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
   .shopContainer .shopBoxWrapper {
     border-radius: 20px;
