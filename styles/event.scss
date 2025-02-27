@@ -137,7 +137,6 @@ body {
         position: absolute;
         border-radius: 5px;
         background: url("/images/event/login.png") center/cover no-repeat;
-        position: absolute;
         bottom: 100px;
         right: 20px;
       }
@@ -199,11 +198,11 @@ body {
   margin-top: 132px;
 
   .hashTags {
-    width: 628px;
+    width: 630px;
     height: 56px;
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     justify-content: space-evenly;
 
     span {
@@ -249,28 +248,28 @@ body {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: food);
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
     }
     &.couponPink {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: beauty);
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
     }
     &.couponSky {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: fashion);
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
     }
     &.couponPurple {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: lifestyle);
-        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
       }
     }
 
@@ -794,9 +793,11 @@ body {
     gap: 20px;
     .hashTags {
       width: 100%;
+      gap: 0;
       span {
         width: auto;
-        font-size: 1.9rem;
+        height: 40px;
+        font-size: 1.6rem;
       }
     }
     .coupons {
@@ -839,16 +840,13 @@ body {
 
   .coupons {
     gap: 20px;
-    .ticket {
-      gap: 20px;
-    }
   }
 
   .couponText {
     bottom: 12px;
     left: 5px;
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       max-width: 100px;
 
       b {
@@ -856,7 +854,7 @@ body {
       }
     }
     span {
-      font-size: 1.2rem;
+      font-size: 0.8rem;
     }
   }
 
@@ -868,7 +866,7 @@ body {
     a {
       width: 100%;
       max-width: 200px;
-      height: 50px;
+      height: 45px;
       justify-content: space-between;
       p {
         font-size: 1.6rem;
@@ -891,7 +889,7 @@ body {
     }
     ul > li {
       width: 100%;
-      font-size: 1.4rem;
+      font-size: 1.4rem !important;
       line-height: 1.5;
       letter-spacing: 0.1px;
       word-wrap: break-word;
@@ -911,15 +909,17 @@ body {
         }
       }
       .modalTitle {
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin-top: 0px;
+        font-family: map-get($map: $font-family, $key: Pretendard);
       }
       .modalButtons {
         margin-top: 20px;
         button {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           width: 100%;
           height: 50px;
+          font-family: map-get($map: $font-family, $key: Pretendard);
         }
       }
     }
