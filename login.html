@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/login.css" />
+    <script defer src="./script.js"></script>
+    <script defer src="./scripts/login.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h2>LOGIN</h2>
+      <form id="form" action="#" method="post">
+        <div id="inputWrap">
+          <div class="inputBox">
+            <input type="email" id="email" placeholder="E-MAIL" />
+            <label for="email">ID(E-mail)</label>
+          </div>
+          <div class="inputBox">
+            <input type="password" id="password" placeholder="PASSWORD" />
+            <label for="password">PASSWORD</label>
+            <i class="fas fa-eye active"></i>
+          </div>
+        </div>
+        <div id="userInfo">
+          <div>
+            <input type="checkbox" value="" id="idBtn" />
+            <label for="idBtn">아이디 저장</label>
+          </div>
+          <div>
+            <a href="#" title="아이디 찾기">아이디 찾기</a>
+            <a href="#" title="비밀번호 찾기">비밀번호 찾기</a>
+          </div>
+        </div>
+        <div id="inputBtn">
+          <input id="loginBtn" type="button" value="로그인" />
+          <input id="joinBtn" type="button" value="회원가입" />
+        </div>
+        <div id="easyLogin">
+          <a href="#" title="NAVER">
+            <img
+              src="https://withmuu1.cdn-nhncommerce.com/data/skin/front/moment/images/common/icon_sns_login_naver.svg"
+              alt="NAVER
+            "
+            />
+            <span>NAVER로 로그인</span></a
+          >
+          <a href="#" title="Kakao">
+            <img
+              src="https://withmuu1.cdn-nhncommerce.com/data/skin/front/moment/images/common/icon_sns_login_kakao.svg"
+              alt="Kakao"
+            />
+            <span>Kakao로 로그인</span></a
+          >
+          <a href="#" title="Apple">
+            <img
+              src="https://withmuu1.cdn-nhncommerce.com/data/skin/front/moment/images/common/icon_sns_login_facebook.svg"
+              alt="facebook"
+            />
+            <span>Facebook으로 로그인</span></a
+          >
+          <a href="#" title="Google">
+            <img
+              src="https://withmuu1.cdn-nhncommerce.com/data/skin/front/moment/images/common/icon_sns_login_apple.svg"
+              alt=""
+            />
+            <span>Apple로 로그인</span></a
+          >
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

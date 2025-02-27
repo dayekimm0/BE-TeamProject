@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome</title>
+    <!-- fontawesome -->
+    <script
+      src="https://kit.fontawesome.com/3f2ea24883.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Common CSS & JS -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/welcome.css" />
+    <script defer src="./script.js"></script>
+    <script defer src="./scripts/welcome.js"></script>
+    <!-- lenis -->
+    <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
+  </head>
+  <body>
+    <header></header>
+    <main>
+      <h2>WELCOME</h2>
+      <form id="form" action="#" method="post">
+        <div id="finalStep">
+          <div class="stepWrap">
+            <div class="stepCircle">
+              <i class="fa-solid fa-id-card"></i>
+              <span>STEP 1</span>
+            </div>
+            <p>정보입력</p>
+          </div>
+          <div id="arrow">
+            <i class="fas fa-angle-right"></i>
+          </div>
+          <div class="stepWrap">
+            <div class="stepCircle">
+              <i class="fa-solid fa-circle-check"></i>
+              <span>STEP 2</span>
+            </div>
+            <p>가입완료</p>
+          </div>
+        </div>
+        <div id="finalText">
+          <i class="fa-solid fa-circle-check"></i>
+          <p>회원가입이 완료되었습니다.</p>
+        </div>
+        <div id="inputBtn">
+          <input id="finalLogin" type="button" value="로그인" />
+          <input id="finalMain" type="button" value="메인으로" />
+        </div>
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>
