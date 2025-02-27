@@ -38,54 +38,12 @@ main {
 }
 main #intro .index {
   height: 100vh;
-<<<<<<< HEAD
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-main #intro .title {
-  top: 280px;
-  left: 176px;
-  position: absolute;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
-}
-main #intro .title p {
-  font: normal 3.3rem/1.75 "pretendard";
-  font-weight: 700;
-}
-main #intro .title .mainTitle {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 8px;
-  font: bold 8.5rem/0.87 "REM";
-}
-main #intro .indexImg1 {
-  position: absolute;
-  top: 108px;
-  right: 212px;
-}
-main #intro .indexImg2 {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  top: 758px;
-  left: 136px;
-  transform: rotate(11deg);
-}
-main #intro .subTitle {
-  top: 664px;
-  right: 212px;
-=======
   position: relative;
   display: flex;
   align-items: center;
 }
 main #intro .index .title {
-  left: 3%;
+  left: 5%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -95,11 +53,13 @@ main #intro .index .title p {
   font-weight: 500;
 }
 main #intro .index .title h2 span {
-  padding: 10px;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: flex-start;
   font: bold 10rem/0.87 "REM";
+}
+main #intro .index .title h2 span:first-child {
+  margin: 10px 0;
 }
 main #intro .index .indexImg1 {
   position: absolute;
@@ -113,36 +73,14 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
-<<<<<<< HEAD
-=======
-  animation: rotate-scale-up 0.7s both;
->>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
 }
 main #intro .index .subTitle {
   top: 70%;
   right: 10%;
->>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
   position: absolute;
   display: flex;
   gap: 20px;
 }
-<<<<<<< HEAD
-main #intro .subTitle p {
-  padding: 6px 22px;
-  gap: 10px;
-  border-radius: 40px;
-  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-top: 47px;
-  font: normal 2.6rem/2.23 "Pretendard";
-  font-weight: 700;
-  letter-spacing: -0.52px;
-}
-main #con1 {
-  left: 96px;
-  margin-top: 147px;
-  display: flex;
-  flex-direction: column;
-=======
 main #intro .index .subTitle p {
   padding: 16px 30px;
   border-radius: 40px;
@@ -165,42 +103,12 @@ main #con1 {
   display: flex;
   flex-direction: column;
   padding-left: 5%;
->>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
   gap: 40px;
 }
 main #con1 h2 {
   font: normal 7rem/1 "REM";
 }
 main #con1 .parts {
-<<<<<<< HEAD
-  display: flex;
-  align-items: center;
-  gap: 46px;
-}
-main #con1 .parts .part {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-main #con1 .parts .part img {
-  width: 430px;
-  height: 570px;
-  border-radius: 40px;
-  align-items: center;
-}
-main #con1 .parts .part p {
-  font: normal 3.6rem/1 "REM";
-  font-weight: 700;
-}
-main #con2 {
-  position: relative;
-}
-main #con2 .con2-text {
-  position: absolute;
-  width: 971px;
-  right: 120px;
-  margin-top: 60px;
-=======
   width: 100%;
   display: flex;
   align-items: center;
@@ -246,7 +154,6 @@ main #con2 {
 main #con2 .con2-text {
   margin-top: 10%;
   padding: 0 5%;
->>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
   font: 900 11rem/1 "REM";
   text-align: right;
   letter-spacing: 22px;
@@ -256,33 +163,6 @@ main #con2 .con2-text {
 }
 main #con2 .con2-text p:nth-child(even) {
   color: #fff;
-<<<<<<< HEAD
-  -webkit-text-stroke: 1.5px #000;
-}
-main #con2 .con2Img {
-  width: 200px;
-  height: 200px;
-  transform: rotate(11deg);
-  position: absolute;
-  left: 200px;
-  margin-top: 500px;
-}
-main #con3 .content-video {
-  padding-top: 56.25%;
-  position: relative;
-}
-main #con3 .content-video iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-main #con4 {
-  width: 1728px;
-}
-main #con4 .category {
-=======
   text-shadow: -1px 0 #000, 0 1px #000, 1px 0 #000, 0 -1px #000;
 }
 main #con2 .con2-text .con2Img {
@@ -306,222 +186,24 @@ main #con3 .content-video iframe {
   width: 100%;
   height: 100%;
 }
+main #con4 {
+  margin: 100px 0;
+  padding: 0 10%;
+}
 main #con4 .list {
-  margin: 8%;
->>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
-}
-main #con4 .category .list {
-  width: 1436px;
-}
-main #con4 .category .list h3 {
-  font: 600 9rem/1 "REM";
-  margin-bottom: 50px;
-}
-main #con4 .category .list p {
-  font: 700 3rem/1 "REM";
-  padding: 50px;
-}
-main #con4 .category .list p a {
-  font: 700 5rem/1 "REM";
-  padding: 50px;
-}
-
-.section {
-  margin: 0 5%;
-  height: 100vh;
-}
-
-footer {
-  width: 100%;
-  padding: 5%;
-  background: #333;
-  color: #ccc;
-}
-footer #footerInner {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-footer #footerInner #footerTop {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-footer #footerInner #footerTop #footerLogo {
-  width: 120px;
-}
-footer #footerInner #footerTop #footerLogo img {
-  width: 100%;
-}
-footer #footerInner #footerTop #fnb ul {
-  display: flex;
-  gap: 20px;
-}
-footer #footerInner #footerBottom {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-footer #footerInner #footerBottom address {
-  font-style: normal;
-}
-footer #footerInner #footerBottom address ul {
-  display: flex;
-  flex-wrap: wrap;
-}
-footer #footerInner #footerBottom address ul li {
-  position: relative;
-  margin-right: 20px;
-}
-footer #footerInner #footerBottom address ul li.flex-basis {
-  flex-basis: 100%;
-}
-footer #footerInner #footerBottom address ul li::after {
-  content: "";
-  position: absolute;
-  right: -10px;
-  width: 1px;
-  height: 100%;
-  background-color: #ccc;
-}
-footer #footerInner #footerBottom address ul li:nth-child(3)::after {
-  display: none;
-}
-footer #footerInner #footerBottom address ul li:last-child::after {
-  display: none;
-}
-footer #footerInner #footerBottom address ul li:last-child, footer #footerInner #footerBottom address ul li:nth-child(6), footer #footerInner #footerBottom address ul li:nth-child(5) {
-  margin: 20px 20px 20px 0;
-}
-footer #footerInner #footerBottom p {
-  font-size: 1.4rem;
-}
-
-@media screen and (max-width: 1024px) {
-  header {
-    z-index: 2;
-    background: transparent;
-    top: 0;
-    width: 100% !important;
-    height: 60px;
-    border-radius: 0;
-    left: auto;
-    transform: none;
-  }
-  header h1 {
-    position: relative;
-    z-index: 3;
-  }
-  header.active {
-    top: 0;
-  }
-  header #gnb {
-    background: #fff;
-    transition: all 0.3s;
-    opacity: 0;
-    visibility: hidden;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    pointer-events: none;
-  }
-  header #gnb ul {
-    gap: 30px;
-    flex-direction: column;
-  }
-  header #gnb ul li a {
-    font-size: 2rem;
-    color: #000;
-  }
-  header #toggleBtn {
-    position: relative;
-    display: block;
-  }
-  header #toggleBtn span {
-    background: #000;
-  }
-  header #toggleBtn.active {
-    z-index: 3;
-  }
-  header #toggleBtn.active span:first-child {
-    top: 50%;
-    transform: rotate(45deg);
-  }
-  header #toggleBtn.active span:nth-child(2) {
-    opacity: 0;
-  }
-  header #toggleBtn.active span:last-child {
-    top: 50%;
-    transform: rotate(-45deg);
-  }
-  header #toggleBtn.active ~ #gnb {
-    opacity: 1;
-    visibility: visible;
-    z-index: 2;
-    pointer-events: fill;
-  }
-  footer {
-    position: relative;
-    z-index: 1;
-  }
-  footer #footerTop {
-    flex-direction: column;
-    gap: 20px;
-  }
-  footer #footerTop #footerLogo {
-    width: 100px !important;
-  }
-}
-@media screen and (max-width: 767px) {
-  header {
-    left: 0;
-    transform: none;
-    width: 100vw;
-  }
-  footer #footerInner {
-    gap: 20px;
-  }
-  footer #footerInner #footerTop {
-    font-size: 1.2rem;
-  }
-  footer #footerInner #footerTop #footerLogo {
-    width: 80px !important;
-  }
-  footer #footerInner #footerBottom address {
-    font-size: 12px;
-  }
-  footer #footerInner #footerBottom address ul li:nth-child(2)::after {
-    display: none;
-  }
-  footer #footerInner #footerBottom address ul li:nth-child(3) {
-    margin-top: 10px;
-  }
-  footer #footerInner #footerBottom address ul li:last-child, footer #footerInner #footerBottom address ul li:nth-child(6), footer #footerInner #footerBottom address ul li:nth-child(5) {
-    margin: 10px 20px 10px 0 !important;
-  }
-  footer #footerInner #footerBottom p {
-    font-size: 10px !important;
-=======
-  width: 1200px;
 }
 main #con4 .list h3 {
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: left;
   font: bold 9rem/1 "REM";
-  padding-bottom: 50px;
-  border-bottom: 1px solid #000;
 }
 main #con4 .list .trendList {
-  width: 1200px;
+  width: 100%;
 }
 main #con4 .list .trendList p {
   font: normal 3.2rem/1 "Pretendard";
@@ -541,6 +223,9 @@ main #con4 .list .trendList div p:first-child {
   display: flex;
   align-items: center;
 }
+main #con4 .list .trendList div p:first-child a {
+  transition: all 0.3s;
+}
 main #con4 .list .trendList .list01 p a:hover {
   color: #a5d112;
 }
@@ -557,13 +242,15 @@ main #con5 {
   width: 100%;
 }
 main #con5 .eventLoad {
-  padding: 150px 0;
+  padding: 130px 0;
   display: flex;
   align-items: center;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/index/couponheader.png");
-  background-size: cover;
   justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 main #con5 .eventLoad span {
@@ -576,15 +263,10 @@ main #con5 .eventLoad span b {
 }
 
 @media screen and (max-width: 1024px) {
-  main #intro .index .title {
-    left: 3%;
-    gap: 14px;
-  }
   main #intro .index .title p {
     font: bold 2rem/1 "Pretendard";
   }
   main #intro .index .title h2 span {
-    padding: 3px 0;
     font: bold 8rem/1 "REM";
   }
   main #intro .index .title h2 span:nth-child(1) {
@@ -666,27 +348,23 @@ main #con5 .eventLoad span b {
     margin-top: 8%;
   }
   main #con4 .list h3 {
-    width: 80%;
-    font: bold 7rem/1 "REM";
-    padding-bottom: 20px;
-  }
-  main #con4 .list .trendList {
-    width: 80%;
+    font: bold 5rem/1 "REM";
+    margin-bottom: 30px;
   }
   main #con4 .list .trendList p {
-    font: bold 2rem/1 "REM";
-    padding: 20px;
-    width: 80%;
+    font: bold 1.6rem/1 "REM";
   }
   main #con4 .list .trendList p a {
     font: bold 3rem/1 "REM";
-    padding: 20px;
   }
   main #con5 .eventLoad {
     padding: 80px 0;
   }
   main #con5 .eventLoad span {
     width: 700px;
+    font: bold 2rem/1.2 "REM";
+  }
+  main #con5 .eventLoad span b {
     font: bold 4rem/1.2 "REM";
   }
 }
@@ -697,6 +375,9 @@ main #con5 .eventLoad span b {
   main #intro .index .title {
     top: 30%;
   }
+  main #intro .index .title p {
+    position: relative;
+  }
   main #intro .index .title h2 span {
     padding: 3px 0;
     font: bold 4rem/1 "REM";
@@ -705,20 +386,22 @@ main #con5 .eventLoad span b {
     font: normal 3rem/1 "REM";
   }
   main #intro .index .subTitle {
-    top: 50%;
+    top: 54%;
+    right: auto;
+    left: 5%;
   }
   main #intro .index .subTitle p {
-    padding: 10px 20px;
+    padding: 8px 16px;
     gap: 4px;
     font: 700 1.4rem/1 "Pretendard";
   }
   main #intro .index .indexImg1 {
     width: 120px;
     height: 120px;
-    top: 10%;
+    top: 12%;
   }
   main #intro .index .indexImg2 {
-    top: 60%;
+    top: 65%;
     width: 60px;
     height: 60px;
     animation: rotate-scale-up 0.7s both;
@@ -771,23 +454,21 @@ main #con5 .eventLoad span b {
   main #con3 {
     height: 50vh;
   }
-  main #con4 .list {
-    width: 100%;
+  main #con4 {
+    padding: 0 3%;
   }
   main #con4 .list h3 {
     font: bold 3rem/1 "REM";
-    padding-bottom: 16px;
   }
-  main #con4 .list p {
-    font: bold 1.2rem/1 "REM";
-    padding: 16px;
+  main #con4 .list .trendList p {
+    font: bold 1.3rem/1 "REM";
   }
-  main #con4 .list p a {
-    font: bold 2rem/1 "REM";
+  main #con4 .list .trendList p a {
+    font: bold 1.5rem/1 "REM";
     padding: 16px;
   }
   main #con5 .eventLoad {
-    padding: 40px 0;
+    padding: 80px 0;
   }
   main #con5 .eventLoad span {
     width: 700px;
@@ -806,7 +487,6 @@ main #con5 .eventLoad span b {
   }
   100% {
     transform: scale(1) rotateZ(360deg);
-<<<<<<< HEAD
   }
 }
 @keyframes main-circle {
@@ -815,8 +495,5 @@ main #con5 .eventLoad span b {
   }
   to {
     transform: rotate(360deg);
-=======
->>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
->>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
   }
 }

@@ -41,10 +41,6 @@ body {
   height: 600px;
   background-image: url("/images/event/title-bg.png");
   display: flex;
-<<<<<<< HEAD
-  justify-content: center;
-=======
->>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
   align-items: center;
 }
 .eventTitle .mainTitle {
@@ -825,10 +821,7 @@ body {
   .buttons {
     gap: 15px;
     align-items: center;
-<<<<<<< HEAD
-=======
     flex-wrap: nowrap;
->>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
   }
   .buttons button,
   .buttons a {

@@ -27,7 +27,7 @@ main {
       display: flex;
       align-items: center;
       .title {
-        left: 3%;
+        left: 5%;
         position: absolute;
         display: flex;
         flex-direction: column;
@@ -37,11 +37,13 @@ main {
         }
         h2 {
           span {
-            padding: 10px;
-            display: flex;
+            display: block;
             flex-direction: column;
             align-items: flex-start;
             font: bold 10rem/0.87 map-get($map: $font-family, $key: REM);
+            &:first-child {
+              margin: 10px 0;
+            }
           }
         }
       }
@@ -179,20 +181,21 @@ main {
     }
   }
   #con4 {
+    margin: 100px 0;
+    padding: 0 10%;
     .list {
-      margin: 8%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 1200px;
       h3 {
+        margin-bottom: 50px;
+        width: 100%;
+        text-align: left;
         font: bold 9rem/1 map-get($map: $font-family, $key: REM);
-        padding-bottom: 50px;
-        border-bottom: 1px solid map-get($map: $colors, $key: dark);
       }
       .trendList {
-        width: 1200px;
+        width: 100%;
         p {
           font: normal 3.2rem/1 map-get($map: $font-family, $key: Pretendard);
           a {
@@ -209,6 +212,9 @@ main {
           p:first-child {
             display: flex;
             align-items: center;
+            a {
+              transition: all 0.3s;
+            }
           }
         }
         .list01 {
@@ -246,14 +252,16 @@ main {
   #con5 {
     width: 100%;
     .eventLoad {
-      padding: 150px 0;
+      padding: 130px 0;
       display: flex;
       align-items: center;
       color: map-get($map: $colors, $key: light);
       background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
         url("../images/index/couponheader.png");
-      background-size: cover;
       justify-content: center;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       background-attachment: fixed;
       span {
         text-align: center;
@@ -273,14 +281,11 @@ main {
     #intro {
       .index {
         .title {
-          left: 3%;
-          gap: 14px;
           p {
             font: bold 2rem/1 map-get($map: $font-family, $key: Pretendard);
           }
           h2 {
             span {
-              padding: 3px 0;
               font: bold 8rem/1 map-get($map: $font-family, $key: REM);
               &:nth-child(1) {
                 font: normal 5rem/1 map-get($map: $font-family, $key: REM);
@@ -372,19 +377,14 @@ main {
     #con4 {
       .list {
         h3 {
-          width: 80%;
-          font: bold 7rem/1 map-get($map: $font-family, $key: REM);
-          padding-bottom: 20px;
+          font: bold 5rem/1 map-get($map: $font-family, $key: REM);
+          margin-bottom: 30px;
         }
         .trendList {
-          width: 80%;
           p {
-            font: bold 2rem/1 map-get($map: $font-family, $key: REM);
-            padding: 20px;
-            width: 80%;
+            font: bold 1.6rem/1 map-get($map: $font-family, $key: REM);
             a {
               font: bold 3rem/1 map-get($map: $font-family, $key: REM);
-              padding: 20px;
             }
           }
         }
@@ -395,7 +395,10 @@ main {
         padding: 80px 0;
         span {
           width: 700px;
-          font: bold 4rem/1.2 map-get($map: $font-family, $key: REM);
+          font: bold 2rem/1.2 map-get($map: $font-family, $key: REM);
+          b {
+            font: bold 4rem/1.2 map-get($map: $font-family, $key: REM);
+          }
         }
       }
     }
@@ -410,6 +413,9 @@ main {
         height: 80vh;
         .title {
           top: 30%;
+          p {
+            position: relative;
+          }
           h2 {
             span {
               padding: 3px 0;
@@ -421,9 +427,11 @@ main {
           }
         }
         .subTitle {
-          top: 50%;
+          top: 54%;
+          right: auto;
+          left: 5%;
           p {
-            padding: 10px 20px;
+            padding: 8px 16px;
             gap: 4px;
             font: 700 1.4rem/1 map-get($map: $font-family, $key: Pretendard);
           }
@@ -431,10 +439,10 @@ main {
         .indexImg1 {
           width: 120px;
           height: 120px;
-          top: 10%;
+          top: 12%;
         }
         .indexImg2 {
-          top: 60%;
+          top: 65%;
           width: 60px;
           height: 60px;
           animation: rotate-scale-up 0.7s both;
@@ -495,18 +503,18 @@ main {
       height: 50vh;
     }
     #con4 {
+      padding: 0 3%;
       .list {
-        width: 100%;
         h3 {
           font: bold 3rem/1 map-get($map: $font-family, $key: REM);
-          padding-bottom: 16px;
         }
-        p {
-          font: bold 1.2rem/1 map-get($map: $font-family, $key: REM);
-          padding: 16px;
-          a {
-            font: bold 2rem/1 map-get($map: $font-family, $key: REM);
-            padding: 16px;
+        .trendList {
+          p {
+            font: bold 1.3rem/1 map-get($map: $font-family, $key: REM);
+            a {
+              font: bold 1.5rem/1 map-get($map: $font-family, $key: REM);
+              padding: 16px;
+            }
           }
         }
       }
@@ -514,7 +522,7 @@ main {
 
     #con5 {
       .eventLoad {
-        padding: 40px 0;
+        padding: 80px 0;
         span {
           width: 700px;
           font: bold 2rem/1.2 map-get($map: $font-family, $key: REM);
