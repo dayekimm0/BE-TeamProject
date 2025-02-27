@@ -50,7 +50,7 @@ main #intro .index .title {
 }
 main #intro .index .title p {
   font: normal 3.3rem/1.75 "Pretendard";
-  font-weight: 700;
+  font-weight: 500;
 }
 main #intro .index .title h2 span {
   padding: 10px;
@@ -63,6 +63,7 @@ main #intro .index .indexImg1 {
   position: absolute;
   top: 15%;
   right: 5%;
+  animation: main-circle 5s linear infinite;
 }
 main #intro .index .indexImg2 {
   position: absolute;
@@ -70,7 +71,10 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
+<<<<<<< HEAD
+=======
   animation: rotate-scale-up 0.7s both;
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -86,6 +90,16 @@ main #intro .index .subTitle p {
   margin-top: 5%;
   font: 700 2.4rem/1 "Pretendard";
   letter-spacing: -0.52px;
+  transition: all 0.3s;
+}
+main #intro .index .subTitle p:hover {
+  background-color: #cae570;
+}
+main #intro .index .subTitle p:hover:nth-child(2) {
+  background-color: #ffc6c7;
+}
+main #intro .index .subTitle p:hover:nth-child(3) {
+  background-color: #b4e3fc;
 }
 main #con1 {
   display: flex;
@@ -159,6 +173,9 @@ main #con2 .con2-text .con2Img {
   margin-top: -5%;
   margin-left: 5%;
 }
+main #con2 .con2-text .con2Img .active {
+  animation: rotate-scale-up 0.7s both;
+}
 main #con3 {
   width: 100%;
   height: 100vh;
@@ -171,41 +188,50 @@ main #con3 .content-video iframe {
   width: 100%;
   height: 100%;
 }
-main #con4 .category {
+main #con4 .list {
   margin: 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-main #con4 .category .list {
   width: 1200px;
 }
-main #con4 .category .list h3 {
+main #con4 .list h3 {
   font: bold 9rem/1 "REM";
   padding-bottom: 50px;
   border-bottom: 1px solid #000;
 }
-main #con4 .category .list p {
-  border-bottom: 1px solid #000;
-  font: bold 3rem/1 "REM";
-  padding: 50px;
+main #con4 .list .trendList {
+  width: 1200px;
 }
-main #con4 .category .list p a {
+main #con4 .list .trendList p {
+  font: normal 3.2rem/1 "Pretendard";
+}
+main #con4 .list .trendList p a {
+  padding-left: 20px;
   font: bold 5rem/1 "REM";
-  padding: 50px;
-  transition: all 0.3s;
 }
-main #con4 .category .list p:nth-child(2) a:hover {
+main #con4 .list .trendList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding: 20px;
+}
+main #con4 .list .trendList div p:first-child {
+  display: flex;
+  align-items: center;
+}
+main #con4 .list .trendList .list01 p a:hover {
   color: #a5d112;
 }
-main #con4 .category .list p:nth-child(3) a:hover {
+main #con4 .list .trendList .list02 p a:hover {
   color: #ffa6a7;
 }
-main #con4 .category .list p:nth-child(4) a:hover {
+main #con4 .list .trendList .list03 p a:hover {
   color: #6fbde7;
 }
-main #con4 .category .list p:nth-child(5) a:hover {
+main #con4 .list .trendList .list04 p a:hover {
   color: #c198f9;
 }
 main #con5 {
@@ -283,6 +309,7 @@ main #con5 .eventLoad span b {
   }
   main #con1 .parts .part::after {
     content: "";
+    cursor: pointer;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -319,20 +346,22 @@ main #con5 .eventLoad span b {
   main #con3 {
     margin-top: 8%;
   }
-  main #con4 .category .list {
+  main #con4 .list h3 {
+    width: 80%;
+    font: bold 7rem/1 "REM";
+    padding-bottom: 20px;
+  }
+  main #con4 .list .trendList {
     width: 80%;
   }
-  main #con4 .category .list h3 {
-    font: bold 7rem/1 "REM";
-    padding-bottom: 30px;
-  }
-  main #con4 .category .list p {
+  main #con4 .list .trendList p {
     font: bold 2rem/1 "REM";
-    padding: 30px;
+    padding: 20px;
+    width: 80%;
   }
-  main #con4 .category .list p a {
+  main #con4 .list .trendList p a {
     font: bold 3rem/1 "REM";
-    padding: 30px;
+    padding: 20px;
   }
   main #con5 .eventLoad {
     padding: 80px 0;
@@ -400,6 +429,7 @@ main #con5 .eventLoad span b {
   }
   main #con1 .parts .part::after {
     content: "";
+    cursor: pointer;
     border-radius: 20px;
   }
   main #con1 .parts .part a .partImg {
@@ -422,18 +452,18 @@ main #con5 .eventLoad span b {
   main #con3 {
     height: 50vh;
   }
-  main #con4 .category .list {
+  main #con4 .list {
     width: 100%;
   }
-  main #con4 .category .list h3 {
+  main #con4 .list h3 {
     font: bold 3rem/1 "REM";
     padding-bottom: 16px;
   }
-  main #con4 .category .list p {
+  main #con4 .list p {
     font: bold 1.2rem/1 "REM";
     padding: 16px;
   }
-  main #con4 .category .list p a {
+  main #con4 .list p a {
     font: bold 2rem/1 "REM";
     padding: 16px;
   }
@@ -457,5 +487,16 @@ main #con5 .eventLoad span b {
   }
   100% {
     transform: scale(1) rotateZ(360deg);
+<<<<<<< HEAD
+  }
+}
+@keyframes main-circle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+=======
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
   }
 }

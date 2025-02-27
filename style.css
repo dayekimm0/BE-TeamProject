@@ -241,7 +241,11 @@ footer #footerInner #footerBottom p {
     height: 101vh;
     display: flex;
     align-items: center;
+<<<<<<< HEAD
+    justify-content: center;
+=======
     justify-content: flex-start;
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
     opacity: 0;
     pointer-events: none;
   }
@@ -251,6 +255,10 @@ footer #footerInner #footerBottom p {
     height: 300px;
   }
   header #gnb ul {
+<<<<<<< HEAD
+    gap: 30px;
+    flex-direction: column;
+=======
     gap: 4px;
     flex-direction: column;
     padding-left: 4%;
@@ -260,6 +268,7 @@ footer #footerInner #footerBottom p {
     width: 100%;
     overflow: hidden;
     position: relative;
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
   }
   header #gnb ul li a {
     font-size: 7rem !important;
