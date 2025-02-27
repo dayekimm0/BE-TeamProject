@@ -43,7 +43,7 @@ main #intro .index {
   align-items: center;
 }
 main #intro .index .title {
-  left: 3%;
+  left: 5%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -53,11 +53,13 @@ main #intro .index .title p {
   font-weight: 500;
 }
 main #intro .index .title h2 span {
-  padding: 10px;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: flex-start;
   font: bold 10rem/0.87 "REM";
+}
+main #intro .index .title h2 span:first-child {
+  margin: 10px 0;
 }
 main #intro .index .indexImg1 {
   position: absolute;
@@ -71,10 +73,6 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
-<<<<<<< HEAD
-=======
-  animation: rotate-scale-up 0.7s both;
->>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -188,21 +186,24 @@ main #con3 .content-video iframe {
   width: 100%;
   height: 100%;
 }
+main #con4 {
+  margin: 100px 0;
+  padding: 0 10%;
+}
 main #con4 .list {
-  margin: 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 1200px;
 }
 main #con4 .list h3 {
+  margin-bottom: 50px;
+  width: 100%;
+  text-align: left;
   font: bold 9rem/1 "REM";
-  padding-bottom: 50px;
-  border-bottom: 1px solid #000;
 }
 main #con4 .list .trendList {
-  width: 1200px;
+  width: 100%;
 }
 main #con4 .list .trendList p {
   font: normal 3.2rem/1 "Pretendard";
@@ -222,6 +223,9 @@ main #con4 .list .trendList div p:first-child {
   display: flex;
   align-items: center;
 }
+main #con4 .list .trendList div p:first-child a {
+  transition: all 0.3s;
+}
 main #con4 .list .trendList .list01 p a:hover {
   color: #a5d112;
 }
@@ -238,13 +242,15 @@ main #con5 {
   width: 100%;
 }
 main #con5 .eventLoad {
-  padding: 150px 0;
+  padding: 130px 0;
   display: flex;
   align-items: center;
   color: #fff;
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/index/couponheader.png");
-  background-size: cover;
   justify-content: center;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 main #con5 .eventLoad span {
@@ -257,15 +263,10 @@ main #con5 .eventLoad span b {
 }
 
 @media screen and (max-width: 1024px) {
-  main #intro .index .title {
-    left: 3%;
-    gap: 14px;
-  }
   main #intro .index .title p {
     font: bold 2rem/1 "Pretendard";
   }
   main #intro .index .title h2 span {
-    padding: 3px 0;
     font: bold 8rem/1 "REM";
   }
   main #intro .index .title h2 span:nth-child(1) {
@@ -347,27 +348,23 @@ main #con5 .eventLoad span b {
     margin-top: 8%;
   }
   main #con4 .list h3 {
-    width: 80%;
-    font: bold 7rem/1 "REM";
-    padding-bottom: 20px;
-  }
-  main #con4 .list .trendList {
-    width: 80%;
+    font: bold 5rem/1 "REM";
+    margin-bottom: 30px;
   }
   main #con4 .list .trendList p {
-    font: bold 2rem/1 "REM";
-    padding: 20px;
-    width: 80%;
+    font: bold 1.6rem/1 "REM";
   }
   main #con4 .list .trendList p a {
     font: bold 3rem/1 "REM";
-    padding: 20px;
   }
   main #con5 .eventLoad {
     padding: 80px 0;
   }
   main #con5 .eventLoad span {
     width: 700px;
+    font: bold 2rem/1.2 "REM";
+  }
+  main #con5 .eventLoad span b {
     font: bold 4rem/1.2 "REM";
   }
 }
@@ -378,6 +375,9 @@ main #con5 .eventLoad span b {
   main #intro .index .title {
     top: 30%;
   }
+  main #intro .index .title p {
+    position: relative;
+  }
   main #intro .index .title h2 span {
     padding: 3px 0;
     font: bold 4rem/1 "REM";
@@ -386,20 +386,22 @@ main #con5 .eventLoad span b {
     font: normal 3rem/1 "REM";
   }
   main #intro .index .subTitle {
-    top: 50%;
+    top: 54%;
+    right: auto;
+    left: 5%;
   }
   main #intro .index .subTitle p {
-    padding: 10px 20px;
+    padding: 8px 16px;
     gap: 4px;
     font: 700 1.4rem/1 "Pretendard";
   }
   main #intro .index .indexImg1 {
     width: 120px;
     height: 120px;
-    top: 10%;
+    top: 12%;
   }
   main #intro .index .indexImg2 {
-    top: 60%;
+    top: 65%;
     width: 60px;
     height: 60px;
     animation: rotate-scale-up 0.7s both;
@@ -452,23 +454,21 @@ main #con5 .eventLoad span b {
   main #con3 {
     height: 50vh;
   }
-  main #con4 .list {
-    width: 100%;
+  main #con4 {
+    padding: 0 3%;
   }
   main #con4 .list h3 {
     font: bold 3rem/1 "REM";
-    padding-bottom: 16px;
   }
-  main #con4 .list p {
-    font: bold 1.2rem/1 "REM";
-    padding: 16px;
+  main #con4 .list .trendList p {
+    font: bold 1.3rem/1 "REM";
   }
-  main #con4 .list p a {
-    font: bold 2rem/1 "REM";
+  main #con4 .list .trendList p a {
+    font: bold 1.5rem/1 "REM";
     padding: 16px;
   }
   main #con5 .eventLoad {
-    padding: 40px 0;
+    padding: 80px 0;
   }
   main #con5 .eventLoad span {
     width: 700px;
@@ -487,7 +487,6 @@ main #con5 .eventLoad span b {
   }
   100% {
     transform: scale(1) rotateZ(360deg);
-<<<<<<< HEAD
   }
 }
 @keyframes main-circle {
@@ -496,7 +495,5 @@ main #con5 .eventLoad span b {
   }
   to {
     transform: rotate(360deg);
-=======
->>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
   }
 }

@@ -15,7 +15,7 @@ main {
   #form {
     margin: 70px 0;
     background: map-get($map: $colors, $key: light);
-    box-shadow: 0 30px 60px rgba(20, 20, 21, 0.06);
+    box-shadow: 0 30px 60px rgba(20, 20, 21, 0.08);
     border-radius: 30px;
     width: 800px;
     padding: 80px 200px;
