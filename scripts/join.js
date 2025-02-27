@@ -131,3 +131,7 @@ finalBtn.addEventListener("click", () => {
     document.querySelector("#errorAgree").innerHTML = ``;
   }
 });
+
+joinCancel.addEventListener("click", () => {
+  location.href = "login.html";
+});

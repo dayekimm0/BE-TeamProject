@@ -107,6 +107,26 @@ window.addEventListener("scroll", function () {
 const toggleBtn = document.querySelector("#toggleBtn");
 toggleBtn.addEventListener("click", function () {
   this.classList.toggle("active");
+  // if (window.innerWidth < 1025) {
+  //   document.querySelector("#gnb ul li a").classList.toggle("active");
+  //   document
+  //     .querySelector("#gnb ul li:nth-child(2) a")
+  //     .classList.toggle("active");
+  //   document
+  //     .querySelector("#gnb ul li:nth-child(3) a")
+  //     .classList.toggle("active");
+  //   document
+  //     .querySelector("#gnb ul li:nth-child(4) a")
+  //     .classList.toggle("active");
+  //   document
+  //     .querySelector("#gnb ul li:nth-child(5) a")
+  //     .classList.toggle("active");
+  //   document
+  //     .querySelector("#gnb ul li:nth-child(6) a")
+  //     .classList.toggle("active");
+  // } else {
+  //   document.querySelectorAll("#gnb ul li a").classList.remove("active");
+  // }
 });
 
 // 메뉴 로고 이벤트
@@ -119,6 +139,7 @@ window.addEventListener("resize", () => {
     header.classList.remove("active");
     toggleBtn.classList.remove("active");
     headerLogo.src = "./images/common/logo_white.png";
+    // document.querySelectorAll("#gnb ul li a").classList.remove("active");
   } else {
     headerLogo.src = "./images/common/logo_black.png";
   }
