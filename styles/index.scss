@@ -179,44 +179,70 @@ main {
     }
   }
   #con4 {
-    .category {
+    .list {
       margin: 8%;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      .list {
+      width: 1200px;
+      h3 {
+        font: bold 9rem/1 map-get($map: $font-family, $key: REM);
+        padding-bottom: 50px;
+        border-bottom: 1px solid map-get($map: $colors, $key: dark);
+      }
+      .trendList {
         width: 1200px;
-        h3 {
-          font: bold 9rem/1 map-get($map: $font-family, $key: REM);
-          padding-bottom: 50px;
-          border-bottom: 1px solid map-get($map: $colors, $key: dark);
-        }
         p {
-          border-bottom: 1px solid map-get($map: $colors, $key: dark);
-          font: bold 3rem/1 map-get($map: $font-family, $key: REM);
-          padding: 50px;
+          font: normal 3.2rem/1 map-get($map: $font-family, $key: Pretendard);
           a {
+            padding-left: 20px;
             font: bold 5rem/1 map-get($map: $font-family, $key: REM);
-            padding: 50px;
-            transition: all 0.3s;
           }
-          &:nth-child(2) a:hover {
-            color: map-get($map: $colors, $key: foodAccent);
+        }
+        & div {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-bottom: 1px solid map-get($map: $colors, $key: dark);
+          padding: 20px;
+          p:first-child {
+            display: flex;
+            align-items: center;
           }
-          &:nth-child(3) a:hover {
-            color: map-get($map: $colors, $key: beautyAccent);
+        }
+        .list01 {
+          p {
+            a:hover {
+              color: map-get($map: $colors, $key: foodAccent);
+            }
           }
-          &:nth-child(4) a:hover {
-            color: map-get($map: $colors, $key: fasionAccent);
+        }
+        .list02 {
+          p {
+            a:hover {
+              color: map-get($map: $colors, $key: beautyAccent);
+            }
           }
-          &:nth-child(5) a:hover {
-            color: map-get($map: $colors, $key: lifestyle);
+        }
+        .list03 {
+          p {
+            a:hover {
+              color: map-get($map: $colors, $key: fasionAccent);
+            }
+          }
+        }
+        .list04 {
+          p {
+            a:hover {
+              color: map-get($map: $colors, $key: lifestyle);
+            }
           }
         }
       }
     }
   }
+
   #con5 {
     width: 100%;
     .eventLoad {
@@ -344,19 +370,21 @@ main {
       margin-top: 8%;
     }
     #con4 {
-      .category {
-        .list {
+      .list {
+        h3 {
           width: 80%;
-          h3 {
-            font: bold 7rem/1 map-get($map: $font-family, $key: REM);
-            padding-bottom: 30px;
-          }
+          font: bold 7rem/1 map-get($map: $font-family, $key: REM);
+          padding-bottom: 20px;
+        }
+        .trendList {
+          width: 80%;
           p {
             font: bold 2rem/1 map-get($map: $font-family, $key: REM);
-            padding: 30px;
+            padding: 20px;
+            width: 80%;
             a {
               font: bold 3rem/1 map-get($map: $font-family, $key: REM);
-              padding: 30px;
+              padding: 20px;
             }
           }
         }
@@ -467,24 +495,23 @@ main {
       height: 50vh;
     }
     #con4 {
-      .category {
-        .list {
-          width: 100%;
-          h3 {
-            font: bold 3rem/1 map-get($map: $font-family, $key: REM);
-            padding-bottom: 16px;
-          }
-          p {
-            font: bold 1.2rem/1 map-get($map: $font-family, $key: REM);
+      .list {
+        width: 100%;
+        h3 {
+          font: bold 3rem/1 map-get($map: $font-family, $key: REM);
+          padding-bottom: 16px;
+        }
+        p {
+          font: bold 1.2rem/1 map-get($map: $font-family, $key: REM);
+          padding: 16px;
+          a {
+            font: bold 2rem/1 map-get($map: $font-family, $key: REM);
             padding: 16px;
-            a {
-              font: bold 2rem/1 map-get($map: $font-family, $key: REM);
-              padding: 16px;
-            }
           }
         }
       }
     }
+
     #con5 {
       .eventLoad {
         padding: 40px 0;

@@ -132,7 +132,7 @@ main #con1 .parts .part a .partImg {
   background-size: cover;
   background-repeat: no-repeat;
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   cursor: pointer;
 }
 main #con1 .parts .part p {
@@ -184,41 +184,50 @@ main #con3 .content-video iframe {
   width: 100%;
   height: 100%;
 }
-main #con4 .category {
+main #con4 .list {
   margin: 8%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-main #con4 .category .list {
   width: 1200px;
 }
-main #con4 .category .list h3 {
+main #con4 .list h3 {
   font: bold 9rem/1 "REM";
   padding-bottom: 50px;
   border-bottom: 1px solid #000;
 }
-main #con4 .category .list p {
-  border-bottom: 1px solid #000;
-  font: bold 3rem/1 "REM";
-  padding: 50px;
+main #con4 .list .trendList {
+  width: 1200px;
 }
-main #con4 .category .list p a {
+main #con4 .list .trendList p {
+  font: normal 3.2rem/1 "Pretendard";
+}
+main #con4 .list .trendList p a {
+  padding-left: 20px;
   font: bold 5rem/1 "REM";
-  padding: 50px;
-  transition: all 0.3s;
 }
-main #con4 .category .list p:nth-child(2) a:hover {
+main #con4 .list .trendList div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #000;
+  padding: 20px;
+}
+main #con4 .list .trendList div p:first-child {
+  display: flex;
+  align-items: center;
+}
+main #con4 .list .trendList .list01 p a:hover {
   color: #a5d112;
 }
-main #con4 .category .list p:nth-child(3) a:hover {
+main #con4 .list .trendList .list02 p a:hover {
   color: #ffa6a7;
 }
-main #con4 .category .list p:nth-child(4) a:hover {
+main #con4 .list .trendList .list03 p a:hover {
   color: #6fbde7;
 }
-main #con4 .category .list p:nth-child(5) a:hover {
+main #con4 .list .trendList .list04 p a:hover {
   color: #c198f9;
 }
 main #con5 {
@@ -229,8 +238,7 @@ main #con5 .eventLoad {
   display: flex;
   align-items: center;
   color: #fff;
-  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url("../images/index/couponheader.png");
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/index/couponheader.png");
   background-size: cover;
   justify-content: center;
   background-attachment: fixed;
@@ -334,20 +342,22 @@ main #con5 .eventLoad span b {
   main #con3 {
     margin-top: 8%;
   }
-  main #con4 .category .list {
+  main #con4 .list h3 {
+    width: 80%;
+    font: bold 7rem/1 "REM";
+    padding-bottom: 20px;
+  }
+  main #con4 .list .trendList {
     width: 80%;
   }
-  main #con4 .category .list h3 {
-    font: bold 7rem/1 "REM";
-    padding-bottom: 30px;
-  }
-  main #con4 .category .list p {
+  main #con4 .list .trendList p {
     font: bold 2rem/1 "REM";
-    padding: 30px;
+    padding: 20px;
+    width: 80%;
   }
-  main #con4 .category .list p a {
+  main #con4 .list .trendList p a {
     font: bold 3rem/1 "REM";
-    padding: 30px;
+    padding: 20px;
   }
   main #con5 .eventLoad {
     padding: 80px 0;
@@ -438,18 +448,18 @@ main #con5 .eventLoad span b {
   main #con3 {
     height: 50vh;
   }
-  main #con4 .category .list {
+  main #con4 .list {
     width: 100%;
   }
-  main #con4 .category .list h3 {
+  main #con4 .list h3 {
     font: bold 3rem/1 "REM";
     padding-bottom: 16px;
   }
-  main #con4 .category .list p {
+  main #con4 .list p {
     font: bold 1.2rem/1 "REM";
     padding: 16px;
   }
-  main #con4 .category .list p a {
+  main #con4 .list p a {
     font: bold 2rem/1 "REM";
     padding: 16px;
   }

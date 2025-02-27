@@ -33,7 +33,6 @@ const part06 = document.querySelector(".part:nth-child(6)");
 part01.addEventListener("click", () => {
   location.href = "login.html";
 });
-
 part02.addEventListener("click", () => {
   location.href = "food.html";
 });

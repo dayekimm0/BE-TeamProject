@@ -83,25 +83,11 @@ h2 {
 .infoContainer .tabContainer > div {
   width: 100%;
   height: 500px;
-<<<<<<< HEAD
   display: flex;
   border-radius: 40px;
   overflow: hidden;
   align-items: center;
   justify-content: space-between;
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-radius: 40px;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   border: 1.5px solid #a5d112;
   display: none;
 }
@@ -127,11 +113,6 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-<<<<<<< HEAD
-=======
-  display: -webkit-box;
-  display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   display: flex;
   gap: 8px;
 }
@@ -178,8 +159,7 @@ h2 {
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
   border-radius: 20px;
   margin-bottom: 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
@@ -220,10 +200,6 @@ h2 {
   align-items: center;
   padding: 0 60px;
   opacity: 0;
-<<<<<<< HEAD
-=======
-  -webkit-transition: all 0.3s;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
   transition: all 0.3s;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
@@ -272,17 +248,14 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper {
     width: 100%;
     gap: 0 !important;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
     width: 20%;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     width: 100%;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -346,14 +319,7 @@ h2 {
     font-size: 1.4rem;
   }
   .bannerContainer {
-<<<<<<< HEAD
     flex-direction: column;
-=======
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
     margin: 70px 0;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -384,8 +350,7 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 16px;
     margin-bottom: 6px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1.5rem;
@@ -399,11 +364,6 @@ h2 {
   .shopContainer .shopBoxWrapper .shopBox {
     width: 100%;
     height: 330px;
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -494,13 +454,7 @@ h2 {
     border-radius: 20px;
   }
   .infoContainer .tabContainer > div .articleInfo {
-<<<<<<< HEAD
     align-items: center;
-=======
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
     height: auto;
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
@@ -513,14 +467,8 @@ h2 {
     line-height: 1.5rem;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-<<<<<<< HEAD
-=======
-    display: -webkit-box;
-    display: -ms-flexbox;
->>>>>>> 51bd41861b4387b20f6266dd705db29b74f9cb42
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 4px;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag li {
@@ -544,8 +492,7 @@ h2 {
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1rem;
