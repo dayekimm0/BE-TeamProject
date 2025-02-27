@@ -226,7 +226,7 @@ main {
       }
       .agreeBox {
         background: map-get($map: $colors, $key: loginTitle);
-        padding: 10px 0 0 0;
+        padding: 10px;
         height: 40px;
         border-radius: 8px;
         overflow: scroll;
@@ -236,7 +236,7 @@ main {
         }
         &::-webkit-scrollbar {
           width: 5px; /* 세로축 스크롤바 폭 너비 */
-          height: 5px; /* 가로축 스크롤바 폭 너비 */
+          height: 8px; /* 가로축 스크롤바 폭 너비 */
         }
         &::-webkit-scrollbar-thumb {
           background: map-get(
