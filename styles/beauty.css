@@ -351,7 +351,7 @@ h2 {
     margin-bottom: 6px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .shopContainer {
     margin-bottom: 70px;
@@ -488,12 +488,18 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
     margin-bottom: 14px;
   }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
+    width: 120px;
+    justify-content: space-between;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox:last-child {
+    display: none;
+  }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
-    margin-bottom: px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .shopContainer .shopBoxWrapper {
     border-radius: 20px;

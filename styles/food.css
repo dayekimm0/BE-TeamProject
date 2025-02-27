@@ -353,7 +353,7 @@ h2 {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .shopContainer {
     margin-bottom: 70px;
@@ -490,12 +490,19 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
     margin-bottom: 14px;
   }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
+    width: 120px;
+    justify-content: space-between;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox:last-child {
+    display: none;
+  }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .shopContainer .shopBoxWrapper {
     border-radius: 20px;

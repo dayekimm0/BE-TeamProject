@@ -71,6 +71,10 @@ main #intro .index .indexImg2 {
   height: 100px;
   left: 10%;
   bottom: 10%;
+<<<<<<< HEAD
+=======
+  animation: rotate-scale-up 0.7s both;
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
 }
 main #intro .index .subTitle {
   top: 70%;
@@ -483,6 +487,7 @@ main #con5 .eventLoad span b {
   }
   100% {
     transform: scale(1) rotateZ(360deg);
+<<<<<<< HEAD
   }
 }
 @keyframes main-circle {
@@ -491,5 +496,7 @@ main #con5 .eventLoad span b {
   }
   to {
     transform: rotate(360deg);
+=======
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
   }
 }

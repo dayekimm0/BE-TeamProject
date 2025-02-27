@@ -489,12 +489,22 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper:first-child {
     margin-bottom: 14px;
   }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
+    width: 120px;
+    justify-content: space-between;
+  }
+  .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox:last-child {
+    display: none;
+  }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+<<<<<<< HEAD
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1rem;
+=======
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
   }
   .shopContainer .shopBoxWrapper {
     border-radius: 20px;
