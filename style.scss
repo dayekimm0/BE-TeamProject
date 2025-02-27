@@ -1,0 +1,339 @@
+@import "./styles/reset.scss";
+@import "./styles/variables.scss";
+
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  overflow-x: hidden;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "Pretendard";
+}
+// header
+header {
+  z-index: 1;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  border-radius: 30px;
+  position: fixed;
+  width: 650px;
+  height: 50px;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 30px;
+  align-items: center;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.75);
+  // background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  color: map-get($map: $colors, $key: light);
+  transition: all 0.5s;
+  &.active {
+    top: -60px;
+  }
+  h1 {
+    width: 50px;
+    a {
+      position: relative;
+      display: inline-block;
+      display: flex;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  #gnb {
+    ul {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      li {
+        &:nth-child(1):hover > a {
+          color: map-get($map: $colors, $key: food);
+        }
+        &:nth-child(2):hover > a {
+          color: map-get($map: $colors, $key: beauty);
+        }
+        &:nth-child(3):hover > a {
+          color: map-get($map: $colors, $key: fashion);
+        }
+        &:nth-child(4):hover > a {
+          color: map-get($map: $colors, $key: lifestyle);
+        }
+        a {
+          text-transform: uppercase;
+          display: inline-block;
+          padding: 5px 8px;
+          border-radius: 20px;
+          position: relative;
+          font-family: map-get($map: $font-family, $key: REM);
+          font-size: map-get($map: $font-size, $key: 14px);
+          transition: all 0.5s;
+          &:hover {
+            font-weight: bold;
+          }
+
+          // &::after {
+          //   content: "";
+          //   background: map-get($map: $colors, $key: food);
+          //   width: 10px;
+          //   height: 10px;
+          //   position: absolute;
+          //   border-radius: 50%;
+          //   opacity: 0;
+          //   transition: all 0.3s;
+          //   top: 20%;
+          //   right: -3%;
+          // }
+          // &:hover::after {
+          //   opacity: 1;
+          // }
+        }
+      }
+    }
+  }
+  #toggleBtn {
+    display: none;
+    transition: all 0.3s;
+    width: 28px;
+    height: 20px;
+    position: relative;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    span {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: map-get($map: $colors, $key: light);
+      width: 100%;
+      height: 2px;
+      transition: all 0.3s;
+      &:nth-child(2) {
+        top: 50%;
+      }
+      &:last-child {
+        top: 100%;
+      }
+    }
+  }
+}
+// main-contents
+main {
+  overflow: hidden;
+}
+.section {
+  margin: 0 5%;
+  height: 100vh;
+}
+// footer
+footer {
+  width: 100%;
+  padding: 5%;
+  background: #333;
+  color: #ccc;
+  #footerInner {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    #footerTop {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      #footerLogo {
+        width: 120px;
+        img {
+          width: 100%;
+        }
+      }
+      #fnb {
+        ul {
+          display: flex;
+          gap: 20px;
+        }
+      }
+    }
+    #footerBottom {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      address {
+        font-style: normal;
+        ul {
+          display: flex;
+          flex-wrap: wrap;
+          li {
+            position: relative;
+            margin-right: 20px;
+            &.flex-basis {
+              flex-basis: 100%;
+            }
+            &::after {
+              content: "";
+              position: absolute;
+              right: -10px;
+              width: 1px;
+              height: 100%;
+              background-color: #ccc;
+            }
+            &:nth-child(3)::after {
+              display: none;
+            }
+            &:last-child::after {
+              display: none;
+            }
+            &:last-child,
+            &:nth-child(6),
+            &:nth-child(5) {
+              margin: 20px 20px 20px 0;
+            }
+          }
+        }
+      }
+      p {
+        font-size: map-get($map: $font-size, $key: 14px);
+      }
+    }
+  }
+}
+
+// tablet.ver
+@media screen and (max-width: 1024px) {
+  // header
+  header {
+    z-index: 2;
+    background: transparent;
+    top: 0;
+    width: 100% !important;
+    height: 60px;
+    border-radius: 0;
+    left: auto;
+    transform: none;
+    h1 {
+      position: relative;
+      z-index: 3;
+    }
+    &.active {
+      top: 0;
+    }
+    #gnb {
+      background: map-get($map: $colors, $key: light);
+      transition: all 0.3s;
+      opacity: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      pointer-events: none;
+      ul {
+        gap: 30px;
+        flex-direction: column;
+        li {
+          a {
+            font-size: map-get($map: $font-size, $key: 20px);
+            color: map-get($map: $colors, $key: dark);
+          }
+        }
+      }
+    }
+    #toggleBtn {
+      position: relative;
+      display: block;
+      span {
+        background: map-get($map: $colors, $key: dark);
+      }
+      &.active {
+        z-index: 3;
+        span {
+          &:first-child {
+            top: 50%;
+            transform: rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:last-child {
+            top: 50%;
+            transform: rotate(-45deg);
+          }
+        }
+        & ~ #gnb {
+          opacity: 1;
+          visibility: visible;
+          z-index: 2;
+          pointer-events: fill;
+        }
+      }
+    }
+  }
+  // footer
+  footer {
+    position: relative;
+    z-index: 1;
+    #footerTop {
+      flex-direction: column;
+      gap: 20px;
+      #footerLogo {
+        width: 100px !important;
+      }
+    }
+  }
+}
+
+// mobile.ver
+@media screen and (max-width: 767px) {
+  header {
+    left: 0;
+    transform: none;
+    width: 100vw;
+  }
+  footer {
+    #footerInner {
+      gap: 20px;
+      #footerTop {
+        font-size: map-get($map: $font-size, $key: 12px);
+        #footerLogo {
+          width: 80px !important;
+        }
+      }
+      #footerBottom {
+        address {
+          font-size: 12px;
+          ul {
+            li {
+              &:nth-child(2)::after {
+                display: none;
+              }
+              &:nth-child(3) {
+                margin-top: 10px;
+              }
+              &:last-child,
+              &:nth-child(6),
+              &:nth-child(5) {
+                margin: 10px 20px 10px 0 !important;
+              }
+            }
+          }
+        }
+        p {
+          font-size: 10px !important;
+        }
+      }
+    }
+  }
+}
