@@ -3,7 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul,
@@ -28,10 +29,19 @@ body {
 
 .container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 5%;
 }
 
@@ -40,16 +50,27 @@ body {
   position: relative;
   height: 600px;
   background-image: url("/images/event/title-bg.png");
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .eventTitle .mainTitle {
   padding-left: 5%;
 }
 .eventTitle .mainTitle .title {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   gap: 30px;
   color: #fff;
 }
@@ -75,19 +96,35 @@ body {
 
 .eventSteps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .eventSteps .howTo {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 450px;
   height: auto;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 10px;
   color: #000;
 }
@@ -106,7 +143,9 @@ body {
 .eventSteps .howTo p {
   font-size: 3.4rem;
   font-weight: 500;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   width: 900px;
   margin-top: 30px;
@@ -117,8 +156,12 @@ body {
 }
 .eventSteps .steps {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   margin-top: 50px;
 }
 .eventSteps .steps .step01,
@@ -128,7 +171,8 @@ body {
   position: relative;
   border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 0 8px #d9d9d9;
+  -webkit-box-shadow: 0 0 8px #d9d9d9;
+          box-shadow: 0 0 8px #d9d9d9;
   background: #fff;
 }
 .eventSteps .steps .step01 .bg1,
@@ -161,16 +205,24 @@ body {
   position: absolute;
   bottom: 83px;
   right: 0;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .eventSteps .steps .step01 .text1,
 .eventSteps .steps .step01 .text2,
 .eventSteps .steps .step02 .text1,
 .eventSteps .steps .step02 .text2 {
   width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   gap: 11px;
   position: absolute;
   top: 25px;
@@ -207,20 +259,35 @@ body {
 
 .couponsList {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 50px;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-top: 132px;
 }
 .couponsList .hashTags {
   width: 630px;
   height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   gap: 50px;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 .couponsList .hashTags span {
   width: 200px;
@@ -228,29 +295,46 @@ body {
   padding: 10px 25px;
   border-radius: 30px;
   background: #fff;
-  box-shadow: 0px 0px 4px 0px #d9d9d9;
+  -webkit-box-shadow: 0px 0px 4px 0px #d9d9d9;
+          box-shadow: 0px 0px 4px 0px #d9d9d9;
   color: #000;
   font-size: 2.4rem;
   font-weight: 600;
   line-height: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
 }
 .couponsList .coupons {
   width: 100%;
   gap: 30px;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .couponsList .couponCommon {
   position: relative;
   width: 230px;
   height: 310px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   cursor: pointer;
 }
 .couponsList .couponCommon img {
@@ -262,22 +346,26 @@ body {
 .couponsList .couponCommon.couponGreen .couponTop,
 .couponsList .couponCommon.couponGreen .couponBottom {
   background: #cae570;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .couponsList .couponCommon.couponPink .couponTop,
 .couponsList .couponCommon.couponPink .couponBottom {
   background: #ffc6c7;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .couponsList .couponCommon.couponSky .couponTop,
 .couponsList .couponCommon.couponSky .couponBottom {
   background: #b4e3fc;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .couponsList .couponCommon.couponPurple .couponTop,
 .couponsList .couponCommon.couponPurple .couponBottom {
   background: #c198f9;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 .couponsList .couponCommon .couponTop {
   position: absolute;
@@ -285,10 +373,19 @@ body {
   width: 100%;
   height: 280px;
   left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   border-radius: 10px;
 }
 .couponsList .couponCommon .couponBottom {
@@ -334,23 +431,33 @@ body {
 }
 
 .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   gap: 35px;
 }
 .buttons button,
 .buttons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 20px;
   gap: 10px;
   width: auto;
   height: 60px;
   border-radius: 30px;
   border: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   background-color: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   color: inherit;
   outline: none;
@@ -381,25 +488,34 @@ body {
   left: 0;
   width: 0;
   background: #000;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .buttons button i,
 .buttons a i {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 40px;
   height: 40px;
   padding: 6px;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 30px;
   color: #000;
   border: 2px solid #d9d9d9;
   background: #fff;
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 .buttons button p,
 .buttons a p {
   font-family: "Pretendard";
+  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -408,10 +524,19 @@ body {
   font-size: 3rem;
   font-weight: 500;
   letter-spacing: -0.6px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .eventNotice .eventWrapper h5 {
   font-weight: bold;
@@ -433,18 +558,22 @@ body {
   letter-spacing: 0.1px;
   word-wrap: break-word;
   word-break: keep-all;
-  align-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
 }
 .eventNotice .eventWrapper ul li::before {
   content: "";
   position: absolute;
   left: 0px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
   width: 5px;
   height: 5px;
   border-radius: 50%;
-  flex-shrink: 0;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   background: #000;
 }
 
@@ -454,15 +583,22 @@ body {
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   z-index: 5;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .modal.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .modal .modalContent {
@@ -474,7 +610,8 @@ body {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 .modal .modalCheck {
   margin: 0 auto 20px;
@@ -496,6 +633,8 @@ body {
   margin-bottom: 30px;
 }
 .modal .modalButtons {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-top: 30px;
 }
@@ -507,6 +646,7 @@ body {
   border: none;
   color: #fff;
   cursor: pointer;
+  -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 .modal .modalButtons button.confirmBtn {
@@ -562,9 +702,14 @@ body {
     margin-top: 20px;
   }
   .steps {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 30px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .steps .step01,
   .steps .step02 {
@@ -606,7 +751,8 @@ body {
     font-size: 2rem;
   }
   .coupons .ticket {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
   .couponText {
     max-width: 110px;
@@ -618,7 +764,8 @@ body {
     font-size: 3.5rem;
   }
   .buttons {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     gap: 20px;
   }
   .buttons button {
@@ -705,9 +852,14 @@ body {
     margin-top: 20px;
   }
   .eventSteps .steps {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     gap: 50px;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-top: 35px;
   }
   .eventSteps .steps .step01,
@@ -818,15 +970,20 @@ body {
   }
   .buttons {
     gap: 15px;
-    align-items: center;
-    flex-wrap: nowrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
   .buttons button,
   .buttons a {
     width: 100%;
     max-width: 200px;
     height: 45px;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   .buttons button p,
   .buttons a p {
