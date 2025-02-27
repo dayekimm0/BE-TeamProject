@@ -162,6 +162,7 @@ body {
   position: absolute;
   bottom: 83px;
   right: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .eventSteps .steps .step01 .text1,
 .eventSteps .steps .step01 .text2,
@@ -262,18 +263,22 @@ body {
 .couponsList .couponCommon.couponGreen .couponTop,
 .couponsList .couponCommon.couponGreen .couponBottom {
   background: #cae570;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .couponsList .couponCommon.couponPink .couponTop,
 .couponsList .couponCommon.couponPink .couponBottom {
   background: #ffc6c7;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .couponsList .couponCommon.couponSky .couponTop,
 .couponsList .couponCommon.couponSky .couponBottom {
   background: #b4e3fc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .couponsList .couponCommon.couponPurple .couponTop,
 .couponsList .couponCommon.couponPurple .couponBottom {
   background: #c198f9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 .couponsList .couponCommon .couponTop {
   position: absolute;
@@ -344,7 +349,7 @@ body {
   height: 60px;
   border-radius: 30px;
   border: none;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
   background-color: #fff;
   cursor: pointer;
   transition: all 0.3s linear;
@@ -808,7 +813,7 @@ body {
     max-width: 100px;
   }
   .couponText p b {
-    font-size: 2.8rem;
+    font-size: 2.4rem;
   }
   .couponText span {
     font-size: 1.2rem;

@@ -151,6 +151,7 @@ body {
         position: absolute;
         bottom: 83px;
         right: 0;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
       }
 
       .text1,
@@ -248,24 +249,28 @@ body {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: food);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
     }
     &.couponPink {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: beauty);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
     }
     &.couponSky {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: fashion);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       }
     }
     &.couponPurple {
       .couponTop,
       .couponBottom {
         background: map-get($map: $colors, $key: lifestyle);
+        box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
       }
     }
 
@@ -348,7 +353,7 @@ body {
     height: 60px;
     border-radius: 30px;
     border: none;
-    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
     background-color: map-get($map: $colors, $key: light);
     cursor: pointer;
     transition: all 0.3s linear;
@@ -847,7 +852,7 @@ body {
       max-width: 100px;
 
       b {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
       }
     }
     span {
