@@ -1,0 +1,890 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Pretendard";
+  background: #fff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.eventTitle {
+  width: 100%;
+  position: relative;
+  height: 600px;
+  background-image: url("/images/event/title-bg.png");
+  display: flex;
+<<<<<<< HEAD
+  justify-content: center;
+=======
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
+  align-items: center;
+}
+.eventTitle .mainTitle {
+  padding-left: 5%;
+}
+.eventTitle .mainTitle .title {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+  color: #fff;
+}
+.eventTitle .mainTitle .title p {
+  font-size: 5rem;
+  line-height: 1.1;
+  letter-spacing: -1.5px;
+}
+.eventTitle .mainTitle .title h2 {
+  font-size: 10rem;
+  line-height: 1;
+  font-family: "REM";
+  font-weight: bold;
+  letter-spacing: -2px;
+}
+.eventTitle .mainTitle .title span {
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: lighter;
+  letter-spacing: 0.9px;
+  opacity: 0.7;
+}
+
+.eventSteps {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-top: 100px;
+}
+.eventSteps .howTo {
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+.eventSteps .howTo h3 {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 15px;
+  padding: 12px 10px;
+  color: #000;
+  font-family: "REM";
+  font-size: 8rem;
+  font-weight: bold;
+  position: relative;
+}
+.eventSteps .howTo p {
+  font-size: 3.4rem;
+  font-weight: 500;
+  justify-content: center;
+  text-align: center;
+  width: 900px;
+  margin-top: 30px;
+  font-weight: normal;
+}
+.eventSteps .howTo p b {
+  font-weight: 800;
+}
+.eventSteps .steps {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+.eventSteps .steps .step01,
+.eventSteps .steps .step02 {
+  width: 620px;
+  height: 415px;
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 8px #d9d9d9;
+  background: #fff;
+}
+.eventSteps .steps .step01 .bg1,
+.eventSteps .steps .step01 .bg3,
+.eventSteps .steps .step02 .bg1,
+.eventSteps .steps .step02 .bg3 {
+  position: absolute;
+  width: 360px;
+  height: 225px;
+  bottom: 0;
+  right: 0px;
+}
+.eventSteps .steps .step01 .bg2,
+.eventSteps .steps .step02 .bg2 {
+  width: 180px;
+  height: 200px;
+  position: absolute;
+  border-radius: 5px;
+  background: url("/images/event/login.png") center/cover no-repeat;
+  position: absolute;
+  bottom: 100px;
+  right: 20px;
+}
+.eventSteps .steps .step01 .bg4,
+.eventSteps .steps .step02 .bg4 {
+  width: 284px;
+  height: 190px;
+  position: absolute;
+  border-radius: 5px;
+  background: url("/images/event/coupons.png") center/cover no-repeat;
+  position: absolute;
+  bottom: 83px;
+  right: 0;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.eventSteps .steps .step01 .text1,
+.eventSteps .steps .step01 .text2,
+.eventSteps .steps .step02 .text1,
+.eventSteps .steps .step02 .text2 {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 11px;
+  position: absolute;
+  top: 25px;
+  left: 45px;
+}
+.eventSteps .steps .step01 .text1 h4,
+.eventSteps .steps .step01 .text2 h4,
+.eventSteps .steps .step02 .text1 h4,
+.eventSteps .steps .step02 .text2 h4 {
+  color: #333;
+  font-size: 6rem;
+  font-weight: 900;
+  letter-spacing: -1.2px;
+  font-family: "REM";
+}
+.eventSteps .steps .step01 .text1 p,
+.eventSteps .steps .step01 .text2 p,
+.eventSteps .steps .step02 .text1 p,
+.eventSteps .steps .step02 .text2 p {
+  color: #000;
+  font-size: 3rem;
+  letter-spacing: -0.6px;
+  font-weight: 600;
+}
+.eventSteps .steps .step01 .text1 span,
+.eventSteps .steps .step01 .text2 span,
+.eventSteps .steps .step02 .text1 span,
+.eventSteps .steps .step02 .text2 span {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: -0.3px;
+}
+
+.couponsList {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 50px;
+  align-items: center;
+  margin-top: 132px;
+}
+.couponsList .hashTags {
+  width: 628px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  justify-content: space-evenly;
+}
+.couponsList .hashTags span {
+  width: 200px;
+  height: 55px;
+  padding: 10px 25px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow: 0px 0px 4px 0px #d9d9d9;
+  color: #000;
+  font-size: 2.4rem;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.couponsList .coupons {
+  width: 100%;
+  gap: 30px;
+  justify-content: center;
+  display: flex;
+}
+.couponsList .couponCommon {
+  position: relative;
+  width: 230px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.couponsList .couponCommon img {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  z-index: 1;
+}
+.couponsList .couponCommon.couponGreen .couponTop,
+.couponsList .couponCommon.couponGreen .couponBottom {
+  background: #cae570;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.couponsList .couponCommon.couponPink .couponTop,
+.couponsList .couponCommon.couponPink .couponBottom {
+  background: #ffc6c7;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.couponsList .couponCommon.couponSky .couponTop,
+.couponsList .couponCommon.couponSky .couponBottom {
+  background: #b4e3fc;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.couponsList .couponCommon.couponPurple .couponTop,
+.couponsList .couponCommon.couponPurple .couponBottom {
+  background: #c198f9;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+.couponsList .couponCommon .couponTop {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 280px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.couponsList .couponCommon .couponBottom {
+  position: absolute;
+  width: 100%;
+  height: 40px;
+  bottom: -10px;
+  left: 0;
+  border-radius: 10px;
+}
+.couponsList .couponCommon .couponBottom .dashed {
+  position: absolute;
+  left: 0;
+  bottom: 39px;
+  width: 100%;
+  border: 1px dashed transparent;
+  -o-border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
+     border-image: repeating-linear-gradient(90deg, #000 0, #000 10px, transparent 10px, transparent 20px) 30;
+}
+
+.couponText {
+  font-size: 1.6rem;
+  position: absolute;
+  bottom: 16px;
+  left: 15px;
+  text-align: left;
+}
+.couponText p {
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: 500;
+  font-family: "Pretendard";
+}
+.couponText p b {
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "REM";
+}
+.couponText span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  opacity: 0.7;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+.buttons button,
+.buttons a {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  width: auto;
+  height: 60px;
+  border-radius: 30px;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.3);
+  background-color: #fff;
+  cursor: pointer;
+  transition: all 0.3s linear;
+  color: inherit;
+  outline: none;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: -0.4px;
+  position: relative;
+  overflow: hidden;
+}
+.buttons button:hover p,
+.buttons a:hover p {
+  color: #fff;
+  z-index: 1;
+}
+.buttons button:hover i,
+.buttons a:hover i {
+  z-index: 1;
+}
+.buttons button:hover::before,
+.buttons a:hover::before {
+  width: 100%;
+  height: 100%;
+}
+.buttons button::before,
+.buttons a::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 0;
+  background: #000;
+  transition: all 0.5s;
+}
+.buttons button i,
+.buttons a i {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  padding: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  color: #000;
+  border: 2px solid #d9d9d9;
+  background: #fff;
+  transition: all 0.5s;
+}
+.buttons button p,
+.buttons a p {
+  font-family: "Pretendard";
+  transition: all 0.5s;
+}
+
+.eventNotice {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 500;
+  letter-spacing: -0.6px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.eventNotice .eventWrapper h5 {
+  font-weight: bold;
+  margin-top: 3%;
+  margin-bottom: 15px;
+  text-align: left;
+  width: 100%;
+}
+.eventNotice .eventWrapper ul {
+  width: 100%;
+  margin-bottom: 3%;
+}
+.eventNotice .eventWrapper ul li {
+  font-size: 2rem;
+  font-weight: 300;
+  position: relative;
+  padding-left: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.1px;
+  word-wrap: break-word;
+  word-break: keep-all;
+  align-items: start;
+}
+.eventNotice .eventWrapper ul li::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: #000;
+}
+
+/* ==== 모달페이지 ==== */
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 5;
+  justify-content: center;
+  align-items: center;
+}
+.modal.active {
+  display: flex;
+}
+.modal .modalContent {
+  background: #fff;
+  text-align: center;
+  padding-top: 40px;
+  max-width: 450px;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal .modalCheck {
+  margin: 0 auto 20px;
+  width: 60px;
+  height: 60px;
+}
+.modal .modalCheck span {
+  font-size: 6rem;
+  color: #000;
+}
+.modal .modalTitle {
+  font-size: 2.6rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #000;
+}
+.modal .modalDesc {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+.modal .modalButtons {
+  display: flex;
+  margin-top: 30px;
+}
+.modal .modalButtons button {
+  height: 60px;
+  width: 50%;
+  font-size: 2rem;
+  font-weight: 600;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.modal .modalButtons button.confirmBtn {
+  background: #000;
+  color: #fff;
+  background: #333;
+}
+.modal .modalButtons button.homepageBtn {
+  background: #fff;
+  color: #000;
+}
+
+/* ==== 반응형 ==== */
+@media screen and (max-width: 1024px) {
+  header {
+    background: #fff;
+  }
+  .container {
+    width: 100%;
+  }
+  main {
+    margin-top: 60px;
+  }
+  .eventTitle {
+    height: 500px;
+  }
+  .eventTitle .mainTitle {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .eventTitle .mainTitle .title p {
+    font-size: 4rem;
+  }
+  .eventTitle .mainTitle .title h2 {
+    font-size: 8rem;
+  }
+  .eventTitle .mainTitle .title span {
+    font-size: 1.7rem;
+  }
+  .eventSteps {
+    margin-top: 70px;
+    gap: 25px;
+  }
+  .eventSteps .howTo {
+    width: 100%;
+  }
+  .eventSteps .howTo h3 {
+    font-size: 6rem;
+  }
+  .eventSteps .howTo p {
+    width: 100%;
+    font-size: 2.8rem;
+    margin-top: 20px;
+  }
+  .steps {
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+  .steps .step01,
+  .steps .step02 {
+    width: 100%;
+    max-width: 620px;
+  }
+  .steps .step01 .text1,
+  .steps .step01 .text2,
+  .steps .step02 .text1,
+  .steps .step02 .text2 {
+    width: 200px;
+    left: 25px;
+  }
+  .couponsList {
+    margin-top: 100px;
+    gap: 40px;
+  }
+  .couponsList .couponCommon {
+    height: 260px;
+  }
+  .couponsList .couponCommon .couponTop {
+    height: 220px;
+    top: 0;
+  }
+  .couponsList .couponCommon .couponBottom {
+    bottom: 0;
+  }
+  .couponsList .couponCommon .couponBottom .dashed {
+    bottom: 39px;
+    left: -4%;
+    width: 100%;
+  }
+  .hashTags {
+    height: auto;
+    gap: 10px;
+  }
+  .hashTags span {
+    width: calc(50% - 10px);
+    font-size: 2rem;
+  }
+  .coupons .ticket {
+    flex-wrap: wrap;
+  }
+  .couponText {
+    max-width: 110px;
+  }
+  .couponText p {
+    font-size: 1.8rem;
+  }
+  .couponText p b {
+    font-size: 3.5rem;
+  }
+  .buttons {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  .buttons button {
+    max-width: 300px;
+    padding: 10px 20px;
+  }
+  .buttons button p {
+    font-size: 2rem;
+  }
+  .buttons button > i {
+    width: 40px;
+    height: 40px;
+    font-size: 2rem;
+  }
+  .eventNotice {
+    font-size: 2.5rem;
+    height: auto;
+    min-height: 400px;
+  }
+  .eventNotice h5 {
+    font-size: 3rem;
+    margin-top: 8%;
+  }
+  .eventNotice ul > li {
+    font-size: 1.6rem !important;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    word-wrap: break-word;
+    word-break: keep-all;
+  }
+  .modal .modalContent {
+    width: 50%;
+  }
+  .modal .modalContent .modalCheck {
+    margin: 0 auto 0px;
+  }
+  .modal .modalContent .modalCheck span {
+    font-size: 6rem;
+  }
+  .modal .modalContent .modalTitle {
+    margin-top: 15px;
+    font-size: 2.5rem;
+  }
+  .modal .modalContent .modalButtons {
+    margin-top: 40px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+  }
+  .eventTitle {
+    height: 400px;
+  }
+  .eventTitle .mainTitle {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .eventTitle .mainTitle .title {
+    gap: 20px;
+  }
+  .eventTitle .mainTitle .title p {
+    font-size: 3.5rem;
+  }
+  .eventTitle .mainTitle .title h2 {
+    font-size: 5.5rem;
+  }
+  .eventTitle .mainTitle .title span {
+    font-size: 1.8rem;
+  }
+  .eventSteps {
+    margin-top: 50px;
+    gap: 20px;
+  }
+  .eventSteps .howTo {
+    width: 100%;
+  }
+  .eventSteps .howTo h3 {
+    font-size: 5.5rem;
+  }
+  .eventSteps .howTo p {
+    width: 100%;
+    font-size: 2rem;
+    margin-top: 20px;
+  }
+  .eventSteps .steps {
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    margin-top: 35px;
+  }
+  .eventSteps .steps .step01,
+  .eventSteps .steps .step02 {
+    width: 100%;
+    height: 350px;
+  }
+  .eventSteps .steps .step01 .bg1,
+  .eventSteps .steps .step01 .bg3,
+  .eventSteps .steps .step02 .bg1,
+  .eventSteps .steps .step02 .bg3 {
+    width: 280px;
+    height: 175px;
+  }
+  .eventSteps .steps .step01 .bg2,
+  .eventSteps .steps .step02 .bg2 {
+    width: 140px;
+    height: 160px;
+    bottom: 80px;
+  }
+  .eventSteps .steps .step01 .bg4,
+  .eventSteps .steps .step02 .bg4 {
+    width: 220px;
+    height: 150px;
+    bottom: 70px;
+  }
+  .eventSteps .steps .step01 .text1,
+  .eventSteps .steps .step01 .text2,
+  .eventSteps .steps .step02 .text1,
+  .eventSteps .steps .step02 .text2 {
+    width: 200px;
+    left: 25px;
+  }
+  .eventSteps .steps .step01 .text1 h4,
+  .eventSteps .steps .step01 .text2 h4,
+  .eventSteps .steps .step02 .text1 h4,
+  .eventSteps .steps .step02 .text2 h4 {
+    font-size: 5rem;
+  }
+  .eventSteps .steps .step01 .text1 p,
+  .eventSteps .steps .step01 .text2 p,
+  .eventSteps .steps .step02 .text1 p,
+  .eventSteps .steps .step02 .text2 p {
+    font-size: 2.5rem;
+  }
+  .eventSteps .steps .step01 .text1 span,
+  .eventSteps .steps .step01 .text2 span,
+  .eventSteps .steps .step02 .text1 span,
+  .eventSteps .steps .step02 .text2 span {
+    font-size: 1.4rem;
+  }
+  .couponsList {
+    margin-top: 60px;
+    gap: 20px;
+  }
+  .couponsList .hashTags {
+    width: 100%;
+  }
+  .couponsList .hashTags span {
+    width: auto;
+    font-size: 1.9rem;
+  }
+  .couponsList .coupons .couponCommon {
+    height: 160px;
+  }
+  .couponsList .coupons .couponCommon .couponTop {
+    width: 100%;
+    height: 130px;
+    font-size: 28px;
+    top: 0;
+  }
+  .couponsList .coupons .couponCommon .couponBottom {
+    bottom: 0px;
+    width: 100%;
+    height: 30px;
+  }
+  .couponsList .coupons .couponCommon .couponBottom .dashed {
+    bottom: 28px;
+    -o-border-image: repeating-linear-gradient(90deg, #000 0, #000 5px, transparent 5px, transparent 10px) 20;
+       border-image: repeating-linear-gradient(90deg, #000 0, #000 5px, transparent 5px, transparent 10px) 20;
+    width: 80%;
+    left: 13%;
+  }
+  .couponsList .coupons .couponCommon img {
+    top: 3%;
+    right: 8%;
+    width: 20px;
+    height: 20px;
+  }
+  .coupons {
+    gap: 20px;
+  }
+  .coupons .ticket {
+    gap: 20px;
+  }
+  .couponText {
+    bottom: 12px;
+    left: 5px;
+  }
+  .couponText p {
+    font-size: 1rem;
+    max-width: 100px;
+  }
+  .couponText p b {
+    font-size: 2.4rem;
+  }
+  .couponText span {
+    font-size: 1.2rem;
+  }
+  .buttons {
+    gap: 15px;
+    align-items: center;
+<<<<<<< HEAD
+=======
+    flex-wrap: nowrap;
+>>>>>>> 3f9afbeb6b33dc522a390eea04c9f347ea6f3463
+  }
+  .buttons button,
+  .buttons a {
+    width: 100%;
+    max-width: 200px;
+    height: 50px;
+    justify-content: space-between;
+  }
+  .buttons button p,
+  .buttons a p {
+    font-size: 1.6rem;
+  }
+  .buttons button > i,
+  .buttons a > i {
+    width: 30px;
+    height: 30px;
+    font-size: 1.6rem;
+  }
+  .eventNotice {
+    font-size: 2rem;
+    min-height: 330px;
+    margin-top: 30px;
+  }
+  .eventNotice h5 {
+    font-size: 2.5rem;
+    margin-top: 5%;
+  }
+  .eventNotice ul > li {
+    width: 100%;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    letter-spacing: 0.1px;
+    word-wrap: break-word;
+    word-break: keep-all;
+  }
+  .modal .modalContent {
+    padding-top: 25px;
+    width: 50%;
+    height: 15%;
+  }
+  .modal .modalContent .modalCheck {
+    margin: 0 auto 0px;
+  }
+  .modal .modalContent .modalCheck span {
+    font-size: 5rem;
+  }
+  .modal .modalContent .modalTitle {
+    font-size: 2rem;
+    margin-top: 0px;
+  }
+  .modal .modalContent .modalButtons {
+    margin-top: 20px;
+  }
+  .modal .modalContent .modalButtons button {
+    font-size: 1.8rem;
+    width: 100%;
+    height: 50px;
+  }
+}

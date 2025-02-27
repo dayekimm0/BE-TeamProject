@@ -3,15 +3,25 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BE:</title>
+    <title>K-Vegan Platform, BE:</title>
     <link rel="icon" href="./images/common/favicon.png" type="image/x-icon" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- slick slider -->
+    <link rel="stylesheet" href="./slickslider/slick-theme.css" />
+    <link rel="stylesheet" href="./slickslider/slick.css" />
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script src="./slickslider/slick.js"></script>
     <!-- fontawesome -->
     <script
       src="https://kit.fontawesome.com/3f2ea24883.js"
       crossorigin="anonymous"
     ></script>
     <!-- Common CSS & JS -->
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script defer src="./scripts/index.js"></script>
     <script defer src="./script.js"></script>
     <!-- lenis -->
     <script src="https://unpkg.com/lenis@1.1.14/dist/lenis.min.js"></script>
@@ -23,13 +33,10 @@
         <div class="index">
           <div class="title">
             <p>비건, 이제 BE:로 완성하다</p>
-            <div class="mainTitle">
-              <h2>WITH BE,</h2>
-              <h2>VEGAN IS COMPLETE</h2>
-            </div>
+            <h2><span>WITH BE,</span><span>VEGAN IS COMPLETE</span></h2>
           </div>
           <div class="subTitle">
-            <p>#한국</p>
+            <p>#안녕하세요</p>
             <p>#새로운 비건플랫폼</p>
             <p>#비건을 쉽게, BE와 함께</p>
           </div>
@@ -40,75 +47,145 @@
           />
           <img class="indexImg2" src="./images/index/star.png" alt="star" />
         </div>
-      </section>
-      <section id="con1" class="section">
-        <h2>What We Have</h2>
-        <div class="parts">
-          <div class="part">
-            <img src="./images/index/home.jpeg" alt="BE" />
-            <p>BE:</p>
+        <section id="con1" class="section">
+          <h2>What We Have</h2>
+          <div class="parts">
+            <div class="part">
+              <a href="./join.html"
+                ><img class="partImg" src="./images/index/home.jpeg" alt="home"
+              /></a>
+              <p>BE:</p>
+            </div>
+            <div class="part">
+              <a href="./food.html"
+                ><img class="partImg" src="./images/index/food.png" alt="food"
+              /></a>
+              <p>FOOD</p>
+            </div>
+            <div class="part">
+              <a href="./beauty.html"
+                ><img
+                  class="partImg"
+                  src="./images/index/beauty.png"
+                  alt="beauty"
+              /></a>
+              <p>BEAUTY</p>
+            </div>
+            <div class="part">
+              <a href="./fashion.html">
+                <img
+                  class="partImg"
+                  src="./images/index/fashion.png"
+                  alt="fashion"
+                />
+              </a>
+              <p>FASHION</p>
+            </div>
+            <div class="part">
+              <a href="./lifestyle.html"
+                ><img
+                  class="partImg"
+                  src="./images/index/lifestyle.png"
+                  alt="lifestyle"
+              /></a>
+              <p>LIFESTYLE</p>
+            </div>
+            <div class="part">
+              <a href="./event.html"
+                ><img
+                  class="partImg"
+                  src="./images/index/event.png"
+                  alt="event"
+              /></a>
+              <p>EVENT</p>
+            </div>
           </div>
-          <div class="part">
-            <img src="./images/index/food.png" alt="food" />
-            <p>FOOD</p>
+        </section>
+        <section id="con2" class="section">
+          <div class="con2-text">
+            <p
+              data-aos-offset="500"
+              data-aos-duration="550"
+              data-aos="fade-right"
+            >
+              TASTY
+            </p>
+            <p
+              data-aos-offset="500"
+              data-aos-duration="550"
+              data-aos="fade-left"
+            >
+              BEAUTIFUL
+            </p>
+            <p
+              data-aos-offset="500"
+              data-aos-duration="550"
+              data-aos="fade-right"
+            >
+              STYLISH
+            </p>
+            <p
+              data-aos-offset="500"
+              data-aos-duration="550"
+              data-aos="fade-left"
+            >
+              WELLNESS
+            </p>
+            <img
+              data-aos="fade"
+              class="con2Img"
+              src="./images/index/star.png"
+              alt="star"
+            />
           </div>
-          <div class="part">
-            <img src="./images/index/beauty.png" alt="beauty" />
-            <p>BEAUTY</p>
+        </section>
+        <section id="con3" class="section">
+          <div class="content-video">
+            <iframe
+              src="https://www.youtube.com/embed/ZXi-_PnXZp8?si=zBPa7dGK2_moEQ8k"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
           </div>
-          <div class="part">
-            <img src="./images/index/fashion.png" alt="fashion" />
-            <p>FASHION</p>
-          </div>
-          <div class="part">
-            <img src="./images/index/lifestyle.png" alt="lifestyle" />
-            <p>LIFESTYLE</p>
-          </div>
-          <div class="part">
-            <img src="./images/index/event.png" alt="event" />
-            <p>EVENT</p>
-          </div>
-        </div>
-      </section>
-      <section id="con2" class="section">
-        <div class="con2-text">
-          <p>TASTY</p>
-          <p>BEAUTIFUL</p>
-          <p>STYLISH</p>
-          <p>WELLNESS</p>
-        </div>
-        <img class="con2Img" src="./images/index/star.png" alt="star" />
-      </section>
-      <section id="con3" class="section">
-        <div class="content-video">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/ZXi-_PnXZp8?si=zBPa7dGK2_moEQ8k"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </section>
-      <section id="con4" class="section">
-        <div class="category">
+        </section>
+        <section id="con4" class="section">
           <div class="list">
-            <h3>Our Service *</h3>
-            <hr />
-            <p>01<a href="#">FOOD</a></p>
-            <hr />
-            <p>02<a href="#">BEAUTY</a></p>
-            <hr />
-            <p>03<a href="#">FASHION</a></p>
-            <hr />
-            <p>04<a href="#">LIFESTYLE</a></p>
-            <hr/>
-        </div>
+            <h3>BE Trendy *</h3>
+            <div class="trendList">
+              <div class="list01">
+                <p>01<a href="./food.html">FOOD</a></p>
+                <p>도둑 정재기가 털어간 글루텐프리 베이커리</p>
+              </div>
+              <div class="list02">
+                <p>02<a href="./beauty.html">BEAUTY</a></p>
+                <p>AMUSE, 25S/S 비건 립 앤 치크 제품 출시</p>
+              </div>
+              <div class="list03">
+                <p>03<a href="./fashion.html">FASHION</a></p>
+                <p>디자이너 브랜드 강동호, 신상 비건 레더자켓 발매</p>
+              </div>
+              <div class="list04">
+                <p>04<a href="./lifestyle.html">LIFESTYLE</a></p>
+                <p>배우 김소연이 추천한 힐링스팟, 템플스테이?</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="con5" class="section">
+          <div class="eventLoad">
+            <a href="./event.html"
+              ><span>BE:에서 만나는<br /><b>COUPON EVENT</b></span></a
+            >
+          </div>
+        </section>
       </section>
     </main>
     <footer></footer>
   </body>
+  <script>
+    AOS.init();
+  </script>
 </html>

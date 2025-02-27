@@ -1,8 +1,13 @@
 // 헤더
 const header = document.querySelector("header");
 const headerInner = `
+<<<<<<< HEAD
   <h1>
         <a href="#" title="Home">
+=======
+      <h1>
+        <a href="index.html" title="Home">
+>>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
           <img src="./images/common/logo_white.png" alt="Home" />
         </a>
       </h1>
@@ -14,6 +19,7 @@ const headerInner = `
       <nav id="gnb">
         <ul>
           <li>
+<<<<<<< HEAD
             <a href="#" title="Food">Food</a>
           </li>
           <li>
@@ -32,6 +38,27 @@ const headerInner = `
             <a href="#" title="Sign Up" id="Sign">Login</a>
           </li>
         </ul>
+=======
+            <a href="food.html" title="Food">Food</a>
+          </li>
+          <li>
+            <a href="beauty.html" title="Beauty">Beauty</a>
+          </li>
+          <li>
+            <a href="fashion.html" title="Fashion">Fashion</a>
+          </li>
+          <li>
+            <a href="lifestyle.html" title="Lifestyle">Lifestyle</a>
+          </li>
+          <li>
+            <a href="event.html" title="Events">Events</a>
+          </li>
+          <li>
+            <a href="login.html" title="Sign Up" id="Sign">Login</a>
+          </li>
+        </ul>
+        <p></p>
+>>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
       </nav>
 `;
 header.innerHTML = headerInner;
@@ -46,6 +73,7 @@ const footerInner = `
           <nav id="fnb">
             <ul>
               <li>
+<<<<<<< HEAD
                 <a href="#" title="Food">Food</a>
               </li>
               <li>
@@ -56,6 +84,18 @@ const footerInner = `
               </li>
               <li>
                 <a href="#" title="Lifestyle">Lifestyle</a>
+=======
+                <a href="food.html" title="Food">Food</a>
+              </li>
+              <li>
+                <a href="beauty.html" title="Beauty">Beauty</a>
+              </li>
+              <li>
+                <a href="fashion.html" title="Fashion">Fashion</a>
+              </li>
+              <li>
+                <a href="lifestyle.html" title="Lifestyle">Lifestyle</a>
+>>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
               </li>
               <li>
                 <a href="#" title="Events">Events</a>
@@ -108,9 +148,18 @@ toggleBtn.addEventListener("click", function () {
   this.classList.toggle("active");
 });
 
+<<<<<<< HEAD
 // 메뉴 리사이즈 이벤트
 window.addEventListener("resize", () => {
   let headerLogo = document.querySelector("header > h1 > a > img");
+=======
+// 메뉴 로고 이벤트
+let headerLogo = document.querySelector("header > h1 > a > img");
+if (window.innerWidth < 1025) {
+  headerLogo.src = "./images/common/logo_black.png";
+}
+window.addEventListener("resize", () => {
+>>>>>>> cfa34b19eac923cd9fa814ea1c086dd793c6879c
   if (window.innerWidth > 1024) {
     header.classList.remove("active");
     toggleBtn.classList.remove("active");
