@@ -59,10 +59,10 @@ const footerInner = `
                 <a href="lifestyle.html" title="Lifestyle">Lifestyle</a>
               </li>
               <li>
-                <a href="#" title="Events">Events</a>
+                <a href="event.html" title="Events">Events</a>
               </li>
               <li>
-                <a href="#" title="Sign Up" id="Sign">Login</a>
+                <a href="login.html" title="Sign Up" id="Sign">Login</a>
               </li>
             </ul>
           </nav>

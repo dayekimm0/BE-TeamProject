@@ -197,7 +197,7 @@ main {
       .trendList {
         width: 100%;
         p {
-          font: normal 3.2rem/1 map-get($map: $font-family, $key: Pretendard);
+          font: normal 2.4rem/1 map-get($map: $font-family, $key: Pretendard);
           a {
             padding-left: 20px;
             font: bold 5rem/1 map-get($map: $font-family, $key: REM);
@@ -410,9 +410,7 @@ main {
   main {
     #intro {
       .index {
-        height: 80vh;
         .title {
-          top: 30%;
           p {
             position: relative;
           }
@@ -427,9 +425,10 @@ main {
           }
         }
         .subTitle {
-          top: 54%;
+          top: 65%;
           right: auto;
           left: 5%;
+          flex-wrap: wrap;
           p {
             padding: 8px 16px;
             gap: 4px;
@@ -442,9 +441,10 @@ main {
           top: 12%;
         }
         .indexImg2 {
-          top: 65%;
+          top: 80%;
           width: 60px;
           height: 60px;
+          left: 70%;
           animation: rotate-scale-up 0.7s both;
         }
       }
@@ -453,7 +453,6 @@ main {
       padding-left: 5%;
       padding-right: 0;
       gap: 20px;
-      margin-top: -20%;
       h2 {
         font: normal 4rem/1 map-get($map: $font-family, $key: REM);
       }
@@ -489,6 +488,7 @@ main {
       }
     }
     #con2 {
+      margin: 100px 0;
       .con2-text {
         font: bold 4rem/1 map-get($map: $font-family, $key: REM);
         letter-spacing: 12px;
@@ -503,7 +503,7 @@ main {
       height: 50vh;
     }
     #con4 {
-      padding: 0 3%;
+      padding: 0 5%;
       .list {
         h3 {
           font: bold 3rem/1 map-get($map: $font-family, $key: REM);
@@ -554,4 +554,22 @@ main {
   to {
     transform: rotate(360deg);
   }
+}
+
+// phone.ver2
+@media screen and (max-width: 430px){
+ main{
+  #con4{
+    .list{
+      .trendList{
+        div{
+          padding: 20px 0;
+          p{
+
+          }
+        }
+      }
+    }
+  }
+ }
 }

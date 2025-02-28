@@ -584,3 +584,59 @@ h2 {
     }
   }
 }
+
+// phone.ver2
+@media screen and (max-width: 430px){
+  main{
+    .detailTitle{
+      .titleImg{
+        height: 34px;
+      }
+      h1{
+        font: 700 5rem / 1 "REM" !important;
+      }
+    }
+    .infoContainer{
+      h2{
+        font-size: 1.8rem;
+      }
+      & > ul{
+        width: 100%;
+        li{
+          line-height: 32px;
+          button{
+            font-size: 1.1rem;
+            padding: 8px 9px;
+          }
+        }
+      }
+      .tabContainer{
+        &> div{
+          .articleInfo{
+            h3{
+              font-size: 1.3rem;
+            }
+            p{
+              width: 90% !important;
+              margin: 12px 0 12px;
+            }
+          }
+        .articleHashtag{
+          li{
+            padding: 6px !important;
+          }
+        }
+        }
+      }
+    }
+    .bannerContainer{
+      .bannerBoxWrapper{
+        .contentWrapper{
+          .contentBox{
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+}
