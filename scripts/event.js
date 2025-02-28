@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // 모달 표시 함수
   function showModal(message) {
-    modal.style.display = "block";
+    modal.style.display = "flex";
   }
 
   // 모달 닫기 함수
