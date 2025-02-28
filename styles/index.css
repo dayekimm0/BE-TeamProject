@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -40,23 +39,14 @@ main {
 main #intro .index {
   height: 100vh;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 main #intro .index .title {
   left: 5%;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 main #intro .index .title p {
   font: normal 3.3rem/1.75 "Pretendard";
@@ -64,13 +54,8 @@ main #intro .index .title p {
 }
 main #intro .index .title h2 span {
   display: block;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   font: bold 10rem/0.87 "REM";
 }
 main #intro .index .title h2 span:first-child {
@@ -80,8 +65,7 @@ main #intro .index .indexImg1 {
   position: absolute;
   top: 15%;
   right: 5%;
-  -webkit-animation: main-circle 5s linear infinite;
-          animation: main-circle 5s linear infinite;
+  animation: main-circle 5s linear infinite;
 }
 main #intro .index .indexImg2 {
   position: absolute;
@@ -94,20 +78,16 @@ main #intro .index .subTitle {
   top: 70%;
   right: 10%;
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 20px;
 }
 main #intro .index .subTitle p {
   padding: 16px 30px;
   border-radius: 40px;
-  -webkit-box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
   margin-top: 5%;
   font: 700 2.4rem/1 "Pretendard";
   letter-spacing: -0.52px;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 main #intro .index .subTitle p:hover {
@@ -120,13 +100,8 @@ main #intro .index .subTitle p:hover:nth-child(3) {
   background-color: #b4e3fc;
 }
 main #con1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   padding-left: 5%;
   gap: 40px;
 }
@@ -135,12 +110,8 @@ main #con1 h2 {
 }
 main #con1 .parts {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   gap: 46px;
   overflow: hidden;
 }
@@ -151,8 +122,7 @@ main #con1 .parts .part:hover p {
   opacity: 1;
 }
 main #con1 .parts .part:hover .partImg {
-  -webkit-filter: brightness(60%);
-          filter: brightness(60%);
+  filter: brightness(60%);
 }
 main #con1 .parts .part a .partImg {
   width: 430px;
@@ -160,17 +130,14 @@ main #con1 .parts .part a .partImg {
   display: block;
   border-radius: 40px;
   background-position: center;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
   background-size: cover;
   background-repeat: no-repeat;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   cursor: pointer;
 }
 main #con1 .parts .part p {
   width: 100%;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
   position: absolute;
   border-radius: 40px;
@@ -189,13 +156,8 @@ main #con2 .con2-text {
   font: 900 11rem/1 "REM";
   text-align: right;
   letter-spacing: 22px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   gap: 20px;
 }
 main #con2 .con2-text p:nth-child(even) {
@@ -209,8 +171,7 @@ main #con2 .con2-text .con2Img {
   margin-left: 5%;
 }
 main #con2 .con2-text .con2Img .active {
-  -webkit-animation: rotate-scale-up 0.7s both;
-          animation: rotate-scale-up 0.7s both;
+  animation: rotate-scale-up 0.7s both;
 }
 main #con3 {
   width: 100%;
@@ -229,19 +190,10 @@ main #con4 {
   padding: 0 10%;
 }
 main #con4 .list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 main #con4 .list h3 {
   margin-bottom: 50px;
@@ -253,35 +205,24 @@ main #con4 .list .trendList {
   width: 100%;
 }
 main #con4 .list .trendList p {
-  font: normal 3.2rem/1 "Pretendard";
+  font: normal 2.4rem/1 "Pretendard";
 }
 main #con4 .list .trendList p a {
   padding-left: 20px;
   font: bold 5rem/1 "REM";
 }
 main #con4 .list .trendList div {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid #000;
   padding: 20px;
 }
 main #con4 .list .trendList div p:first-child {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 main #con4 .list .trendList div p:first-child a {
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 main #con4 .list .trendList .list01 p a:hover {
@@ -301,18 +242,11 @@ main #con5 {
 }
 main #con5 .eventLoad {
   padding: 130px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
   color: #fff;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.75)), to(rgba(0, 0, 0, 0.75))), url("../images/index/couponheader.png");
   background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/index/couponheader.png");
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -351,8 +285,7 @@ main #con5 .eventLoad span b {
     width: 80px;
     height: 80px;
     bottom: 6%;
-    -webkit-animation: rotate-scale-up 0.7s both;
-            animation: rotate-scale-up 0.7s both;
+    animation: rotate-scale-up 0.7s both;
   }
   main #con1 {
     padding: 0 5%;
@@ -361,8 +294,7 @@ main #con5 .eventLoad span b {
     font: normal 4rem/1 "REM";
   }
   main #con1 .parts {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 0;
     overflow: hidden;
     border-radius: 40px;
@@ -373,8 +305,7 @@ main #con5 .eventLoad span b {
     position: relative;
   }
   main #con1 .parts .part:hover .partImg {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%);
+    filter: brightness(100%);
   }
   main #con1 .parts .part::after {
     content: "";
@@ -383,7 +314,6 @@ main #con5 .eventLoad span b {
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0.6)));
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6));
   }
   main #con1 .parts .part a .partImg {
@@ -438,12 +368,6 @@ main #con5 .eventLoad span b {
   }
 }
 @media screen and (max-width: 767px) {
-  main #intro .index {
-    height: 80vh;
-  }
-  main #intro .index .title {
-    top: 30%;
-  }
   main #intro .index .title p {
     position: relative;
   }
@@ -455,9 +379,10 @@ main #con5 .eventLoad span b {
     font: normal 3rem/1 "REM";
   }
   main #intro .index .subTitle {
-    top: 54%;
+    top: 65%;
     right: auto;
     left: 5%;
+    flex-wrap: wrap;
   }
   main #intro .index .subTitle p {
     padding: 8px 16px;
@@ -470,42 +395,31 @@ main #con5 .eventLoad span b {
     top: 12%;
   }
   main #intro .index .indexImg2 {
-    top: 65%;
+    top: 80%;
     width: 60px;
     height: 60px;
-    -webkit-animation: rotate-scale-up 0.7s both;
-            animation: rotate-scale-up 0.7s both;
+    left: 70%;
+    animation: rotate-scale-up 0.7s both;
   }
   main #con1 {
     padding-left: 5%;
     padding-right: 0;
     gap: 20px;
-    margin-top: -20%;
   }
   main #con1 h2 {
     font: normal 4rem/1 "REM";
   }
   main #con1 .parts {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    align-items: center;
     gap: 14px;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
     border-radius: 0;
     overflow: hidden;
   }
   main #con1 .parts .part {
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 auto;
-            flex: 0 0 auto;
+    flex: 0 0 auto;
     width: 80%;
     max-width: 280px;
   }
@@ -523,6 +437,9 @@ main #con5 .eventLoad span b {
     left: 10%;
     bottom: 8%;
   }
+  main #con2 {
+    margin: 100px 0;
+  }
   main #con2 .con2-text {
     font: bold 4rem/1 "REM";
     letter-spacing: 12px;
@@ -535,7 +452,7 @@ main #con5 .eventLoad span b {
     height: 50vh;
   }
   main #con4 {
-    padding: 0 3%;
+    padding: 0 5%;
   }
   main #con4 .list h3 {
     font: bold 3rem/1 "REM";
@@ -558,51 +475,27 @@ main #con5 .eventLoad span b {
     font: bold 3rem/1.2 "REM";
   }
 }
-@-webkit-keyframes rotate-scale-up {
-  0% {
-    -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
-  }
-  50% {
-    -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
-  }
-  100% {
-    -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
-  }
-}
 @keyframes rotate-scale-up {
   0% {
-    -webkit-transform: scale(1) rotateZ(0);
-            transform: scale(1) rotateZ(0);
+    transform: scale(1) rotateZ(0);
   }
   50% {
-    -webkit-transform: scale(2) rotateZ(180deg);
-            transform: scale(2) rotateZ(180deg);
+    transform: scale(2) rotateZ(180deg);
   }
   100% {
-    -webkit-transform: scale(1) rotateZ(360deg);
-            transform: scale(1) rotateZ(360deg);
-  }
-}
-@-webkit-keyframes main-circle {
-  from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
-  }
-  to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: scale(1) rotateZ(360deg);
   }
 }
 @keyframes main-circle {
   from {
-    -webkit-transform: rotate(0deg);
-            transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@media screen and (max-width: 430px) {
+  main #con4 .list .trendList div {
+    padding: 20px 0;
   }
 }

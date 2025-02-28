@@ -4,8 +4,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 ul,
@@ -35,13 +34,9 @@ section {
 }
 
 .detailTitle {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
 .detailTitle .titleImg {
   width: 30px;
@@ -53,8 +48,7 @@ section {
 .detailTitle .circleImg {
   margin-left: auto;
   margin-bottom: 70px;
-  -webkit-animation: circle 6s linear infinite;
-          animation: circle 6s linear infinite;
+  animation: circle 6s linear infinite;
 }
 
 h2 {
@@ -65,8 +59,6 @@ h2 {
 
 /* ==== contents ==== */
 .infoContainer > ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 14px;
   margin: 20px 0;
@@ -82,7 +74,6 @@ h2 {
   border: 1.5px solid #a5d112;
   background: none;
   cursor: pointer;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .infoContainer > ul li .active {
@@ -92,25 +83,18 @@ h2 {
 .infoContainer .tabContainer > div {
   width: 100%;
   height: 500px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-radius: 40px;
   overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   border: 1.5px solid #a5d112;
   display: none;
 }
 .infoContainer .tabContainer > div .articleVideo {
   width: 35%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .infoContainer .tabContainer > div .articleInfo {
   width: 65%;
@@ -128,8 +112,6 @@ h2 {
   line-height: 2.8rem;
 }
 .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 8px;
 }
@@ -142,18 +124,12 @@ h2 {
   font-weight: 400;
 }
 .infoContainer .tabContainer > div.active {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .bannerContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 130px 0;
   background: #cae570;
   padding-top: 70px;
@@ -164,19 +140,12 @@ h2 {
   position: relative;
 }
 .bannerContainer .bannerBoxWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 60%;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  justify-content: flex-end;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   gap: 24px;
 }
@@ -189,22 +158,18 @@ h2 {
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
   border-radius: 20px;
   margin-bottom: 8px;
-  -webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
-          box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 8px;
 }
 .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
   font-size: 2rem;
 }
 
 .shopContainer .shopBoxWrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   overflow: hidden;
   border-radius: 40px;
   margin-top: 30px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 .shopContainer .shopBoxWrapper .shopBox {
   position: relative;
@@ -219,28 +184,20 @@ h2 {
 .shopContainer .shopBoxWrapper .shopBox .imgBox img {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
   background: rgba(202, 229, 112, 0.9);
   position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   left: 0;
   top: 0;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   padding: 0 60px;
   opacity: 0;
-  -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
 .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo span {
@@ -267,17 +224,9 @@ h2 {
   visibility: visible;
 }
 
-@-webkit-keyframes circle {
-  100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-}
-
 @keyframes circle {
   100% {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 /* ==== 반응형 ==== */
@@ -297,17 +246,14 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper {
     width: 100%;
     gap: 0 !important;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
     width: 20%;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     width: 100%;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -321,8 +267,6 @@ h2 {
     line-height: 4.2rem;
   }
   .detailTitle {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     gap: 18px;
   }
@@ -373,10 +317,7 @@ h2 {
     font-size: 1.4rem;
   }
   .bannerContainer {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     margin: 70px 0;
     padding-top: 50px;
     padding-bottom: 50px;
@@ -407,8 +348,7 @@ h2 {
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 16px;
     margin-bottom: 6px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
-            box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1.8rem;
@@ -422,8 +362,6 @@ h2 {
   .shopContainer .shopBoxWrapper .shopBox {
     width: 100%;
     height: 330px;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
   }
   .shopContainer .shopBoxWrapper .shopBox .imgBox {
@@ -435,43 +373,31 @@ h2 {
     display: block;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(2) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(4) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .imgBox {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
+    order: 2;
   }
   .shopContainer .shopBoxWrapper .shopBox:nth-child(6) .shopHoverBox {
     right: auto;
     left: 0;
     position: relative;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
-            order: 1;
+    order: 1;
   }
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox {
     opacity: 1;
@@ -526,9 +452,7 @@ h2 {
     border-radius: 20px;
   }
   .infoContainer .tabContainer > div .articleInfo {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    align-items: center;
     height: auto;
   }
   .infoContainer .tabContainer > div .articleInfo h3 {
@@ -541,11 +465,8 @@ h2 {
     line-height: 1.5rem;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
     gap: 4px;
   }
   .infoContainer .tabContainer > div .articleInfo .articleHashtag li {
@@ -569,17 +490,14 @@ h2 {
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
     width: 120px;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox:last-child {
     display: none;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox img {
     border-radius: 10px;
-    -webkit-box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-            box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
   }
   .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox p {
     font-size: 1.5rem;
@@ -604,5 +522,39 @@ h2 {
   .shopContainer .shopBoxWrapper .shopBox .shopHoverBox .shopInfo p {
     font-size: 0.9rem;
     line-height: 1rem;
+  }
+}
+@media screen and (max-width: 430px) {
+  main .detailTitle .titleImg {
+    height: 34px;
+  }
+  main .detailTitle h1 {
+    font: 700 5rem/1 "REM" !important;
+  }
+  main .infoContainer h2 {
+    font-size: 1.8rem;
+  }
+  main .infoContainer > ul {
+    width: 100%;
+  }
+  main .infoContainer > ul li {
+    line-height: 32px;
+  }
+  main .infoContainer > ul li button {
+    font-size: 1.1rem;
+    padding: 8px 9px;
+  }
+  main .infoContainer .tabContainer > div .articleInfo h3 {
+    font-size: 1.3rem;
+  }
+  main .infoContainer .tabContainer > div .articleInfo p {
+    width: 90% !important;
+    margin: 12px 0 12px;
+  }
+  main .infoContainer .tabContainer > div .articleHashtag li {
+    padding: 6px !important;
+  }
+  main .bannerContainer .bannerBoxWrapper .contentWrapper .contentBox {
+    width: 100px;
   }
 }

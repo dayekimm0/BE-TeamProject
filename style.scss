@@ -334,6 +334,7 @@ footer {
       gap: 20px;
       #footerTop {
         font-size: 1.2rem;
+
         #footerLogo {
           width: 80px !important;
         }
@@ -361,6 +362,32 @@ footer {
         p {
           font-size: 10px !important;
         }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 430px){
+  header{
+    #gnb{
+      ul{
+        li{
+          a{
+            font-size: 5rem !important;
+          }
+        }
+      }
+      p{
+        bottom: -120px;
+        right: -120px;
+      }
+    }
+  }
+  footer{
+    #fnb{
+      ul{
+        justify-content: space-between;
+        gap: 0 !important;
       }
     }
   }
